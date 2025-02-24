@@ -1,0 +1,379 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "02-20",
+   "Name": "FU264.02",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Modes",
+       "TextID": "Modes",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "OperatingModes",
+        "Text": "Operating Modes",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1251_Auto",
+        "Position": "L",
+        "TextID": "S1251",
+        "OffLED": "O",
+        "Text": "Automatic Mode",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000010-AddCommandFeedback2WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2282",
+        "OffLED": "O",
+        "Text": "Manual Setpoint On",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2283_MSetOff",
+        "writeTagWR2": "CB.C2282_MSetOn",
+        "readTagRD1": "SB.S1257_Manu",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddText": {
+        "Position": "R",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2264_Open",
+        "Position": "R",
+        "TextID": "S2264",
+        "OffLED": "O",
+        "Text": "Drive Opened",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2265_Clsd",
+        "Position": "R",
+        "TextID": "S2265",
+        "OffLED": "O",
+        "Text": "Drive Closed",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "CO.C2746_InvMode",
+        "Position": "R",
+        "TextID": "C2746",
+        "OffLED": "O",
+        "Text": "Inverse Mode",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C2746_InvMode",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000015-AddPageTab": {
+       "Text": "Config",
+       "TextID": "Config",
+       "VisibleAtRight": "1",
+       "1000016-AddText": {
+        "Position": "L",
+        "TextID": "ConfigurationSignals",
+        "Text": "Configuration Signals",
+        "Bold": "2",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "1"
+       },
+       "1000017-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CO.C2746_InvMode",
+        "UserRight": "9",
+        "Position": "L",
+        "TextID": "C2746",
+        "OffLED": "O",
+        "Text": "Inverse Mode",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "1"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000018-Messages": {
+     "1000019-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000020-AddPageTab": {
+     "1000021-AddPageControl": {
+      "1000022-AddPageTab": {
+       "Text": "Parameters 1",
+       "TextID": "Parameters1",
+       "VisibleAtRight": "0",
+       "1000023-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000024-AddTextReal": {
+        "OPCID": "AA.R2321_ActSet",
+        "Precision": "1",
+        "TextID": "R2321",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "Text": "Actual Setpoint",
+        "Border": "B",
+        "UnitLocale": "%",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V2324_MSet",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Manual Setpoint",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "V2324",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Border": "B",
+        "LEDOPCID": "SB.S2327_MSetA",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddLEDTextRealLong": {
+        "OnLED": "G",
+        "OPCID": "AA.R7256_ActExtSet",
+        "OffLED": "O",
+        "Text": "External Setpoint",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7256_TextES",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "Bold": "1",
+        "Border": "B",
+        "LEDOPCID": "SB.S2328_ESetA",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000027-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V7381_ISet1",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Setpoint 1",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7381_TextISet1",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Border": "B",
+        "LEDOPCID": "SB.S2329_ISet1A",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V7382_ISet2",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Setpoint 2",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7382_TextISet2",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "LEDOPCID": "SB.S2330_ISet2A",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000029-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V7383_ISet3",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Setpoint 3",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7383_TextISet3",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Border": "B",
+        "LEDOPCID": "SB.S2331_ISet3A",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000030-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V7384_ISet4",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Setpoint 4",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7384_TextISet4",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "LEDOPCID": "SB.S2332_ISet4A",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000031-AddPageTab": {
+       "Text": "Parameters 2",
+       "TextID": "Parameters2",
+       "VisibleAtRight": "0",
+       "1000032-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000033-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "TextID2": "Setpoint",
+        "VisibleAtRight": "0"
+       },
+       "1000034-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1259_MOp",
+        "OPCID": "TA.T2259_MOp",
+        "UserRight": "6",
+        "TextID": "T2259",
+        "Text": "Motion Control Open",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000035-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1260_MCl",
+        "OPCID": "TA.T2260_MCl",
+        "UserRight": "6",
+        "TextID": "T2260",
+        "Text": "Motion Control Close",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU264",
+ "DiagnosisControl": "FU264",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1744871587
+}

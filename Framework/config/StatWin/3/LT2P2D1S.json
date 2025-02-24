@@ -1,0 +1,419 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "LT2P2D1S",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status 1 ",
+       "TextID": "Status1",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1254_EnMV",
+        "Position": "R",
+        "TextID": "S1254",
+        "OffLED": "O",
+        "Text": "Enable Manual Operation",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0",
+        "VisibleOPCID": ""
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1252_Enbl",
+        "Position": "L",
+        "TextID": "S1252",
+        "OffLED": "O",
+        "Text": "Enable Device",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0",
+        "VisibleOPCID": ""
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1255_EnFV",
+        "Position": "M",
+        "TextID": "S1255",
+        "OffLED": "O",
+        "Text": "Enable Faults",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0",
+        "VisibleOPCID": ""
+       },
+       "1000011-AddText": {
+        "Position": "L",
+        "TextID": "OperatingModes",
+        "Text": "Operating Modes",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1251_Auto",
+        "Position": "L",
+        "TextID": "S1251",
+        "OffLED": "O",
+        "Text": "Automatic",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1257_Manu",
+        "Position": "L",
+        "TextID": "S1257",
+        "OffLED": "O",
+        "Text": "Manual",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1526_SetModeAct",
+        "Position": "L",
+        "TextID": "S1526",
+        "OffLED": "O",
+        "Text": "Setup Mode Active",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1109_UpwSelVisu",
+        "Position": "L",
+        "TextID": "S1109",
+        "OffLED": "O",
+        "Text": "Upwards Selected by Visu",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1110_DownSelVisu",
+        "Position": "L",
+        "TextID": "S1110",
+        "OffLED": "O",
+        "Text": "Downwards Selected by Visu",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1010_Lift",
+        "Position": "L",
+        "TextID": "S1010",
+        "OffLED": "O",
+        "Text": "Lifting",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1011_Lower",
+        "Position": "L",
+        "TextID": "S1011",
+        "OffLED": "O",
+        "Text": "Lowering",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000020-AddPageTab": {
+       "Text": "Status 2",
+       "TextID": "Status2",
+       "VisibleAtRight": "0",
+       "1000021-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000022-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1025_PTop",
+        "Position": "L",
+        "TextID": "S1025",
+        "OffLED": "O",
+        "Text": "Position Occupied Top",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1012_PDown",
+        "Position": "L",
+        "TextID": "S1012",
+        "OffLED": "O",
+        "Text": "Position Occupied Down",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddText": {
+        "Position": "L",
+        "TextID": "ProximitySwitches",
+        "Text": "Proximity Switches",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000025-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1222_MLift",
+        "Position": "L",
+        "TextID": "S1222",
+        "OffLED": "O",
+        "Text": "Manual Lift",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1223_MLower",
+        "Position": "L",
+        "TextID": "S1223",
+        "OffLED": "O",
+        "Text": "Manual Lower",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0",
+       "1000027-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Control",
+        "TextID": "Control",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000028-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1064_ClrCmd",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1064",
+        "OffLED": "O",
+        "Text": "Clear Command",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "VisibleOPCID": ""
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000029-Messages": {
+     "1000030-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000031-AddPageTab": {
+     "1000032-AddPageControl": {
+      "1000033-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000034-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Function group",
+        "TextID": "FunctionGroup",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000035-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "120",
+        "OPCID2": "AS.I1621_RtUD",
+        "OPCID": "AA.I1621_RtUD",
+        "UserRight": "7",
+        "TextID": "I1621",
+        "Text": "Runtime Upwards/Downwards",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "ms",
+        "Base": "ms",
+        "Position": "L"
+       },
+       "1000036-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1640_DelFlt",
+        "OPCID": "AA.I1640_DelFlt",
+        "UserRight": "7",
+        "VisuBase": "ms",
+        "Text": "Faults to Visu Delay",
+        "Base": "ms",
+        "TextID": "I1640",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000037-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1604_Delay",
+        "OPCID": "AA.I1604_Delay",
+        "UserRight": "7",
+        "VisuBase": "ms",
+        "Text": "Delay timer",
+        "Base": "ms",
+        "TextID": "I1604",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000038-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1615_TLTop",
+        "OPCID": "AA.I1615_TLTop",
+        "UserRight": "7",
+        "VisuBase": "ms",
+        "Text": "Timer leaving Top position",
+        "Base": "ms",
+        "TextID": "I1615",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000039-AddTextReal": {
+        "OPCID": "AA.I8011_AreaNr",
+        "Position": "L",
+        "Text": "Area Number",
+        "UnitLocale": "",
+        "Precision": "",
+        "TextID": "I8011",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "VisibleOPCID": ""
+      }
+     },
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": "Parameters"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "LT2P2D1S",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -2141882798
+}

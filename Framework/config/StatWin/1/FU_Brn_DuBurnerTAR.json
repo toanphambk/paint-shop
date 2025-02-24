@@ -1,0 +1,289 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-20",
+   "Name": "FU_Brn_DuBurnerTAR.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback2WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2254",
+        "OffLED": "O",
+        "Text": "Manual On",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2251_Off",
+        "writeTagWR2": "CB.C2254_On",
+        "readTagRD1": "SB.S1257_Manu",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddCommandFeedback1WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2263",
+        "OffLED": "O",
+        "Text": "Switch Device back to Automatic",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2263_Auto",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S1251_Auto",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "Position": "L",
+        "UserRight": "7",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "1000011-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2296_BurnStart",
+        "Position": "R",
+        "TextID": "S2296",
+        "OffLED": "O",
+        "Text": "Burner Start",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2725_BurnOn",
+        "Position": "R",
+        "TextID": "S2725",
+        "OffLED": "O",
+        "Text": "Burner In Operation",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000014-Messages": {
+     "1000015-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000016-AddPageTab": {
+     "1000017-AddPageControl": {
+      "1000018-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000019-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000020-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "TextID2": "Setpoint"
+       },
+       "1000021-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4539_SPos",
+        "OPCID": "AA.I4539_SPos",
+        "UserRight": "6",
+        "TextID": "I4539",
+        "Text": "Motion Control of Gas Valve in Start Position (Burner Starting)",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4540_CPos",
+        "OPCID": "AA.I4540_CPos",
+        "UserRight": "6",
+        "TextID": "I4540",
+        "Text": "Motion Control of Gas Valve in Closed Position (Burner Stopping)",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4541_BurnMOn",
+        "OPCID": "AA.I4541_BurnMOn",
+        "UserRight": "6",
+        "TextID": "I4541",
+        "Text": "Motion Control of Burner Running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "AS.I1641_ExtAckn",
+        "OPCID": "AA.I1641_ExtAckn",
+        "UserRight": "1",
+        "TextID": "I1641",
+        "Text": "Impulse Extension Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000025-AddPageTab": {
+       "Text": "Diagnostics",
+       "TextID": "Diagnostics",
+       "VisibleAtRight": "0",
+       "1000026-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Operation",
+        "TextID": "Operation",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000027-AddTextOperatingCounterInputLong": {
+        "OPCID": "AA.I2001_OperTime",
+        "TextID": "I2001",
+        "Text": "Operation Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "UserRight": "6",
+        "IntTimeMin": "0",
+        "IntTimeMax": "2147483640",
+        "Position": "L"
+       },
+       "1000028-AddTextIntegerInput": {
+        "OPCID": "AA.I2000_OpCyc",
+        "UserRight": "5",
+        "Position": "L",
+        "IntInputMin": "",
+        "Text": "Operating Cycles",
+        "UnitLocale": "",
+        "TextID": "I2000",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640",
+        "InputMin": "0"
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Brn_DuBurnerTAR",
+ "DiagnosisControl": "FU_Brn_DuBurnerTAR",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1172357582
+}

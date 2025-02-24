@@ -1,0 +1,31 @@
+{
+ "tabs": {
+  "Private1": {
+   "1": {
+    "data": {
+     "OnLED": "G",
+     "OPCID": "",
+     "Position": "L",
+     "UserRight": "9",
+     "TextID": "S1251",
+     "OffLED": "O",
+     "Text": "Automatic Mode",
+     "Bold": "1",
+     "Border": "B",
+     "writeTagWR1": "CB.C2263_Auto",
+     "readTagRD1": "SB.S1257_Manu",
+     "readTagRD2": "SB.S1251_Auto",
+     "leftIcon": "handMode",
+     "rightIcon": "automatic",
+     "VisibleOPCID": "",
+     "VisibleAtRight": "0",
+     "writable": true,
+     "DiagnosisLibID": 1
+    },
+    "myPLC": "P1C1T1.P1C1T1_KL01_VZ366_G11",
+    "myKey": "1000012-AddCommandFeedback1WR2RD",
+    "writable": false
+   }
+  }
+ }
+}

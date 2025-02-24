@@ -1,0 +1,6 @@
+{
+	"proxy.server": "bie-sv555",
+	"proxy.port": "8080",
+	"site.url": "https://hmi.durr.com/updates/5.0/wss/modules.json",
+	"checkBeta": false
+}

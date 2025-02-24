@@ -1,0 +1,272 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-20",
+   "Name": "FU_Gp_PLCInformation.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation ",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1268_CFV",
+        "Position": "R",
+        "TextID": "S1268",
+        "OffLED": "O",
+        "Text": "Collective Fault to Visu",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1269_CWV",
+        "Position": "R",
+        "TextID": "S1269",
+        "OffLED": "O",
+        "Text": "Collective Warning to Visu",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1000_IntFlt",
+        "Position": "R",
+        "TextID": "S1000",
+        "OffLED": "O",
+        "Text": "Internal Fault",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1001_IntWarn",
+        "Position": "R",
+        "TextID": "S1001",
+        "OffLED": "O",
+        "Text": "Internal Warning",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000012-Messages": {
+     "1000013-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000014-AddPageTab": {
+     "1000015-AddPageControl": {
+      "1000016-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000017-AddText": {
+        "Position": "L",
+        "TextID": "Time",
+        "Text": "Time",
+        "showHide": true
+       },
+       "1000018-AddTextSiemensDateLong": {
+        "OPCID": "GP.G2202_DateAV",
+        "TextID": "G2202",
+        "Text": "Actual Date",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextSiemensTimeLong": {
+        "OPCID": "GP.G2204_TimeAV",
+        "TextID": "G2204",
+        "Text": "Time Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextSiemensDateInputLong": {
+        "OPCID": "GP.G2201_DateSP",
+        "UserRight": "13",
+        "TextID": "G2201",
+        "Text": "Date Set Point",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextSiemensTimeInputLong": {
+        "IntTimeMax": "86400",
+        "OPCID": "GP.G2203_TimeSP",
+        "UserRight": "13",
+        "TextID": "G2203",
+        "Text": "Time Set Point",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1256_SetTime",
+        "UserRight": "13",
+        "TextID": "C1256",
+        "OffLED": "O",
+        "Text": "Set Date Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextInteger": {
+        "OPCID": "AA.I2342_MinCycle",
+        "TextID": "I2342",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Minimum Cycle Time",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddTextInteger": {
+        "OPCID": "AA.I2350_MinCycleSR",
+        "TextID": "I2350",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Minimum Cycle Time Since Reset",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddTextInteger": {
+        "OPCID": "AA.I2341_ActCycle",
+        "TextID": "I2341",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Actual Cycle Time",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddTextInteger": {
+        "OPCID": "AA.I2351_MaxCycleSR",
+        "TextID": "I2351",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Maximum Cycle Time Since Reset",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000027-AddTextInteger": {
+        "OPCID": "AA.I2343_MaxCycle",
+        "TextID": "I2343",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Maximum Cycle Time",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1066_Reset",
+        "UserRight": "0",
+        "TextID": "C2258",
+        "OffLED": "O",
+        "Text": "Reset from Visu",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Gp_PLCInformation",
+ "DiagnosisControl": "FU_Gp_PLCInformation",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1386838945
+}

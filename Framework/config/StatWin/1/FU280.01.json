@@ -1,0 +1,461 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU280.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback2WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "0",
+        "TextID": "C2282",
+        "OffLED": "O",
+        "Text": "Manual Setpoint On",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2283_MSetOff",
+        "writeTagWR2": "CB.C2282_MSetOn",
+        "readTagRD1": "SB.S2327_MSetA",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2838_IceRevA",
+        "Position": "R",
+        "TextID": "S2838",
+        "OffLED": "O",
+        "Text": "Ice Revolution ",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2839_CleanMA",
+        "Position": "R",
+        "TextID": "S2839",
+        "OffLED": "O",
+        "Text": "Cleaning Mode",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2878_NormalMA",
+        "Position": "R",
+        "TextID": "S2878",
+        "OffLED": "O",
+        "Text": "Normal Mode",
+        "Border": "B",
+        "VisibleOPCID": ""
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation"
+    },
+    "1000013-Messages": {
+     "1000014-AlarmClient": {},
+     "Text": "Messages"
+    },
+    "1000015-AddPageTab": {
+     "1000016-AddPageControl": {
+      "1000017-AddPageTab": {
+       "Text": "Parameters 1",
+       "TextID": "Parameters1",
+       "1000018-AddText": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Border": "N",
+        "VisibleOPCID": ""
+       },
+       "1000019-AddTextReal": {
+        "OPCID": "AA.R2353_OutTemp",
+        "Precision": "1",
+        "TextID": "R2353",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "Text": "Outside Temperature",
+        "Border": "B",
+        "UnitLocale": "°C",
+        "UnitImperial": "°F",
+        "VisibleOPCID": ""
+       },
+       "1000020-AddText": {
+        "TextID": "ActualSetpoint",
+        "Text": "Actual Setpoint",
+        "Border": "N",
+        "VisibleOPCID": ""
+       },
+       "1000021-AddTextReal": {
+        "OPCID": "AA.R2354_ActRevSet",
+        "Precision": "1",
+        "TextID": "R2354",
+        "UnitInit": "2",
+        "UnitMetric": "Upm",
+        "Text": "Revolution",
+        "Border": "B",
+        "UnitLocale": "Upm",
+        "UnitImperial": "Rpm",
+        "VisibleOPCID": ""
+       },
+       "1000022-AddTextReal": {
+        "OPCID": "AA.R2355_ActFreqSet",
+        "Precision": "1",
+        "TextID": "R2355",
+        "UnitInit": "2",
+        "UnitMetric": "Hz",
+        "Text": "Frequency",
+        "Border": "B",
+        "UnitLocale": "Hz",
+        "UnitImperial": "Hz",
+        "VisibleOPCID": ""
+       }
+      },
+      "1000023-AddPageTab": {
+       "Text": "Parameters 2",
+       "TextID": "Parameters2",
+       "VisibleAtRight": "0",
+       "1000024-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000025-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "TextID2": "Setpoint"
+       },
+       "1000026-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1343_HWMOn",
+        "OPCID": "TA.T2343_HWMOn",
+        "UserRight": "6",
+        "TextID": "T2343",
+        "Text": "Heatwheel Motion Control",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000027-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1471_RevAdj",
+        "OPCID": "TA.T2471_RevAdj",
+        "UserRight": "1",
+        "TextID": "T2471",
+        "Text": "Revolution Adjustment",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000028-AddTextRealInput": {
+        "OPCID": "AS.V2324_MSet",
+        "UserRight": "7",
+        "RealInputMax": "10",
+        "Text": "Manual Setpoint",
+        "UnitLocale": "Upm",
+        "Precision": "1",
+        "TextID": "V2324",
+        "UnitInit": "2",
+        "UnitMetric": "Upm",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "Rpm",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000029-AddTextRealInput": {
+        "OPCID": "AS.V2399_FactorIncPerc",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "Text": "Factor Increment",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "V2399",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": ""
+       },
+       "1000030-AddTextReal": {
+        "OPCID": "AA.R2356_MaxRev",
+        "Precision": "1",
+        "TextID": "R2356",
+        "UnitInit": "2",
+        "UnitMetric": "Upm",
+        "Text": "Maximum Revolution",
+        "Border": "B",
+        "UnitLocale": "Upm",
+        "UnitImperial": "Rpm",
+        "VisibleOPCID": ""
+       },
+       "1000031-AddTextRealInput": {
+        "OPCID": "AS.V2400_MinRev",
+        "UserRight": "1",
+        "RealInputMax": "10",
+        "Text": "Minimum Revolution",
+        "UnitLocale": "Upm",
+        "Precision": "1",
+        "TextID": "V2400",
+        "UnitInit": "2",
+        "UnitMetric": "Upm",
+        "RealInputMin": "0",
+        "Border": "B",
+        "UnitImperial": "Rpm",
+        "VisibleOPCID": ""
+       },
+       "1000032-AddTextRealInput": {
+        "OPCID": "AS.V2298_MaxFreq",
+        "UserRight": "1",
+        "RealInputMax": "100",
+        "Text": "Maximum Frequency",
+        "UnitLocale": "Hz",
+        "Precision": "1",
+        "TextID": "V2298",
+        "UnitInit": "2",
+        "UnitMetric": "Hz",
+        "RealInputMin": "0",
+        "Border": "B",
+        "UnitImperial": "Hz",
+        "VisibleOPCID": ""
+       },
+       "1000033-AddTextReal": {
+        "OPCID": "AA.R2357_MinFreq",
+        "Precision": "1",
+        "TextID": "R2357",
+        "UnitInit": "2",
+        "UnitMetric": "Hz",
+        "Text": "Minimum Frequency",
+        "Border": "B",
+        "UnitLocale": "Hz",
+        "UnitImperial": "Hz",
+        "VisibleOPCID": ""
+       },
+       "RegAutoHide": "0"
+      },
+      "1000034-AddPageTab": {
+       "Text": "Parameters 3",
+       "TextID": "Parameters3",
+       "VisibleAtRight": "0",
+       "1000035-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000036-AddTextRealInput": {
+        "OPCID": "AS.V2393_SwpS",
+        "UserRight": "1",
+        "RealInputMax": "10",
+        "Text": "Temperature Switch Point Start",
+        "UnitLocale": "°C",
+        "Precision": "1",
+        "TextID": "V2393",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "RealInputMin": "-20",
+        "Border": "B",
+        "UnitImperial": "°F",
+        "VisibleOPCID": ""
+       },
+       "1000037-AddTextRealInput": {
+        "OPCID": "AS.V2392_Swp4",
+        "UserRight": "1",
+        "RealInputMax": "10",
+        "Text": "Temperature Switch Point 4",
+        "UnitLocale": "°C",
+        "Precision": "1",
+        "TextID": "V2392",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "RealInputMin": "-20",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "°F",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000038-AddTextRealInput": {
+        "OPCID": "AS.V2391_Swp3",
+        "UserRight": "1",
+        "RealInputMax": "10",
+        "Text": "Temperature Switch Point 3",
+        "UnitLocale": "°C",
+        "Precision": "1",
+        "TextID": "V2391",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "RealInputMin": "-20",
+        "Border": "B",
+        "UnitImperial": "°F",
+        "VisibleOPCID": ""
+       },
+       "1000039-AddTextRealInput": {
+        "OPCID": "AS.V2390_Swp2",
+        "UserRight": "1",
+        "RealInputMax": "10",
+        "Text": "Temperature Switch Point 2",
+        "UnitLocale": "°C",
+        "Precision": "1",
+        "TextID": "V2390",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "RealInputMin": "-20",
+        "Border": "B",
+        "UnitImperial": "°F",
+        "VisibleOPCID": ""
+       },
+       "1000040-AddTextRealInput": {
+        "OPCID": "AS.V2389_Swp1",
+        "UserRight": "1",
+        "RealInputMax": "10",
+        "Text": "Temperature Switch Point 1",
+        "UnitLocale": "°C",
+        "Precision": "1",
+        "TextID": "V2389",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "RealInputMin": "-20",
+        "Border": "B",
+        "UnitImperial": "°F",
+        "VisibleOPCID": ""
+       },
+       "1000041-AddTextRealInput": {
+        "OPCID": "AS.V2398_RevSwpS",
+        "UserRight": "1",
+        "RealInputMax": "10",
+        "Text": "Revolution Setpoint Point Start",
+        "UnitLocale": "Upm",
+        "Precision": "1",
+        "TextID": "V2398",
+        "UnitInit": "2",
+        "UnitMetric": "Upm",
+        "RealInputMin": "0",
+        "Border": "B",
+        "UnitImperial": "Rpm",
+        "VisibleOPCID": ""
+       },
+       "1000042-AddTextRealInput": {
+        "OPCID": "AS.V2397_RevSwp4",
+        "UserRight": "1",
+        "RealInputMax": "10",
+        "Text": "Revolution Setpoint Point 4",
+        "UnitLocale": "Upm",
+        "Precision": "1",
+        "TextID": "V2397",
+        "UnitInit": "2",
+        "UnitMetric": "Upm",
+        "RealInputMin": "0",
+        "Border": "B",
+        "UnitImperial": "Rpm",
+        "VisibleOPCID": ""
+       },
+       "1000043-AddTextRealInput": {
+        "OPCID": "AS.V2396_RevSwp3",
+        "UserRight": "1",
+        "RealInputMax": "10",
+        "Text": "Revolution Setpoint Point 3",
+        "UnitLocale": "Upm",
+        "Precision": "1",
+        "TextID": "V2396",
+        "UnitInit": "2",
+        "UnitMetric": "Upm",
+        "RealInputMin": "0",
+        "Border": "B",
+        "UnitImperial": "Rpm",
+        "VisibleOPCID": ""
+       },
+       "1000044-AddTextRealInput": {
+        "OPCID": "AS.V2395_RevSwp2",
+        "UserRight": "1",
+        "RealInputMax": "10",
+        "Text": "Revolution Setpoint Point 2",
+        "UnitLocale": "Upm",
+        "Precision": "1",
+        "TextID": "V2395",
+        "UnitInit": "2",
+        "UnitMetric": "Upm",
+        "RealInputMin": "0",
+        "Border": "B",
+        "UnitImperial": "Rpm",
+        "VisibleOPCID": ""
+       },
+       "1000045-AddTextRealInput": {
+        "OPCID": "AS.V2394_RevSwp1",
+        "UserRight": "1",
+        "RealInputMax": "10",
+        "Text": "Revolution Setpoint Point 1",
+        "UnitLocale": "Upm",
+        "Precision": "1",
+        "TextID": "V2394",
+        "UnitInit": "2",
+        "UnitMetric": "Upm",
+        "RealInputMin": "0",
+        "Border": "B",
+        "UnitImperial": "Rpm",
+        "VisibleOPCID": ""
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU280",
+ "DiagnosisControl": "FU280.01",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1762697020
+}

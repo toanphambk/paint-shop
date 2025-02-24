@@ -1,0 +1,203 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S15000_EnMV",
+     "Position": "R",
+     "TextID": "S15000",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "10-20",
+   "Name": "FU396.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C15000_Reset",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C15000",
+        "OffLED": "O",
+        "Text": "Reset",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "1000009-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S15001_DriveOn",
+        "Position": "L",
+        "TextID": "S15001",
+        "OffLED": "O",
+        "Text": "Drive is On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000011-Messages": {
+     "1000012-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000013-AddPageTab": {
+     "1000014-AddPageControl": {
+      "1000015-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000016-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000017-AddTextDoubleTimerLong": {
+        "OPCID2": "TA.T15007_DriveOnSwOff",
+        "OPCID": "TA.T15008_DriveOnSwOff",
+        "TextID": "T15008",
+        "Text": "Drive On Switch Off Delay",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T15000_DelCyBegin",
+        "OPCID": "TA.T15009_DelCyBegin",
+        "UserRight": "7",
+        "TextID": "T15009",
+        "Text": "Delay of Cycle Begin",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextDoubleTimerLong": {
+        "OPCID2": "TA.T15010_RemCyTime",
+        "OPCID": "TA.T15011_RemCyTime",
+        "TextID": "T15011",
+        "Text": "Remaining Cycle Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextTimerLong": {
+        "OPCID": "TA.T15012_Team1TotRemCyTime",
+        "TextID": "T15012",
+        "Text": "Team 1 Total Remaining Cycle Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextTimerLong": {
+        "OPCID": "TA.T15013_Team2TotRemCyTime",
+        "TextID": "T15013",
+        "Text": "Team 2 Total Remaining Cycle Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextTimerInputLong": {
+        "IntTimeMax": "86400",
+        "OPCID": "TS.T15001_Ro1DrTime",
+        "UserRight": "7",
+        "TextID": "T15001",
+        "Text": "Route 1 Driving Time to Work Cycle 71",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextTimerInputLong": {
+        "IntTimeMax": "86400",
+        "OPCID": "TS.T15002_Ro2DrTime",
+        "UserRight": "0",
+        "TextID": "T15002",
+        "Text": "Route 2 Driving Time to Work Cycle 71",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Base": "s",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU396",
+ "DiagnosisControl": "FU396.10",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 431018634
+}

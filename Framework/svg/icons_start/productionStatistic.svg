@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="140px" height="90px" viewBox="0 0 140 90" style="enable-background:new 0 0 140 90;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#3B4654;}
+	.st2{fill:#196FA3;}
+</style>
+<rect class="st0" width="140" height="90"/>
+<path class="st1" d="M68,15.4328C64.85,12.2164,59.6,9,51.2,9C34.4,9,26,21.8656,26,21.8656V69c0,0,8.1383-5.5751,25.2003-5.5751
+	c8.4484,0,13.6718,2.338,16.7997,3.3997V15.4328z"/>
+<g>
+	<rect x="110" y="53" class="st2" width="21" height="19"/>
+	<rect x="85" y="53" class="st2" width="21" height="19"/>
+	<polygon class="st2" points="75,75 75,82 82,82 82,78 104,78 104,82 111,82 111,78 133,78 133,82 140,82 140,75 	"/>
+</g>
+<path class="st1" d="M83,53v-2h2h21h2h2h3V21.8656C113,21.8656,104.6,9,87.8,9c-8.4,0-13.65,3.2164-16.8,6.4328v51.3918
+	c2.4855-0.8437,6.3014-2.4895,12-3.1315V53z"/>
+</svg>

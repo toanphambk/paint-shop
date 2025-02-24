@@ -1,0 +1,426 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "11-20",
+   "Name": "FU874.11",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5303_BuEnab",
+        "Position": "L",
+        "TextID": "S5303",
+        "OffLED": "O",
+        "Text": "Burner Enabled",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2725_BurnOn",
+        "Position": "L",
+        "TextID": "S2725",
+        "OffLED": "O",
+        "Text": "Burner In Operation",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5300_IgTrOn",
+        "Position": "L",
+        "TextID": "S5300",
+        "OffLED": "O",
+        "Text": "Ignition Transformator On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5313_IgnGaVaOp",
+        "Position": "L",
+        "TextID": "S5313",
+        "OffLED": "O",
+        "Text": "Ignition Gas Valve Open",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5301_MaGaVa1Op",
+        "Position": "L",
+        "TextID": "S5301",
+        "OffLED": "O",
+        "Text": "Main Gas Valve 1 Open",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5302_MaGaVa2Op",
+        "Position": "L",
+        "TextID": "S5302",
+        "OffLED": "O",
+        "Text": "Main Gas Valve 2 Open",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5314_GasVaSt2Op",
+        "Position": "L",
+        "TextID": "S5314",
+        "OffLED": "O",
+        "Text": "Gas Valve Stage 2 Open",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C2269_CStages",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5304_BasPos",
+        "Position": "L",
+        "TextID": "S5304",
+        "OffLED": "O",
+        "Text": "Basic Position",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5315_IgnFlSt",
+        "Position": "L",
+        "TextID": "S5315",
+        "OffLED": "O",
+        "Text": "Ignition Flame Stable",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5311_ReigOn",
+        "Position": "L",
+        "TextID": "S5311",
+        "OffLED": "O",
+        "Text": "Reignition On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5320_MaFl1Det",
+        "Position": "R",
+        "TextID": "S5320",
+        "OffLED": "O",
+        "Text": "Main Flame 1 Detected",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5321_MaFl2Det",
+        "Position": "R",
+        "TextID": "S5321",
+        "OffLED": "O",
+        "Text": "Main Flame 2 Detected",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C2269_CStages",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5305_MaGaVa1St",
+        "Position": "R",
+        "TextID": "S5305",
+        "OffLED": "O",
+        "Text": "Main Flame 1 Stable",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5306_MaGaVa2St",
+        "Position": "R",
+        "TextID": "S5306",
+        "OffLED": "O",
+        "Text": "Main Flame 2 Stable",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C2269_CStages",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5307_S1IgTrOn",
+        "Position": "R",
+        "TextID": "S5307",
+        "OffLED": "O",
+        "Text": "Step 1: Ignition Transformator On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5316_S2OpIgVa",
+        "Position": "R",
+        "TextID": "S5316",
+        "OffLED": "O",
+        "Text": "Step 2: Open Ignition Valve",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5317_S3OpMaGaVa",
+        "Position": "R",
+        "TextID": "S5317",
+        "OffLED": "O",
+        "Text": "Step 3: Open Main Gas Valves",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5318_S4StMaFlStTi",
+        "Position": "R",
+        "TextID": "S5318",
+        "OffLED": "O",
+        "Text": "Step 4: Start Main Flame Stable Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5319_S5BuRu",
+        "Position": "R",
+        "TextID": "S5319",
+        "OffLED": "O",
+        "Text": "Step 5: Burner is Running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000027-Messages": {
+     "1000028-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000029-AddPageTab": {
+     "1000030-AddPageControl": {
+      "1000031-AddPageTab": {
+       "Text": "Parameters 1",
+       "TextID": "Parameters1",
+       "VisibleAtRight": "0",
+       "1000032-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000033-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.T5042_T1SetDelMaFl1",
+        "OPCID": "TA.T6042_T1AVDelMaFl1",
+        "TextID": "T6042",
+        "Text": "Delay Main Flame 1 Detected During \"Off Command\" ",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000034-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.T5049_T2SetStTiIgFl",
+        "OPCID": "TA.T6049_T2AVStTiIgFl",
+        "TextID": "T6049",
+        "Text": "Stable Time Ignition Flame",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000035-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.T5050_T3SetMaFllSt",
+        "OPCID": "TA.T6050_T3AVMaFllSt",
+        "TextID": "T6050",
+        "Text": "Main Flame 1 Stable Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000036-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.T5051_T4SetMaFl2St",
+        "OPCID": "TA.T6051_T4AVMaFl2St",
+        "TextID": "T6051",
+        "Text": "Main Flame 2 Stable Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C2269_CStages",
+        "VisibleAtRight": "0"
+       },
+       "1000037-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.T5052_T5SetPrIgTi",
+        "OPCID": "TA.T6052_T5AVPrIgTi",
+        "TextID": "T6052",
+        "Text": "Preignition Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000038-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.T5053_T6SetIgFlMoTi",
+        "OPCID": "TA.T6053_T6AVIgFlMoTi",
+        "TextID": "T5053",
+        "Text": "Ignition Flame Monitoring Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000039-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.T5054_T7SetDeReig",
+        "OPCID": "TA.T6054_T7AVDeReig",
+        "TextID": "T5054",
+        "Text": "Delay Reignition",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000040-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.T5055_T8SetDeFlSi",
+        "OPCID": "TA.T6055_T8AVDeFlSi",
+        "TextID": "T5055",
+        "Text": "Delay Flame Signal Monitoring",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000041-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.T5056_T9SetIgVaCl",
+        "OPCID": "TA.T6056_T9AVIgVaCl",
+        "TextID": "T5056",
+        "Text": "Ignition Valve Close",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000042-AddPageTab": {
+       "Text": "Parameters 2",
+       "TextID": "Parameters2",
+       "VisibleAtRight": "0",
+       "1000043-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000044-AddTextInteger": {
+        "OPCID": "AA.I2692_C1AVIgTr",
+        "TextID": "I2692",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Actual Value Ignition Trails",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "1000045-AddText": {},
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU874",
+ "DiagnosisControl": "FU874",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1511007323
+}

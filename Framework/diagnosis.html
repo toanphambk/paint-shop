@@ -1,0 +1,145 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+<!--    <script>
+        window.parent.document.getElementsByClassName('ball')[0].style.display = 'block';
+            window.parent.document.getElementsByClassName('ball1')[0].style.display = 'block';
+    </script>-->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(client) app/vendor.css -->
+      <!-- bower:css -->
+      <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,client}) app/app.css -->
+    <link rel="stylesheet" href="/lib/css/durr.emos.css">
+    <link rel="stylesheet" href="/lib/css/jquery-ui.css">
+
+    <link rel="stylesheet" type="text/css" href="js/amstockchart/amcharts/style.css">
+    <link rel="stylesheet" type="text/css" href="js/amstockchart/amcharts/plugins/export/export.css">
+    <link rel="stylesheet" type="text/css" href="js/TrendPage/css/trendpage.css">
+	
+    <link rel="stylesheet" href="app/app.css">
+    <link rel="Stylesheet" media="screen" href="css/reset.css" />
+    <link rel="Stylesheet" media="screen" href="css/styles.css" />
+	
+    <link href="/lib/test_mobiscroll/css/mobiscroll.animation.css" rel="stylesheet" type="text/css" />
+    <link href="/lib/test_mobiscroll/css/mobiscroll.icons.css" rel="stylesheet" type="text/css" />
+    <link href="/lib/test_mobiscroll/css/mobiscroll.frame.css" rel="stylesheet" type="text/css" />
+    <link href="/lib/test_mobiscroll/css/mobiscroll.frame.wp.css" rel="stylesheet" type="text/css" />
+    <link href="/lib/test_mobiscroll/css/mobiscroll.scroller.css" rel="stylesheet" type="text/css" />
+    <link rel="Stylesheet" media="screen" href="/lib/test_mobiscroll/css/mobiscroll.scroller.wp.css" />
+    <link href="/lib/test_mobiscroll/css/mobiscroll.image.css" rel="stylesheet" type="text/css" />
+	
+      <!-- injector:css -->
+      <!-- endinjector -->
+    <!-- endbuild -->
+  </head>
+  <body ng-app="duerrDiagnoseApp">
+    <!--[if lt IE 7]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <statusbar class="statusbar"></statusbar>
+<!--    <mainmenu></mainmenu>-->
+    <div ui-view=""></div>
+
+<!--<script src="js/site.configuration.js"></script>-->
+<script src="../config/diagnosis.configuration.js"></script>
+<script src="/lib/js/durr.emos.js"></script>
+    <!-- build:js({client,node_modules}) app/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="bower_components/restangular/dist/restangular.js"></script>
+        <script src="bower_components/angularUtils-pagination/dirPagination.js"></script>
+        <script src="bower_components/moment/moment.js"></script>
+        <script src="bower_components/angular-moment/angular-moment.js"></script>
+        <!-- endbower -->
+      <!-- endbuild -->
+      <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+   
+    <!-- build:js({.tmp,client}) app/app.js -->
+      <script src="app/app.js"></script>
+      <!-- injector:js -->
+      <script src="app/app-config.js"></script>
+      <script src="app/main/main.controller.js"></script>
+      <script src="app/main/main.js"></script>
+      <script src="app/plant/plant.controller.js"></script>
+      <script src="app/plant/plant.js"></script>
+      <script src="directives/contentsection/contentsection.controller.js"></script>
+      <script src="directives/contentsection/contentsection.directive.js"></script>
+      <script src="directives/contentsectionPlant/contentsectionPlant.controller.js"></script>
+      <script src="directives/contentsectionPlant/contentsectionPlant.directive.js"></script>
+      <script src="directives/gridelement/gridelement.directive.js"></script>
+      <script src="directives/gridelementPlant/gridelementPlant.directive.js"></script>
+      <script src="directives/mainmenu/mainmenu.directive.js"></script>
+      <script src="directives/navigationBar/navigationBar.directive.js"></script>
+      <script src="directives/statusbar/statusbar.controller.js"></script>
+      <script src="directives/statusbar/statusbar.directive.js"></script>
+      <script src="directives/wizard/wizard.controller.js"></script>
+      <script src="directives/wizard/wizard.directive.js"></script>
+      <script src="directives/wizardRelated/wizardRelated.controller.js"></script>
+      <script src="directives/wizardRelated/wizardRelated.directive.js"></script>
+      <script src="directives/wizardSolutions/wizardSolutions.controller.js"></script>
+      <script src="directives/wizardSolutions/wizardSolutions.directive.js"></script>
+      <script src="directives/wizardTrending/wizardTrending.controller.js"></script>
+      <script src="directives/wizardTrending/wizardTrending.directive.js"></script>
+      <script src="factories/dataFactory/dataFactory.service.js"></script>
+      <script src="filters/messageFilter/messageFilter.filter.js"></script>
+      <script src="filters/minutesToHHmm/minutesToHHmm.filter.js"></script>
+      <script src="filters/slice/slice.filter.js"></script>
+      <script src="app/qrcode.min.js"></script>
+      <!-- endinjector -->
+    <!-- endbuild -->
+    <script src="app/app-config.js"></script>
+    <script src="/lib/js/jquery.js"></script>       
+    <script src="/lib/js/jquery-ui.js"></script>    
+	
+    <script src="/lib/test_mobiscroll/js/mobiscroll.core.js"></script>
+    <script src="/lib/test_mobiscroll/js/mobiscroll.frame.js"></script>
+    <script src="/lib/test_mobiscroll/js/mobiscroll.scroller.js"></script>
+    <script src="/lib/test_mobiscroll/js/mobiscroll.util.datetime.js"></script>
+    <script src="/lib/test_mobiscroll/js/mobiscroll.datetimebase.js"></script>   
+    <script src="/lib/test_mobiscroll/js/mobiscroll.datetime.js"></script>    
+    <script src="/lib/test_mobiscroll/js/mobiscroll.select.js"></script>
+	
+	<script src="js/jquery.PrintArea.js"></script>
+    <script src="js/amstockchart/amcharts/amcharts.js"></script>
+    <script src="js/amstockchart/amcharts/serial.js"></script>
+    <script src="js/amstockchart/amcharts/amstock.js"></script>
+    <script src="js/amstockchart/amcharts/plugins/export/export.js"></script>
+    <script src="js/amstockchart/amcharts/themes/durr.js"></script>
+    <script src="js/TrendPage/js/emos-ui-trendpage.js"></script>
+    <script>            
+        angular.element(document).ready(function () {            
+            var result = document.getElementsByClassName("statusbar");
+            var moveFrom = angular.element(result);
+            var result1 = window.parent.document.getElementById("alarmheader");
+            var moveTo = angular.element(result1);
+            moveTo.append(moveFrom);
+            window.addEventListener("load", function () {
+//                window.parent.document.getElementsByClassName('ball')[0].style.display = 'none';
+//                window.parent.document.getElementsByClassName('ball1')[0].style.display = 'none';
+                emosWS.connect();
+            }, false);
+        });
+        
+    </script>
+  </body>
+</html>

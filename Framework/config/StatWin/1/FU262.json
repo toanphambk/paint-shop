@@ -1,0 +1,229 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Border": "B"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    },
+    "1000004-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "L",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-21",
+   "Name": "FU262.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback1WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2263",
+        "OffLED": "O",
+        "Text": "Switch Device back to Automatic",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2263_Auto",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S1251_Auto",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddCommandFeedback3WR4RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2257",
+        "OffLED": "O",
+        "Text": "Manual Open",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2257_Open",
+        "writeTagWR2": "CB.C2261_Stop",
+        "writeTagWR3": "CB.C2250_Clse",
+        "readTagRD1": "SB.S2264_Open",
+        "readTagRD2": "SB.S2274_Opening",
+        "readTagRD3": "SB.S2294_Closing",
+        "readTagRD4": "SB.S2265_Clsd",
+        "leftIcon": "closeCommand",
+        "middleIcon": "stopCommand",
+        "rightIcon": "openCommand",
+        "visibilityStop": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddCommandFeedback1WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2264",
+        "OffLED": "O",
+        "Text": "Manual to Frost Position",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2264_ManFrost",
+        "readTagRD1": "SB.S2702_FrostPos",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000011-Messages": {
+     "1000012-AlarmClient": {},
+     "Text": "Messages"
+    },
+    "1000013-AddPageTab": {
+     "1000014-AddPageControl": {
+      "1000015-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000016-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "VisibleOPCID": "",
+        "showHide": true
+       },
+       "1000017-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "TextID2": "Setpoint"
+       },
+       "1000018-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1259_MOp",
+        "OPCID": "TA.T2259_MOp",
+        "UserRight": "6",
+        "TextID": "T2259",
+        "Text": "Motion Control Open",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000019-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1260_MCl",
+        "OPCID": "TA.T2260_MCl",
+        "UserRight": "6",
+        "TextID": "T2260",
+        "Text": "Motion Control Close",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000020-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1261_DelOpen",
+        "OPCID": "TA.T2261_DelOpen",
+        "UserRight": "1",
+        "TextID": "T2261",
+        "Text": "Switch-Off Delay at Open Position",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000021-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1262_DelClse",
+        "OPCID": "TA.T2262_DelClse",
+        "UserRight": "1",
+        "TextID": "T2262",
+        "Text": "Switch-Off Delay at Closed Position",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000022-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1264_ExtOpen",
+        "OPCID": "TA.T2264_ExtOpen",
+        "UserRight": "1",
+        "TextID": "T2264",
+        "Text": "Impulse Extension Open",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1265_ExtClse",
+        "OPCID": "TA.T2265_ExtClse",
+        "UserRight": "1",
+        "TextID": "T2265",
+        "Text": "Impulse Extension Close",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU262",
+ "DiagnosisControl": "FU262",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1350235325
+}

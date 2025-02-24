@@ -1,0 +1,569 @@
+/*!  ---------------------------------------------------------
+    Trendpage.scss
+    Version: 1.00
+    Date: 28.06.2016
+    ---------------------------------------------------------*/
+/* Alex Schell CSS
+html, body {height: 100%; margin: 0;}
+.hidden {display: none;}
+.logo {margin: 20px 0 20px 45%; text-align: center;}
+#TrendPageContainer {background: #fafafa; border: 1px solid lightgrey; margin: 0 15px 0 15px; padding: 2% 2% 0 2%; height: 70%;}
+.TrendPageWrapper {position:relative; height: 90%; overflow: visible;}
+.TrendCharts,
+.TrendPageDiagramBackNext,
+.TrendPageDiagramChart {height: 100%;}
+.TrendChart {position: relative;}
+.TrendPageDiagramBackNext:hover {background-color: #D6FF5C;  cursor: pointer;}
+.TrendPageDiagramBackNext {position: absolute; width: 20px; z-index: 10;}
+.TrendPageDiagramBack {left: -20px;}
+.TrendPageDiagramNext {right: -20px;}
+#TrendPageToolbar button,
+#TrendPageToolbar label {margin-bottom: 4px;}
+*/
+/*  --------------------------------------------------------- Colors ---------------------------------------------------------*/
+/*  --------------------------------------------------------- Commom styles ---------------------------------------------------------*/
+html, body { height: 100%; margin: 0; font-family: 'Roboto-Light', sans-serif; color: #003254; }
+
+body { overflow: hidden; scroll: no; }
+
+.hidden { display: none; }
+
+.logo { margin: 20px 0 20px 45%; text-align: center; }
+
+.tptoolbar { overflow: visible !important; z-index: 1; }
+
+.TrendDiagnosisPageControl { position: absolute; top: 0px; left: 19px; width: 100%; height: 98%; overflow: visible; }
+
+.syncbox { margin-top: 16px; width: 100%; float: left; }
+
+.TrendDiagnosisPageControl input[type="color"] { float: left; padding: 14px 0 14px 0; width: 102px; height: 12px; margin-bottom: 16px; }
+
+.setProp.disabled { cursor: auto; pointer-events: none; opacity: 0.3; }
+
+.setProp { float: left; /*height:32px;*/ /*width: 100px;*/ text-align: center; padding-top: 16px; padding-left: 3px; }
+
+#TrendPageToolbar .TrendDiagnose .diatabs span.steps { background-image: url(../svg/tabs/duerr_ico_historicalTrending_45_Steps_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+#TrendPageToolbar .TrendDiagnose .diatabs span.mark { background-image: url(../svg/tabs/duerr_ico_historicalTrending_46_Mark_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+.propText { float: left; /*width: 200px;*/ margin-bottom: 30px; /*    margin-left: 20px;*/ line-height: 34px; padding-top: 5px; /*width: 100%;*/ }
+
+.alarmDetails .propText { margin-bottom: 25px; }
+
+.alarmDetails .propMark + .propText { margin-bottom: 10px; }
+
+.TrendDiagnose { box-sizing: border-box; }
+
+.TrendGroupbox.lastbox { padding-top: 0; margin-top: -10px; border-top: 0; }
+
+.TrendGroupbox { float: left; font-family: 'Roboto-Light', sans-serif; width: 330px; padding: 10px; border: 1px solid #89BAD3; margin: 10px; }
+.TrendGroupbox.big { width: 560px; padding: 10px 10px 5px 10px; }
+
+.pagerHeadLine { font-family: 'Roboto-Light', sans-serif; margin-top: 22px; display: block; font-size: 16px; font-weight: 400; color: #3b4654; padding-left: 13px; border: none; }
+
+/*  --------------------------------------------------------- set  display right Navigation ---------------------------------------------------------*/
+.TrendDiagnoseHeader { height: 45px; margin: 10px 22px 0 10px; }
+
+#diagnoseHeader { display: block; line-height: 12px; font-size: 18px; color: #105395; font-weight: bold; }
+
+#diagnoseSubline { font-size: 12px; width: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; margin-top: 7px; }
+
+.operationHeader { display: flex; }
+
+.TrendDiagnose .diatabs div > ul { float: left; background: #003254; padding-left: 16px; padding-top: 8px; z-index: 0; width: 100%; }
+
+.TrendDiagnose .diatabs div > ul li.ui-tabs-active { padding-bottom: 2px; }
+
+.TrendDiagnose .diatabs.diamodifier div > ul li { width: 60px; margin-right: 20px; }
+
+.diamodifier { display: block !important; }
+
+#propsWrapper, #dateWrapper, #operationWrapper { flex-direction: column; }
+
+#propsWrapper, #dateWrapper { left: 390px; }
+
+.unknown { display: none; }
+
+/*  --------------------------------------------------------- Chart ---------------------------------------------------------*/
+.pagerHead { float: left; }
+
+.TrendDiagnose .pagerHead { background-position: bottom; padding-bottom: 12px; font-size: 16px; height: 17px; margin-top: 27px; }
+
+.TrendCharts { position: absolute; left: 0; right: 390px; top: 0; padding-bottom: 12px; box-shadow: 0 0 0 0 #d0d0d0; bottom: 0; }
+
+.alarmDetails .TrendChart { margin-left: 10px; }
+
+.TrendChart { box-sizing: border-box; border: 1px solid #89BAD3; margin: 2px; position: relative; }
+
+#chartWrapper .buttonholder, #deleteOverlay .buttonholder, #propsWrapper .buttonholder, .fileManager .buttonholder { padding: 0 30px; float: left; display: none; }
+#chartWrapper .buttonholder .text, #deleteOverlay .buttonholder .text, #propsWrapper .buttonholder .text, .fileManager .buttonholder .text { width: 100%; line-height: 30px; display: inline-block; }
+#chartWrapper .buttonholder .savebutton, #chartWrapper .buttonholder .cancelbutton, #deleteOverlay .buttonholder .savebutton, #deleteOverlay .buttonholder .cancelbutton, #propsWrapper .buttonholder .savebutton, #propsWrapper .buttonholder .cancelbutton, .fileManager .buttonholder .savebutton, .fileManager .buttonholder .cancelbutton { display: block; width: 56px; float: left; height: 20px; padding: 10px; }
+
+.fileManager .buttonholder { margin-bottom: 20px; }
+
+/*  --------------------------------------------------------- VariableDialog ---------------------------------------------------------*/
+.ui-dialog .ui-dialog-titlebar { font-family: Roboto-Light, arial; font-weight: 300; border-radius: 0; font-size: 14px; background: none; background-color: #003254; color: #FFFFFF; }
+
+.loadDiagramm { width: 600px; height: 90%; }
+
+/*  --------------------------------------------------------- Button Styles ---------------------------------------------------------*/
+#TrendPageToolbar .TrendDiagnose .diatabs ul li.Management { background-image: url(../svg/tabs/duerr_ico_historicalTrending_01_Management_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+#TrendPageToolbar .TrendDiagnose .diatabs ul li.Chart { background-image: url(../svg/tabs/duerr_ico_historicalTrending_02_Chart_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+#TrendPageToolbar .TrendDiagnose .diatabs ul li.Graph { background-image: url(../svg/tabs/duerr_ico_historicalTrending_03_Graph_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+#TrendPageToolbar .TrendDiagnose .diatabs ul li.Time { background-image: url(../svg/tabs/duerr_ico_historicalTrending_04_StartEndTime_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+#TrendPageToolbar .TrendDiagnose .diatabs span.emosbutton, #deleteOverlay .buttonholder .emosbutton { top: 0; float: left; cursor: pointer; width: 42px; margin-right: 15px; }
+
+#TrendPageToolbar .TrendDiagnose .diatabs span.writebutton { height: 24px; padding: 10px; }
+
+#TrendPageToolbar .TrendDiagnose .diatabs span.fromToButton { height: 24px; padding: 10px; margin-top: 21px; margin-right: 15px; background-image: url(../svg/tabs/duerr_ico_historicalTrending_04_StartEndTime_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+#TrendPageToolbar .TrendDiagnose .diatabs span.fromToButton:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_04_StartEndTime_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+#TrendPageToolbar .TrendDiagnose .diatabs span.fromToButton.active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_04_StartEndTime_38.svg); }
+
+#TrendPageToolbar .TrendDiagnose .diatabs .datetimeblock { float: left; display: block; position: relative; width: 200px; }
+
+.TrendDiagnose .diatabs span.emosbutton.active + .datetimeblock { left: -34px; }
+
+.buttonDescription { width: 215px; line-height: 60px; position: relative; left: 0; display: inline-block; top: -7px; margin-bottom: 10px; }
+
+.buttonSaveOver { float: left; width: 200px; position: relative; left: 0; display: inline-block; top: 20px; margin-top: 10px; margin-bottom: 40px; }
+
+.TrendDiagnose .diatabs span.emosbutton.active + .buttonDescription { left: -34px; }
+
+.ChartAdd.emosbutton:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_11_NewChart_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+.ChartAdd.emosbutton { background-image: url(../svg/tabs/duerr_ico_historicalTrending_11_NewChart_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+.ChartRemove.emosbutton:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_12_RemoveChart_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+.ChartRemove.emosbutton { background-image: url(../svg/tabs/duerr_ico_historicalTrending_12_RemoveChart_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+.settimerange.emosbutton.disabled, .synchronization.emosbutton.disabled, .print.emosbutton.disabled, .export.emosbutton.disabled, .ChartAdd.emosbutton.disabled, .ChartRemove.emosbutton.disabled, .ChartLive.emosbutton.disabled, .ChartZoom.emosbutton.disabled { cursor: auto; pointer-events: none; opacity: 0.5; }
+
+.Groupbox .mbsc-wp .dwwb span { display: block !important; color: transparent; width: 42px; }
+
+.TrendGroupbox .setDateFrom, .TrendGroupbox .setDateTo, .TrendGroupbox .propLine, .TrendGroupbox .propLegend, .TrendGroupbox .propLink, .TrendGroupbox .propMark, .TrendGroupbox .propColor { /*top: -16px !important;*/ display: block; }
+
+#TrendPageContainer .TrendGroupbox .writebutton.active { padding: 10px 0; background-image: url(../svg/tabs/edit.svg); background-position: 37px 3px; }
+
+/*#TrendPageContainer .TrendGroupbox .writebutton.disabled{ background-image: url(../svg/tabs/duerr_ico_historicalTrending_31_Realtime_38.svg);
+}*/
+.TrendGroupbox .setDateFrom.active + .DateFrom, .TrendGroupbox .setDateTo.active + .DateTo { margin-right: 100px; left: -45px; }
+
+.TrendGroupbox .propLine.active + .propText, .TrendGroupbox .propLegend.active + .propText, .TrendGroupbox .propLink.active + .propText, .TrendGroupbox .propMark.active + .propText, .TrendGroupbox .propColor.active + .propText { margin-left: -34px; }
+
+.settimerange.emosbutton.disabled::after, .synchronization.emosbutton.disabled::after, .print.emosbutton.disabled::after, .export.emosbutton.disabled::after, .ChartAdd.emosbutton.disabled::after, .ChartRemove.emosbutton.disabled::after, .ChartLive.emosbutton.disabled::after, .ChartZoom.emosbutton.disabled::after { background: none; }
+
+#Realtime.emosbutton:active#Realtime.emosbutton { background-image: url(../svg/tabs/duerr_ico_historicalTrending_31_Realtime_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+#Realtime.emosbutton { background-image: url(../svg/tabs/duerr_ico_historicalTrending_31_Realtime_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+#ZoomOut.emosbutton:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_32_ZoomOut_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+#ZoomOut.emosbutton { background-image: url(../svg/tabs/duerr_ico_historicalTrending_32_ZoomOut_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+.GraphAdd.emosbutton:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_13_NewGraph_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+.GraphAdd.emosbutton { background-image: url(../svg/tabs/duerr_ico_historicalTrending_13_NewGraph_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+.GraphAdd.emosbutton.active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_13_NewGraph_38.svg); }
+
+.GraphRemove.emosbutton:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_14_RemoveGraph_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+.GraphRemove.emosbutton { background-image: url(../svg/tabs/duerr_ico_historicalTrending_14_RemoveGraph_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+.GraphAdd.emosbutton.disabled, .GraphRemove.emosbutton.disabled, .propColor.disabled { cursor: auto; pointer-events: none; opacity: 0.5; }
+
+.emosbutton.ChartSelected { border: 3px solid #89b9d2; }
+
+.GraphAdd.emosbutton.disabled::after, .GraphRemove.emosbutton.disabled::after, .propColor.disabled:after, .propLine.disabled:after, .propLegend.disabled:after, .propLink.disabled:after, .propMark.disabled:after { background: none; }
+
+#Accept.emosbutton:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_41_accept_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+#Accept.emosbutton { background-image: url(../svg/tabs/duerr_ico_historicalTrending_41_accept_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+.accept.emosbutton:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_41_accept_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+.accept.emosbutton { background-image: url(../svg/tabs/duerr_ico_historicalTrending_41_accept_38.svg), linear-gradient(#fff, #d1d7e0); margin-right: 10px !important; float: right !important; }
+
+.close.emosbutton:active { background-image: url(../svg/tabs/close.svg), linear-gradient(#d1d7e0, #fff); }
+
+.close.emosbutton { background-image: url(../svg/tabs/close.svg), linear-gradient(#fff, #d1d7e0); }
+
+.settimebuttons .close.emosbutton { margin-left: 12px; }
+
+.uparrow.emosbutton:active { background-image: url(../svg/tabs/upArrow.svg), linear-gradient(#d1d7e0, #fff); background-size: 80px; }
+
+.uparrow.emosbutton { background-image: url(../svg/tabs/upArrow.svg), linear-gradient(#fff, #d1d7e0); background-size: 80px; }
+
+.downarrow.emosbutton:active { background-image: url(../svg/tabs/downArrow.svg), linear-gradient(#d1d7e0, #fff); background-size: 80px; }
+
+.downarrow.emosbutton { background-image: url(../svg/tabs/downArrow.svg), linear-gradient(#fff, #d1d7e0); background-size: 80px; }
+
+#Synchronize.emosbutton:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_33_Synchronize_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+#Synchronize.emosbutton { background-image: url(../svg/tabs/duerr_ico_historicalTrending_33_Synchronize_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+.emosbutton.printCharts:active, .emosbutton.printCharts, .emosbutton.print { background-image: url(../svg/tabs/duerr_ico_historicalTrending_24_Printer_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+.emosbutton.print:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_24_Printer_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+.emosbutton.print.active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_24_Printer_38.svg); }
+
+/*.emosbutton.export:active,*/
+.emosbutton.export { background-image: url(../svg/tabs/duerr_ico_historicalTrending_25_Export_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+.emosbutton.export:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_25_Export_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+.emosbutton.export.active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_25_Export_38.svg); }
+
+.emosbutton.empty { background-image: url(../svg/tabs/duerr_ico_historicalTrending_15_Empty_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+.emosbutton.empty:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_15_Empty_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+/*
+.emosbutton.empty.disabled { cursor: auto; pointer-events: none; opacity: 0.5;
+}
+
+.emosbutton.empty.disabled::after { background: none;
+}
+*/
+.emosbutton.load { background-image: url(../svg/tabs/duerr_ico_historicalTrending_21_Load_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+.emosbutton.load:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_21_Load_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+.TrendDiagnose .diatabs span.emosbutton.load.active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_21_Load_38.svg); }
+
+#TrendPageContainer span.emosbutton.active { border-radius: 0 4px 4px 0; border: 1px solid #cecece; border-left: none; width: 79px !important; background-position: 47px 1px; background-color: #f2f2f2; box-shadow: none; right: 33px; height: 24px; }
+
+#TrendPageContainer span.emosbutton.active:after { box-shadow: none; background: none; height: 0; }
+
+div[id^='loadOverlay'] .icon, div[id^='openSets'] .icon, div[id^='openCharts'] .icon, div[id^='saveOverlay'] .icon, div[id^='deleteOverlay'] .icon, div[id^='printOverlay'] .icon, div[id^='exportOverlay'] .icon, div[id^='openNewGraph'] .icon { /*margin: 20px;*/ width: 38px; height: 38px; float: left; margin-left: 15px; margin-top: 13px; }
+
+div[id^='loadOverlay'] .icon, div[id^='openSets'] .icon, div[id^='openCharts'] .icon { background-image: url(../svg/tabs/duerr_ico_historicalTrending_21_Load_38.svg); }
+
+#TrendPageContainer #loadOverlay .emosbutton.active { height: 40px; background: #f2f2f2; width: 67px !important; padding-right: 26px; text-align: right; margin-bottom: -2px; }
+
+#TrendPageContainer #loadOverlay .emosbutton.active + input[type="text"] { margin-left: -34px; margin-top: 2px; }
+
+/*.emosbutton.save:active,*/
+.emosbutton.save { background-image: url(../svg/tabs/duerr_ico_historicalTrending_22_Save_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+.emosbutton.save:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_22_Save_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+.TrendDiagnose .diatabs span.emosbutton.save.active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_22_Save_38.svg); }
+
+.TrendDiagnose .diatabs span.emosbutton.save.noAction, .TrendDiagnose .diatabs span.emosbutton.save.noAction:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_22_SaveNoAction_38.svg), linear-gradient(#fff, #d1d7e0); cursor: default; }
+
+.TrendDiagnose .diatabs span.emosbutton.delete.noAction, .TrendDiagnose .diatabs span.emosbutton.delete.noAction:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_23_DeleteNoAction_38.svg), linear-gradient(#fff, #d1d7e0); cursor: default; }
+
+div[id^='saveOverlay'] .icon { background-image: url(../svg/tabs/duerr_ico_historicalTrending_22_Save_38.svg); }
+div[id^='saveOverlay'] .error { border: 2px solid red; }
+
+div[id^='deleteOverlay'] .icon { background-image: url(../svg/tabs/duerr_ico_historicalTrending_23_Delete_38.svg); }
+
+div[id^='printOverlay'] .icon { background-image: url(../svg/tabs/duerr_ico_historicalTrending_24_Printer_38.svg); }
+
+div[id^='exportOverlay'] .icon { background-image: url(../svg/tabs/duerr_ico_historicalTrending_25_Export_38.svg); }
+
+div[id^='openNewGraph'] .icon { background-image: url(../svg/tabs/duerr_ico_historicalTrending_13_NewGraph_38.svg); }
+
+div[id^='lineColor'] .icon { background-image: url(../svg/tabs/duerr_ico_historicalTrending_13_NewGraph_38.svg); }
+
+/*.emosbutton.delete:active,*/
+.emosbutton.delete { background-image: url(../svg/tabs/duerr_ico_historicalTrending_23_Delete_38.svg), linear-gradient(#fff, #d1d7e0); }
+
+.emosbutton.delete:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_23_Delete_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+.TrendDiagnose .diatabs span.emosbutton.delete.active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_23_Delete_38.svg); }
+
+.setTimeButton, .TrendDiagnose .diatabs ul li.Square { background-image: url(../svg/tabs/square.svg), linear-gradient(#fff, #d1d7e0); }
+
+.setTimeButton { width: 42px; }
+
+.setDateButton { top: -2px; }
+
+.settimetext { float: left; position: relative; top: 16px; display: inline-block; height: 38px; margin-left: 16px; }
+
+.settimebuttons { float: right; margin: 10px 0 16px 0; }
+
+.setDate { position: relative; float: left; height: 32px; margin-right: 10px; margin-top: 16px; }
+
+#setTime .TrendGroupbox.Groupbox .dw-inline .dw { display: block; }
+
+#setTime .pagerHeadLine, #lineThickness .pagerHeadLine, #lineColor .pagerHeadLine, #lineLink .pagerHeadLine, #lineMark .pagerHeadLine, #lineLegend .pagerHeadLine { padding-bottom: 5px; float: left; margin-top: 29px; margin-left: 0; }
+
+.emosbutton.linemarkbutton, .emosbutton.linetypebutton, .emosbutton.linebutton, .emosbutton.timebutton { font-family: 'Roboto-Light', sans-serif; font-size: 14px; display: inline-block; width: 56px; height: 38px; line-height: 38px; margin: 0 1px; background-repeat: no-repeat; text-align: center; cursor: pointer; padding: 0; top: 0; }
+
+.emosbutton.timebutton { width: 56px !important; font-weight: bold; background-repeat: no-repeat; float: left; margin-right: 4px; }
+
+.emosbutton.timebutton.NoChartSelected { background: url(../svg/tabs/accept.svg), linear-gradient(#fff, #d1d7e0); background-position: center; background-repeat: no-repeat; }
+
+.emosbutton.timebutton.ChartSelected { background: url(../svg/tabs/accept.svg), linear-gradient(#fff, #d1d7e0); background-position: center; background-repeat: no-repeat; }
+
+.emosbutton.period { margin-right: 8px; width: 62px !important; height: 40px !important; margin-bottom: 25px; }
+
+.emosbutton.period.first { margin-left: 50px; }
+
+.emosbutton.linecolorbutton, .emosbutton.linebutton { width: 60px; top: 0; margin-bottom: 20px; margin-right: 30px; height: 15px; }
+
+.emosbutton.linecolorbutton.noMarginRight, .emosbutton.linebutton.noMarginRight { margin-right: 0px; }
+
+.emosbutton.linebutton { height: 35px; width: 80px; margin-left: 0px; }
+
+.emosbutton.linelegendbutton { width: 300px; text-align: center; font-size: 14px; line-height: 24px; top: 0; margin-bottom: 20px; }
+
+#dateWrapper .timebutton { width: 50px; margin-right: 5px; }
+
+.pressed { background: linear-gradient(#89BAD3, #9fd2eb); box-shadow: 1px 1px 6px #CECECE; border: 2px solid transparent; position: relative; }
+
+.pressed::after { background: linear-gradient(#D2D7E7, #FFFFFF); }
+
+.timetext { float: left; line-height: 30px; width: 100%; }
+
+.datetimetext { width: 70px; position: relative; float: left; height: 32px; margin-top: 16px; }
+
+.emosbutton.buttonEdit:active { background-image: url(../svg/tabs/edit.svg), linear-gradient(#d1d7e0, #fff); }
+
+.emosbutton.buttonEdit { width: 38px; background-image: url(../svg/tabs/edit.svg), linear-gradient(#fff, #d1d7e0); position: absolute; top: 5px; right: 10px; }
+
+.emosbutton.buttonFullscreenMax:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_34_FullScreenMax_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+.emosbutton.buttonFullscreenMax { width: 36px !important; background-image: url(../svg/tabs/duerr_ico_historicalTrending_34_FullScreenMax_38.svg), linear-gradient(#fff, #d1d7e0); position: absolute; top: 5px; right: 16px; height: 18px; margin-right: 0 !important; }
+
+.emosbutton.buttonFullscreenMin:active { background-image: url(../svg/tabs/duerr_ico_historicalTrending_35_FullScreenMin_38.svg), linear-gradient(#d1d7e0, #fff); }
+
+.emosbutton.buttonFullscreenMin { width: 36px !important; background-image: url(../svg/tabs/duerr_ico_historicalTrending_35_FullScreenMin_38.svg), linear-gradient(#fff, #d1d7e0); position: absolute; top: 5px; right: 10px; height: 18px; margin-right: 0 !important; }
+
+/*  --------------------------------------------------------- Layer Modal ---------------------------------------------------------*/
+.modalBg { /*z-index: 500;*/ background: rgba(93, 83, 83, 0.5); /*width: 100%;*/ /*height: 100%;*/ position: absolute; top: 16px; bottom: 0; /*right: 380px;*/ right: 0; left: 16px; display: none; }
+
+.alarmDetails .modalBg { top: 0; left: 0; }
+
+.modalLoadBg input[type="text"], .modalBg input[type="text"] { /*float: left;*/ width: 70%; max-width: 240px; height: 34px; /*border: 2px solid $blue;*/ /*margin-left: 18px;*/ margin-top: 2px; background: #fff; margin: 0; box-shadow: 0 -2px 5px 1px #d0d0d0; padding-left: 5px; }
+
+#deleteSetText, #deleteChartText0, #deleteChartText1, #deleteChartText2, #deleteChartText3, #saveSetText, #saveChartText0, #saveChartText1, #saveChartText2, #saveChartText3 { margin-top: 3px; }
+
+.trendPLCFilter { float: left; height: 32px; width: 200px; text-align: center; margin-left: auto !important; }
+
+.emosbutton.closeModal { width: 56px; height: 38px; float: right; margin: 7px; background: url(../svg/tabs/close.svg), linear-gradient(#fff, #d1d7e0); background-repeat: no-repeat; background-position: center; }
+
+.emosbutton.closeModal:active { background: url(../svg/tabs/close.svg), linear-gradient(#d1d7e0, #fff); background-repeat: no-repeat; background-position: center; }
+
+/*  --------------------------------------------------------- GeneralOperation Overlays ---------------------------------------------------------*/
+div[id^='printOverlay'], div[id^='exportOverlay'], div[id^='saveOverlay'], div[id^='deleteOverlay'], div[id^='loadOverlay'] { display: none; z-index: 2; background: #f2f2f2; width: 370px; /*height:100%;*/ position: absolute; top: 49px; right: 388px; bottom: 0; }
+
+.alarmDetails div[id^='printOverlay'], .alarmDetails div[id^='exportOverlay'], .alarmDetails div[id^='saveOverlay'], .alarmDetails div[id^='deleteOverlay'], .alarmDetails div[id^='loadOverlay'], .alarmDetails div[id^='setTime'], .alarmDetails div[id^='openNewGraph'], .alarmDetails div[id^='openCharts'], .alarmDetails div[id^='openSets'], .alarmDetails div[id^='lineColor'], .alarmDetails div[id^='lineMark'], .alarmDetails div[id^='lineLink'], .alarmDetails div[id^='lineThickness'], .alarmDetails div[id^='lineLegend'] { top: 163px; }
+
+#loadOverlay .pagerHeadLine, #openCharts .pagerHeadLine, #openSets .pagerHeadLine, #saveOverlay .pagerHeadLine, #deleteOverlay .pagerHeadLine, #printOverlay .pagerHeadLine, #exportOverlay .pagerHeadLine { padding-bottom: 5px; float: left; margin-top: 29px; margin-left: 0; }
+
+.emosbutton.exportOk, .emosbutton.addGraphOk, .emosbutton.saveOk, .emosbutton.deleteOk, .emosbutton.loadOk, .emosbutton.addLineOk { float: right; margin: 10px; background: url(../svg/tabs/accept.svg), linear-gradient(#fff, #d1d7e0); background-repeat: no-repeat; background-position: center; }
+
+.emosbutton.exportOk:active, .emosbutton.addGraphOk:active, .emosbutton.saveOk:active, .emosbutton.deleteOk:active, .emosbutton.loadOk:active { background: url(../svg/tabs/accept.svg), linear-gradient(#d1d7e0, #fff); background-repeat: no-repeat; background-position: center; }
+
+.emosbutton.clearSelection { float: right; margin: 10px; background: url(../svg/tabs/duerr_ico_historicalTrending_23_Delete_38.svg), linear-gradient(#fff, #d1d7e0); background-repeat: no-repeat; background-position: center; }
+
+.emosbutton.clearSelection:active { background: url(../svg/tabs/duerr_ico_historicalTrending_23_Delete_38.svg), linear-gradient(#d1d7e0, #fff); background-repeat: no-repeat; background-position: center; }
+
+.emosbutton.saveOk.private { background: url(../svg/tabs/duerr_ico_historicalTrending_44_private_38.svg), linear-gradient(#fff, #d1d7e0); background-repeat: no-repeat; background-position: center; float: left; margin: 15px; margin-left: 20px; margin-bottom: 0px; }
+
+.emosbutton.saveOk.private:active { background: url(../svg/tabs/duerr_ico_historicalTrending_44_private_38.svg), linear-gradient(#d1d7e0, #fff); background-repeat: no-repeat; background-position: center; }
+
+.emosbutton.publicbutton { width: 140px; margin: 15px; float: left; background: url(../svg/tabs/duerr_ico_historicalTrending_44_public_38.svg), linear-gradient(#fff, #d1d7e0); background-repeat: no-repeat; background-position: center; margin-left: 20px; margin-bottom: 0; }
+
+.emosbutton.publicbutton:active { background: url(../svg/tabs/duerr_ico_historicalTrending_44_public_38.svg), linear-gradient(#d1d7e0, #fff); background-repeat: no-repeat; background-position: center; }
+
+/*  --------------------------------------------------------- LineColor-Overlay ---------------------------------------------------------*/
+#propColor { height: 24px; border: 1px solid #a0a0a0; background-color: #FFFFFF; }
+
+.selectLine { width: 95%; border: 2px solid #FFFFFF; display: inline-block; }
+
+.showLine { height: 10px; margin: 16px 8px; display: block; float: left; width: 10px; }
+
+.linecolorbutton { border-radius: 0; border: 2px solid #cecece; }
+
+/*  --------------------------------------------------------- Overlays ---------------------------------------------------------*/
+.overlayBridge { z-index: 510; position: absolute; left: -22px; width: 44px; height: 40px; box-shadow: 3px 1px 6px #cecece; border-top: 2px solid transparent; border-bottom: 2px solid transparent; background: #efefef; display: none; }
+
+.overlayBridge.load { top: 205px; }
+
+.overlayBridge.save { top: 265px; }
+
+.overlayBridge.delete { top: 323px; }
+
+.overlayBridge.printer { top: 467px; }
+
+.overlayBridge.export { top: 524px; }
+
+.overlayBridge.newgraph { top: 145px; }
+
+.overlayBridgeGraphs { z-index: 510; position: absolute; box-shadow: 3px 1px 6px #cecece; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; background: #efefef; left: -21px; width: 43px; height: 36px; display: none; }
+
+.overlayBridgeGraphs.color { top: 348px; }
+
+.overlayBridgeGraphs.thickness { top: 418px; }
+
+.overlayBridgeGraphs.legend { top: 488px; }
+
+.overlayBridgeGraphs.link { top: 640px; }
+
+.overlayBridgeGraphs.mark { top: 710px; }
+
+.overlayBridgeGraphs.set1 { top: 392px; }
+
+.overlayBridgeGraphs.set2 { top: 459px; }
+
+.overlayClose { text-align: right; background: url(../images/underHead.png); background-repeat: no-repeat; background-position: bottom; background-size: 98% 2px; width: 100%; height: 57px; font-size: 16px; /*margin-bottom: 102px;*/ }
+
+div[id^='setTime'] { display: none; z-index: 999; background: #f2f2f2; width: 600px; position: absolute; top: 65px; right: 389px; bottom: 0; }
+
+div[id^='openNewGraph'], div[id^='openCharts'], div[id^='openSets'], div[id^='lineColor'], div[id^='lineMark'], div[id^='lineLink'], div[id^='lineThickness'], div[id^='lineLegend'] { display: none; z-index: 999; background: #f2f2f2; width: 370px; position: absolute; top: 65px; right: 389px; bottom: 0; }
+
+div[id^='setTime'], div[id^='openNewGraph'], div[id^='lineThickness'], div[id^='lineLegend'], div[id^='lineLink'], div[id^='lineMark'], div[id^='lineMark'], div[id^='lineColor'] { top: 49px; }
+
+/*div[id^='exportOverlay'],*/
+div[id^='openNewGraph'], div[id^='openCharts'], div[id^='openSets'] { display: block; position: absolute; padding-bottom: 40px; right: 769px; width: 620px; /*.pagerHead { background-size: 98% 2px;
+}
+.pagerHeadLine { width:98%;
+}*/ }
+div[id^='openNewGraph'] .TrendGroupbox, div[id^='openCharts'] .TrendGroupbox, div[id^='openSets'] .TrendGroupbox { width: 93%; }
+
+.alarmDetails #openNewGraph { /*padding-bottom: 100px;*/ }
+
+div[id^='openCharts'], div[id^='openSets'] { overflow-y: auto; overflow-x: hidden; }
+
+/*div[id^='exportOverlay'],*/
+div[id^='openNewGraph'] { right: 389px; width: 990px; bottom: 0; /*height: 95%;*/ /* overflow change */ }
+div[id^='openNewGraph'] .TrendGroupbox { width: 96%; }
+
+#openNewGraph .pagerHeadLine { padding-bottom: 5px; float: left; margin-top: 29px; margin-left: 0; }
+
+table.overlay { width: 100%; margin-top: 12px; }
+table.overlay thead th { text-align: left; padding: 12px 0 10px 0; border-top: 2px solid #cecece; /*border-bottom: 1px dashed #2D3438;*/ }
+table.overlay td { cursor: pointer; }
+table.overlay tbody tr:hover { /*color: $groupboxblue;*/ background-color: #89bad3; }
+
+#privateChartTable td, #publicChartTable td, #privateTable td, #publicTable td { width: 33%; padding: 12px 3px; white-space: nowrap; border-bottom: 1px solid #003254; height: 24px; vertical-align: middle; }
+
+.openChart.disabled { cursor: auto; pointer-events: none; opacity: 0.3; }
+
+.openChart.disabled::after { background: none; }
+
+/*  --------------------------------------------------------- Overlays AddNewGraph ---------------------------------------------------------*/
+table#overlayNewGraph { width: 100%; margin-top: 12px; }
+table#overlayNewGraph tr { height: 60px; }
+
+.detailOverlay.full table#overlayNewGraph { margin-top: 0; }
+
+table#plantTable { width: 220px; height: 300px; overflow: scroll; margin-top: 10px; }
+table#plantTable td .emosbutton { top: 0; width: 200px; line-height: 20px; text-align: center; cursor: pointer; }
+
+table#plcTable { width: 640px; margin-top: 10px; }
+table#plcTable td.firstempty { border: none; }
+table#plcTable td { box-sizing: border-box; border-top: 1px dashed #2D3438; }
+table#plcTable td input[type="checkbox"] { width: 21px; height: 21px; cursor: pointer; }
+table#plcTable td label { cursor: pointer; width: 570px; display: block; overflow: hidden; }
+
+.plcTableSpace { width: 60px; }
+
+.plantTableOverflow, .plcTableOverflow { float: left; }
+
+.plantTableOverflow, .plcTableOverflow { min-width: 270px; height: 460px; overflow-y: auto; overflow-x: hidden; }
+
+.alarmDetails .plantTableOverflow, .alarmDetails .plcTableOverflow { height: 430px; }
+
+.TrendGroupbox.data .plcTableOverflow, .TrendGroupbox.data .plantTableOverflow { height: 380px; }
+
+.plcTableOverflow { min-width: 640px; width: 640px; }
+.plcTableOverflow td { vertical-align: middle; }
+
+/*  --------------------------------------------------------- Overlay Print ---------------------------------------------------------*/
+.printCharts { float: left; margin-right: 5px !important; }
+
+.printAll, .printJpg, .printPdf, .printPng, .printSvg { margin-right: 0 !important; /*margin-left: 5px!important;*/ }
+
+/*  --------------------------------------------------------- Overlay generalYaxisOpen ---------------------------------------------------------*/
+.yaxis { display: flex; box-sizing: border-box; height: 32px; margin-top: 12px; width: 315px; padding: 0 5px; }
+
+.yaxis:focus { border: 3px solid #89b9d2; }
+
+/*  --------------------------------------------------------- Overlay export ---------------------------------------------------------*/
+.exportCsv, .exportJson, .exportXlsx { margin-right: 15px !important; }
+
+.printJpg, .printPdf, .printPng, .printSvg { margin-right: 5px !important; }
+
+#exportOverflow { max-height: 500px; overflow-y: auto; }
+
+#exportOverflow .buttonDescription, #printOverflow .buttonDescription { width: 215px; line-height: 50px; position: relative; left: 0; display: inline-block; top: 0; }
+#exportOverflow div, #printOverflow div { float: left; display: flex; overflow: hidden; width: 225px; height: auto; text-align: left; margin-right: 5px; }
+#exportOverflow input[type="checkbox"], #printOverflow input[type="checkbox"] { width: 20px; height: 20px; cursor: pointer; }
+#exportOverflow .printBtn, #printOverflow .printBtn { background: url(../svg/tabs/accept.svg), linear-gradient(#fff, #d1d7e0); background-position: center; background-repeat: no-repeat; margin-right: 15px; }
+
+/*  --------------------------------------------------------- Spin ball for loading data ---------------------------------------------------------*/
+.trendBall { background-color: rgba(0, 0, 0, 0); border: 5px solid rgba(25, 111, 163, 0.9); opacity: .9; border-top: 5px solid rgba(0, 0, 0, 0); border-left: 5px solid rgba(0, 0, 0, 0); border-radius: 150px; box-shadow: 0 0 35px #2187e7; width: 150px; height: 150px; margin: 0 auto; -moz-animation: spin 3s infinite linear; -webkit-animation: spin 3s infinite linear; position: absolute; top: 50%; left: 50%; margin-top: -75px; margin-left: -75px; display: none; z-index: 1; }
+.trendBall.block { display: block; }
+
+.trendBall1 { background-color: rgba(0, 0, 0, 0); border: 5px solid rgba(25, 111, 163, 0.9); opacity: .9; border-top: 5px solid rgba(0, 0, 0, 0); border-left: 5px solid rgba(0, 0, 0, 0); border-radius: 150px; box-shadow: 0 0 15px #2187e7; width: 130px; height: 130px; margin: 0 auto; position: relative; top: -50px; -moz-animation: spinoff 3s infinite linear; -webkit-animation: spinoff 3s infinite linear; position: absolute; top: 50%; left: 50%; margin-top: -65px; margin-left: -65px; display: none; z-index: 1; }
+.trendBall1.block { display: block; }
+
+.detailOverlay.full .TrendGroupbox { white-space: normal; }
+
+.detailOverlay.full .TrendGroupbox.data { height: 420px; }
+
+@-moz-keyframes spin { 0% { -moz-transform: rotate(0deg); }
+  100% { -moz-transform: rotate(360deg); } }
+@-moz-keyframes spinoff { 0% { -moz-transform: rotate(0deg); }
+  100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); } }
+@-webkit-keyframes spinoff { 0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(-360deg); } }
+/*  --------------------------------------------------------- Print Styles ---------------------------------------------------------*/
+/* Debug Line for Print Testing
+
+.noprint { border: 5px solid red;
+}
+
+*/
+@media print { @page { size: A4 landscape; }
+  .TrendPageWrapper { overflow: visible; }
+  /* @page:left{ @bottom-left { content: "Page " counter(page) " of " counter(pages); } } */
+  .amcharts-scrollbar-grip-left, .amcharts-scrollbar-grip-right, .amcharts-scrollbar-bg, .amcharts-scrollbar-bg-selected, #detailTrending .detailHead, #alarmpage #alarmpage_content div[id^="alarm_solo_item"], #header, #left, #center, .bluebox, .cars, .amcharts-export-menu, #TrendPageToolbar, .noprint, .buttonEdit, #printOverlay { display: none !important; }
+  .TrendCharts { right: 0; }
+  .TrendChart { margin-bottom: 3px; }
+  /* div[id^="EMOSUI"].TrendCharts { display:table; width: 100%; height: 100%; } */
+  .amChartsPanel.amcharts-stock-panel-div.amcharts-stock-panel-div-stockPanel0 { overflow: visible !important; }
+  /* test one chart one site .TrendChart { border: none; min-height: 100%!important; width: 1152px; page-break-after: always; }  div[id^="EMOSUI"].TrendCharts, div[id^="EMOSUI"].TrendChart { min-height: 100%!important; height: 100%!important; page-break-after: always; } */ }
+.scrollOverlayer { height: 380px; width: 20px; left: 276px; background-color: #f2f2f2; position: absolute; }
+
+.scrollOverlayerRight { height: 380px; width: 20px; right: 15px; background-color: #f2f2f2; position: absolute; }
+
+.TrendGroupbox.data #graphTable td .scrollUp, .TrendGroupbox.data #graphTable td .scrollDown { float: left; left: 10px; position: relative; display: block; }
+
+.TrendGroupbox.data #graphTable td.transRight .scrollUp { left: calc(50% - 130px); }
+
+.TrendGroupbox.data #graphTable td.transRight .scrollDown { left: calc(50% - 110px); }
+
+.TrendGroupbox.data #graphTable td.transLeft .scrollDown { left: 30px; }
+
+/*table#overlayNewGraph td .scrollDown{ bottom: 85px; display: block; left: 160px;
+}
+
+table#overlayNewGraph td .scrollUp{ bottom: 85px; display: block; left: 40px;
+}
+
+.TrendGroupbox.data .plantRight { float: left; width: calc(100% - 250px); height: 100%;
+}
+
+.TrendGroupbox.data .plantLeft { float: left; width: 250px; height: 100%;
+}
+
+.TrendGroupbox.data .plantRight .scrollPlant,  .TrendGroupbox.data .plantLeft .scrollPlant{ overflow: hidden; width: 100%; height: 100%; overflow-y: scroll;
+}*/
+
+/*# sourceMappingURL=trendpage.css.map */

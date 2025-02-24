@@ -1,0 +1,178 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "02-20",
+   "Name": "FU216.02",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "TextID": "&E_E7470_AnaValHead",
+        "Text": "Analog Values Headline",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000008-AddTextInteger": {
+        "OPCID": "AA.I7471_AnaVal1",
+        "TextID": "&I_E7471_AnaValText1",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "$O_Analog Value 1",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextInteger": {
+        "OPCID": "AA.I7472_AnaVal2",
+        "TextID": "&I_E7472_AnaValText2",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "$O_Analog Value 2",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextInteger": {
+        "OPCID": "AA.I7473_AnaVal3",
+        "TextID": "&I_E7473_AnaValText3",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "$O_Analog Value 3",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextInteger": {
+        "OPCID": "AA.I7474_AnaVal4",
+        "TextID": "&I_E7474_AnaValText4",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "$O_Analog Value 4",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextIntegerInput": {
+        "OPCID": "AS.P2951_ReplAnaVal1",
+        "UserRight": "7",
+        "IntInputMin": "-2147483640",
+        "Text": "Replacement Value of Analog Value 1",
+        "UnitLocale": "",
+        "TextID": "&P_E7471_AnaValText1",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextIntegerInput": {
+        "OPCID": "AS.P2952_ReplAnaVal2",
+        "UserRight": "7",
+        "IntInputMin": "-2147483640",
+        "Text": "Replacement Value of Analog Value 2",
+        "UnitLocale": "",
+        "TextID": "&P_E7472_AnaValText2",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextIntegerInput": {
+        "OPCID": "AS.P2953_ReplAnaVal3",
+        "UserRight": "7",
+        "IntInputMin": "-2147483640",
+        "Text": "Replacement Value of Analog Value 3",
+        "UnitLocale": "",
+        "TextID": "&P_E7473_AnaValText3",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextIntegerInput": {
+        "OPCID": "AS.P2954_ReplAnaVal4",
+        "UserRight": "7",
+        "IntInputMin": "-2147483640",
+        "Text": "Replacement Value of Analog Value 4",
+        "UnitLocale": "",
+        "TextID": "&P_E7474_AnaValText4",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000016-Messages": {
+     "1000017-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU216",
+ "DiagnosisControl": "FU216",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1431862869
+}

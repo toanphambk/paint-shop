@@ -1,0 +1,87 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU220.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000008-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1263_InDel",
+        "OPCID": "TA.T2263_InDel",
+        "UserRight": "6",
+        "TextID": "&A_E7251_FWText",
+        "Text": "Input Delay",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2370_CBFW",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1263_InDel",
+        "OPCID": "TA.T2263_InDel",
+        "UserRight": "6",
+        "TextID": "&B_E7251_FWText",
+        "Text": "Input Delay",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2370_CBFW",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "ms",
+        "Base": "ms",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    },
+    "1000010-Messages": {
+     "1000011-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU220",
+ "DiagnosisControl": "FU220.01",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1691317051
+}

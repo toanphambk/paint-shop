@@ -1,0 +1,241 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-19",
+   "Name": "FU_Re_MACSSetpointCyclePlant.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Parameters ",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "showHide": true
+       },
+       "1000008-AddTextReal": {
+        "OPCID": "AA.I1020_Step",
+        "Precision": "0",
+        "TextID": "I1020",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Actual Step of Program",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextReal": {
+        "OPCID": "AA.I6729_ExCycleTime",
+        "Precision": "0",
+        "TextID": "I6729",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Expired Cycle Time",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextReal": {
+        "OPCID": "AA.I6728_EntCycleTime",
+        "Precision": "0",
+        "TextID": "I6728",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Entire Cycle Time",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextTimerLong": {
+        "OPCID": "AA.I5265_PolDAV",
+        "TextID": "I5265",
+        "Text": "Polaristaion On Delay Timer Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextReal": {
+        "OPCID": "AA.I3705_DesUSp",
+        "Precision": "0",
+        "TextID": "I3705",
+        "UnitInit": "2",
+        "UnitMetric": "V",
+        "Text": "Desired Voltage Setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "V",
+        "UnitImperial": "V",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000013-AddTextReal": {
+        "OPCID": "AA.I3706_DesISp",
+        "Precision": "0",
+        "TextID": "I3706",
+        "UnitInit": "2",
+        "UnitMetric": "A",
+        "Text": "Desired Current Setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "A",
+        "UnitImperial": "A",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0",
+       "1000014-AddText": {
+        "Position": "L",
+        "TextID": "Program",
+        "Text": "Program",
+        "showHide": false
+       },
+       "1000015-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C3016_CopPro",
+        "UserRight": "7",
+        "TextID": "C3016",
+        "OffLED": "O",
+        "Text": "Copy Program",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextIntegerInput": {
+        "OPCID": "AS.I3830_ProSo",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Program Source",
+        "UnitLocale": "",
+        "TextID": "I3830",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "100",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "100",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000017-AddTextIntegerInput": {
+        "OPCID": "AS.I3831_ProTar",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Program Target",
+        "UnitLocale": "",
+        "TextID": "I3831",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "100",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "100",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000018-AddText": {
+        "Position": "L",
+        "TextID": "Service",
+        "Text": "Service",
+        "showHide": false
+       },
+       "1000019-AddTextIntegerInput": {
+        "OPCID": "CO.I3834_MSetNr",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "MACS Setpoint Number",
+        "UnitLocale": "",
+        "TextID": "I3834",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "1000",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000020-AddTextIntegerInput": {
+        "OPCID": "CO.I3717_QMMBM",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Qantity MACS-Modules in Bridge-Mode",
+        "UnitLocale": "",
+        "TextID": "I3717",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "1000",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000021-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CO.C2707_MMBM",
+        "UserRight": "1",
+        "TextID": "C2707",
+        "OffLED": "O",
+        "Text": "MACS-Module in Bridge-Mode",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "1"
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    },
+    "1000022-Messages": {
+     "1000023-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Re_MACSSetpointCyclePlant",
+ "DiagnosisControl": "FU_Re_MACSSetpointCyclePlant.10",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1375081949
+}

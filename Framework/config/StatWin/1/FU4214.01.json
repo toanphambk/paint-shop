@@ -1,0 +1,88 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU4214.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000008-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "TS.T1496_ComTimeOut",
+        "OPCID": "TA.T2496_ComTimeOut",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Communication Time",
+        "UnitLocale": "*0.1s",
+        "TextID": "T2496",
+        "UnitInit": "2",
+        "UnitMetric": "*0.1s",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "*0.1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "1000",
+        "InputMin": "0",
+        "Position": "L"
+       }
+      }
+     },
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    },
+    "1000009-Messages": {
+     "1000010-AlarmClient": {},
+     "Text": "Messages"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU4214",
+ "DiagnosisControl": "FU4214.01",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1783883647
+}

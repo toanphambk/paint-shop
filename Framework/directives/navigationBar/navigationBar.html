@@ -1,0 +1,62 @@
+<div class="navigation-bar">
+  <a ng-href="#/" class="breadcrumb general {{ overviewStatus }}">General Plant Overview</a>
+  <div class="breadcrumb plant {{ plant.status }}">{{ plant.name }}</div>
+  <div style="position: relative;">
+    <div id="dropdownFilter" class="filter-dropdown emosbutton filter-icon" ng-click="toggleOverlay($event)" placeholder="Filter Auswahl">Filter Selection <span class="filter-icon"></span></div>
+    <ul id="faultsFilter" class="faultsFilter listOverlay">
+      <li class="processFault" ng-click="uncheck($event)">
+        <input type="checkbox" ng-model="filter.processFault" value="processFault" id="button-processFault" ng-click="uncheck($event)">
+        Process Fault
+      </li>
+      <li class="electricalFault " ng-click="uncheck($event)">
+        <input type="checkbox" ng-model="filter.electricalFault" value="electricalFault" id="button-electricalFault" ng-click="uncheck($event)">
+       Electrical Fault
+      </li>
+      <li class="mechanicalFault " ng-click="uncheck($event)">
+        <input type="checkbox" ng-model="filter.mechanicalFault" value="mechanicalFault" id="button-mechanicalFault" ng-click="uncheck($event)">
+        Mechanical Fault
+      </li>
+      <li class="softwareFault " ng-click="uncheck($event)">
+        <input type="checkbox" ng-model="filter.softwareFault" value="softwareFault" id="button-softwareFault" ng-click="uncheck($event)">
+        Software Fault
+      </li>
+    </ul> 
+  </div>
+  <div class="button-wrapper">     
+    <label for="button-error">
+      <div class="button filter error">
+        <input type="checkbox" ng-model="filter.error" name="" value="" id="button-error">
+        <label for="button-error"><span></span></label>
+        <span class="icon"></span>
+        <span class="count">{{ plant.errorCount }}</span>
+      </div>
+    </label>
+    <label for="button-warning">
+      <div class="button filter warning">
+        <input type="checkbox" ng-model="filter.warning" name="" value="" id="button-warning">
+        <label for="button-warning"><span></span></label>
+        <span class="icon"></span>
+        <span class="count">{{ plant.warningCount }}</span>
+      </div>
+    </label>
+    <label for="button-info">
+      <div class="button filter info">
+        <input type="checkbox" ng-model="filter.info" name="" value="" id="button-info">
+        <label for="button-info"><span></span></label>
+        <span class="icon"></span>
+        <span class="count">{{ plant.infoCount }}</span>
+      </div>
+    </label>
+    <button class="button reset" ng-click="resetFilter()" ng-disabled="filter.info && filter.warning && filter.error && filter.processFault && filter.electricalFault && filter.mechanicalFault && filter.softwareFault" ng-model="isDisabled">
+      <span class="icon refresh"></span>
+    </button>
+  </div>
+  <div style="position: relative;">
+    <div id="dropdownFilterError" class="filter-dropdownerror emosbutton filter-icon" ng-click="toggleOverlayError($event)" placeholder="Filter Auswahl">Filter Selection <span class="filter-icon"></span></div>
+    <ul id="faultsFilterError" class="faultsFilter listOverlay">
+        <li ng-repeat="item in items">{{item.name}}
+            <input type="checkbox" ng-model="item.selected" ng-checked="true" value={{item.name}} id="filterError" ng-click="selectError(item, $index)">
+        </li>
+    </ul> 
+  </div>
+</div>

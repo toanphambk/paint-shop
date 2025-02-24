@@ -1,0 +1,54 @@
+[
+{
+"Id": 1,
+"name": "Volumenstrom (F22) in Kühlaggregat (WK113) zu gering",
+"errorType": 1,
+"productionRelevance": 0, 
+"plantType": "ASU",
+"plant": "ASU1",
+"functionGroup": "WK113",
+"inProcess": false,
+"durationError": 140,
+"durationHandling": 12,
+"relatesTo": [2]
+},
+{
+"Id": 2,
+"name": "Vorlauftemperatur (T55) in Heizaggregat (WH114) zu gering",
+"errorType": 1,
+"productionRelevance": 2,
+"plantType": "ASU",
+"plant": "ASU2",
+"functionGroup": "WH114",
+"inProcess": 1,
+"durationError": 1503,
+"durationHandling": 144,
+"relatesTo": 0
+},
+{
+"Id": 3,
+"name": "Warpkernbruch steht unmittelbar bevor",
+"errorType": 1,
+"productionRelevance": 1,
+"plantType": "ASU",
+"plant": "ASU1",
+"functionGroup": "WH0815",
+"inProcess": 1,
+"durationError": 1503,
+"durationHandling": 144,
+"relatesTo": 0
+},
+{
+"Id": 4,
+"name": "Deflektorschild ausgefallen",
+"errorType": 1,
+"productionRelevance": 1,
+"plantType": "ASU",
+"plant": "ASU2",
+"functionGroup": "WH1704",
+"inProcess": false,
+"durationError": 1503,
+"durationHandling": 144,
+"relatesTo": [1]
+}
+]

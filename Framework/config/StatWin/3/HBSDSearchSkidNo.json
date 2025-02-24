@@ -1,0 +1,218 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "HBSDSearchSkidNo",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status",
+       "TextID": "Status",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "OperatingModes",
+        "Text": "Operating Modes",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1827_FndSkidNo",
+        "Position": "L",
+        "TextID": "S1827",
+        "OffLED": "O",
+        "Text": "Found Skid Number",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1829_NFndSkidNo",
+        "Position": "L",
+        "TextID": "S1829",
+        "OffLED": "O",
+        "Text": "Not Found Skid Number",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1828_WrngSkidNo",
+        "Position": "L",
+        "TextID": "S1828",
+        "OffLED": "O",
+        "Text": "Wrong Skid Number",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Control",
+        "TextID": "Control",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000012-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1015_SearchSkidNo",
+        "Position": "L",
+        "UserRight": "4",
+        "TextID": "C1015",
+        "OffLED": "O",
+        "Text": "Search Skid Number",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextIntegerInput": {
+        "OPCID": "AS.I1030_RBDataSkidNo",
+        "UserRight": "7",
+        "Position": "L",
+        "IntInputMin": "",
+        "Text": "Rollerbed Data Skid Number",
+        "UnitLocale": "",
+        "TextID": "I1030",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": 100,
+        "InputMin": -100
+       },
+       "1000014-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Skid position",
+        "TextID": "SkidPosition",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000015-AddTextInteger": {
+        "OPCID": "AA.I1543_SkidNoPosX",
+        "Position": "L",
+        "TextID": "I1543",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Position X",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextInteger": {
+        "OPCID": "AA.I1544_SkidNoPosY",
+        "Position": "L",
+        "TextID": "I1544",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Position Y",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextInteger": {
+        "OPCID": "AA.I1545_SkidNoPosZ",
+        "Position": "L",
+        "TextID": "I1545",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Position Z",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0",
+       "VisibleOPCID": ""
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000018-Messages": {
+     "1000019-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "HBSDSearchSkidNo",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1042738023
+}

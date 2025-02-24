@@ -1,0 +1,6 @@
+<div class="pagination" ng-show="pagination.last > 1">
+  <button class="top" ng-click="setCurrent(pagination.current - 1)" ng-class="{ 'inactive': pagination.current < 2}"></button>
+  <div class="pages" ng-show="range.lower != range.upper">{{ range.lower }}-{{ range.upper }} / {{ range.total }}</div>
+  <div class="pages" ng-show="range.lower == range.upper">{{ range.total }} / {{ range.total }}</div>
+  <button class="down" ng-click="setCurrent(pagination.current + 1)" ng-class="{ 'inactive': pagination.last == pagination.current}"></button>
+</div>

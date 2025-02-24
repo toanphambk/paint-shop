@@ -1,0 +1,575 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Operation",
+     "Border": "B",
+     "VisibleOPCID": ""
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B",
+     "VisibleOPCID": ""
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "10-10",
+   "Name": "Gp_PLCInfo",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status 1",
+       "TextID": "Status1",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0"
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "Y",
+        "OPCID": "SB1.S2312_ForceSteady",
+        "Position": "L",
+        "TextID": "S2312",
+        "OffLED": "O",
+        "Text": "Force Steady",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "Y",
+        "OPCID": "SB1.S2313_Force2Hz",
+        "Position": "L",
+        "TextID": "S2313",
+        "OffLED": "O",
+        "Text": "Force 2 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "Y",
+        "OPCID": "SB1.S2314_Force05Hz",
+        "Position": "L",
+        "TextID": "S2314",
+        "OffLED": "O",
+        "Text": "Force 0,5 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB1.S2306_RunSteady",
+        "Position": "L",
+        "TextID": "S2306",
+        "OffLED": "O",
+        "Text": "Run Steady",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB1.S2307_Run2Hz",
+        "Position": "L",
+        "TextID": "S2307",
+        "OffLED": "O",
+        "Text": "Run 2 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB1.S2308_Run05Hz",
+        "Position": "L",
+        "TextID": "S2308",
+        "OffLED": "O",
+        "Text": "Run 0,5 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "Y",
+        "OPCID": "SB1.S2309_StopSteady",
+        "Position": "L",
+        "TextID": "S2309",
+        "OffLED": "O",
+        "Text": "Stop Steady",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "Y",
+        "OPCID": "SB1.S2310_Stop2Hz",
+        "Position": "L",
+        "TextID": "S2310",
+        "OffLED": "O",
+        "Text": "Stop 2 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "Y",
+        "OPCID": "SB1.S2311_Stop05Hz",
+        "Position": "L",
+        "TextID": "S2311",
+        "OffLED": "O",
+        "Text": "Stop 0,5 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "10000001-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       },
+       "10000002-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1254_EnMV",
+        "Position": "R",
+        "TextID": "S1254",
+        "OffLED": "O",
+        "Text": "Enable Operation",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "10000003-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1255_EnFV",
+        "Position": "M",
+        "TextID": "S1255",
+        "OffLED": "O",
+        "Text": "Enable Faults",
+        "Border": "B",
+        "VisibleOPCID": ""
+       }
+      },
+      "1000017-AddPageTab": {
+       "Text": "Status 2",
+       "TextID": "Status2",
+       "VisibleAtRight": "0",
+       "1000018-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals"
+       },
+       "1000019-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2893_BatFaultSteady",
+        "Position": "L",
+        "TextID": "S2893",
+        "OffLED": "O",
+        "Text": "Battery Fault Steady",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2894_BatFault2Hz",
+        "Position": "L",
+        "TextID": "S2894",
+        "OffLED": "O",
+        "Text": "Battery Fault  2 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000021-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2895_BatFault05Hz",
+        "Position": "L",
+        "TextID": "S2895",
+        "OffLED": "O",
+        "Text": "Battery Fault 0,5 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000022-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2887_IntFaultSteady",
+        "Position": "L",
+        "TextID": "S2887",
+        "OffLED": "O",
+        "Text": "Internal Fault Steady",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000023-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2888_IntFault2Hz",
+        "Position": "L",
+        "TextID": "S2888",
+        "OffLED": "O",
+        "Text": "Internal Fault  2 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000024-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2889_IntFault05Hz",
+        "Position": "L",
+        "TextID": "S2889",
+        "OffLED": "O",
+        "Text": "Internal Fault 0,5 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000025-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2890_ExtFaultSteady",
+        "Position": "L",
+        "TextID": "S2890",
+        "OffLED": "O",
+        "Text": "External Fault Steady",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000026-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2891_ExtFault2Hz",
+        "Position": "L",
+        "TextID": "S2891",
+        "OffLED": "O",
+        "Text": "External Fault  2 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000027-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2892_ExtFault05Hz",
+        "Position": "L",
+        "TextID": "S2892",
+        "OffLED": "O",
+        "Text": "External Fault 0,5 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       }
+      },
+      "1000028-AddPageTab": {
+       "Text": "Status 3",
+       "TextID": "Status3",
+       "VisibleAtRight": "0",
+       "1000029-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals"
+       },
+       "1000030-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2896_Bus1FaultSteady",
+        "Position": "L",
+        "TextID": "S2896",
+        "OffLED": "O",
+        "Text": "Bus 1 Fault Steady",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000031-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2897_Bus1Fault2Hz",
+        "Position": "L",
+        "TextID": "S2897",
+        "OffLED": "O",
+        "Text": "Bus 1 Fault  2 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000032-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2898_Bus1Fault05Hz",
+        "Position": "L",
+        "TextID": "S2898",
+        "OffLED": "O",
+        "Text": "Bus 1 Fault 0,5 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000033-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2899_Bus2FaultSteady",
+        "Position": "L",
+        "TextID": "S2899",
+        "OffLED": "O",
+        "Text": "Bus 2 Fault Steady",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000034-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2900_Bus2Fault2Hz",
+        "Position": "L",
+        "TextID": "S2900",
+        "OffLED": "O",
+        "Text": "Bus 2 Fault  2 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000035-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2901_Bus2Fault05Hz",
+        "Position": "L",
+        "TextID": "S2901",
+        "OffLED": "O",
+        "Text": "Bus 2 Fault 0,5 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000036-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true
+       },
+       "1000037-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2902_Inter1FaultSteady",
+        "Position": "L",
+        "TextID": "S2902",
+        "OffLED": "O",
+        "Text": "Interface 1 Fault Steady",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000038-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2903_Inter1Fault2Hz",
+        "Position": "L",
+        "TextID": "S2903",
+        "OffLED": "O",
+        "Text": "Interface 1 Fault 2 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000039-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2904_Inter1Fault05Hz",
+        "Position": "L",
+        "TextID": "S2904",
+        "OffLED": "O",
+        "Text": "Interface 1 Fault 0,5 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000040-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2905_Inter2FaultSteady",
+        "Position": "L",
+        "TextID": "S2905",
+        "OffLED": "O",
+        "Text": "Interface 2 Fault Steady",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000041-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2906_Inter2Fault2Hz",
+        "Position": "L",
+        "TextID": "S2906",
+        "OffLED": "O",
+        "Text": "Interface 2 Fault  2 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000042-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB1.S2907_Inter2Fault05Hz",
+        "Position": "L",
+        "TextID": "S2907",
+        "OffLED": "O",
+        "Text": "Interface 2 Fault 0,5 Hz",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000043-Messages": {
+     "1000044-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000045-AddPageTab": {
+     "1000046-AddPageControl": {
+      "1000047-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000048-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000049-AddTextSiemensDateLong": {
+        "OPCID": "GP.G2202_DateAV",
+        "TextID": "G2202",
+        "Text": "Actual Date",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000050-AddTextSiemensTimeLong": {
+        "OPCID": "GP.E2204_TimeAV",
+        "TextID": "E2204",
+        "Text": "Actual Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000051-AddTextSiemensDateInputLong": {
+        "OPCID": "GP.G2201_DateSP",
+        "UserRight": "13",
+        "TextID": "G2201",
+        "Text": "Adjust Date",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000052-AddTextSiemensTimeInputLong": {
+        "IntTimeMax": "86400",
+        "OPCID": "GP.G2203_TimeSP",
+        "UserRight": "13",
+        "TextID": "G2203",
+        "Text": "Adjust Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000053-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1256_SetTime",
+        "UserRight": "4",
+        "TextID": "C1256",
+        "OffLED": "O",
+        "Text": "Set Date Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000054-AddTextInteger": {
+        "OPCID": "AA.I2342_MinCycle",
+        "TextID": "I2342",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Minimum Cycle Time",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000055-AddTextInteger": {
+        "OPCID": "AA.I2350_MinCycleSR",
+        "TextID": "I2350",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Minimum Cycle Time Since Reset",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": ""
+       },
+       "1000056-AddTextInteger": {
+        "OPCID": "AA.I2341_ActCycle",
+        "TextID": "I2341",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Actual Cycle Time",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": ""
+       },
+       "1000057-AddTextInteger": {
+        "OPCID": "AA.I2351_MaxCycleSR",
+        "TextID": "I2351",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Maximum Cycle Time Since Reset",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": ""
+       },
+       "1000058-AddTextInteger": {
+        "OPCID": "AA.I2343_MaxCycle",
+        "TextID": "I2343",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Maximum Cycle Time",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000059-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1066_Reset",
+        "UserRight": "4",
+        "TextID": "C1066",
+        "OffLED": "O",
+        "Text": "Reset",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "Gp_PLCInfo",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1944343651
+}

@@ -1,0 +1,76 @@
+.grid-element {
+
+  &.active:before {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    content: '';
+    border: 4px solid $grid_highlighted;
+    border-radius: 7px;
+  }
+
+  &.active-related:before {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    content: '';
+    border: 4px dashed $grid_highlighted;
+    border-radius: 7px;
+  }
+
+  .big-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+
+    &.\000030 { background: url(../assets/images/icons/ico_DeviationToSetpoint.png) no-repeat; }
+    &.\000031 { background: url(../assets/images/icons/ico_deviationToSimulation.png) no-repeat; }
+    &.\000032 { background: url(../assets/images/icons/ico_electricalProblem.png) no-repeat; }
+    &.\000033 { background: url(../assets/images/icons/ico_mechanicalProblem.png) no-repeat; }
+    &.\000034 { background: url(../assets/images/icons/ico_signalSaturation.png) no-repeat; }
+    &.\000035 { background: url(../assets/images/icons/ico_threshold.png) no-repeat; }
+  }
+
+	.time {
+        position: absolute;
+        bottom: 47px;
+        width: 100%;
+        padding: 0 6px;
+
+        font-weight: 300;
+        font-size: 14px;
+
+        .left { float: left; }
+        .right { float: right; }
+        .middle {
+        	position: absolute;
+        	left: 50%;
+    		transform: translateX(-50%);
+        	bottom: 0;
+        }
+        .icon-container {
+            float: left;
+            margin-right: 5px;
+        }
+        .clock-icon {
+            display: block;
+            width: 16px;
+            height: 16px;
+            background: url(../assets/images/gridelement/ico_clock.png) no-repeat;
+        }
+    }
+
+  .handling {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+        width: 53px;
+        height: 43px;
+        background: url(../assets/images/gridelement/ico_state_progress.png) no-repeat;
+    }
+}

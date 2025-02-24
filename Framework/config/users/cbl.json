@@ -1,0 +1,31 @@
+{
+ "tabs": {
+  "Private1": {
+   "1": {
+    "data": {
+     "OnLED": "G",
+     "OPCID": "",
+     "Position": "L",
+     "UserRight": "9",
+     "TextID": "S2251",
+     "OffLED": "O",
+     "Text": "In Operation",
+     "Bold": "1",
+     "Border": "B",
+     "writeTagWR1": "CB.C2251_Off",
+     "writeTagWR2": "CB.C2254_On",
+     "readTagRD1": "SB.S2251_On",
+     "leftIcon": "off",
+     "rightIcon": "on",
+     "VisibleOPCID": "",
+     "VisibleAtRight": "0",
+     "writable": true,
+     "DiagnosisLibID": 1
+    },
+    "myPLC": "P1P1V1.P1P1V1_PS01_VA571_G11",
+    "myKey": "1000013-AddCommandFeedback2WR1RD",
+    "writable": false
+   }
+  }
+ }
+}

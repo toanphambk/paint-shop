@@ -1,0 +1,373 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "FU_Pf_SelectorSwitch16.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Selector Switch 1-8",
+       "TextID": "SelectorSwitch1-8",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "TextID": "SelectorSwitch",
+        "Text": "Selector Switch",
+        "Border": "N",
+        "Position": "L",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "SS.X7451_SelBit1",
+        "UserRight": "12",
+        "TextID": "&X_G7451_SelText1",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.I1331_QuantPos >= 1",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "leftIcon": "on"
+       },
+       "1000009-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "SS.X7452_SelBit2",
+        "UserRight": "12",
+        "TextID": "&X_G7452_SelText2",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.I1331_QuantPos >= 2",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "leftIcon": "on"
+       },
+       "1000010-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "SS.X7453_SelBit3",
+        "UserRight": "12",
+        "TextID": "&X_G7453_SelText3",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.I1331_QuantPos >= 3",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "leftIcon": "on"
+       },
+       "1000011-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "SS.X7454_SelBit4",
+        "UserRight": "12",
+        "TextID": "&X_G7454_SelText4",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 4",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.I1331_QuantPos >= 4",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "leftIcon": "on"
+       },
+       "1000012-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "SS.X7455_SelBit5",
+        "UserRight": "12",
+        "TextID": "&X_G7455_SelText5",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 5",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.I1331_QuantPos >= 5",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "leftIcon": "on"
+       },
+       "1000013-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "SS.X7456_SelBit6",
+        "UserRight": "12",
+        "TextID": "&X_G7456_SelText6",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 6",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.I1331_QuantPos >= 6",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "leftIcon": "on"
+       },
+       "1000014-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "SS.X7457_SelBit7",
+        "UserRight": "12",
+        "TextID": "&X_G7457_SelText7",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 7",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.I1331_QuantPos >= 7",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "leftIcon": "on"
+       },
+       "1000015-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "SS.X7458_SelBit8",
+        "UserRight": "12",
+        "TextID": "&X_G7458_SelText8",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 8",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.I1331_QuantPos >= 8",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "leftIcon": "on"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000016-AddPageTab": {
+       "Text": "Selector Switch 9-16",
+       "TextID": "SelectorSwitch9-16",
+       "VisibleAtRight": "0",
+       "1000017-AddText": {
+        "TextID": "SelectorSwitch",
+        "Text": "Selector Switch",
+        "Border": "N",
+        "Position": "L",
+        "showHide": true
+       },
+       "1000018-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "SS.X7459_SelBit9",
+        "UserRight": "12",
+        "TextID": "&X_G7459_SelText9",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 9",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.I1331_QuantPos >= 9",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "leftIcon": "on"
+       },
+       "1000019-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "SS.X7460_SelBit10",
+        "UserRight": "12",
+        "TextID": "&X_G7460_SelText10",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 10",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.I1331_QuantPos >= 10",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "leftIcon": "on"
+       },
+       "1000020-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "SS.X7461_SelBit11",
+        "UserRight": "12",
+        "TextID": "&X_G7461_SelText11",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 11",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.I1331_QuantPos >= 11",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "leftIcon": "on"
+       },
+       "1000021-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "SS.X7462_SelBit12",
+        "UserRight": "12",
+        "TextID": "&X_G7462_SelText12",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 12",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.I1331_QuantPos >= 12",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "leftIcon": "on"
+       },
+       "1000022-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "SS.X7463_SelBit13",
+        "UserRight": "12",
+        "TextID": "&X_G7463_SelText13",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 13",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.I1331_QuantPos >= 13",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "leftIcon": "on"
+       },
+       "1000023-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "SS.X7464_SelBit14",
+        "UserRight": "12",
+        "TextID": "&X_G7464_SelText14",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 14",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.I1331_QuantPos >= 14",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "leftIcon": "on"
+       },
+       "1000024-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "SS.X7465_SelBit15",
+        "UserRight": "12",
+        "TextID": "&X_G7465_SelText15",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 15",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.I1331_QuantPos >= 15",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "leftIcon": "on"
+       },
+       "1000025-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "SS.X7466_SelBit16",
+        "UserRight": "12",
+        "TextID": "&X_G7466_SelText16",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 16",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.I1331_QuantPos >= 16",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "leftIcon": "on"
+       },
+       "RegAutoHide": "1"
+      },
+      "1000026-AddPageTab": {
+       "Text": "Control Signals",
+       "TextID": "ControlSignals",
+       "VisibleAtRight": "0",
+       "1000027-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000028-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "UserRight": "9",
+        "Position": "L",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "acknowledge"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000029-Messages": {
+     "1000030-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000031-AddPageTab": {
+     "1000032-AddPageControl": {
+      "1000033-AddPageTab": {
+       "Text": "Timer",
+       "TextID": "Timer",
+       "VisibleAtRight": "0",
+       "1000034-AddText": {
+        "Position": "L",
+        "TextID": "ImpulseExtension",
+        "Text": "Impulse Extension",
+        "showHide": false
+       },
+       "1000035-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4641_SelAct",
+        "OPCID": "AA.I4641_SelAct",
+        "UserRight": "1",
+        "VisuBase": "s",
+        "Text": "Impulse Extension Activated",
+        "Base": "ms",
+        "TextID": "I4641",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Pf_SelectorSwitch16",
+ "DiagnosisControl": "FU_Pf_SelectorSwitch16",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 335050003
+}

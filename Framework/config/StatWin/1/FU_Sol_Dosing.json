@@ -1,0 +1,265 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-19",
+   "Name": "FU_Sol_Dosing.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback1WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "S1251",
+        "OffLED": "O",
+        "Text": "Automatic Mode",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2263_Auto",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S1251_Auto",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2250_Clse",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C2250",
+        "OffLED": "O",
+        "Text": "Manual Close",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "closeCommand"
+       },
+       "1000010-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2257_Open",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C2257",
+        "OffLED": "O",
+        "Text": "Manual Open",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "openCommand"
+       },
+       "1000011-AddText": {
+        "Position": "R",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2264_Open",
+        "Position": "R",
+        "TextID": "S2264",
+        "OffLED": "O",
+        "Text": "Device Open",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000013-Messages": {
+     "1000014-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000015-AddPageTab": {
+     "1000016-AddPageControl": {
+      "1000017-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000018-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "showHide": true
+       },
+       "1000019-AddTextRealRealInputLong": {
+        "OPCID2": "AS.V2251_Setpoint",
+        "OPCID": "AA.R2251_ActValue",
+        "UserRight": "0",
+        "RealInputMax": "2147483640",
+        "Text": "Concentration",
+        "UnitLocale": "",
+        "Precision": "1",
+        "TextID": "R2251",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640.00",
+        "InputMin": "-2147483640.00",
+        "Position": "L"
+       },
+       "1000020-AddTextRealInput": {
+        "OPCID": "AS.R4022_Gradient",
+        "UserRight": "0",
+        "RealInputMax": "2147483640",
+        "Text": "Gradient",
+        "UnitLocale": "",
+        "Precision": "1",
+        "TextID": "R4022",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640.00",
+        "InputMin": "-2147483640.00",
+        "Position": "L"
+       },
+       "1000021-AddTextTimerInputLong": {
+        "IntTimeMax": "86400",
+        "OPCID": "AS.I3100_MinOnSP",
+        "UserRight": "1",
+        "TextID": "I3100",
+        "Text": "Minimum On Duration setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextTimerInputLong": {
+        "IntTimeMax": "86400",
+        "OPCID": "AS.I3101_MaxOnSP",
+        "UserRight": "1",
+        "TextID": "I3101",
+        "Text": "Maximum On Duration setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextTimerInputLong": {
+        "IntTimeMax": "86400",
+        "OPCID": "AS.I3102_CycleSP",
+        "UserRight": "0",
+        "TextID": "I3102",
+        "Text": "Cycle Duration setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Base": "s",
+        "Position": "L"
+       },
+       "1000024-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.I2262_OnSP",
+        "OPCID": "AA.I2259_OnAV",
+        "TextID": "I2259",
+        "Text": "On Duration",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.I2261_BrkSP",
+        "OPCID": "AA.I2260_BrkAV",
+        "TextID": "I2260",
+        "Text": "Break Duration",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Base": "s",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Sol_Dosing",
+ "DiagnosisControl": "FU_Sol_Dosing",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 938049299
+}

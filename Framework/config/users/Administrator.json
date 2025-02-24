@@ -1,0 +1,138 @@
+{
+ "tabs": {
+  "Private3": {
+   "1": {
+    "data": {
+     "OnLED": "G",
+     "OPCID": "CB.C1265_VisuCSOffPE",
+     "Position": "L",
+     "UserRight": "9",
+     "TextID": "C1265",
+     "OffLED": "O",
+     "Text": "Central Start Off when Plant Empty from Visu",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleOPCID": "",
+     "VisibleAtRight": "0",
+     "leftIcon": "off",
+     "writable": true,
+     "DiagnosisLibID": 1
+    },
+    "myPLC": "P1C1T1.P1C1T1_ZS01_A01_PAN",
+    "myKey": "1000010-AddTextInputLED",
+    "writable": false
+   },
+   "3": {
+    "data": {
+     "OnLED": "G",
+     "OPCID": "CB.C1265_VisuCSOffPE",
+     "Position": "L",
+     "UserRight": "9",
+     "TextID": "C1265",
+     "OffLED": "O",
+     "Text": "Central Start Off when Plant Empty from Visu",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleOPCID": "",
+     "VisibleAtRight": "0",
+     "leftIcon": "off",
+     "writable": true,
+     "DiagnosisLibID": 1
+    },
+    "myPLC": "P1C1T1.P1C1T1_ZS01_A01_PAN",
+    "myKey": "1000010-AddTextInputLED",
+    "writable": false
+   },
+   "4": {
+    "data": {
+     "OnLED": "G",
+     "OPCID": "",
+     "Position": "L",
+     "UserRight": "9",
+     "TextID": "C1255",
+     "OffLED": "O",
+     "Text": "Central Start On",
+     "Bold": "1",
+     "Border": "B",
+     "writeTagWR1": "CB.C1254_VisuCSOff",
+     "writeTagWR2": "CB.C1255_VisuCSOn",
+     "readTagRD1": "SB.S1260_CSOn",
+     "leftIcon": "off",
+     "rightIcon": "on",
+     "VisibleOPCID": "",
+     "VisibleAtRight": "0",
+     "writable": true,
+     "DiagnosisLibID": 1
+    },
+    "myPLC": "P1C1T1.P1C1T1_ZS01_A01_PAN",
+    "myKey": "1000009-AddCommandFeedback2WR1RD",
+    "writable": false
+   },
+   "5": {
+    "data": {
+     "OnLED": "G",
+     "OPCID": "CB.C1265_VisuCSOffPE",
+     "Position": "L",
+     "UserRight": "9",
+     "TextID": "C1265",
+     "OffLED": "O",
+     "Text": "Central Start Off when Plant Empty from Visu",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleOPCID": "",
+     "VisibleAtRight": "0",
+     "leftIcon": "off",
+     "writable": true,
+     "DiagnosisLibID": 1
+    },
+    "myPLC": "P1C1T1.P1C1T1_ZS01_A01_PAN",
+    "myKey": "1000010-AddTextInputLED",
+    "writable": false
+   },
+   "6": {
+    "data": {
+     "OnLED": "G",
+     "OPCID": "CB.C1265_VisuCSOffPE",
+     "Position": "L",
+     "UserRight": "9",
+     "TextID": "C1265",
+     "OffLED": "O",
+     "Text": "Central Start Off when Plant Empty from Visu",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleOPCID": "",
+     "VisibleAtRight": "0",
+     "leftIcon": "off",
+     "writable": true,
+     "DiagnosisLibID": 1
+    },
+    "myPLC": "P1C1T1.P1C1T1_ZS01_A01_PAN",
+    "myKey": "1000010-AddTextInputLED",
+    "writable": false
+   }
+  },
+  "Private1": {
+   "2": {
+    "data": {
+     "OnLED": "G",
+     "OPCID": "CB.C1265_VisuCSOffPE",
+     "Position": "L",
+     "UserRight": "9",
+     "TextID": "C1265",
+     "OffLED": "O",
+     "Text": "Central Start Off when Plant Empty from Visu",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleOPCID": "",
+     "VisibleAtRight": "0",
+     "leftIcon": "off",
+     "writable": true,
+     "DiagnosisLibID": 1
+    },
+    "myPLC": "P1C1T1.P1C1T1_ZS01_A01_PAN",
+    "myKey": "1000010-AddTextInputLED",
+    "writable": false
+   }
+  }
+ }
+}

@@ -1,0 +1,291 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "02-20",
+   "Name": "FU305.02",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2279_VOPos",
+        "Position": "L",
+        "UserRight": "1",
+        "TextID": "C2279",
+        "OffLED": "O",
+        "Text": "Virtual Opened Position",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "on"
+       },
+       "1000009-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2280_VCPos",
+        "Position": "L",
+        "UserRight": "1",
+        "TextID": "C2280",
+        "OffLED": "O",
+        "Text": "Virtual Closed Position",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "on"
+       },
+       "1000010-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2729_ScalingOn",
+        "Position": "R",
+        "TextID": "S2729",
+        "OffLED": "O",
+        "Text": "Pre-Select Scaling",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2386_VPosSwOn",
+        "Position": "R",
+        "TextID": "S2386",
+        "OffLED": "O",
+        "Text": "Pre-Select Virtual Position",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000013-Messages": {
+     "1000014-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000015-AddPageTab": {
+     "1000016-AddPageControl": {
+      "1000017-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000018-AddText": {
+        "Position": "L",
+        "TextID": "R2251",
+        "Text": "Actual Value",
+        "showHide": true
+       },
+       "1000019-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2729_ScalingOn",
+        "TextID": "S2729",
+        "OffLED": "O",
+        "Text": "Pre-Select Scaling",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextReal": {
+        "OPCID": "AA.R2251_ActValue",
+        "Precision": "1",
+        "TextID": "R2251",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "Text": "Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "%",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000021-AddText": {
+        "TextID": "Setpoint",
+        "Text": "Setpoint",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "showHide": true
+       },
+       "1000022-AddTextRealInput": {
+        "OPCID": "AS.V2312_VOPosSP",
+        "UserRight": "1",
+        "RealInputMax": "1000",
+        "Text": "Virtual Opened Position Switch",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "V2312",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": "SB.S2386_VPosSwOn",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextRealInput": {
+        "OPCID": "AS.V2355_VBW",
+        "UserRight": "1",
+        "RealInputMax": "1000",
+        "Text": "Bandwith Virtual Position Switches",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "V2355",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": "SB.S2386_VPosSwOn",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddTextRealInput": {
+        "OPCID": "AS.V2313_VCPosSP",
+        "UserRight": "1",
+        "RealInputMax": "1000",
+        "Text": "Virtual Closed Position Switch",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "V2313",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": "SB.S2386_VPosSwOn",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddTextReal": {
+        "OPCID": "AA.R2415_OPosAV",
+        "Precision": "1",
+        "TextID": "R2415",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "Text": "Opened Position refering to Total Range",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "%",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddTextRealInput": {
+        "OPCID": "AS.V2281_AboveLimFlt",
+        "UserRight": "6",
+        "RealInputMax": "1000",
+        "Text": "Above Upper Limit refering to Total Range",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "V2281",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000027-AddTextRealInput": {
+        "OPCID": "AS.V2282_BelowLimFlt",
+        "UserRight": "6",
+        "RealInputMax": "1000",
+        "Text": "Below Lower Limit refering to Total Range",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "V2282",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddTextReal": {
+        "OPCID": "AA.R2416_CPosAV",
+        "Precision": "1",
+        "TextID": "R2416",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "Text": "Closed Position refering to Total Range",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "%",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU305",
+ "DiagnosisControl": "FU305",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -562681622
+}

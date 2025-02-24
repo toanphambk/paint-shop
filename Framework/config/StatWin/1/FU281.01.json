@@ -1,0 +1,427 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Border": "B"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Border": "B"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU281.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback1WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2263",
+        "OffLED": "O",
+        "Text": "Switch Device back to Automatic",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2263_Auto",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S1251_Auto",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddCommandFeedback2WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "0",
+        "TextID": "C2262",
+        "OffLED": "O",
+        "Text": "CB.C2262_Fwd",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2259_Rev",
+        "writeTagWR2": "CB.C2262_Fwd",
+        "readTagRD1": "SB.S2278_Rev",
+        "readTagRD2": "SB.S2301_Fwd",
+        "leftIcon": "left_previous",
+        "rightIcon": "start_right_next",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2251_Off",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C2251",
+        "OffLED": "O",
+        "Text": "Manual Off",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "off"
+       },
+       "1000011-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2789_CleanWatAir",
+        "Position": "R",
+        "TextID": "S2789",
+        "OffLED": "O",
+        "Text": "Cleaning On with Water and Air",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2790_CleanAir",
+        "Position": "R",
+        "TextID": "S2790",
+        "OffLED": "O",
+        "Text": "Cleaning On with Air",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2787_StartPos",
+        "Position": "R",
+        "TextID": "S2787",
+        "OffLED": "O",
+        "Text": "Start Position",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2788_DirChaPoint",
+        "Position": "R",
+        "TextID": "S2788",
+        "OffLED": "O",
+        "Text": "Direction Change Point",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2350_HPCOn",
+        "Position": "R",
+        "TextID": "S2350",
+        "OffLED": "O",
+        "Text": "High Pressure Cleaner On",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000017-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2351_AirOn",
+        "Position": "R",
+        "TextID": "S2351",
+        "OffLED": "O",
+        "Text": "Air Pressure On",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000018-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2791_Temp",
+        "Position": "R",
+        "TextID": "S2791",
+        "OffLED": "O",
+        "Text": "Water Temperature OK",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000019-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2792_Press",
+        "Position": "R",
+        "TextID": "S2792",
+        "OffLED": "O",
+        "Text": "Water Pressure OK",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000020-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2301_Fwd",
+        "Position": "L",
+        "TextID": "S2301",
+        "OffLED": "O",
+        "Text": "Drive Running Forward",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2278_Rev",
+        "Position": "L",
+        "TextID": "S2278",
+        "OffLED": "O",
+        "Text": "Drive Running Reverse",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000022-Messages": {
+     "1000023-AlarmClient": {},
+     "Text": "Messages"
+    },
+    "1000024-AddPageTab": {
+     "1000025-AddPageControl": {
+      "1000026-AddPageTab": {
+       "Text": "Parameters 1",
+       "TextID": "Parameters1",
+       "VisibleAtRight": "0",
+       "1000027-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000028-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "TextID2": "Setpoint"
+       },
+       "1000029-AddTextReal": {
+        "OPCID": "AA.R2259_nAV",
+        "Precision": "1",
+        "TextID": "R2259",
+        "UnitInit": "2",
+        "UnitMetric": "Upm",
+        "Text": "Heatwheel Speed",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "Upm",
+        "UnitImperial": "Rpm",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000030-AddTextReal": {
+        "OPCID": "AA.R2258_rAV",
+        "Precision": "1",
+        "TextID": "R2258",
+        "UnitInit": "2",
+        "UnitMetric": "m",
+        "Text": "Heatwheel Radius",
+        "Border": "B",
+        "UnitLocale": "m",
+        "UnitImperial": "m",
+        "VisibleOPCID": ""
+       },
+       "1000031-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.P2318_ImpHwheelSP",
+        "OPCID": "AA.I2318_ImpHwheelAV",
+        "UserRight": "1",
+        "IntInputMin": "1",
+        "Text": "Impulse Heatwheel",
+        "UnitLocale": "",
+        "TextID": "I2318",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "32767",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": ""
+       },
+       "1000032-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.P2319_CleanAreaSP",
+        "OPCID": "AA.I2255_CleanAreaAV",
+        "UserRight": "1",
+        "IntInputMin": "1",
+        "Text": "Impulse Cleaning Area",
+        "UnitLocale": "",
+        "TextID": "I2255",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "32767",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": ""
+       },
+       "1000033-AddTextRealInput": {
+        "OPCID": "AS.V2299_rMin",
+        "UserRight": "1",
+        "RealInputMax": "100",
+        "Text": "Heatwheel Minimum Radius",
+        "UnitLocale": "m",
+        "Precision": "1",
+        "TextID": "V2299",
+        "UnitInit": "2",
+        "UnitMetric": "m",
+        "RealInputMin": "0",
+        "Border": "B",
+        "UnitImperial": "m",
+        "VisibleOPCID": ""
+       },
+       "1000034-AddTextRealInput": {
+        "OPCID": "AS.V2300_rMax",
+        "UserRight": "1",
+        "RealInputMax": "100",
+        "Text": "Heatwheel Maximum Radius",
+        "UnitLocale": "m",
+        "Precision": "1",
+        "TextID": "V2300",
+        "UnitInit": "2",
+        "UnitMetric": "m",
+        "RealInputMin": "0",
+        "Border": "B",
+        "UnitImperial": "m",
+        "VisibleOPCID": ""
+       },
+       "1000035-AddTextRealInput": {
+        "OPCID": "AS.V2303_v0",
+        "UserRight": "1",
+        "RealInputMax": "100",
+        "Text": "Relative Cleaning Speed",
+        "UnitLocale": "m/s",
+        "Precision": "1",
+        "TextID": "V2303",
+        "UnitInit": "2",
+        "UnitMetric": "m/s",
+        "RealInputMin": "0",
+        "Border": "B",
+        "UnitImperial": "m/s",
+        "VisibleOPCID": ""
+       },
+       "RegAutoHide": "0"
+      },
+      "1000036-AddPageTab": {
+       "Text": "Parameters 2",
+       "TextID": "Parameters2",
+       "VisibleAtRight": "0",
+       "1000037-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000038-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "TextID2": "Setpoint"
+       },
+       "1000039-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1472_MOnFwd",
+        "OPCID": "TA.T2472_MOnFwd",
+        "UserRight": "6",
+        "TextID": "T2472",
+        "Text": "Motion Control Forward (Automatic)",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000040-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1473_MOnFwdManu",
+        "OPCID": "TA.T2473_MOnFwdManu",
+        "UserRight": "6",
+        "TextID": "T2473",
+        "Text": "Motion Control Forward (Manual)",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000041-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1474_MOnRev",
+        "OPCID": "TA.T2474_MOnRev",
+        "UserRight": "6",
+        "TextID": "T2474",
+        "Text": "Motion Control Reverse (Automatic)",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000042-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1475_MOnRevManu",
+        "OPCID": "TA.T2475_MOnRevManu",
+        "UserRight": "6",
+        "TextID": "T2475",
+        "Text": "Motion Control Reverse (Manual)",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "1000043-AddText": {},
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU281",
+ "DiagnosisControl": "FU281.01",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1631020038
+}

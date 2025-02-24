@@ -1,0 +1,72 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "Gp_AnalVal1",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "TextID": "G7470",
+        "Text": "Head Line",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000008-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.I2669_AnaValSetp",
+        "OPCID": "AA.I2608_AnaValAVal",
+        "UserRight": "7",
+        "IntInputMin": "-32768",
+        "Text": "Analog Value",
+        "UnitLocale": "",
+        "TextID": "I2608",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "32767",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "100",
+        "InputMin": "-100",
+        "Position": "L"
+       },
+       "VisibleOPCID": ""
+      }
+     },
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000009-Messages": {
+     "1000010-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "Gp_AnalVal1",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1822921293
+}

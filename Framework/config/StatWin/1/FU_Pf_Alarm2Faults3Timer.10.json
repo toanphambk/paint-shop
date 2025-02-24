@@ -1,0 +1,202 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "FU_Pf_Alarm2Faults3Timer.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "acknowledge"
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000009-Messages": {
+     "1000010-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000011-AddPageTab": {
+     "1000012-AddPageControl": {
+      "1000013-AddPageTab": {
+       "Text": "Timer",
+       "TextID": "Timer",
+       "VisibleAtRight": "0",
+       "1000014-AddText": {
+        "TextID": "&F_G7261_FWText1",
+        "Text": "Alarm 1",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "showHide": false
+       },
+       "1000015-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1453_MOn1",
+        "OPCID": "AA.I1453_MOn1",
+        "UserRight": "7",
+        "TextID": "I1453",
+        "Text": "Motion Control On Timer 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2388_S1NotUsed",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "1000016-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1454_MOff1",
+        "OPCID": "AA.I1454_MOff1",
+        "UserRight": "7",
+        "TextID": "I1454",
+        "Text": "Motion Control Off Timer 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2388_S1NotUsed",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "1000017-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1455_Sens1",
+        "OPCID": "AA.I1455_Sens1",
+        "UserRight": "7",
+        "TextID": "I1455",
+        "Text": "Motion Control Sensor Timer 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2388_S1NotUsed",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "1000018-AddText": {
+        "TextID": "&F_G7262_FWText2",
+        "Text": "Alarm 2",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "showHide": false
+       },
+       "1000019-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1456_MOn2",
+        "OPCID": "AA.I1456_MOn2",
+        "UserRight": "7",
+        "TextID": "I1456",
+        "Text": "Motion Control On Timer 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2391_S2NotUsed",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "1000020-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1457_MOff2",
+        "OPCID": "AA.I1457_MOff2",
+        "UserRight": "7",
+        "TextID": "I1457",
+        "Text": "Motion Control Off Timer 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2391_S2NotUsed",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "1000021-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1458_Sens2",
+        "OPCID": "AA.I1458_Sens2",
+        "UserRight": "7",
+        "TextID": "I1458",
+        "Text": "Motion Control Sensor Timer 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2391_S2NotUsed",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Pf_Alarm2Faults3Timer",
+ "DiagnosisControl": "FU_Pf_Alarm2Faults3Timer.10",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1271296633
+}

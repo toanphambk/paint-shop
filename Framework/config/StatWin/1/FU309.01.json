@@ -1,0 +1,102 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU309.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000008-AddTextReal": {
+        "OPCID": "AA.R2326_TempAV",
+        "Precision": "1",
+        "TextID": "R2326",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "Text": "Temperature Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "°C",
+        "UnitImperial": "°F",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextReal": {
+        "OPCID": "AA.R2327_HumAV",
+        "Precision": "1",
+        "TextID": "R2327",
+        "UnitInit": "2",
+        "UnitMetric": "%rF",
+        "Text": "Relative Humidity Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "%rF",
+        "UnitImperial": "%rH",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextReal": {
+        "OPCID": "AA.R2381_AbsHumAV",
+        "Precision": "1",
+        "TextID": "R2381",
+        "UnitInit": "2",
+        "UnitMetric": "g/kg",
+        "Text": "Absolute Humidity Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "g/kg",
+        "UnitImperial": "g/kg",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    },
+    "1000011-Messages": {
+     "1000012-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU309",
+ "DiagnosisControl": "FU309.01",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1969872274
+}

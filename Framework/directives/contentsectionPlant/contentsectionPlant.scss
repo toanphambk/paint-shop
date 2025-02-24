@@ -1,0 +1,49 @@
+$wizard-width: 375px;
+
+.content-section {
+
+    .grid.plant {
+        width: ($hd-width - $mainmenu-width - $wizard-width - 40px);
+    }
+
+    .wizard {
+        position: relative;
+        width: $wizard-width;
+        height: ($hd-height - $statusbar-height - $contentbar-height - 25px);
+        position: absolute;
+        left: ($hd-width - $mainmenu-width - $wizard-width);
+        z-index: 30;
+    }
+
+    .fake-grid {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 42px;
+        width: 100%;
+        z-index: 1;
+
+        .fake-grid-element {
+            width: 229px;
+            height: 42px;
+            margin: 0 25px;
+            float: left;
+
+            background: #f4f4f4;
+            border: 2px solid #e8eaed;
+            border-radius: 2px;
+            @extend .box-shadow;
+        }
+    }
+
+    .overlay {
+        display: none;
+        position: absolute;
+        width: ($hd-width - $mainmenu-width - 15px);
+        height: ($hd-height - $statusbar-height - 15px);
+        z-index: 10;
+        background: rgba(0, 50, 84, 0.5);
+        bottom: 0;
+        right: 0;
+    }
+}

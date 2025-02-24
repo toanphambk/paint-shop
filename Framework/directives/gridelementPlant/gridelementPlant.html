@@ -1,0 +1,33 @@
+<!--<a ng-class="{ 'grid-element': selectedTile.id != item.id && selectedTile.relatesTo.indexOf(item.id) == -1, 'grid-element active-related': selectedTile.id != item.id && selectedTile.relatesTo.indexOf(item.id) != -1, 'grid-element active': selectedTile.id === item.id, 'errorObsolete': item.obsolete === true || ServerError === false}" ng-click="selectTile(item, $index)">-->
+<a class="{{item.obsolete == true ? 'errorObsolete' : ''}}" ng-class="{ 'grid-element': selectedTile.id != item.id && selectedTile.relatesTo.indexOf(item.id) == -1, 'grid-element active-related': selectedTile.id != item.id && selectedTile.relatesTo.indexOf(item.id) != -1, 'grid-element active': selectedTile.id === item.id }" ng-click="selectTile(item, $index)">
+  <div class="big-icon {{ item.errorType }} {{ item.iconType }}"></div>
+  <div class="trapezoid-background"></div>
+  <div class="title-container">
+    <p class="title">{{ item.name}}</p>
+  </div>
+  <div class="time">
+    <span class="left" ng-show="item.inProcess">{{ item.durationHandling }}</span>
+    <!--<span class="left" ng-show="item.durationHandling > 0"></span>-->
+    <span class="middle">
+      <span class="clock-icon"></span>
+    </span>
+    <span class="right">
+      <span class="icon-container" ng-show="item.durationError === 0">
+      </span>
+<!--      {{ item.timeStop | amDifference : clock : 'minutes' | minutesToHHmm}}-->
+            {{item.durationError}}
+    </span>
+  </div>
+  <div class="status-wrapper" ng-show="item.inProcess">
+    <span class="handling"></span>
+  </div>
+  <div class="status-wrapper" ng-show="item.productionRelevance === 0">
+    <span class="status error"></span>
+  </div>
+  <div class="status-wrapper" ng-show="item.productionRelevance === 1">
+    <span class="status warning"></span>
+  </div>
+  <div class="status-wrapper" ng-show="item.productionRelevance === 2">
+    <span class="status info"></span>
+  </div>
+</a>

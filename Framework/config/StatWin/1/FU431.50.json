@@ -1,0 +1,563 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000004-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "50-20",
+   "Name": "FU431.50",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Modes",
+       "TextID": "Modes",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback1WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2263",
+        "OffLED": "O",
+        "Text": "Switch Device back to Automatic",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2263_Auto",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S1251_Auto",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "Position": "L",
+        "UserRight": "3",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "1000010-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S4586_BBEvacPres",
+        "Position": "R",
+        "TextID": "S4586",
+        "OffLED": "O",
+        "Text": "Station Evacuation Waste Material Silo Preselect",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S4267_EvacSiloRun",
+        "Position": "R",
+        "TextID": "S4267",
+        "OffLED": "O",
+        "Text": "Evacuation Silo Running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S4587_BBFull",
+        "Position": "R",
+        "TextID": "S4587",
+        "OffLED": "O",
+        "Text": "Big Bag Is Full",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000014-AddPageTab": {
+       "Text": "Reset",
+       "TextID": "Reset",
+       "VisibleAtRight": "1",
+       "1000015-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000016-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2416_X10ZerBal",
+        "Position": "L",
+        "UserRight": "1",
+        "TextID": "C2416",
+        "OffLED": "O",
+        "Text": "Zero Balance",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT CO.C2802_LevOrBalan",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000018-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S4462_X10ZerNonULBal",
+        "Position": "R",
+        "TextID": "S4462",
+        "OffLED": "O",
+        "Text": "X10 Zero Balance Non UL",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT CO.C2785_ZerBalTyp & NOT CO.C2802_LevOrBalan",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S4509_X10ZerULBal",
+        "Position": "R",
+        "TextID": "S4509",
+        "OffLED": "O",
+        "Text": "X10 Zero Balance UL Sequence",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C2785_ZerBalTyp & NOT CO.C2802_LevOrBalan",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000020-AddPageTab": {
+       "Text": "Aggr",
+       "TextID": "Aggr",
+       "VisibleAtRight": "0",
+       "1000021-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000022-AddCommandFeedback2WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C3032",
+        "OffLED": "O",
+        "Text": "V57 Evacuation Valve Open",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C3033_V57EvacClse",
+        "writeTagWR2": "CB.C3032_V57EvacOpen",
+        "readTagRD1": "SB.S4456_WMV57IsOpen",
+        "readTagRD2": "SB.S4455_WMV57Closed",
+        "leftIcon": "closeCommand",
+        "rightIcon": "openCommand",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000024-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S4077_V57EvacOpen",
+        "Position": "L",
+        "TextID": "S4077",
+        "OffLED": "O",
+        "Text": "V57 Evacuation Valve Open",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000025-AddPageTab": {
+       "Text": "Config",
+       "TextID": "Config",
+       "VisibleAtRight": "1",
+       "1000026-AddText": {
+        "Position": "L",
+        "TextID": "ConfigurationSignals",
+        "Text": "Configuration Signals",
+        "Bold": "2",
+        "VisibleAtRight": "1",
+        "showHide": true
+       },
+       "1000027-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CO.C2802_LevOrBalan",
+        "UserRight": "12",
+        "Position": "L",
+        "TextID": "C2802",
+        "OffLED": "O",
+        "Text": "Station With Level Switch",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "1"
+       },
+       "1000028-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CO.C2785_ZerBalTyp",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C2785",
+        "OffLED": "O",
+        "Text": "Configuration Bit Zero Balance",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000029-Messages": {
+     "1000030-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000031-AddPageTab": {
+     "1000032-AddPageControl": {
+      "1000033-AddPageTab": {
+       "Text": "Weights",
+       "TextID": "Weights",
+       "VisibleAtRight": "0",
+       "1000034-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000035-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T3016_FillBigBag",
+        "OPCID": "TA.T4016_FillBigBag",
+        "UserRight": "7",
+        "TextID": "T4016",
+        "Text": "Fill-Up Big Bag",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000036-AddTextReal": {
+        "OPCID": "AA.R2444_BalActValue",
+        "Precision": "1",
+        "TextID": "R2444",
+        "UnitInit": "2",
+        "UnitMetric": "kg",
+        "Text": "X10 Balance Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "kg",
+        "UnitImperial": "kg",
+        "VisibleOPCID": "NOT CO.C2802_LevOrBalan",
+        "VisibleAtRight": "0"
+       },
+       "1000037-AddTextRealInput": {
+        "OPCID": "AS.V2705_FullSetp",
+        "UserRight": "0",
+        "RealInputMax": "2147483640",
+        "Text": "X10 Full Setpoint",
+        "UnitLocale": "kg",
+        "Precision": "1",
+        "TextID": "V2705",
+        "UnitInit": "2",
+        "UnitMetric": "kg",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "kg",
+        "VisibleOPCID": "NOT CO.C2802_LevOrBalan",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640.00",
+        "InputMin": "-2147483640.00",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000038-AddPageTab": {
+       "Text": "Weights 2",
+       "TextID": "Weights2",
+       "VisibleAtRight": "1",
+       "1000039-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000040-AddTextReal": {
+        "OPCID": "AA.R2444_BalActValue",
+        "Precision": "1",
+        "TextID": "R2444",
+        "UnitInit": "2",
+        "UnitMetric": "kg",
+        "Text": "X10 Balance Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "kg",
+        "UnitImperial": "kg",
+        "VisibleOPCID": "NOT CO.C2802_LevOrBalan",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000041-AddTextRealInput": {
+        "OPCID": "AS.V2851_MaxFillFSetp",
+        "UserRight": "0",
+        "RealInputMax": "2147483640",
+        "Text": "X10 Max Level Fault",
+        "UnitLocale": "kg",
+        "Precision": "1",
+        "TextID": "V2851",
+        "UnitInit": "2",
+        "UnitMetric": "kg",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "kg",
+        "VisibleOPCID": "NOT CO.C2802_LevOrBalan",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640.00",
+        "InputMin": "-2147483640.00",
+        "Position": "L"
+       },
+       "1000042-AddTextRealInput": {
+        "OPCID": "AS.V2705_FullSetp",
+        "UserRight": "0",
+        "RealInputMax": "2147483640",
+        "Text": "X10 Full Setpoint",
+        "UnitLocale": "kg",
+        "Precision": "1",
+        "TextID": "V2705",
+        "UnitInit": "2",
+        "UnitMetric": "kg",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "kg",
+        "VisibleOPCID": "NOT CO.C2802_LevOrBalan",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640.00",
+        "InputMin": "-2147483640.00",
+        "Position": "L"
+       },
+       "RegAutoHide": "1"
+      },
+      "1000043-AddPageTab": {
+       "Text": "Dly Times",
+       "TextID": "DlyTimes",
+       "VisibleAtRight": "1",
+       "1000044-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000045-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T3160_DelGrtSetMFillF",
+        "OPCID": "TA.T4160_DelGrtSetMFillF",
+        "UserRight": "7",
+        "TextID": "T4160",
+        "Text": "X10 Actual Value > Max Level Fault",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT CO.C2802_LevOrBalan",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "1"
+       },
+       "1000046-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1761_DelGrtSetFull",
+        "OPCID": "TA.T2761_DelGrtSetFull",
+        "UserRight": "7",
+        "TextID": "T2761",
+        "Text": "X10 Actual Value > Full Limit",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT CO.C2802_LevOrBalan",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "1"
+       },
+       "1000047-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T3166_ZerBalULOnTime",
+        "OPCID": "TA.T4166_ZerBalULOnTime",
+        "UserRight": "7",
+        "TextID": "T4166",
+        "Text": "X10 Zero Balance UL 4.Sequence On-Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C2785_ZerBalTyp & NOT CO.C2802_LevOrBalan",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "1"
+       },
+       "1000048-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T3165_ZerBalNonULOnTime",
+        "OPCID": "TA.T4165_ZerBalNonULOnDur",
+        "UserRight": "7",
+        "TextID": "T3165",
+        "Text": "X10 Zero Balance Non UL On-Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT CO.C2785_ZerBalTyp & NOT CO.C2802_LevOrBalan",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "1"
+       },
+       "1000049-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T3128_WMV57MOp",
+        "OPCID": "TA.T4128_WMV57MOp",
+        "UserRight": "7",
+        "TextID": "T4201",
+        "Text": "V57 WM Evacuation Valve Open MC",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "1"
+       },
+       "1000050-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T3127_WMV57MCl",
+        "OPCID": "TA.T4127_WMV57MCl",
+        "UserRight": "0",
+        "TextID": "T4127",
+        "Text": "V57 WM Evacuation Valve Close MC",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Base": "s",
+        "Position": "L"
+       },
+       "1000051-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T3015_BBFulDeBou",
+        "OPCID": "TA.T4015_BBFulDebou",
+        "UserRight": "7",
+        "TextID": "T4015",
+        "Text": "L73O Big Bag Full Debounce",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "1"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU431",
+ "DiagnosisControl": "FU431.50",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -724704112
+}

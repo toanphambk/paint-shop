@@ -1,0 +1,750 @@
+// centerpage with the tiles
+/* start center */
+//@import "variablen";
+//@import "globals";
+//@import "mixins";
+
+/*für iTac*/
+.itac{
+    .modal{
+        top: 10px;
+        left: 10px;
+    }
+    #breadcrump{
+        left: 10px;
+        top: 20px;
+    }
+    .quickcontrol{
+        margin-top: 10px;
+    }
+    #center{
+        top: 105px;
+        left:0;
+    }
+    .frameWrapper{
+        left: 20px;
+    }
+    .quickcontrol .trendOverlay{
+        top:106px;
+        left: 22px;
+        
+        &.full{
+            height: calc(100% - 110px);
+        }
+    }
+    .crumbOL .smallFooter{
+        top:590px;
+    }
+}
+
+// start breadcrumb navigation
+#breadcrump{
+    position: absolute;
+    left: 139px;
+    top: 120px;
+    
+    .bread_li{
+        background-image:url(../svg/breadcrumb/breadcrumbEnabled.svg);
+        background-repeat: no-repeat;
+        float: left;
+        width: 260px;
+        height: 38px;
+        text-align: center;
+        padding-top: 20px;
+        font-size: $big-size;
+        margin-left: -12px;
+        box-sizing: content-box;
+        
+        &.warn{
+            background-image:url(../svg/breadcrumb/breadcrumbEnabledWarning.svg);
+        }
+        &.alert{
+            background-image:url(../svg/breadcrumb/breadcrumbEnabledError.svg);
+        }
+        &:first-child{
+            background-image:url(../svg/breadcrumb/breadcrumbLeftEnabled.svg);
+            margin-left: 0;
+        }
+        &:last-child{
+            background-image:url(../svg/breadcrumb/breadcrumbSelected.svg);
+        }
+        &.firstLast{
+            background-image:url(../svg/breadcrumb/breadcrumbLeftSelected.svg);
+        }
+        &:first-child.warn{
+            background-image:url(../svg/breadcrumb/breadcrumbLeftEnabledWarning.svg);
+            margin-left: 0;
+        }
+        &:last-child.warn{
+            background-image:url(../svg/breadcrumb/breadcrumbSelectedWarning.svg);
+        }
+        &.firstLast.warn{
+            background-image:url(../svg/breadcrumb/breadcrumbLeftSelectedWarning.svg);
+        }
+        &:first-child.alert{
+            background-image:url(../svg/breadcrumb/breadcrumbLeftEnabledError.svg);
+            margin-left: 0;
+        }
+        &:last-child.alert{
+            background-image:url(../svg/breadcrumb/breadcrumbSelectedError.svg);
+        }
+        &.firstLast.alert{
+            background-image:url(../svg/breadcrumb/breadcrumbLeftSelectedError.svg);
+        }
+    }
+}
+
+.crumbOL{
+    //position: absolute;
+    z-index: 3;
+    /*top: 50px;*/
+    left: 10px;
+    //border-radius: 4px;
+    //background: $overlay-back;
+    //box-shadow: inset 0px 0px 6px 1px #cecece;
+    padding: 10px;
+    padding-bottom: 60px;
+    //display: none;
+    //height: 0;
+    //border: 1px solid #cecece;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-width: 242px;//262px
+    @extend %overlay;
+    
+    .smallFooter{
+        position: fixed;
+        background: $overlay-back;
+        height: 48px;
+        top: 690px;
+        display: none;
+        min-width: 242px;
+    }
+    
+    .scrollDown, .scrollUp{
+        float: left;
+        margin-left: 20px;
+        position: initial;
+        
+    }
+    .scrollDown{left: 320px;background-position: -108px 0;}
+    .scrollUp{background-position: 0 -49px;}
+    
+}
+.IE11 .crumbOL .smallFooter{
+        top: 684px;
+}
+.IE11 .crumbOL .scrollDown{
+        left: 125px;
+}
+#breadoverlayParent1{
+/*    left: 260px;
+    float: left;*/
+}
+.breadoverlay_li{
+    padding: 12px 3px;
+    white-space: nowrap;
+    border-bottom: 1px solid $default_blue;
+    
+    &.alarmingIcon{
+        padding-left: 35px !important;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+    } 
+}
+.breadoverlay_li:last-child{
+    border-bottom: none;
+}
+.IE11 .breadoverlay_li:last-of-type{
+    margin-bottom: 60px;
+}
+.IE11 .sortArea .breadoverlay_li:last-of-type{
+    margin-bottom: 0;
+}
+.breadoverlayParent{
+    overflow: hidden;
+/*    z-index: 4;*/
+    position: relative;
+    top: 20px; 
+    bottom: 0;
+    float: left;
+    
+    li{
+        font-size: 12px;
+        text-align: left;
+    }
+}
+.IE11 .breadoverlayParent{
+    position: absolute;
+    top: 52px;
+}
+// end breadcrumb
+//start center
+#center, #precenter, #diagnosisApp{
+    position: absolute;
+    top: 206px; //192px;
+/*    left: 149px;*/
+    left: 109px;
+    right: 0;
+    bottom: 2px;
+    box-shadow: $box-shadow_1;
+}
+.IE11 #cars{
+    bottom: 60px;
+}
+/*#center{*/
+#cars{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    right: -20px;
+    position: absolute;
+    top: 0;
+    /*left: 0;*/
+    bottom: 0;
+    left: 40px;
+}
+
+#cars ~ .scrollUp, #alarmpage .scrollUp, .preferences.full .scrollUp{
+    background-position: 0 -49px;
+    left: 50%;
+    margin-left: -120px;
+    display: none;
+}
+#cars ~ .scrollDown, #alarmpage .scrollDown, .preferences.full .scrollDown{
+    background-position: -108px 0;
+    left: 50%;    
+    display: none;
+}
+#cars ~ .scrollUp, #cars ~ .scrollDown{
+    position: fixed;
+}
+#cars ~ .scrollDown.active, #alarmpage .scrollDown.active, .preferences.full .scrollDown.active {
+    background-position: -108px -49px;
+}
+#cars ~ .scrollUp.active, #alarmpage .scrollUp.active, .preferences.full .scrollUp.active {
+    background-position: 0 0;
+}
+#alarmpage .scrollDown, .preferences.full .scrollDown {
+    left: calc(50% + 7px);
+}
+#alarmpage .scrollUp, .preferences.full .scrollUp {
+    left: calc(50% - 245px);
+    margin-left: 0;
+}
+.preferences.full .scrollDown {
+    left: calc(50% + 7px);
+    display: block;
+}
+.preferences.full .scrollUp {
+    left: calc(50% - 100px);
+    margin-left: 0;
+    display: block;
+}
+#precenter{
+    z-index: 10;
+    display: none;
+    bottom: -35px;
+}
+.frameWrapper{
+    position: absolute;
+    left: 40px;
+    right: 396px;
+    top: 0;
+    margin-bottom: 12px;
+/*    box-shadow: $box-shadow_1;*/
+    bottom: 0;
+    
+    &.border {
+        box-shadow: 0px 0px 20px 2px #003254;
+    }
+}
+ul.cars{
+    //margin-left: 70px;
+    
+    li{
+        width:224px;
+        height: 156px;
+        position: relative;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        background: $gradient;
+        background-clip: padding-box;
+        box-shadow: $box-shadow_2;
+        float: left;
+        margin:0 25px 50px 25px; //0 40px 30px 40px;
+        background-position: center 0;
+        background-repeat: no-repeat;
+         
+        &:after {
+            position: absolute;
+            top: -4px; bottom: -4px;
+            left: -4px; right: -4px;
+            background: $reversegradient;
+            content: '';
+            z-index: -1;
+            border-radius: 4px;
+        }
+        &:active{
+            background: $reversegradient;
+            background-position: center 0;
+            background-repeat: no-repeat;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+/*        .tilename{
+            display: block;
+            width:115px;
+            height:0;
+            line-height: 42px;
+            border-bottom: 43px solid #c5cdd6;
+            border-left: 45px solid transparent;
+            border-right: 45px solid transparent;
+            position: absolute;
+            bottom: 1px;
+            left: 10px;
+            font-size: $big-size;
+            color: $dark-fontcolor;
+            font-weight: 400;
+            text-align: center;
+            box-sizing: content-box;
+        }*/
+        .tilename {
+            display: block;
+            line-height: 42px;
+            height: 43px;
+            bottom: 7px;
+            font-size: 18px;
+            color: #353944;
+            font-weight: 400;
+            text-align: center;
+            box-sizing: content-box;
+            position: relative;
+            margin-top: 120px;
+            background-image: url(../svg/Tiles/tileBackgroundBevel.svg);
+            background-size: 225px;
+            background-position: 0px 44px;
+        }
+        .tilenameText{
+            width: 120px;
+            display: block;
+            margin-left: 53px;
+            line-height: 20px;
+            font-size: 16px;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+        .alert:before{
+            border-top: 43px solid $alert_red; 
+        }
+        .warn:before{
+            border-top: 43px solid $warn;
+        }
+        .alert:before, .warn:before {     
+            border-left: 45px solid transparent;
+            border-right: 0 solid transparent;
+            content:" ";
+            display:block;
+            height:0;
+            width:7px;
+            top: -43px;
+            right:0;
+            position:absolute;
+        }
+
+        .alert, .warn{
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: 1px;
+            right: 0;
+            width:10px;
+            border-top: 43px solid #fff;
+            border-left: 45px solid transparent;
+            border-right: 0 solid transparent;
+            
+            .warn_image{
+                bottom: 18px;
+                display: block;
+                height: 19px;
+                position: absolute;
+                right: 6px;
+                width: 15px;
+            }
+        }
+        .alert .warn_image{
+            background:url(../images/alert.png) no-repeat; 
+        }
+        .warn .warn_image{
+            background:url(../images/warn.png) no-repeat; 
+        }
+    }
+}
+
+@each $machine in booth, dry, exhaustAir, pvcSupply, supplyAir, wet, wetElectric, workingArea, boothConveyor, dryConveyor, exhaustAirConveyor, pvcSupplyConveyor, supplyAirConveyor, wetConveyor, wetElectricConveyor, workingAreaConveyor, alarmReport, alarmStatistic, atomizerSchematic, downtime, engineStatistic, highTension, maintenanceReport, productionStatistic, softlog, systemTest {
+        @include buildTiles($machine, '', '.cars', '', $gradient);
+        //@include buildSmallTiles($machine, '#alarmpage', '', '.tilename', null);
+}
+
+.quit .warn, .quit .alert{
+    @extend %alarmsigns;
+}
+.quickcontrol{
+    float: right;
+    margin-top: 109px;
+    border-radius: 4px;
+    /*position: relative;*/
+    /*margin-right: 30px;*/
+    #ackAlmOverlay{
+        right: 14px;
+        
+        .warn{
+                background-image:url(../svg/status/warning.svg);
+                background-repeat: no-repeat;
+                background-position: 5px 10px;
+            }
+    }
+    #quitAlmOverlay{
+        right: 183px;
+    }
+    #quitAlmOverlay, #ackAlmOverlay{
+        @extend %overlay;
+        top: 173px;
+        padding: 10px;
+        z-index: 3;
+        min-width: 172px;
+        
+        li{
+            min-width: 132px;
+            float: none;
+            padding: 12px 10px 12px 30px;
+            font-size: 1.167em;
+            
+            &.fine{
+                background-image:url(../svg/status/ok.svg);
+                background-repeat: no-repeat;
+                background-position: 5px 10px;
+            }
+            &.alert{
+                background-image:url(../svg/status/error.svg);
+                background-repeat: no-repeat;
+                background-position: 5px 10px;
+            } 
+            &.warn{
+                background-repeat: no-repeat;
+                background-position: 5px 10px;
+            }
+        }
+    }
+}
+.quickcontrol .emosbutton{ 
+    font-size: 1.333em;
+    width: 150px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 15px;
+}
+.quickcontrol .emosbutton:hover{
+    cursor: pointer;
+}
+.quickcontrol .quit{
+    background-image:url(../svg/content/acknowledge.svg),linear-gradient(#fff, #d1d7e0);
+    &.multi{
+        background-image:url(../svg/content/acknowledgeMulti.svg),linear-gradient(#fff, #d1d7e0);
+        &:active{
+            background-image: url(../svg/content/acknowledgeMulti.svg), linear-gradient(#d1d7e0, #fff);
+        }        
+    }
+    &.noAction, &.noAction:active{
+        background-image:url(../svg/content/acknowledgeNoAction.svg),linear-gradient(#fff, #d1d7e0);
+        cursor: default;
+    }
+    &.multi.noAction, &.multi.noAction:active{
+        background-image:url(../svg/content/acknowledgeMultiNoAction.svg),linear-gradient(#fff, #d1d7e0);
+        cursor: default;
+    }
+    &:active{
+        background-image: url(../svg/content/acknowledge.svg), linear-gradient(#d1d7e0, #fff);
+    }
+    &:not(.noAction):hover + #ackAlmOverlay{
+        display: block;
+        height: auto;
+    }
+}
+.quickcontrol .reset{
+    
+    background-image:url(../svg/content/reset.svg),linear-gradient(#fff, #d1d7e0);
+    &.noAction, &.noAction:active{
+        background-image:url(../svg/content/resetNoAction.svg),linear-gradient(#fff, #d1d7e0);
+        cursor: default;
+    }
+    &.multi.noAction, &.multi.noAction:active{
+        background-image:url(../svg/content/resetMultiNoAction.svg),linear-gradient(#fff, #d1d7e0);
+        cursor: default;
+    }
+    &:active{
+        background-image: url(../svg/content/reset.svg), linear-gradient(#d1d7e0, #fff);
+    }
+    &.multi{
+        background-image:url(../svg/content/resetMulti.svg),linear-gradient(#fff, #d1d7e0);
+        &:active{
+            background-image: url(../svg/content/resetMulti.svg), linear-gradient(#d1d7e0, #fff);
+        }        
+    }
+    .fine{
+        @extend %alarmsigns;
+    }
+    &:not(.noAction):hover + #quitAlmOverlay{
+        display: block;
+        height: auto;
+    }
+}
+#quitAlmOverlay:hover, #ackAlmOverlay:hover{
+    display: block;
+    height: auto;
+}
+
+.quickcontrol .trends{
+    background-image:url(../svg/status/historicalTrending.svg),linear-gradient(#fff, #d1d7e0);
+    &.noAction, &.noAction:active{
+        background-image:url(../svg/status/historicalTrending.svg),linear-gradient(#d1d7e0, #fff);
+        cursor: default;
+    }
+    &:active{
+        background-image: url(../svg/status/historicalTrending.svg), linear-gradient(#d1d7e0, #fff);
+    }
+    &.active:not(.emosbutton){
+        height: 57px;
+        border-radius: 4px 4px 0 0;
+        border: 1px solid #cecece;
+        border-bottom: none;
+        background-position: 68px 2px;
+        background-image: url(../svg/status/historicalTrending.svg);
+        background-color: #ececec;
+        position: relative;
+        width: 150px;
+        background-repeat: no-repeat;
+        padding: 10px;
+        float: left;
+        display: inherit;
+        top: 20px;
+        margin-right: 18px;
+        z-index: 3;
+        cursor: pointer;
+    }
+}
+.quickcontrol .trendOverlay{
+    position: absolute;
+    top: 206px;
+    left: 149px;
+    height: 0; 
+    right: 0;
+    z-index: 2;
+    background: #ececec;
+    border: 1px solid #cecece;
+    /*display: none;*/
+    border-radius: 3px;
+    transition: 0.4s;
+    
+    &.full{
+        height: calc(100% - 210px);
+    }
+    
+    .TrendPageWrapper{
+        width: initial;
+        right: 0;
+        margin: 15px 0 0 15px;
+        top: 0;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .diagnose{
+        bottom: 0;
+    }
+}
+.emosbutton.buttonEdit:active, .emosbutton.buttonEdit{
+    width: 38px;
+}
+/* end center */
+
+/* styles für Diagnosis */
+#center.diagnosis{
+    top: 120px;
+    padding-left: 40px;
+    
+    .preferences.full{
+        top: -10px;
+    }
+}
+/*.grid-element.booth{
+    background-image:url('../assets/images/icons/booth.svg');
+    background-repeat: no-repeat;
+    background-position: center 10px;
+}
+.grid-element.wet{
+    background-image:url('../assets/images/icons/wet.svg');
+    background-repeat: no-repeat;
+    background-position: center 10px;
+}
+.grid-element.pvcSupply{
+    background-image:url('../assets/images/icons/pvcSupply.svg');
+    background-repeat: no-repeat;
+    background-position: center 10px;
+}*/
+.hidden{
+    display: none;
+}
+
+#diagnosiscontainer {
+    width: 100%;
+    height: 100%;
+}
+
+.diagnosiscontainer{
+    width: calc(100% - 40px);
+    height: 100%;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.grid-element .status.error, .grid-element .status.warning, .grid-element .status.info {
+/*    -webkit-animation: blink 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink 1s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink 1s;
+    -o-animation-iteration-count: infinite;*/
+}
+.grid-element .big-icon.electricalFault{
+    background-image: url(../assets/images/icons/ElectricalFault.svg);  
+    background-position: center center;
+  }
+  .grid-element .big-icon.mechanicalFault{
+    background-image: url(../assets/images/icons/MechanicalFault.svg); 
+    background-position: center center;
+  }
+  .grid-element .big-icon.processFault{
+    background-image: url(../assets/images/icons/ProcessFault.svg);  
+    background-position: center center;
+  }
+  .grid-element .big-icon.softwareFault{
+    background-image: url(../assets/images/icons/SoftwareFault.svg);  
+    background-position: center center;
+  }
+  a.grid-element.errorObsolete{
+      opacity: 0.5;
+  }
+  #faultsFilter, #chartSelection{
+    top: 54px;
+    left: 670px;
+    height: auto;
+    z-index: 21;
+    display: none;
+    width: 284px;
+    overflow: hidden;
+  }
+  #faultsFilterError{
+    top: 54px;
+    left: unset;
+    right: 0px;
+    height: auto;
+    z-index: 40;
+    display: none;
+    width: 374px;
+    overflow: hidden;
+  }
+  #faultsFilter input, #chartSelection input, #faultsFilterError input {
+      /*visibility: hidden;*/
+/*      display: none;*/
+      transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      float: right;
+      margin-right: 20px;
+  }
+  #faultsFilter.active, #chartSelection.active, #faultsFilterError.active{
+      display: block;
+  }
+  #faultsFilter li, #faultsFilterError li{
+      background-size: 40px;
+      background-repeat: no-repeat;
+      padding: 13px 0px 13px 40px;
+      width: 244px;
+      background-position: 0 center;
+  }
+  #chartSelection li{
+      background-size: 40px;
+      background-repeat: no-repeat;
+      padding: 13px 0px 13px 13px;
+      width: 280px;
+      background-position: 0 center;
+      cursor: default;
+  }
+  #faultsFilterError li{
+      background-size: 40px;
+      background-repeat: no-repeat;
+      padding: 13px 0px 13px 13px;
+      width: 365px;
+      background-position: 0 center;
+      cursor: default;
+  }
+  #faultsFilter li.processFault{
+      background-image: url(../assets/images/icons/ProcessFault.svg); 
+      background-repeat: no-repeat;
+  }
+  #faultsFilter li.electricalFault{
+      background-image: url(../assets/images/icons/ElectricalFault.svg);
+      background-repeat: no-repeat;
+  }
+  #faultsFilter li.mechanicalFault{
+      background-image: url(../assets/images/icons/MechanicalFault.svg); 
+      background-repeat: no-repeat;
+  }
+  #faultsFilter li.softwareFault{
+      background-image: url(../assets/images/icons/SoftwareFault.svg);  
+      background-repeat: no-repeat;
+  }

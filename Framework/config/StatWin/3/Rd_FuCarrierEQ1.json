@@ -1,0 +1,190 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "Rd_FuCarrierEQ1",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status",
+       "TextID": "Status",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1554_ActValConf",
+        "Position": "L",
+        "TextID": "S1554",
+        "OffLED": "O",
+        "Text": "Active value conf",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1549_Ready",
+        "Position": "L",
+        "TextID": "S1549",
+        "OffLED": "O",
+        "Text": "Ready",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1268_CFV",
+        "Position": "L",
+        "TextID": "S1268",
+        "OffLED": "O",
+        "Text": "Collective faults to Visu",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1251_Auto",
+        "Position": "L",
+        "TextID": "S1251",
+        "OffLED": "O",
+        "Text": "Automatic mode",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1754_InitCycRun",
+        "Position": "L",
+        "TextID": "S1754",
+        "OffLED": "O",
+        "Text": "Initiation cycle run",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1824_SEWOSPara",
+        "Position": "L",
+        "TextID": "S1824",
+        "OffLED": "O",
+        "Text": "SEWOS",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1825_OpcCtrl",
+        "Position": "L",
+        "TextID": "S1825",
+        "OffLED": "O",
+        "Text": "OPC control",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1100_RunRelease",
+        "Position": "L",
+        "TextID": "S1100",
+        "OffLED": "O",
+        "Text": "Run release",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1551_HBOK",
+        "Position": "L",
+        "TextID": "S1551",
+        "OffLED": "O",
+        "Text": "HB ok",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1526_SetModeAct",
+        "Position": "L",
+        "TextID": "S1526",
+        "OffLED": "O",
+        "Text": "Setup Mode Active",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1269_CWV",
+        "Position": "L",
+        "TextID": "S1269",
+        "OffLED": "O",
+        "Text": "Collective warning to Visu",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0",
+       "10000001-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000019-Messages": {
+     "1000020-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "FuCarrierEQ1",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1855323107
+}

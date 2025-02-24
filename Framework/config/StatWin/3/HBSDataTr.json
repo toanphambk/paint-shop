@@ -1,0 +1,138 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "",
+   "Version": "10-10",
+   "Name": "HBSDataTr",
+   "PageControl": {
+    "1000004-Messages": {
+     "1000005-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "1"
+    },
+    "1000006-AddPageTab": {
+     "1000007-AddPageControl": {
+      "1000008-AddPageTab": {
+       "Text": "Data change",
+       "TextID": "DataChange",
+       "VisibleAtRight": "0",
+       "1000009-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000010-AddTextInteger": {
+        "OPCID": "AA.I1540_CellX",
+        "Position": "L",
+        "TextID": "I1540",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Cell X position",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextInteger": {
+        "OPCID": "AA.I1541_CellY",
+        "Position": "L",
+        "TextID": "I1541",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Cell Y position",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextInteger": {
+        "OPCID": "AA.I1542_CellZ",
+        "Position": "L",
+        "TextID": "I1542",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Cell Z position",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextByteInput": {
+        "OPCID": "AS.I1501_XLim",
+        "UserRight": "7",
+        "ByteInputMin": "0",
+        "Position": "L",
+        "ByteInputMax": "",
+        "TextID": "I1501",
+        "Text": "Number of cells in X axis",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "10000",
+        "InputMin": "-10000"
+       },
+       "1000014-AddTextByteInput": {
+        "OPCID": "AS.I1502_YLim",
+        "UserRight": "7",
+        "ByteInputMin": "0",
+        "Position": "L",
+        "ByteInputMax": "",
+        "TextID": "I1502",
+        "Text": "Number of cells in Y axis",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "10000",
+        "InputMin": "-10000"
+       },
+       "1000015-AddTextByteInput": {
+        "OPCID": "AS.I1503_ZLim",
+        "UserRight": "7",
+        "ByteInputMin": "0",
+        "Position": "L",
+        "ByteInputMax": "",
+        "TextID": "I1503",
+        "Text": "Number of cells in Z axis",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "10000",
+        "InputMin": "-10000"
+       },
+       "RegAutoHide": "0",
+       "VisibleOPCID": ""
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Conveyor",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": "GP.G2003_Vari",
+ "DiagnosisControl": "HBSDataTr",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -752517282
+}

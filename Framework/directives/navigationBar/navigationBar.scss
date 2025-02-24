@@ -1,0 +1,138 @@
+$navigation-bar_height: 86px;
+$navigation-bar-contentHeight: 42px;
+
+.navigation-bar {
+    height: $navigation-bar_height;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 24px;
+
+    .breadcrumb {
+        position: absolute;
+        display: inline-block;
+        width: 265px;
+        height: 62px;
+        line-height: 62px;
+
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-decoration: none;
+
+        @extend .LA3a;
+        color: $font_text;
+
+        &.general {
+            padding-left: 22px;
+
+            background: url("../assets/images/breadcrumb/con_breadcrumbLeft_active.png");
+            &:active {
+                background: url("../assets/images/breadcrumb/con_breadcrumbLeft_pressed.png");
+            }
+            &.error {
+                background: url("../assets/images/breadcrumb/con_breadcrumbLeft_error_active.png");
+                &:active {
+                    background: url("../assets/images/breadcrumb/con_breadcrumbLeft_error_pressed.png");
+                }
+            }
+
+            &.warning {
+                background: url("../assets/images/breadcrumb/con_breadcrumbLeft_warning_active.png");
+                &:active {
+                    background: url("../assets/images/breadcrumb/con_breadcrumbLeft_warning_pressed.png");
+                }
+            }
+
+            &.info {
+                background: url("../assets/images/breadcrumb/con_breadcrumbLeft_info_active.png");
+                &:active {
+                    background: url("../assets/images/breadcrumb/con_breadcrumbLeft_info_pressed.png");
+                }
+            }
+
+        }
+        &.plant {
+            left: 300px;
+
+            margin-left: -30px;
+            padding-left: 45px;
+
+            background: url("../assets/images/breadcrumb/con_breadcrumbRight_selected.png");
+            &.error { background: url("../assets/images/breadcrumb/con_breadcrumbRight_error_selected.png"); }
+            &.warning { background: url("../assets/images/breadcrumb/con_breadcrumbRight_warning_selected.png"); }
+            &.info { background: url("../assets/images/breadcrumb/con_breadcrumbRight_info_selected.png"); }
+        }
+    }
+
+    .filter-dropdown {
+        position: absolute;
+        display: inline-block;
+        width: 260px;
+        height: 42px;
+        left: 525px;
+
+        margin-left: 140px;
+        margin-top: 10px;
+        padding: 10px 10px;
+
+        background: linear-gradient(to bottom, $gridelement_bg_start 0%, $gridelement_bg_end 100%);
+        background-clip: padding-box;
+        border: 2px solid transparent;
+        border-radius: 2px;
+
+        @extend .box-shadow;
+        @extend .LA3a;
+
+        .filter-icon {
+            background: url("../assets/images/buttons/ico_filter.png");
+            position: absolute;
+            right: 5px;
+            bottom: 2px;
+            height: 32px;
+            width: 32px;
+        }
+    }
+    .button-wrapper {
+        position: absolute;
+        left: 925px;
+        display: inline-block;
+        z-index: 0;
+
+        margin-left: 140px;
+        margin-top: 10px;
+
+        .button {
+            float: left;
+        }
+
+        .filter {
+            width: 86px;
+            margin-right: 20px;
+
+            input[type="checkbox"] {
+                display: none;
+            }
+
+            input[type="checkbox"] + label span {
+              width: 16px;
+              height: 16px;
+              position: absolute;
+              top: 11px;
+              left: 4px;
+              background: transparent;
+              background: url("../assets/images/checkbox/con_checkbox_active.png") left top no-repeat;
+            }
+
+            input[type="checkbox"]:checked + label span{
+                background: url("../assets/images/checkbox/con_checkbox_selected.png") left top no-repeat;
+            }
+
+            &.info .icon { background: url("../assets/images/buttons/ico_info_status.png"); }
+            &.warning .icon { background: url("../assets/images/buttons/ico_warning.png"); }
+            &.error .icon { background: url("../assets/images/buttons/ico_error.png"); }
+        }
+        .reset .icon {
+            background: url("../assets/images/buttons/ico_reset.png");
+            margin-left: 0;
+        }
+    }
+}

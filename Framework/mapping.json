@@ -1,0 +1,238 @@
+{
+    "AA":{
+        "WinName": "FU_Av_Average",
+        "Description": "Analog value average"
+    },
+    "AC":{
+        "WinName": "FU_Av_ValueCheck",
+        "Description": "Analog Value Actual Value Check"
+    },
+    "AD":{
+        "WinName": "FU_Av_Dosing",
+        "Description": "Analog value dosing"
+    },
+    "AF":{
+        "WinName": "FU_Av_PositionFeedback",
+        "Description": "Analog value positioning feedback"
+    },
+    "AL":{
+        "WinName": "FU_Av_LimitComparator",
+        "Description": "Analog value limit comparator"
+    },
+    "AP":{
+        "WinName": "FU_Av_SetpointSelection4",
+        "Description": "Setpoint pre-selection of 4 Setpoints"
+    },
+    "AS":{
+        "WinName": "FU_Av_8Pt",
+        "Description": "Analog value standardization 4-20mA"
+    },
+    "BR":{
+        "WinName": "FU_IL_DuBurner2Stages",
+        "Description": "Interlock Visu/Safety - F_Burn2Stag"
+    },
+    "CO":{
+        "WinName": "FU_Pf_Totalizer",
+        "Description": "Counter with scaled output (totalizer)"
+    },
+    "CV":{
+        "WinName": "FU_Mtr_VFDSEWMovidrive",
+        "Description": "SEW Movidrive"
+    },
+    "CX":{
+        "WinName": "FU_Mtr_VFDSEWMovimotMFEPNIO",
+        "Description": "SEW Movimot MFE PNIO"
+    },
+    "DS":{
+        "WinName": "FU_Pf_DelayCycleRepetition",
+        "Description": "Switch-on delay, switch-on time, pause, repetition (selectable)"
+    },
+    "DU":{
+        "WinName": "FU_Mtr_DosingUnit",
+        "Description": "Dosing Unit"
+    },
+    "ET":{
+        "WinName": "FU_Pf_ExternalTime",
+        "Description": "External timer"
+    },
+    "FH":{
+        "WinName": "FU_Sf_AbsEncCE58EPN",
+        "Description": "Absolut Encoder CE58EPN"
+    },
+    "FM":{
+        "WinName": "FU_Pf_Alarm8",
+        "Description": "Registration of 8 external faults"
+    },
+    "FS":{
+        "WinName": "FU_Pf_Alarm1",
+        "Description": "Registration of 1 external fault"
+    },
+    "FT":{
+        "WinName": "FU_Pf_Alarm2Faults3Timer",
+        "Description": "Registration of 2 external fault warnings with 3 timer"
+    },
+    "HC":{
+        "WinName": "FU_Hw_Ctrl",
+        "Description": "Heat Wheel Setpoint Calculation"
+    },
+    "IE":{
+        "WinName": "FU_Brn_DuBurnerTARIF",
+        "Description": "Interface Visu/Safety - F_DuBurnerTAR"
+    },
+    "IF":{
+        "WinName": "FU_Brn_DuLeakControlIF",
+        "Description": "Interface Visu/Safety - F_DuLeakControl"
+    },
+    "IG":{
+        "WinName": "FU_Brn_DuOvenManIF",
+        "Description": "Interface Visu/Safety - F_DuOvenMan"
+    },
+    "IH":{
+        "WinName": "FU_Brn_DuPresMonIF",
+        "Description": "Interface Visu/Safety - F_DuPresMon"
+    },
+    "II":{
+        "WinName": "FU_Brn_DuPurgeIF",
+        "Description": "Interface Visu/Safety - F_DuPurge"
+    },
+    "IU":{
+        "WinName": "FU_Gp_AnalogueValues4",
+        "Description": "4 Analog Values"
+    },
+    "IX":{
+        "WinName": "FU_Gp_Interlock8",
+        "Description": "8 Interlocks Meessages"
+    },
+    "IY":{
+        "WinName": "FU_Gp_Interlock16",
+        "Description": "16 Interlocks Meessages"
+    },
+    "IZ":{
+        "WinName": "FU_Gp_Interlock1AnalogValue",
+        "Description": "1 Interlock Analog Value"
+    },
+    "LI":{
+        "WinName": "FU_Li_Control",
+        "Description": "Lighting Control "
+    },
+    "LJ":{
+        "WinName": "FU_Li_Selective",
+        "Description": "Lighting Selective 1/3-2/3"
+    },
+    "MA":{
+        "WinName": "FU_Mtr_1Dir1Speed",
+        "Description": "Motor, 1 Direction, 1 Speed"
+    },
+    "MF":{
+        "WinName": "FU_Pf_ExtFaultOperationMsg4",
+        "Description": "Registration of 4 external faults and operation messages"
+    },
+    "MM":{
+        "WinName": "FU_Pf_ExtOperationMsg8",
+        "Description": "Registration of 8 External Operation Messages"
+    },
+    "MS":{
+        "WinName": "FU_Pf_ExtOperationMsg1",
+        "Description": "Registration of 1 external operation message"
+    },
+    "OU":{
+        "WinName": "FU_Mtr_DosingOutput",
+        "Description": "Dosing Output Unit"
+    },
+    "PB":{
+        "WinName": "FU_Pf_PumpProtection",
+        "Description": "Pump blocking protection"
+    },
+    "PG":{
+        "WinName": "FU_Gp_PulseGenerator",
+        "Description": "Pulse generator"
+    },
+    "PI":{
+        "WinName": "FU_Gp_PLCInformation",
+        "Description": "PLC information (Siemens)"
+    },
+    "PL":{
+        "WinName": "FU_PID_Controller",
+        "Description": "Controller (Siemens)"
+    },
+    "QA":{
+        "WinName": "FU_Re_MACSManagementCyclePlant",
+        "Description": "MACS Management Cycle-Plant"
+    },
+    "QB":{
+        "WinName": "FU_Re_MACSSetpointCyclePlant",
+        "Description": "MACS Setpoints Cycle-Plant"
+    },
+    "RC":{
+        "WinName": "FU_Re_CoatingMonitoring",
+        "Description": "Coating Monitoring"
+    },
+    "RD":{
+        "WinName": "FU_Re_DialysisCellMonitoring",
+        "Description": "Rectifier Dialysis Cell Monitoring"
+    },
+    "RF":{
+        "WinName": "FU_Re_MACSSetpointContPlant",
+        "Description": "MACS Setpoint"
+    },
+    "RH":{
+        "WinName": "FU_Re_MACSCoatingMonitoring",
+        "Description": "MACS Coating Monitoring"
+    },
+    "RJ":{
+        "WinName": "FU_Re_MACSAMSBodyTrack",
+        "Description": "AMS Body Tracker"
+    },
+    "RK":{
+        "WinName": "FU_Re_MACSConventionalBodyTrack",
+        "Description": "Conventional Body Tracker"
+    },
+    "RL":{
+        "WinName": "FU_Re_MACSManagement",
+        "Description": "MACS Management"
+    },
+    "RN":{
+        "WinName": "FU_Re_MACSConventionalPosition",
+        "Description": "MACS Conventional Position"
+    },
+    "RQ":{
+        "WinName": "FU_Re_MACSMainSwitch",
+        "Description": "MACS Main Switch"
+    },
+    "RR":{
+        "WinName": "FU_Re_MACSAMSCoatingMonitoring",
+        "Description": "MACS AMS Coating Monitoring"
+    },
+    "RV":{
+        "WinName": "FU_Re_MACSHWTLU",
+        "Description": "MACS Hardeware TLU"
+    },
+    "RX":{
+        "WinName": "FU_Re_MACSDialysisCellMonitoring",
+        "Description": "MACS Dialysis Cell Monitoring"
+    },
+    "RZ":{
+        "WinName": "FU_Re_EncoderMonitoring",
+        "Description": "Encoder Monitoring"
+    },
+    "SC":{
+        "WinName": "FU_Pf_Sprayring",
+        "Description": "Spray rings control"
+    },
+    "SN":{
+        "WinName": "FU_Pf_Sequencer40Steps",
+        "Description": "Sequence start with 40 steps"
+    },
+    "ST":{
+        "WinName": "FU_Gp_8Steps",
+        "Description": "Switch on 8 steps with constant time"
+    },
+    "SX":{
+        "WinName": "FU_Pf_SelectorSwitch8",
+        "Description": "Selector switch 8"
+    },
+    "SY":{
+        "WinName": "FU_Pf_SelectorSwitch16",
+        "Description": "Selector switch 16"
+    }
+}

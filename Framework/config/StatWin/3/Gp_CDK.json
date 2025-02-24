@@ -1,0 +1,584 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "Gp_CDK",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation 1",
+       "TextID": "Operation1",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "OperatingModes",
+        "Text": "Operating Modes",
+        "Bold": "2",
+        "VisibleAtRight": "0"
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1390_AutoPres",
+        "Position": "L",
+        "TextID": "S1390",
+        "OffLED": "O",
+        "Text": "Automatic Mode Preselected",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1251_Auto",
+        "Position": "L",
+        "TextID": "S1251",
+        "OffLED": "O",
+        "Text": "Automatic Mode",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1257_Manu",
+        "Position": "L",
+        "TextID": "S1257",
+        "OffLED": "O",
+        "Text": "Manual Mode",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1526_SetModeAct",
+        "Position": "L",
+        "TextID": "S1526",
+        "OffLED": "O",
+        "Text": "Setup Mode Active",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000013-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1259_Auto",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1259",
+        "OffLED": "O",
+        "Text": "Automatic Mode",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1258_Manu",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1258",
+        "OffLED": "O",
+        "Text": "Manual Mode",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1266_AutoSOn",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1266",
+        "OffLED": "O",
+        "Text": "Automatic Start On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0",
+       "VisibleOPCID": "",
+       "10000001-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       },
+       "10000002-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1254_EnMV",
+        "Position": "R",
+        "TextID": "S1254",
+        "OffLED": "O",
+        "Text": "Enable Manual Operation",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0",
+        "VisibleOPCID": ""
+       },
+       "10000003-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1252_Enbl",
+        "Position": "L",
+        "TextID": "S1252",
+        "OffLED": "O",
+        "Text": "Enable Device",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0",
+        "VisibleOPCID": ""
+       },
+       "10000004-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1255_EnFV",
+        "Position": "M",
+        "TextID": "S1255",
+        "OffLED": "O",
+        "Text": "Enable Faults",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0",
+        "VisibleOPCID": ""
+       }
+      },
+      "1000017-AddPageTab": {
+       "Text": "Operation 2",
+       "TextID": "Operation2",
+       "VisibleAtRight": "0",
+       "1000018-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1280_DeselDrives",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1280",
+        "OffLED": "O",
+        "Text": "Deselect Drives",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1281_LifeBitHMI",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1281",
+        "OffLED": "O",
+        "Text": "Life Bit HMI",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1264_Mute",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1264",
+        "OffLED": "O",
+        "Text": "Horn Silence",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000022-AddPageTab": {
+       "Text": "Operation 3",
+       "TextID": "Operation3",
+       "VisibleAtRight": "0",
+       "1000023-AddText": {
+        "Position": "R",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1291_MDesel",
+        "Position": "R",
+        "TextID": "S1291",
+        "OffLED": "O",
+        "Text": "Manual Drives Deselect",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1299_LifeBitCD",
+        "Position": "R",
+        "TextID": "S1299",
+        "OffLED": "O",
+        "Text": "Life Bit CD",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1290_MDriveOn",
+        "Position": "R",
+        "TextID": "S1290",
+        "OffLED": "O",
+        "Text": "Manual Drive On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000027-AddPageTab": {
+       "Text": "Configure",
+       "TextID": "Configure",
+       "VisibleAtRight": "0",
+       "1000028-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0"
+       },
+       "1000029-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CO.C1282_EnLifeSuperv",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1282",
+        "OffLED": "O",
+        "Text": "Enable Life Supervisor",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000030-AddPageTab": {
+       "Text": "Operation 3",
+       "TextID": "Operation3",
+       "VisibleAtRight": "0",
+       "1000031-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0"
+       },
+       "1000032-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1391_MainSw",
+        "Position": "L",
+        "TextID": "S1391",
+        "OffLED": "O",
+        "Text": "Main Switch is On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000033-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1462_StartAuto",
+        "Position": "L",
+        "TextID": "S1462",
+        "OffLED": "O",
+        "Text": "Start Auto",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000034-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1607_ManualFast",
+        "Position": "L",
+        "TextID": "S1607",
+        "OffLED": "O",
+        "Text": "Manual Fast Mode Active",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000035-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1000_IntFlt",
+        "Position": "L",
+        "TextID": "S1000",
+        "OffLED": "O",
+        "Text": "Internal Fault",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000036-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1001_IntWarn",
+        "Position": "L",
+        "TextID": "S1001",
+        "OffLED": "O",
+        "Text": "Internal Warning",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000037-Messages": {
+     "1000038-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000039-AddPageTab": {
+     "1000040-AddPageControl": {
+      "1000041-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000042-AddText": {
+        "Position": "L",
+        "TextID": "MS.M1000_Funct",
+        "Text": "Function Group",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000043-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1644_STOn",
+        "OPCID": "AA.I1644_STOn",
+        "UserRight": "7",
+        "VisuBase": "ms",
+        "Text": "Starting Time",
+        "Base": "ms",
+        "TextID": "I1644",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000044-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1651_DriveOffDelay",
+        "OPCID": "AA.I1651_DriveOffDelay",
+        "UserRight": "7",
+        "VisuBase": "ms",
+        "Text": "Drive Off Delay",
+        "Base": "ms",
+        "TextID": "I1651",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000045-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1652_RtLifeBitHMI",
+        "OPCID": "AA.I1652_RtLifeBitHMI",
+        "UserRight": "7",
+        "VisuBase": "ms",
+        "Text": "Runtime LifeBit HMI",
+        "Base": "ms",
+        "TextID": "I1652",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000046-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1640_DelFlt",
+        "OPCID": "AA.I1640_DelFlt",
+        "UserRight": "7",
+        "VisuBase": "ms",
+        "Text": "Delay for Faults to Visu",
+        "Base": "ms",
+        "TextID": "I1640",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000047-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1641_ExtAckn",
+        "OPCID": "AA.I1641_ExtAckn",
+        "UserRight": "7",
+        "VisuBase": "ms",
+        "Text": "Impulse Extension Fault Acknowledge",
+        "Base": "ms",
+        "TextID": "I1641",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000048-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1642_ExtMute",
+        "OPCID": "AA.I1642_ExtMute",
+        "UserRight": "7",
+        "VisuBase": "ms",
+        "Text": "Impulse Extension Horn Silence",
+        "Base": "ms",
+        "TextID": "I1642",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000049-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1643_ExtLT",
+        "OPCID": "AA.I1643_ExtLT",
+        "UserRight": "7",
+        "VisuBase": "ms",
+        "Text": "Impulse Extension Lamp Test ",
+        "Base": "ms",
+        "TextID": "I1643",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000050-AddTextReal": {
+        "OPCID": "AA.I8011_AreaNr",
+        "Position": "L",
+        "Text": "Area Number",
+        "UnitLocale": "",
+        "Precision": "",
+        "TextID": "I8011",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "Gp_CDK",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -586188342
+}

@@ -1,0 +1,422 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU316.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation 1",
+       "TextID": "Operation1",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback1WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2263",
+        "OffLED": "O",
+        "Text": "Switch Device back to Automatic",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2263_Auto",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S1251_Auto",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddCommandFeedback2WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2254",
+        "OffLED": "O",
+        "Text": "Manual On",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2251_Off",
+        "writeTagWR2": "CB.C2254_On",
+        "readTagRD1": "SB.S1257_Manu",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddCommandFeedback3WR4RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2257",
+        "OffLED": "O",
+        "Text": "Manual Open",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2257_Open",
+        "writeTagWR2": "CB.C2261_Stop",
+        "writeTagWR3": "CB.C2250_Clse",
+        "readTagRD1": "SB.S2264_Open",
+        "readTagRD2": "SB.S2274_Opening",
+        "readTagRD3": "SB.S2294_Closing",
+        "readTagRD4": "SB.S2724_ClsdPos",
+        "leftIcon": "closeCommand",
+        "middleIcon": "stopCommand",
+        "rightIcon": "openCommand",
+        "visibilityStop": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3416_BurnOn",
+        "Position": "R",
+        "TextID": "S3416",
+        "OffLED": "O",
+        "Text": "Burner On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3163_BurnStartPh",
+        "Position": "R",
+        "TextID": "S3163",
+        "OffLED": "O",
+        "Text": "Burner in Starting Phase",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2725_BurnOn",
+        "Position": "R",
+        "TextID": "S2725",
+        "OffLED": "O",
+        "Text": "Burner in Operation",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3434_IgnitPos",
+        "Position": "R",
+        "TextID": "S3434",
+        "OffLED": "O",
+        "Text": "Drive Moves to Ingnition Position",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3428_ContAirFlow",
+        "Position": "R",
+        "TextID": "S3428",
+        "OffLED": "O",
+        "Text": "Controlled Air Flow",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      },
+      "1000017-AddPageTab": {
+       "Text": "Operation 2",
+       "TextID": "Operation2",
+       "VisibleAtRight": "0",
+       "1000018-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3429_ManualBCU",
+        "Position": "L",
+        "TextID": "S3429",
+        "OffLED": "O",
+        "Text": "Manual Mode on BCU",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3430_Standby",
+        "Position": "L",
+        "TextID": "S3430",
+        "OffLED": "O",
+        "Text": "Start Up Position / Standby",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3435_FanRunUpTime",
+        "Position": "R",
+        "TextID": "S3435",
+        "OffLED": "O",
+        "Text": "Fan Run Up Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3432_ContEnabDel",
+        "Position": "L",
+        "TextID": "S3432",
+        "OffLED": "O",
+        "Text": "Controller Enable Signal Del Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3431_ContEnab",
+        "Position": "L",
+        "TextID": "S3431",
+        "OffLED": "O",
+        "Text": "Controller Enable Signal",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3436_PrePurgeTime",
+        "Position": "R",
+        "TextID": "S3436",
+        "OffLED": "O",
+        "Text": "Pre Purge Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3433_OnOffTime",
+        "Position": "L",
+        "TextID": "S3431",
+        "OffLED": "O",
+        "Text": "Switch On Delay Time / Pause",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3437_PreIgnitionTime",
+        "Position": "R",
+        "TextID": "S3437",
+        "OffLED": "O",
+        "Text": "Pre Ignition Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000027-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3438_PostPurgeTime",
+        "Position": "R",
+        "TextID": "S3438",
+        "OffLED": "O",
+        "Text": "Post Purge Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3439_FirstSafetyTime",
+        "Position": "R",
+        "TextID": "S3439",
+        "OffLED": "O",
+        "Text": "1st Safety Time on Start Up",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000029-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3440_FirstFlameProving",
+        "Position": "R",
+        "TextID": "S3440",
+        "OffLED": "O",
+        "Text": "1st Flame Proving Period",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000030-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3441_SecSafetyTime",
+        "Position": "R",
+        "TextID": "S3441",
+        "OffLED": "O",
+        "Text": "2nd Safety Time on Start Up",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000031-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3442_SecFlameProving",
+        "Position": "R",
+        "TextID": "S3442",
+        "OffLED": "O",
+        "Text": "2nd Flame Proving Period",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000032-Messages": {
+     "1000033-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000034-AddPageTab": {
+     "1000035-AddPageControl": {
+      "1000036-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000037-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000038-AddDoubleTextLong": {
+        "TextID": "",
+        "Text": "",
+        "Text2": "Actual Value",
+        "Bold": "2",
+        "Bold2": "2",
+        "TextID2": "ActualValue",
+        "VisibleAtRight": "0"
+       },
+       "1000039-AddTextReal": {
+        "OPCID": "AA.R2251_ActValue",
+        "Precision": "1",
+        "TextID": "R2251",
+        "UnitInit": "2",
+        "UnitMetric": "µA",
+        "Text": "Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "µA",
+        "UnitImperial": "µA",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU316",
+ "DiagnosisControl": "FU316",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1946987253
+}

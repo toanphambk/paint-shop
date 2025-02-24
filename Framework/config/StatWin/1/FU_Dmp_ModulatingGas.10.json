@@ -1,0 +1,308 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "FU_Dmp_ModulatingGas.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Modes",
+       "TextID": "Modes",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback1WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "S1251",
+        "OffLED": "O",
+        "Text": "Automatic Mode",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2263_Auto",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S1251_Auto",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "writeTagWR2": "CB.C2263_Auto"
+       },
+       "1000009-AddCommandFeedback3WR4RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2257",
+        "OffLED": "O",
+        "Text": "Manual Open",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2257_Open",
+        "writeTagWR2": "CB.C2261_Stop",
+        "writeTagWR3": "CB.C2250_Close",
+        "readTagRD1": "SB.S2264_Open",
+        "readTagRD2": "SB.S2274_Opening",
+        "readTagRD3": "SB.S2294_Closing",
+        "readTagRD4": "SB.S2265_Closed",
+        "leftIcon": "closeCommand",
+        "middleIcon": "stopCommand",
+        "rightIcon": "openCommand",
+        "visibilityStop": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "Position": "L",
+        "UserRight": "7",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "acknowledge"
+       },
+       "1000011-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Response Signals",
+        "TextID": "ResponseSignals",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2297_StartPos",
+        "Position": "L",
+        "TextID": "S2297",
+        "OffLED": "O",
+        "Text": "Drive in Start Position",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2724_ClosedPos",
+        "Position": "L",
+        "TextID": "S2724",
+        "OffLED": "O",
+        "Text": "Drive in Closed Position",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000014-Messages": {
+     "1000015-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000016-AddPageTab": {
+     "1000017-AddPageControl": {
+      "1000018-AddPageTab": {
+       "Text": "Timer",
+       "TextID": "Timer",
+       "VisibleAtRight": "0",
+       "1000019-AddText": {
+        "Position": "L",
+        "TextID": "MotionControl",
+        "Text": "Motion Control",
+        "showHide": false
+       },
+       "1000020-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4511_MOp",
+        "OPCID": "AA.I4511_MOp",
+        "UserRight": "7",
+        "TextID": "I4511",
+        "Text": "Motion Control Open",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "1000021-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4512_MCl",
+        "OPCID": "AA.I4512_MCl",
+        "UserRight": "7",
+        "TextID": "I4512",
+        "Text": "Motion Control Close",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "1000022-AddText": {
+        "Position": "L",
+        "TextID": "ImpulseExtension",
+        "Text": "Impulse Extension",
+        "showHide": false
+       },
+       "1000023-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4516_ExtOpen",
+        "OPCID": "AA.I4516_ExtOpen",
+        "UserRight": "1",
+        "TextID": "I4516",
+        "Text": "Impulse Extension Open",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "1000024-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "AS.I4517_ExtClose",
+        "OPCID": "AA.I4517_ExtClose",
+        "UserRight": "1",
+        "TextID": "I4517",
+        "Text": "Impulse Extension Close",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000025-AddPageTab": {
+       "Text": "Diagnostics",
+       "TextID": "Diagnostics",
+       "VisibleAtRight": "0",
+       "1000026-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Operation",
+        "TextID": "Operation",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000027-AddTextOperatingCounterInputLong": {
+        "OPCID": "AA.I2001_OperTime",
+        "TextID": "I2001",
+        "Text": "Operation Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "UserRight": "11",
+        "IntTimeMin": "0",
+        "IntTimeMax": "2147483640",
+        "Position": "L"
+       },
+       "1000028-AddTextIntegerInput": {
+        "OPCID": "AA.I2000_OpCyc",
+        "UserRight": "11",
+        "Position": "L",
+        "IntInputMin": "",
+        "Text": "Operating Cycles",
+        "UnitLocale": "",
+        "TextID": "I2000",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640",
+        "InputMin": "0"
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Dmp_ModulatingGas",
+ "DiagnosisControl": "FU_Dmp_ModulatingGas.10",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1794451714
+}

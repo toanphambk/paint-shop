@@ -1,0 +1,52 @@
+{
+ "tabs": {
+  "Private1": {
+   "1": {
+    "data": {
+     "OnLED": "G",
+     "OPCID": "CB.C1251_Ackn",
+     "UserRight": "4",
+     "Position": "L",
+     "TextID": "C1251",
+     "OffLED": "O",
+     "Text": "Fault Acknowledge",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleOPCID": "",
+     "VisibleAtRight": "0",
+     "leftIcon": "reset",
+     "writable": true,
+     "DiagnosisLibID": 1
+    },
+    "myPLC": "P1F1V1.P1C1V1_ZS01_A01_PAN",
+    "myKey": "1000011-AddTextInputLED",
+    "writable": false
+   },
+   "2": {
+    "data": {
+     "OnLED": "G",
+     "OPCID": "",
+     "Position": "L",
+     "UserRight": "9",
+     "TextID": "S1251",
+     "OffLED": "O",
+     "Text": "Automatic Mode",
+     "Bold": "1",
+     "Border": "B",
+     "writeTagWR1": "CB.C2263_Auto",
+     "readTagRD1": "SB.S1267_ManuComb",
+     "readTagRD2": "SB.S1251_Auto",
+     "leftIcon": "handMode",
+     "rightIcon": "automatic",
+     "VisibleOPCID": "",
+     "VisibleAtRight": "0",
+     "writable": true,
+     "DiagnosisLibID": 1
+    },
+    "myPLC": "P1F1V1.P1C1V1_UL01_VZ116_G21",
+    "myKey": "1000012-AddCommandFeedback1WR2RD",
+    "writable": false
+   }
+  }
+ }
+}

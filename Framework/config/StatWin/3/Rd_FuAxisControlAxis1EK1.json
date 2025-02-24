@@ -1,0 +1,136 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "Rd_FuAxisControlAxis1EK1",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status 1",
+       "TextID": "Status1",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Response Signals",
+        "TextID": "ResponseSignals",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1268_CFV",
+        "Position": "L",
+        "TextID": "S1268",
+        "OffLED": "O",
+        "Text": "Collective Faults",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1269_CWV",
+        "Position": "L",
+        "TextID": "S1269",
+        "OffLED": "O",
+        "Text": "Collective Warnings",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1102_PosValid",
+        "Position": "L",
+        "TextID": "S1102",
+        "OffLED": "O",
+        "Text": "Position valid",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Value",
+        "TextID": "Value",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000012-AddTextInteger": {
+        "OPCID": "AA.R1019_Angle",
+        "TextID": "R1019",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Angle",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000013-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000014-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1163_SZero",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1163",
+        "OffLED": "O",
+        "Text": "Set zero",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "10000001-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000015-Messages": {
+     "1000016-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "Rd_FuAxisControlAxis1EK1",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1616947696
+}

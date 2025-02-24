@@ -1,0 +1,438 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Border": "B"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Operation",
+     "Border": "B"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU249.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback1WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2263",
+        "OffLED": "O",
+        "Text": "Switch Device back to Automatic",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2263_Auto",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S1251_Auto",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddCommandFeedback2WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2254",
+        "OffLED": "O",
+        "Text": "Drive On",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2251_Off",
+        "writeTagWR2": "CB.C2254_On",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S2251_On",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddCommandFeedback2WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2282",
+        "OffLED": "O",
+        "Text": "Manual Setpoint On",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2283_MSetOff",
+        "writeTagWR2": "CB.C2282_MSetOn",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S2251_On",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2324_VFDRun",
+        "Position": "R",
+        "TextID": "S2324",
+        "OffLED": "O",
+        "Text": "Var Freq. Drive Running",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000013-AddTextReal": {
+        "OPCID": "AA.R2319_ActFreq",
+        "Position": "R",
+        "Precision": "1",
+        "TextID": "R2319",
+        "UnitInit": "2",
+        "UnitMetric": "Hz",
+        "Text": "Actual Frequency",
+        "Border": "B",
+        "UnitLocale": "Hz",
+        "UnitImperial": "Hz",
+        "VisibleOPCID": ""
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation"
+    },
+    "1000014-Messages": {
+     "1000015-AlarmClient": {},
+     "Text": "Messages"
+    },
+    "1000016-AddPageTab": {
+     "1000017-AddPageControl": {
+      "1000018-AddPageTab": {
+       "Text": "Parameters 1",
+       "TextID": "Parameters1",
+       "VisibleAtRight": "0",
+       "1000019-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000020-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "TextID2": "Setpoint"
+       },
+       "1000021-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1253_MOn",
+        "OPCID": "TA.T2253_MOn",
+        "UserRight": "6",
+        "TextID": "T2253",
+        "Text": "Motion control on",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000022-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1274_MOff",
+        "OPCID": "TA.T2274_MOff",
+        "UserRight": "6",
+        "TextID": "T2274",
+        "Text": "Motion control off",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000023-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1258_Sens",
+        "OPCID": "TA.T2258_Sens",
+        "UserRight": "6",
+        "TextID": "T2258",
+        "Text": "Motion control sensor",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000024-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1425_Bus",
+        "OPCID": "TA.T2425_Bus",
+        "UserRight": "6",
+        "TextID": "T2425",
+        "Text": "Profibus Access Fault Delay",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000025-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1428_Warn",
+        "OPCID": "TA.T2428_Warn",
+        "UserRight": "6",
+        "TextID": "T2428",
+        "Text": "VFD Warning Delay",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000026-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1427_StDel",
+        "OPCID": "TA.T2427_StDel",
+        "UserRight": "6",
+        "TextID": "T2427",
+        "Text": "Motion control Delaied start",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "10"
+       },
+       "1000027-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1426_MCOff",
+        "OPCID": "TA.T2426_MCOff",
+        "UserRight": "1",
+        "TextID": "T2426",
+        "Text": "Main Contractor off Delay",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       }
+      },
+      "1000028-AddPageTab": {
+       "Text": "Parameters 2",
+       "TextID": "Parameters2",
+       "VisibleAtRight": "0",
+       "1000029-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000030-AddTextReal": {
+        "OPCID": "AA.R2319_ActFreq",
+        "Precision": "1",
+        "TextID": "R2319",
+        "UnitInit": "2",
+        "UnitMetric": "Hz",
+        "Text": "Actual Frequency",
+        "Border": "B",
+        "UnitLocale": "Hz",
+        "UnitImperial": "Hz",
+        "VisibleOPCID": ""
+       },
+       "1000031-AddTextReal": {
+        "OPCID": "AA.R2321_ActSet",
+        "Precision": "1",
+        "TextID": "R2321",
+        "UnitInit": "2",
+        "UnitMetric": "Hz",
+        "Text": "Actual Setpoint",
+        "Border": "B",
+        "UnitLocale": "Hz",
+        "UnitImperial": "Hz",
+        "VisibleOPCID": ""
+       },
+       "1000032-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V2324_MSet",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Manual Setpoint",
+        "UnitLocale": "Hz",
+        "Precision": "1",
+        "TextID": "V2324",
+        "UnitInit": "2",
+        "UnitMetric": "Hz",
+        "RealInputMin": "0",
+        "Border": "B",
+        "LEDOPCID": "SB.S2327_MSetA",
+        "UnitImperial": "Hz",
+        "VisibleOPCID": ""
+       },
+       "1000033-AddLEDTextRealLong": {
+        "OnLED": "G",
+        "OPCID": "AA.R7256_ActExtSet",
+        "OffLED": "O",
+        "Text": "External Setpoint",
+        "UnitLocale": "Hz",
+        "Precision": "1",
+        "TextID": "E7256_TextES",
+        "UnitInit": "2",
+        "UnitMetric": "Hz",
+        "Bold": "1",
+        "Border": "B",
+        "LEDOPCID": "SB.S2328_ESetA",
+        "UnitImperial": "Hz",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000034-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V7381_ISet1",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Setpoint 1",
+        "UnitLocale": "Hz",
+        "Precision": "1",
+        "TextID": "E7381_TextISet1",
+        "UnitInit": "2",
+        "UnitMetric": "Hz",
+        "RealInputMin": "0",
+        "Border": "B",
+        "LEDOPCID": "SB.S2329_ISet1A",
+        "UnitImperial": "Hz",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000035-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V7382_ISet2",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Setpoint 2",
+        "UnitLocale": "Hz",
+        "Precision": "1",
+        "TextID": "E7382_TextISet2",
+        "UnitInit": "2",
+        "UnitMetric": "Hz",
+        "RealInputMin": "0",
+        "Border": "B",
+        "LEDOPCID": "SB.S2330_ISet2A",
+        "UnitImperial": "Hz",
+        "VisibleOPCID": ""
+       },
+       "1000036-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V7383_ISet3",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Setpoint 3",
+        "UnitLocale": "Hz",
+        "Precision": "1",
+        "TextID": "E7383_TextISet3",
+        "UnitInit": "2",
+        "UnitMetric": "Hz",
+        "RealInputMin": "0",
+        "Border": "B",
+        "LEDOPCID": "SB.S2331_ISet3A",
+        "UnitImperial": "Hz",
+        "VisibleOPCID": ""
+       },
+       "1000037-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V7384_ISet4",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Setpoint 4",
+        "UnitLocale": "Hz",
+        "Precision": "1",
+        "TextID": "E7384_TextISet4",
+        "UnitInit": "2",
+        "UnitMetric": "Hz",
+        "RealInputMin": "0",
+        "Border": "B",
+        "LEDOPCID": "SB.S2332_ISet4A",
+        "UnitImperial": "Hz",
+        "VisibleOPCID": ""
+       }
+      },
+      "1000038-AddPageTab": {
+       "Text": "Parameters 3",
+       "TextID": "Parameters3",
+       "VisibleAtRight": "0",
+       "1000039-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000040-AddTextReal": {
+        "OPCID": "AA.R2338_ActCurr",
+        "Precision": "1",
+        "TextID": "R2338",
+        "UnitInit": "2",
+        "UnitMetric": "A",
+        "Text": "Actual Value Current",
+        "Border": "B",
+        "UnitLocale": "A",
+        "UnitImperial": "A",
+        "VisibleOPCID": ""
+       },
+       "1000041-AddTextRealInput": {
+        "OPCID": "AS.V2365_Current",
+        "UserRight": "1",
+        "RealInputMax": "1000",
+        "Text": "Reference Current",
+        "UnitLocale": "A",
+        "Precision": "1",
+        "TextID": "V2365",
+        "UnitInit": "2",
+        "UnitMetric": "A",
+        "RealInputMin": "0",
+        "Border": "B",
+        "UnitImperial": "A",
+        "VisibleOPCID": ""
+       }
+      }
+     },
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU249",
+ "DiagnosisControl": "FU249",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1397506532
+}

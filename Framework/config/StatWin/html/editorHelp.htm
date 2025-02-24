@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <title>Editor Help</title>
+  <meta name="generator" content="Google Web Designer 1.9.0.0619">
+  <style type="text/css"></style>
+</head>
+
+<body class="htmlNoPages">
+  --&gt;
+  <h1>Status Windows Editor Hints: ..\Export\config\StatWin\editor.help</h1>
+  <!-- Description FU/JSON -->
+  <h2 id="fuHelp">Function Unit Naming Conventions</h2>
+  <p>Function units shall be named systematically in order to allow proper sorting.<br>
+    For DBS 4.0 the naming convention is:</p>
+  <p>FU_Class_Device i.e. FU_Mtr_1Dir1Speed for a motor with one speed and one direction.<br>
+    Keep the names short as you have to type them each time you use them!<br>
+    <br>
+    Do not use special characters or extensions in FU names as the name is used as filename! Naming it *Statuswindow* will create a file *Statuswindow.JSON*<br>
+    <br>
+    Naming a FU with .html extension creates a reference to a custom html window that will be loaded as status window.<br>
+    <br>
+    I.e. naming a status window *custom.html* creates a reference *custom.html.json* to a file with the name *custom.html* located in the *Export\config\StatWin\html* folder. The hash code is used to check the version.<br>
+    
+  </p>
+  <!-- HeadControls -->
+  <h2 id="headHelp">HeadControls</h2>
+  <p>Use the checkboxes to configure available options.</p>
+  <p>The data section is important for naming the FU and assignment to specific libraries. Selecting DiagnosisLibID=1 creates or stores the current statuswindow to library 1. To copy a window from one library to the other simply change the DiagnosisLibID
+    and click the checkmark button.
+  </p>
+  <ul>
+    <li>DiagnosisLibID: 1=Process, 2=Application, 3=Conveyor, 4=General, 5=Supervisory</li>
+    <li>DiagnosisControl: Name of the statuswindow.</li>
+    <li>PLC and Tag are only used for rendering the preview.</li>
+  </ul>
+  <p></p>
+  <!-- Tabs -->
+  <h2 id="tabHelp">Tabs</h2>
+  <p>Defines the available tabs; the design defines three tabs: operation, messages and parameters. The messages tab can not be parametrized. If required tabs can be added.<br>
+    A tab features content pages that can also have sub pages.<br>
+    
+  </p>
+  <!-- Contentpage -->
+  <h2 id="contentpageHelp">Contentpage</h2>
+  <p>A contentpage is a single page that is used to group related contents. It is possible to arrange or group contents on multiple content pages. Give the contentpage a reasonable name, Operation is one of the predefined ones. The first content page will
+    be displayed by default when opening the tab, so make sure that the most important contents is displayed there. To group elements blocks are used.<br>
+    <br>
+    
+  </p>
+  <!-- Block-->
+  <h2 id="blockHelp">Block</h2>
+  <p>A block groups multiple elements that belong together from a functional point of view. There can be as many blocks as needed. It is recommended to keep the structure simple in order not to confuse the user. Each block has a name describing the general
+    category, i.e. feedback signals or setpoints.</p>
+  <!-- Element-->
+  <h2 id="elementHelp">Element</h2>
+  <p>An element implements the interface to all data required to implement a specific functionality. I.e. an indicator features a color for on and off states, a text displayed next to the indicator. It also needs parameters about when to display and if write
+    access is used also the required rights to actively write to the data point.
+  </p>
+  <ul>
+    <li>General Connectivity: The most important parameter is the OPCID, the symbolic name of the data point (do not add any dot to the OPCID!). Please note that this is only the last part of the OPC symbol that is generic to the FU. Togehter with the values
+      of the Head Data it must specify a valid OPC symbol: PLC.Tag.OPCID!</li>
+    <li>Rights for write access: specify the rights required to write to the data point, default is none!</li>
+    <li>Visibility (User): each element can be visible depending on the users profile, specify the required rights here.</li>
+    <li>Visibility (Data): elements can be visible depending on PLC data points, specify the required data point here.</li>
+  </ul>
+  <p></p>
+  <!--    </body>
+
+
+</html>-->
+</body>
+
+</html>

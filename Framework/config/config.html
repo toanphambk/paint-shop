@@ -1,0 +1,156 @@
+
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+<!--<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>-->
+<!--<script src="js/jquery.jsForm.controls.js"></script>-->
+<script src="js/jquery.jsForm.js"></script>
+<!--<script src="https://hmi.durr.com/emostestrd/lib/js/durr.emos.js"></script>  -->
+<link rel="Stylesheet" media="screen" href="css/config.css" />
+<!--link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css"/ -->
+  
+<script>
+$(function(){
+    if(myName !== 'MegaAdm'){
+        $("#save").prop('disabled', true);
+    } else {
+       $("#save").prop('disabled', false); 
+    }
+    window.addEventListener("load", function () {
+        emosWS.connect();
+    }, false);
+    emosWS.addEventListener("authentication", function (e) {        
+        if(e.username !== 'MegaAdm'){
+            $("#save").prop('disabled', true);
+        } else {
+           $("#save").prop('disabled', false); 
+        }
+    }, false);
+    
+
+    var results = $.getValues();
+    // initialize the form, prefix is optional and defaults to data
+    $("#details").jsForm({
+            data:results
+    });
+
+    $("#show").click(function() {
+            // show the json data
+            alert(JSON.stringify($("#details").jsForm("get"), null, " "));
+    });
+
+    function saveText(text, filename){
+        var a = document.createElement('a');
+        a.setAttribute('href', 'data:text/plain;charset=utf-u,'+encodeURIComponent(text));
+        a.setAttribute('download', filename);
+        a.click();
+      }
+
+
+    $("#save").click(function() {            
+        emosWS.writeData("/framework/config/app/"+ myArr['app'] +".json", JSON.stringify($("#details").jsForm("get"), null, " "));
+    //emosWS.writeData("/framework/config/config.json", "abcdef");
+            //alert(JSON.stringify($("#details").jsForm("get"), null, " "));
+            emosWS.setLanguage($("#details").jsForm("get").defaultLanguage);
+    });
+});
+</script>
+<style>
+    .subtree input{width:300px;margin-bottom: 5px;}
+    .subtree label{width:80px;display: inline-block;}
+    .firstinput{width: 120px;}
+</style>
+
+<div id="details">
+    <div style="margin-bottom: 20px; border-bottom: 2px dotted">
+        <fieldset> 
+            <h4>Start-Cofiguration</h4>
+            <ul class="first collection sort sortable" >
+                <li class="subtree"><label>Application</label><input name="data.start.application"/></li>
+                <li class="subtree"><label>Plant</label><input name="data.start.plant"/></li>
+                <li class="subtree"><label>Picture</label><input name="data.start.picture"/></li>
+            </ul>
+        </fieldset> 
+    </div>   
+    <div style="margin-bottom: 20px; border-bottom: 2px dotted;padding-bottom: 20px;">
+            <h4>Default Language</h4>
+                <select name="data.defaultLanguage">
+                    <option value="70">Deutsch</option>
+                    <option value="71">English</option>
+                    <option value="72">Español</option>
+                    <option value="73">Português</option>
+                    <option value="74">Français</option>
+                    <option value="75">中国</option>
+                    <option value="76">Local1</option>
+                    <option value="77">Local2</option>
+                </select>
+    </div>
+    <div class="collection sort" data-field="data.sidebuttons">
+    <fieldset>            
+        <h4>Sidebutton <!--input name="sidebuttons.name"/--></h4>
+        <div class="headercontainer"><span class="inputHeader">Buttonname</span><span class="inputHeader">TextID</span><span class="inputHeader">Stationname</span><span class="inputHeader">IconClass</span><span class="inputHeader">AlarmGroup</span><br style="clear:both" /></div>
+            <ul class="first collection sort sortable" data-field="sidebuttons" data-sort="priority" data-sortable='{"placeholder":"ui-state-highlight"}'>
+                <li><span class="field">sidebuttons.$idx</span><input class="firstinput" name="sidebuttons.name"/><input class="firstinput" name="sidebuttons.textId"/><input class="firstinput" name="sidebuttons.stationname"/><input class="firstinput" name="sidebuttons.iconclass"/><input name="sidebuttons.alarm"/><button class="ui-icon ui-icon-trash delete"></button></li>
+                <li class="subtree"><h5>Tiles</h5> 
+
+                        <ul class="collection sort sortable" data-field="sidebuttons.tiles" data-sort="priority" data-sortable='{"placeholder":"ui-state-highlight"}'>
+                            
+                            <li><span class="field">tiles.$idx</span><br>
+                                <label>Tilename</label><input name="tiles.name"/><br>
+                                <label>TextID</label><input name="tiles.textId"/><br>
+                                <label>Link</label><input name="tiles.link"/><br>
+                                <label>IconClass</label><input name="tiles.iconclass"/><br>
+                                <label>AlarmGroup</label><input name="tiles.alarm"/><br>                               
+                                <label>AlarmSecurity</label><input name="tiles.alarm_security"/><br> 
+<!--                                <label>IO_Auto</label><input name="tiles.IO_Auto"/><br> -->
+                                <label>Manual_IsOn</label><input name="tiles.Manual_IsOn"/><br>
+                                <label>Manual_TurnOn</label><input name="tiles.Manual_TurnOn"/><br>
+                                <label>Auto_IsOn</label><input name="tiles.Auto_IsOn"/><br>
+                                <label>Auto_TurnOn</label><input name="tiles.Auto_TurnOn"/><br>
+                                <!--<label>IO_SSEN</label><input name="tiles.IO_SSEN"/><br>--> 
+                                <label>Remote_IsOn</label><input name="tiles.Remote_IsOn"/><br>
+                                <label>Remote_TurnOn</label><input name="tiles.Remote_TurnOn"/><br>
+                                <label>Local_IsOn</label><input name="tiles.Local_IsOn"/><br>
+                                <label>Local_TurnOn</label><input name="tiles.Local_TurnOn"/><br>
+                                <!--<label>IO_CSOn</label><input name="tiles.IO_CSOn"/><br>--> 
+                                <label>CentralStart_IsOn</label><input name="tiles.CentralStart_IsOn"/><br>
+                                <label>CentralStart_TurnOn</label><input name="tiles.CentralStart_TurnOn"/><br>
+                                <label>CentralStart_IsStripeOut</label><input name="tiles.CentralStart_IsStripeOut"/><br>
+                                <label>CentralStart_TurnOffPE</label><input name="tiles.CentralStart_TurnOffPE"/><br>
+                            <button class="sortUp">Tile up</button> <button class="sortDown">Tile down</button> <button class="ui-icon ui-icon-trash delete"></button> </li>   
+                        </ul>
+
+                            <button class="add" data-field="sidebuttons.tiles">Add new Tile</button>
+                    </li>
+                    
+                    <li class="subtree"><h5>Alarmbuttons</h5>   
+                       
+                        <ul class="collection sort sortable" data-field="sidebuttons.alarm_buttons" data-sort="priority" data-sortable='{"placeholder":"ui-state-highlight"}'>
+                            
+                            <li><span class="field">alarm_buttons.$idx</span><br>
+                                <label>Alarmbuttonname</label><input name="alarm_buttons.name"/><br>
+                                <label>Link</label><input name="alarm_buttons.link"/><br>
+                                <label>IconClass</label><input name="alarm_buttons.iconclass"/><br>
+                                <label>AlarmGroup</label><input name="alarm_buttons.alarm"/><br>
+                                <label>AlarmID</label><input name="alarm_buttons.alarm_id"/><br>
+                                <label>IO/Alert</label>
+                                <select name="alarm_buttons.alarm_type">
+                                    <option value="IO">IO</option>
+                                    <option value="Alert">Alert</option>
+                                </select><br><br>
+                            <button class="sortUp">Alarm up</button> <button class="sortDown">Alarm down</button><button class="ui-icon ui-icon-trash delete"></button>     
+                            </li>
+                        </ul>
+
+                    <button class="add" data-field="sidebuttons.alarm_buttons">Add new Alarmbutton</button>
+
+                        
+                    </li>
+            </ul>
+            
+            <button class="sortUp">Sidebutton up</button> <button class="sortDown">Sidebutton down</button> 
+    </fieldset>
+    </div>
+
+     <button class="add" data-field="data.sidebuttons">Add new Sidebutton</button>
+</div>
+<button id="save">save changes</button>
+<!--<button id="show">Show Object</button>-->

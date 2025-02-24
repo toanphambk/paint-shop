@@ -1,0 +1,215 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU214.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Interlock Message Description",
+       "TextID": "&E_E7310_ILMDes",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1274_EnLife",
+        "Position": "R",
+        "TextID": "S1274",
+        "OffLED": "O",
+        "Text": "Enable Life Monitoring",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3144_LifeBitCfg",
+        "Position": "R",
+        "TextID": "S3144",
+        "OffLED": "O",
+        "Text": "Life Bit from Configuration",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000010-Messages": {
+     "1000011-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000012-AddPageTab": {
+     "1000013-AddPageControl": {
+      "1000014-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000015-AddText": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "showHide": true
+       },
+       "1000016-AddTextReal": {
+        "OPCID": "AA.R7683_ILReal",
+        "Precision": "1",
+        "TextID": "R7683",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Interlock Analog Value Real",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "SB.S3146_VisReal",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextInteger": {
+        "OPCID": "AA.I7682_ILDInt",
+        "TextID": "I7682",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Interlock Analog Value Double Integer",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "SB.S3145_VisInt",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "Bold": "2",
+        "Bold2": "2",
+        "TextID2": "Setpoint",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1446_AAckn",
+        "OPCID": "TA.T2446_AAckn",
+        "UserRight": "6",
+        "TextID": "T2446",
+        "Text": "Automatic Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S1274_EnLife",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1448_HBRS",
+        "OPCID": "TA.T2448_HBRS",
+        "UserRight": "6",
+        "TextID": "T2448",
+        "Text": "Motion Control Heartbeat Remote Station",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S1274_EnLife",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddText": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextInteger": {
+        "OPCID": "AA.I2486_HBRS",
+        "TextID": "I2486",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Heartbeat from Remote Station",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "SB.S1274_EnLife",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextInteger": {
+        "OPCID": "AA.I2487_HBS",
+        "TextID": "I2487",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Heartbeat from Station (PLC)",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "SB.S1274_EnLife",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "1"
+      }
+     },
+     "RegAutoHide": "1",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU214",
+ "DiagnosisControl": "FU214",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 787166701
+}

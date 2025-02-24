@@ -1,0 +1,21 @@
+<a class="grid-element" ng-href="#/plant/{{plant.id}}-{{plant.name}}">
+	<div class="trapezoid-background"></div>
+	<div class="title-container">
+		<p class="title">{{ plant.name }}</p>
+	</div>
+	<div class="status-wrapper" ng-show="plant.errorCount > 0">
+		<span class="status error"></span>
+		<span class="count error">{{ plant.errorCount }}</span>
+	</div>
+
+	<div class="status-wrapper" ng-show="plant.errorCount == 0 && plant.warningCount > 0">
+		<span class="status warning"></span>
+		<span class="count warning">{{ plant.warningCount }}</span>
+	</div>
+
+	<div class="status-wrapper" ng-show="plant.errorCount == 0 && plant.warningCount == 0">
+		<span class="status info"></span>
+		<span class="count info">{{ plant.infoCount }}</span>
+	</div>
+
+</a>

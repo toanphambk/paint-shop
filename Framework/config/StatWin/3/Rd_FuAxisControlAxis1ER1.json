@@ -1,0 +1,238 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "Rd_FuAxisControlAxis1ER1",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status 1",
+       "TextID": "Status1",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Response Signals",
+        "TextID": "ResponseSignals",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1099_TorqueMonitoringAc",
+        "Position": "L",
+        "TextID": "S1099",
+        "OffLED": "O",
+        "Text": "Torque Monitoring Ac",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1115_ReferenceDataExist",
+        "Position": "L",
+        "TextID": "S1115",
+        "OffLED": "O",
+        "Text": "Reference Data Exist",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1116_RecordingReference",
+        "Position": "L",
+        "TextID": "S1116",
+        "OffLED": "O",
+        "Text": "Recording Reference",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1268_CFV",
+        "Position": "L",
+        "TextID": "S1268",
+        "OffLED": "O",
+        "Text": "Collective Faults",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1269_CWV",
+        "Position": "L",
+        "TextID": "S1269",
+        "OffLED": "O",
+        "Text": "Collective Warnings",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1552_OsE",
+        "Position": "L",
+        "TextID": "S1552",
+        "OffLED": "O",
+        "Text": "Outside the Envelope",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000015-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1165_ReRDV",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1165",
+        "OffLED": "O",
+        "Text": "ReRDV",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1166_ReRDInv",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1166",
+        "OffLED": "O",
+        "Text": "ReRDInv",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1167_DeleteAllReferenceData",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1167",
+        "OffLED": "O",
+        "Text": "Delete All Reference",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "10000001-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000018-Messages": {
+     "1000019-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000020-AddPageTab": {
+     "1000021-AddPageControl": {
+      "1000022-AddPageTab": {
+       "Text": "Actual Values",
+       "TextID": "ActualValues",
+       "VisibleAtRight": "0",
+       "1000023-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Actual Values",
+        "TextID": "ActualValues",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000024-AddTextInteger": {
+        "OPCID": "AA.R1030_ActiveCurrent",
+        "TextID": "R1030",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Active Current",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000025-AddTextInteger": {
+        "OPCID": "AA.R1031_EnvelopeMax",
+        "TextID": "R1031",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Maximum Envelope",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000026-AddTextInteger": {
+        "OPCID": "AA.R1032_EnvelopeMin",
+        "TextID": "R1032",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Minimum Envelope",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       }
+      }
+     },
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "Rd_FuAxisControlAxis1ER1",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 951541742
+}

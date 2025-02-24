@@ -1,0 +1,225 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1253_EnP",
+     "Position": "L",
+     "TextID": "S1253",
+     "OffLED": "O",
+     "Text": "Enable Process",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU306.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "VisibleOPCID": "",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2430_Limit1",
+        "Position": "R",
+        "TextID": "S2430",
+        "OffLED": "O",
+        "Bold": "1",
+        "Text=Actual Value >": " Limit Value1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2431_Limit1Act",
+        "VisibleAtRight": "0",
+        "Text": "TextLED"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2432_Limit2",
+        "Position": "R",
+        "TextID": "S2432",
+        "OffLED": "O",
+        "Bold": "1",
+        "Text=Actual Value >": " Limit Value2",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2433_Limit2Act",
+        "VisibleAtRight": "0",
+        "Text": "TextLED"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2434_Limit3",
+        "Position": "R",
+        "TextID": "S2434",
+        "OffLED": "O",
+        "Bold": "1",
+        "Text=Actual Value >": " Limit Value 3",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2435_Limit3Act",
+        "VisibleAtRight": "0",
+        "Text": "TextLED"
+       },
+       "RegAutoHide": "1"
+      }
+     },
+     "RegAutoHide": "1",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000011-Messages": {
+     "1000012-AlarmClient": {},
+     "Text": "Messages"
+    },
+    "1000013-AddPageTab": {
+     "1000014-AddPageControl": {
+      "1000015-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000016-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "VisibleOPCID": "",
+        "showHide": true
+       },
+       "1000017-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1390_Limit1",
+        "OPCID": "TA.T2390_Limit1",
+        "UserRight": "1",
+        "TextID": "T2390",
+        "Bold": "1",
+        "Text=Actual Value >": " Limit Value 1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2431_Limit1Act",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "Text": "TextDoubleTimerInputLong"
+       },
+       "1000018-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1391_Limit2",
+        "OPCID": "TA.T2391_Limit2",
+        "UserRight": "1",
+        "TextID": "T2391",
+        "Bold": "1",
+        "Text=Actual Value >": " Limit Value 2",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2433_Limit2Act",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "Text": "TextDoubleTimerInputLong"
+       },
+       "1000019-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1392_Limit3",
+        "OPCID": "TA.T2392_Limit3",
+        "UserRight": "1",
+        "TextID": "T2392",
+        "Bold": "1",
+        "Text=Actual Value >": " Limit Value 3",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2435_Limit3Act",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "Text": "TextDoubleTimerInputLong"
+       },
+       "1000020-AddTextRealInput": {
+        "OPCID": "AS.V7281_Limit1",
+        "UserRight": "7",
+        "RealInputMax": "2147483600",
+        "Text": "Limit Value 1",
+        "UnitLocale": "°C",
+        "Precision": "1",
+        "TextID": "E7281_Text1",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "RealInputMin": "-2147483600",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "°F",
+        "VisibleOPCID": "SB.S2431_Limit1Act",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextRealInput": {
+        "OPCID": "AS.V7282_Limit2",
+        "UserRight": "7",
+        "RealInputMax": "2147483600",
+        "Text": "Limit Value 2",
+        "UnitLocale": "°C",
+        "Precision": "1",
+        "TextID": "E7282_Text2",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "RealInputMin": "-2147483600",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "°F",
+        "VisibleOPCID": "SB.S2433_Limit2Act",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextRealInput": {
+        "OPCID": "AS.V7283_Limit3",
+        "UserRight": "7",
+        "RealInputMax": "2147483640",
+        "Text": "Limit Value 3 ",
+        "UnitLocale": "°C",
+        "Precision": "1",
+        "TextID": "E7283_Text3",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "°F",
+        "VisibleOPCID": "SB.S2435_Limit3Act",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextReal": {
+        "OPCID": "AA.R2251_ActValue",
+        "Precision": "1",
+        "TextID": "R2251",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "Text": "Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "°C",
+        "UnitImperial": "°F",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU306",
+ "DiagnosisControl": "FU306",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1220490146
+}

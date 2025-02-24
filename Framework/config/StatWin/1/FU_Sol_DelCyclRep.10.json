@@ -1,0 +1,337 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Border": "B"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Border": "B"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-20",
+   "Name": "FU_Sol_DelCyclRep.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback2WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2257",
+        "OffLED": "O",
+        "Text": "Manual Open",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2257_Open",
+        "writeTagWR2": "CB.C2250_Clse",
+        "readTagRD1": "SB.S2264_Open",
+        "leftIcon": "openCommand",
+        "rightIcon": "closeCommand",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddCommandFeedback1WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "S1251",
+        "OffLED": "O",
+        "Text": "Automatic Mode",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2263_Auto",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S1251_Auto",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1066_Reset",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C1066",
+        "OffLED": "O",
+        "Text": "Reset",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "1000011-AddText": {
+        "Position": "R",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2264_Open",
+        "Position": "R",
+        "TextID": "S2264",
+        "OffLED": "O",
+        "Text": "Device Open",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2356_BrkOff",
+        "Position": "R",
+        "TextID": "S2356",
+        "OffLED": "O",
+        "Text": "Break Duration De-Activated",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000014-Messages": {
+     "1000015-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000016-AddPageTab": {
+     "1000017-AddPageControl": {
+      "1000018-AddPageTab": {
+       "Text": "Parameters ",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000019-AddText": {
+        "Position": "L",
+        "TextID": "Timer",
+        "Text": "Timer",
+        "showHide": true
+       },
+       "1000020-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1604_Delay",
+        "OPCID": "AA.I1604_Delay",
+        "UserRight": "7",
+        "TextID": "I1604",
+        "Text": "Start Delay Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2353_Delay",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4615_OnDur",
+        "OPCID": "AA.I4615_OnDur",
+        "UserRight": "7",
+        "TextID": "I4615",
+        "Text": "On Duration Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2354_OnDur",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4616_BrkDur",
+        "OPCID": "AA.I4616_BrkDur",
+        "UserRight": "0",
+        "TextID": "I4616",
+        "Text": "Break Duration Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2355_BrkDur",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Base": "s",
+        "Position": "L"
+       },
+       "1000023-AddText": {
+        "Position": "L",
+        "TextID": "Counter",
+        "Text": "Counter",
+        "showHide": true
+       },
+       "1000024-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.I2305_DelCnt",
+        "OPCID": "AA.I2305_DelCntAV",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Start Delay Pulse Counter ",
+        "UnitLocale": "",
+        "TextID": "I2305",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "SB.S2353_Delay",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000025-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.I2306_OnCnt",
+        "OPCID": "AA.I2306_OnCntAV",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "On Duration Pulse Counter",
+        "UnitLocale": "",
+        "TextID": "I2306",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "SB.S2354_OnDur",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000026-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.I2307_BrkCnt",
+        "OPCID": "AA.I2307_BrkCntAV",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Break Duration Pulse Counter",
+        "UnitLocale": "",
+        "TextID": "I2307",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "SB.S2355_BrkDur",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000027-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4611_DelTi",
+        "OPCID": "AA.I4611_DelTi",
+        "UserRight": "6",
+        "TextID": "I4611",
+        "Text": "Start Delay Timer Monitoring",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2353_Delay",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4612_OnTi",
+        "OPCID": "AA.I4612_OnTi",
+        "UserRight": "6",
+        "TextID": "I4612",
+        "Text": "On Duration Time Monitoring",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2354_OnDur",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000029-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.I2303_OnDurSP",
+        "OPCID": "AA.I2304_OnDurAV",
+        "TextID": "I2304",
+        "Text": "On Duration Time Limit",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2354_OnDur",
+        "VisibleAtRight": "0"
+       },
+       "1000030-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4613_BrkTi",
+        "OPCID": "AA.I4613_BrkTi",
+        "UserRight": "0",
+        "TextID": "I4613",
+        "Text": "Break Duration Pulse Interval Monitoring",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2355_BrkDur",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Base": "s",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "1000031-AddText": {},
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Sol_DelCyclRep",
+ "DiagnosisControl": "FU_Sol_DelCyclRep.10",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -979641669
+}

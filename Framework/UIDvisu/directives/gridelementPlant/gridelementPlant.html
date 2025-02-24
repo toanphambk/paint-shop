@@ -1,0 +1,30 @@
+<a ng-class="{ 'grid-element': selectedTile.id != item.id && selectedTile.relatesTo.indexOf(item.id) == -1, 'grid-element active-related': selectedTile.id != item.id && selectedTile.relatesTo.indexOf(item.id) != -1, 'grid-element active': selectedTile.id == item.id }" ng-click="selectTile(item)">
+  <div class="big-icon {{ item.errorType }}"></div>
+  <div class="trapezoid-background"></div>
+  <div class="title-container">
+    <p class="title">{{ item.functionGroup}}</p>
+  </div>
+  <div class="time">
+    <span class="left" ng-show="item.timeHandling > 0">{{ item.timeHandling | amDifference : clock : 'minutes' | minutesToHHmm}}</span>
+    <span class="middle">
+      <span class="clock-icon"></span>
+    </span>
+    <span class="right">
+      <span class="icon-container" ng-show="item.timeHandling == 0">
+      </span>
+      {{ item.timeStop | amDifference : clock : 'minutes' | minutesToHHmm}}
+    </span>
+  </div>
+  <div class="status-wrapper" ng-show="item.timeHandling > 0">
+    <span class="handling"></span>
+  </div>
+  <div class="status-wrapper" ng-show="item.productionRelevance == 0">
+    <span class="status error"></span>
+  </div>
+  <div class="status-wrapper" ng-show="item.productionRelevance == 1">
+    <span class="status warning"></span>
+  </div>
+  <div class="status-wrapper" ng-show="item.productionRelevance == 2">
+    <span class="status info"></span>
+  </div>
+</a>

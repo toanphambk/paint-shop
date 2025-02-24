@@ -1,0 +1,30 @@
+$hd-width: 1920px;
+$hd-height: 1080px;
+$mainmenu-width: 108px;
+$statusbar-height: 97px;
+$contentbar-height: 86px;
+$whitespace: 137px;
+
+.content-section {
+    position: absolute;
+    left: $mainmenu-width;
+    top: $statusbar-height;
+    height: ($hd-height - $statusbar-height);
+    width: ($hd-width - $mainmenu-width);
+    background: $content-section_bg;
+    padding-left: 15px;
+
+    .content-bar {
+        width: 100%;
+        height: $contentbar-height;
+    }
+
+    .grid {
+        position: relative;
+        width: ($hd-width - $mainmenu-width - $whitespace);
+        height: ($hd-height - $statusbar-height - $contentbar-height);
+        float: left;
+        overflow: hidden;
+        z-index: 0;
+    }
+}

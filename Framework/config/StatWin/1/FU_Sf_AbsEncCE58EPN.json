@@ -1,0 +1,282 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-20",
+   "Name": "FU_Sf_AbsEncCE58EPN.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "OperatingModes",
+        "Text": "Operating Modes",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1356_EnEncPres",
+        "Position": "L",
+        "TextID": "S1356",
+        "OffLED": "O",
+        "Text": "Enable Encoder Preset",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1359_EncPresStart",
+        "Position": "L",
+        "TextID": "S1359",
+        "OffLED": "O",
+        "Text": "Encoder Preset Start",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000011-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1069_EncPres",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C1069",
+        "OffLED": "O",
+        "Text": "Encoder Preset",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Response Signals",
+        "TextID": "ResponseSignals",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1358_EncPresEnabled",
+        "Position": "L",
+        "TextID": "S1358",
+        "OffLED": "O",
+        "Text": "Encoder Preset Enabled",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1357_EncPres",
+        "Position": "L",
+        "TextID": "S1357",
+        "OffLED": "O",
+        "Text": "Encoder Preset",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1000_IntFlt",
+        "Position": "L",
+        "TextID": "S1000",
+        "OffLED": "O",
+        "Text": "Internal Fault",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000016-Messages": {
+     "1000017-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000018-AddPageTab": {
+     "1000019-AddPageControl": {
+      "1000020-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000021-AddText": {
+        "Position": "L",
+        "TextID": "MS.M1000_Funct",
+        "Text": "Function Group",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000022-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "120",
+        "OPCID2": "AS.I1619_RtPres",
+        "OPCID": "AA.I1619_RtPres",
+        "UserRight": "0",
+        "VisuBase": "s",
+        "Text": "Runtime Preset",
+        "Base": "ms",
+        "TextID": "I1619",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000023-AddTextInteger": {
+        "OPCID": "AA.I1018_ActPos",
+        "TextID": "I1018",
+        "UnitInit": "2",
+        "UnitMetric": "x0.1mm",
+        "Text": "Actual Position",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "x0.1mm",
+        "UnitImperial": "x0.1mm",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddTextIntegerInput": {
+        "OPCID": "AS.I1752_PosOffset",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Position Offset Setpoint",
+        "UnitLocale": "x0.1mm",
+        "TextID": "I1752",
+        "UnitInit": "2",
+        "UnitMetric": "x0.1mm",
+        "IntInputMax": "32767",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "x0.1mm",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "32767",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000025-AddTextIntegerInput": {
+        "OPCID": "AS.I1753_EncRefPos",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Encoder Reference Position Setpoint",
+        "UnitLocale": "x0.1mm",
+        "TextID": "I1753",
+        "UnitInit": "2",
+        "UnitMetric": "x0.1mm",
+        "IntInputMax": "32767",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "x0.1mm",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "32767",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000026-AddTextRealInput": {
+        "OPCID": "AS.R1209_EncInc01mm",
+        "UserRight": "0",
+        "RealInputMax": "1000",
+        "Text": "Encoder Increments per mm",
+        "UnitLocale": "",
+        "Precision": "3",
+        "TextID": "R1209",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "1000.00",
+        "InputMin": "0.00",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Sf_AbsEncCE58EPN",
+ "DiagnosisControl": "FU_Sf_AbsEncCE58EPN",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1745666901
+}

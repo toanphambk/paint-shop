@@ -1,0 +1,269 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Border": "B"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Border": "B"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-20",
+   "Name": "FU_Mtr_PaintPump.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback1WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2263",
+        "OffLED": "O",
+        "Text": "Switch Device back to Automatic",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2263_Auto",
+        "readTagRD1": "SB.S1251_Auto",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddCommandFeedback2WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2254",
+        "OffLED": "O",
+        "Text": "Manual On",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2251_Off",
+        "writeTagWR2": "CB.C2254_On",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S2251_On",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2264_Open",
+        "Position": "R",
+        "TextID": "S2264",
+        "OffLED": "O",
+        "Text": "Device Open",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000013-Messages": {
+     "1000014-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000015-AddPageTab": {
+     "1000016-AddPageControl": {
+      "1000017-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000018-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000019-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1597_MOn",
+        "OPCID": "AA.I1597_MOn",
+        "UserRight": "6",
+        "TextID": "I1597",
+        "Text": "Motion Control On timer",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4526_MOff",
+        "OPCID": "AA.I4526_MOff",
+        "UserRight": "6",
+        "TextID": "I4526",
+        "Text": "Motion Control Off timer",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4510_Sens",
+        "OPCID": "AA.I4510_Sens",
+        "UserRight": "6",
+        "TextID": "I4510",
+        "Text": "Motion Control Sensor timer",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4590_OnPre",
+        "OPCID": "AA.I4590_OnPre",
+        "UserRight": "3",
+        "TextID": "I4590",
+        "Text": "Switch On Pre-Rinse Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "1000023-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4591_OnPost",
+        "OPCID": "AA.I4591_OnPost",
+        "UserRight": "3",
+        "TextID": "I4591",
+        "Text": "Switch On Post-Rinse Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "1000024-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4592_OffPre",
+        "OPCID": "AA.I4592_OffPre",
+        "UserRight": "3",
+        "TextID": "I4592",
+        "Text": "Switch Off Pre-Rinse Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "1000025-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4593_OffPost",
+        "OPCID": "AA.I4593_OffPost",
+        "UserRight": "3",
+        "TextID": "I4593",
+        "Text": "Switch Off Post-Rinse Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Mtr_PaintPump",
+ "DiagnosisControl": "FU_Mtr_PaintPump.10",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 680293277
+}

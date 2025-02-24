@@ -1,0 +1,461 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-21",
+   "Name": "FU358.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "OperatingModes",
+        "Text": "Operating Modes",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1270_Mntn",
+        "Position": "L",
+        "TextID": "S1270",
+        "OffLED": "O",
+        "Text": "Maintenance Mode",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2883_MValA",
+        "Position": "L",
+        "TextID": "S2883",
+        "OffLED": "O",
+        "Text": "Manual Value Activated",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000011-AddCommandFeedback2WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2254",
+        "OffLED": "O",
+        "Text": "Manual On",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2254_On",
+        "writeTagWR2": "CB.C2251_Off",
+        "readTagRD1": "SB.S1251_Auto",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2840_DCOn",
+        "Position": "R",
+        "TextID": "S2840",
+        "OffLED": "O",
+        "Text": "DC Voltage is On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2835_PolAc",
+        "Position": "R",
+        "TextID": "S2835",
+        "OffLED": "O",
+        "Text": "Polarisation Active",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3508_IGBTRe",
+        "Position": "R",
+        "TextID": "S3508",
+        "OffLED": "O",
+        "Text": "IGBT is Ready",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3670_IGBTSOn",
+        "Position": "R",
+        "TextID": "S3670",
+        "OffLED": "O",
+        "Text": "IGBT is Switched On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2842_RTyp1",
+        "Position": "R",
+        "TextID": "S2842",
+        "OffLED": "O",
+        "Text": "Preselection Ramp Type 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2843_RTyp2",
+        "Position": "R",
+        "TextID": "S2843",
+        "OffLED": "O",
+        "Text": "Preselection Ramp Type 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2844_RTyp3",
+        "Position": "L",
+        "TextID": "S2844",
+        "OffLED": "O",
+        "Text": "Preselection Ramp Type 3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2845_RTyp4",
+        "Position": "R",
+        "TextID": "S2845",
+        "OffLED": "O",
+        "Text": "Preselection Ramp Type 4",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000021-Messages": {
+     "1000022-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000023-AddPageTab": {
+     "1000024-AddPageControl": {
+      "1000025-AddPageTab": {
+       "Text": "Parameters 1",
+       "TextID": "Parameters1",
+       "VisibleAtRight": "0",
+       "1000026-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000027-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "TextID2": "Setpoint",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddTextTimerLong": {
+        "OPCID": "AA.I2465_TRel1",
+        "TextID": "I2465",
+        "Text": "Duration of Controller Release 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000029-AddTextTimerLong": {
+        "OPCID": "AA.I2466_TRel2",
+        "TextID": "I2466",
+        "Text": "Duration of Controller Release 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000030-AddTextTimerLong": {
+        "OPCID": "AA.I2664_RTAP",
+        "TextID": "I2664",
+        "Text": "Ramp Time After Polarisation",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000031-AddTextInteger": {
+        "OPCID": "AA.I2467_BTyp",
+        "TextID": "I2467",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Actual Type of Body",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000032-AddTextIntegerInput": {
+        "OPCID": "AS.V2500_MSetV",
+        "UserRight": "6",
+        "IntInputMin": "0",
+        "Text": "Manual Setpoint Voltage",
+        "UnitLocale": "V",
+        "TextID": "V2500",
+        "UnitInit": "2",
+        "UnitMetric": "V",
+        "IntInputMax": "10000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "V",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000033-AddTextIntegerIntegerLong": {
+        "OPCID2": "AA.I2468_DCVSetP",
+        "OPCID": "AA.I2469_DCV",
+        "TextID": "I2469",
+        "UnitInit": "2",
+        "UnitMetric": "V",
+        "Text": "Direct Voltage",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "V",
+        "UnitImperial": "V",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000034-AddTextIntegerInput": {
+        "OPCID": "AS.V2499_MSetC",
+        "UserRight": "6",
+        "IntInputMin": "0",
+        "Text": "Manual Setpoint Current",
+        "UnitLocale": "A",
+        "TextID": "V2499",
+        "UnitInit": "2",
+        "UnitMetric": "A",
+        "IntInputMax": "10000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "A",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000035-AddTextIntegerIntegerLong": {
+        "OPCID2": "AA.I2382_DCASetP",
+        "OPCID": "AA.I2470_DCA",
+        "TextID": "I2470",
+        "UnitInit": "2",
+        "UnitMetric": "A",
+        "Text": "Direct Current",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "A",
+        "UnitImperial": "A",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      },
+      "1000036-AddPageTab": {
+       "Text": "Parameters 2",
+       "TextID": "Parameters2",
+       "VisibleAtRight": "0",
+       "1000037-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000038-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "TextID2": "Setpoint",
+        "VisibleAtRight": "0"
+       },
+       "1000039-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1617_VMF",
+        "OPCID": "TA.T2617_VMF",
+        "UserRight": "6",
+        "TextID": "T2617",
+        "Text": "Voltage Monitoring",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000040-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1484_CROn",
+        "OPCID": "TA.T2484_CROn",
+        "UserRight": "1",
+        "TextID": "T2484",
+        "Text": "Controller Release On Delay Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000041-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1394_IGBTOnM",
+        "OPCID": "TA.T2382_IGBTOnM",
+        "UserRight": "1",
+        "TextID": "T2382",
+        "Text": "IGBT On Monitoring Timer",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000042-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1497_IGBTOnDel",
+        "OPCID": "TA.T2384_IGBTOnDel",
+        "UserRight": "1",
+        "TextID": "T2384",
+        "Text": "IGBT On Delay Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000043-AddTextIntegerInput": {
+        "OPCID": "AS.P2459_VMT",
+        "UserRight": "6",
+        "IntInputMin": "0",
+        "Text": "Voltage Monitoring Tolerance",
+        "UnitLocale": "V",
+        "TextID": "P2459",
+        "UnitInit": "2",
+        "UnitMetric": "V",
+        "IntInputMax": "10000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "V",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000044-AddTextIntegerInput": {
+        "OPCID": "AS.P2458_VMD",
+        "UserRight": "6",
+        "IntInputMin": "0",
+        "Text": "Voltage Monitoring Deactivated",
+        "UnitLocale": "A",
+        "TextID": "P2458",
+        "UnitInit": "2",
+        "UnitMetric": "A",
+        "IntInputMax": "10000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "A",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU358",
+ "DiagnosisControl": "FU358.01",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -18874620
+}

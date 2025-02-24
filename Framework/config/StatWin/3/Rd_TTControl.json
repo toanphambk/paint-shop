@@ -1,0 +1,297 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "Rd_TTControl",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status",
+       "TextID": "Status",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false,
+        "VisibleOPCID": ""
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1255_EnFV",
+        "Position": "L",
+        "TextID": "S1255",
+        "OffLED": "O",
+        "Text": "Enable Faults",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0",
+        "VisibleOPCID": ""
+       },
+       "1000009-AddText": {
+        "Position": "L",
+        "TextID": "State",
+        "Text": "State",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": false,
+        "VisibleOPCID": ""
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1520_WaitCarTP",
+        "Position": "R",
+        "TextID": "S1520",
+        "OffLED": "O",
+        "Text": "Wait for Carriage in Turn Position",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1521_OpFix",
+        "Position": "R",
+        "TextID": "S1521",
+        "OffLED": "O",
+        "Text": "Open Fixation",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1522_TurnTT",
+        "Position": "R",
+        "TextID": "S1522",
+        "OffLED": "O",
+        "Text": "Turn Turn Table",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1523_ClFix",
+        "Position": "R",
+        "TextID": "S1523",
+        "OffLED": "O",
+        "Text": "Close Fixation",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1524_WaitCarConf",
+        "Position": "R",
+        "TextID": "S1524",
+        "OffLED": "O",
+        "Text": "Wait for Carriage Confirmation",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1530_WaitEmptyTT",
+        "Position": "R",
+        "TextID": "S1530",
+        "OffLED": "O",
+        "Text": "Wait for empty Turn Table",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S1385_TT180",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1535_OpFix2",
+        "Position": "L",
+        "TextID": "S1535",
+        "OffLED": "O",
+        "Text": "Open Fixation",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S1385_TT180",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1531_TurnBackTT",
+        "Position": "L",
+        "TextID": "S1531",
+        "OffLED": "O",
+        "Text": "Turn Back Turn Table",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S1385_TT180",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1536_ClFix2",
+        "Position": "L",
+        "TextID": "S1536",
+        "OffLED": "O",
+        "Text": "Close Fixation",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S1385_TT180",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0",
+       "VisibleOPCID": ""
+      },
+      "1000019-AddPageTab": {
+       "Text": "Reset",
+       "TextID": "Reset",
+       "VisibleAtRight": "0",
+       "1000020-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000021-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1066_Reset",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1066",
+        "OffLED": "O",
+        "Text": "Reset",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1320_Ocpd",
+        "Position": "L",
+        "TextID": "S1320",
+        "OffLED": "O",
+        "Text": "Turn Table Occupied",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000024-Messages": {
+     "1000025-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000026-AddPageTab": {
+     "1000027-AddPageControl": {
+      "1000028-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000029-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000030-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "AS.I1657_WaitCarConf",
+        "OPCID": "AA.I1657_WaitCarConf",
+        "UserRight": "7",
+        "TextID": "I1657",
+        "Text": "Waiting Time For Carriage Confirmation",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Base": "s",
+        "Position": "L"
+       },
+       "1000031-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.I1640_DelFlt",
+        "OPCID": "AA.I1640_DelFlt",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Delay for Faults to Visu ",
+        "UnitLocale": "x0,1s",
+        "TextID": "I1640",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "x0,1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "100",
+        "InputMin": "-100",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "Rd_TTControl",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1729952772
+}

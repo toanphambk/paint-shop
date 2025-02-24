@@ -1,0 +1,627 @@
+/* start header */
+//@import "variablen";
+//@import "globals";
+//@import "mixins";
+// Time/Date on top of the page 
+.actDate{
+    display: block;
+    z-index: 4000;
+    text-align: center;
+    margin-left: -50px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    font-size: $big-size;
+    color: $clock;
+}
+// Stationname right-top of page
+#stationname{
+    position: absolute;
+    right: 10px;
+    top: -31px;
+    font-size: $bigger-size;
+    width: 100%;
+    line-height: 18px;
+    text-align: center;
+}
+.myStation{
+    float: right;
+    
+    .icon{
+        margin-right: 0;
+        margin-left: 10px;
+        background-image: url(../svg/SoftwareArea/connectionOn.svg);
+        background-repeat: no-repeat;
+        background-position: 0 4px;
+        width: 20px;
+        height: 20px;
+        display: inline-block;    
+    }
+    span{
+        font-weight: bold;
+    }
+}
+// section header
+header{
+    height: 97px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    z-index: 1000;
+    background: $default-background;
+}
+.left{
+    position: absolute;
+    left:0;
+}
+.left, .right{
+    width: 108px;
+}
+.left .top, .right .top{
+    height: 84px;
+}
+.left .top{    
+    background: url(../images/logo1.jpg) $default-background no-repeat 10px 10px;
+}
+.right{
+    position: absolute;
+    right:0;
+}
+.right .top{
+}
+.right .top:hover, .left .top:hover{
+    cursor: pointer;
+}
+.left .bottom, .right .bottom{
+    height: 13px;
+    background: $default_blue;
+}
+.center{
+    position:absolute;
+    left: 108px;
+    right: 97px;
+    bottom: 0;
+    
+    .white{
+        background: $default-background;
+        height: 35px;
+    }
+    .bluebox{
+        width: auto !important;
+        margin-left: -15px;
+        border-bottom: 62px solid #003254;
+        border-left: 68px solid transparent;
+        border-right: 68px solid transparent;
+        display: flex;
+        position: relative;
+        margin-right: -4px;
+    }
+}
+
+#alarmheader, #configheader{
+    position: absolute;
+}
+#alarmheader{
+    top: 4px;
+    order: 1;
+    flex: 1;
+    bottom: 0;
+    right: 50%;
+    z-index: 0;
+}
+@media screen and (max-width: 1250px) { 
+    #configheader>ul>li{
+        margin:0 !important;
+    }
+    
+}
+ul.alarms{    
+    margin-top: 3px;
+    
+    &.active{
+        height: 72px;    
+        border: 1px solid #cecece;
+        border-bottom: none;
+        background: $overlay-back;
+        border-radius: 4px 4px 0 0;
+        margin-top: 1px;
+        //box-shadow: inset $box-shadow_1;
+        
+        li{
+            //background: none;
+            
+            &:after{
+                right: 0;
+                top: 0;
+                left: 0;
+                bottom:0;
+            }
+        }
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+ul.alarm_solo{
+    display: table;
+    margin: auto;
+}
+#configheader>ul>li{
+    float: left;
+    background-repeat: no-repeat;
+    height: 38px;
+    width: 56px;
+    border-radius: 4px;
+    margin: 0 10px;
+    padding: 0; 
+    top: 3px;
+    box-shadow: none;
+    
+    &:after{
+        box-shadow: none;
+    }
+}
+
+
+ul.alarms li, ul.alarm_solo li{
+    border: none;
+    border-right: 1px solid #dbdee3;    
+    width: 83px;    
+    float: left;
+    height: 48px;
+    padding: 0;
+    @extend %noshadow; 
+    top: 0;
+    margin-right: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+ul.alarms li:after{
+    @extend %noshadow;
+}
+ul.alarms li:first-child, ul.alarms li:first-child:after{
+    border-radius: 4px 0 0 4px;
+}
+ul.alarms li:last-child, ul.alarms li:last-child:after{
+    border-radius: 0 4px 4px 0;
+}
+ul.alarm_solo li{    
+    margin-right: 10px;
+}
+@each $alarm in automatic, safety, messages, localRemote, plantStartStop {
+    ul.alarms li.#{$alarm}, ul.alarm_solo li.#{$alarm} {
+        background-image: url('../svg/StatusAlarmLine/#{$alarm}.svg'),$gradient;
+    }
+    ul.alarms.active li.#{$alarm} {
+        background-image: url('../svg/StatusAlarmLine/#{$alarm}.svg');
+    }
+    ul.alarms li.#{$alarm}:active, ul.alarm_solo li.#{$alarm}:active {
+        background-image: url('../svg/StatusAlarmLine/#{$alarm}.svg'),$reversegradient;
+    }
+}
+#alarmheader ul.alarms.active li{
+    background-position: 24px 6px;
+    
+    .warn, .alert{
+        margin: 3px 4px;
+    }
+}
+#alarmheader ul li .alert, #alarmheader ul li .warn, #alarmheader ul li .fine, #alarmpage .alarm_solo li .alert, #alarmpage .alarm_solo li .warn{
+    @extend %alarmsigns;
+}
+#alarmheader ul li .fine{
+    background-image:url(../svg/status/ok.svg);
+}
+#alarmheader ul li:last-child{
+    margin-right: 1px;
+}
+#configheader{
+    top: 7px;
+    min-width: 300px;
+    right: 0;
+    order: 2;
+    z-index: 0;
+}
+
+#login{
+    cursor: pointer;
+    background-image:url(../svg/SoftwareArea/userLoggedIn.svg),$gradient;
+}
+#login.active{
+    background-image: url(../svg/SoftwareArea/userLoggedIn.svg);
+    background-color: $overlay-back;
+}
+#login.active:after, #config.active:after, #language.active:after{
+    content: none;
+}
+#config{
+    cursor: pointer;
+    background-image:url(../svg/SoftwareArea/settings.svg),$gradient;
+}
+#config.active{
+    background-image: url(../svg/SoftwareArea/settings.svg);
+    background-color: $overlay-back;
+}
+#help{
+    cursor: pointer;
+    background-image:url(../svg/SoftwareArea/help.svg),$gradient;
+}
+#language{
+    cursor: pointer;
+    background-image:url(../svg/SoftwareArea/language.svg),$gradient;
+}
+#language.active{
+    background-image:url(../svg/SoftwareArea/language.svg);
+    background-color: $overlay-back;
+}
+
+#language ul li{
+    background-image: none;
+    background: transparent;
+    float: none;
+    //height: 25px;
+    padding: 12px 10px;
+    font-size: 1.167em;
+    width: 94px;
+}
+#configheader>ul>li.active{
+    height: 67px;
+    border-radius: 4px 4px 0 0;
+    //box-shadow: inset $box-shadow_1;
+    border: 1px solid #cecece;
+    border-bottom: none;
+    width: 58px;
+    background-position: center 1px;
+}
+#language ul li:last-child{
+    clear: both;
+}
+#language ul li:hover, .breadoverlay_li:hover, .listOverlay li:hover{
+    cursor: pointer;
+    background: $lightblue;
+}
+#language ul li span{
+    display: block;
+}
+#language ul{
+    //border-radius: 4px;
+    //background: $overlay-back;
+    //box-shadow: inset $box-shadow_2;
+    width: 100px;
+    //display: none;
+    //height: 0;
+    overflow:hidden;
+    position: relative;
+    top: 66px;
+    left: -18px;
+    z-index: -1;
+    padding: 10px 0 0;
+    //border: 1px solid #cecece;
+    @extend %overlay;
+}
+#user{
+    background-image: none;
+    width: auto !important;
+}
+#user:hover{
+    //cursor: pointer;
+}
+#user .username, .logout{
+    display: block;
+    color: white;
+    font-size: $big-size;
+    position: relative;
+    top: 5px;
+    //white-space: nowrap;
+    max-width: 150px;
+}
+
+#configheader>ul>li#act_lang{
+    background: transparent;
+    color: $default-background;
+    font-size: $big-size;
+    height: 25px;
+    margin-top: 13px !important;
+    width: 40px;
+    margin-right: 0;
+}
+#plants{
+    width:100%;
+    height:100%;
+    float: left;
+}
+.preferences{
+    width: 60%;
+    //height: 0;
+    //position: absolute;
+    //border-radius: 4px;
+    //background: $overlay-back; 
+    //box-shadow: inset $box-shadow_2;
+    top: -80px;
+    right: 0;
+    overflow-y: scroll;
+    //display: none;
+    padding: 15px;
+    z-index: 500;
+    //border: 1px solid #cecece;
+    @extend %overlay;
+}
+#save{
+    position: fixed;
+    top: 200px;
+    right: 30px;
+}
+.logmein{
+    top: 66px;
+    left: -300px;
+    //height: 0;
+    //display: none;
+    width: 650px;
+    //position: absolute;
+    z-index: -1;
+    //border-radius: 4px;
+    //background: $overlay-back;
+    //box-shadow: inset $box-shadow_2;
+    overflow: hidden;
+    //border: 1px solid #cecece;
+    @extend %overlay;
+}
+.ui-widget{
+    font-family: "Roboto-Light" !important;
+}
+.logmein .ui-dialog{
+    position: relative;
+    //height: 484px;
+    //width: 494px;
+    bottom: 0;
+    background: $overlay-back;
+    //box-shadow: inset $box-shadow_2;
+}
+.ui-dialog.logmein .ui-dialog-content iframe, .emoslogin, #content, .emoslogin header{
+    background: $overlay-back; 
+}
+.alarmheader{
+    height: 70px;
+    //box-shadow: 1px 2px 5px 0 #d0d0d0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.alarmtab:hover{cursor: pointer;}
+.alarmtab.icon1{
+    background-image:url(../svg/status/plantDetails.svg),linear-gradient(#fff, #d1d7e0);    
+}
+.alarmtab.icon2{
+    background-image:url(../svg/status/messages.svg),linear-gradient(#fff, #d1d7e0);
+}
+.alarmtab.icon3{
+    background-image:url(../svg/status/alarmLogbook.svg), linear-gradient(#fff, #d1d7e0);
+}
+.alarmtab.icon4{
+    background-image:url(../svg/status/historicalTrending.svg),linear-gradient(#fff, #d1d7e0);
+}
+.alarmtabwrapper.active .alarmtab.icon1{
+    background-image:url(../svg/status/plantDetails.svg);    
+}
+.alarmtabwrapper.active .alarmtab.icon2{
+    background-image:url(../svg/status/messages.svg);
+    margin-left: 0;
+    //border-radius: 7px 7px 0 0;
+    width: 170px;
+}
+.alarmtabwrapper.active .alarmtab.icon3{
+    background-image:url(../svg/status/alarmLogbook.svg);
+    margin-left: 0;
+    //border-radius: 7px 7px 0 0;
+    width: 170px;
+}
+.alarmtabwrapper.active .alarmtab.icon4{
+    background-image:url(../svg/status/historicalTrending.svg);
+    margin-left: 0;
+    //border-radius: 7px 7px 0 0;
+    width: 170px;
+}
+.alarmtabwrapper.active .alarmtab{
+    height: 40px;
+    border-radius: 7px 7px 0 0;
+    margin-bottom: 20px;
+    top: 15px;
+    margin-left: 0;
+    box-shadow: none;    
+    padding-right: 0;
+    background-position: center 3px;
+    width: 172px;
+    border: 1px solid #cecece;
+    background-color: $default-background;
+    z-index: 1;
+    
+    &:after{
+        background: none;
+        box-shadow: none;
+    }
+}
+.alarmtabwrapper{
+    margin-right: 10px;
+    margin-top: -25px;
+    margin-left: 15px;
+    width: 184px;
+}
+.alarmtabwrapper.active{
+    height: 70px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    top: 31px;
+    margin-left: 15px;    
+}
+.alarmTable{
+    height: 44px;
+    border: none;
+    break-inside: avoid;
+   -moz-break-inside: avoid;
+   -webkit-break-inside: avoid;
+}
+.alarmTable td{
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    padding: 5px;
+    border:none;
+}
+.alarmTable.alarm td:first-child, .alarmTable.ALARM td:first-child{
+    background-image: url(../svg/status/error.svg);
+    padding-left: 35px;
+}
+.Groupbox .alarmTable td{
+    color: #222222;
+    font-weight: bold;
+    word-break: break-all;
+    text-align: left;
+}
+.alarmTable.alarm td{
+    background-color: #eccbcb;    
+}
+.alarmTable.warning td:first-child, .alarmTable.WARNING td:first-child{
+    background-image: url(../svg/status/warning.svg);
+    padding-left: 35px;
+}
+.alarmTable.warning td{
+    background-color: #fcdbc5; 
+}
+.alarmpage{
+    //background: $overlay-back;
+    //border-radius:4px;
+    //box-shadow: inset 1px 1px 6px #cecece;
+    //position: absolute;
+    top: -80px;
+    left: 0;
+    right: 0;
+    bottom: -1%;
+    padding: 0 15px 45px 15px;
+    //height: 0;
+    //display: none;
+    //border: 1px solid #cccccc;
+    @extend %overlay
+}
+#alarmpage_content{
+    position: absolute;
+    top: 75px;
+    left: 15px;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: #f2f2f2;
+    border: 1px solid #cecece;
+    padding: 10px;
+}
+#alarmpage_content.alarmList{
+    overflow: scroll;
+    max-height: 500px;
+    
+}
+.alarmpage:after{
+    clear: both;
+}
+#selectId{
+    margin-bottom: 20px;
+    top: 0;
+    padding: 0 25px 10px 10px;
+    line-height: 30px;
+    background-image:url(../svg/tabs/downArrow.svg), $gradient;
+    width: 120px;
+    background-position: right center;
+    font-size: 1.333em;
+    font-weight: 300;
+}
+#selectId:hover{
+    cursor: pointer;
+}
+#alarmpage .alarm_solo{
+    margin: inherit;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #618cb6;
+    border-radius: 4px;
+    padding: 10px;
+    break-inside: avoid;
+   -moz-break-inside: avoid;
+   -webkit-break-inside: avoid;
+   display: inline-block;
+}
+#alarmpage .firsttile {
+    width: 155px;
+    height: 28px;
+    background: linear-gradient(#fff, #d1d7e0);
+    padding: 6px 10px 14px;
+    font-size: 1.333em;
+    line-height: 20px;
+    text-align: center;
+}
+ 
+#alarmpage .firsttile::after {
+/*    position: absolute;
+    top: -2px; 
+    bottom: -2px;
+    left: -2px; 
+    right: -2px;
+    background: linear-gradient(#d1d7e0, #fff);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;*/
+}
+#alarmpage .firsttile .tilename{
+    padding-left: 25px;
+    display: inline-block;
+    background-size: 45px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: -6px 2px;
+}
+.ALARM{
+    &.NEW td{
+        background-color: $AlarmNEW;
+    }
+    &.ACK td{
+        background-color: $AlarmACK;
+    }
+    &.GONE td{
+        background-color: $AlarmGONE;
+    }
+}
+.WARNING{
+    &.NEW td{
+        background-color: $WarningNEW;
+    }
+    &.ACK td{
+        background-color: $WarningACK;
+    }
+    &.GONE td{
+        background-color: $WarningGONE;
+    }
+}
+.OTHER{
+    &.NEW td{
+        background-color: $Other;
+    }
+    &.ACK td{
+        background-color: $Other;
+    }
+    &.GONE td{
+        background-color: $Other;
+    }
+}
+.listOverlay{
+    overflow-y: scroll;
+    position: absolute;
+    left: 0;
+    @extend %overlay;
+    
+    li{
+        padding: 5px;
+        font-size: $normal-size;
+    }
+}
+/* end header */

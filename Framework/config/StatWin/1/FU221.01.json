@@ -1,0 +1,270 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU221.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Parameters 1-4",
+       "TextID": "Parameters1-4",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000008-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1275_InDel1",
+        "OPCID": "TA.T2275_InDel1",
+        "UserRight": "6",
+        "TextID": "&A_E7261_FWText1",
+        "Text": "Input Delay 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2371_CBFW1",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1275_InDel1",
+        "OPCID": "TA.T2275_InDel1",
+        "UserRight": "6",
+        "TextID": "&B_E7261_FWText1",
+        "Text": "Input Delay 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2371_CBFW1",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1276_InDel2",
+        "OPCID": "TA.T2276_InDel2",
+        "UserRight": "6",
+        "TextID": "&A_E7262_FWText2",
+        "Text": "Input Delay 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2372_CBFW2",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1276_InDel2",
+        "OPCID": "TA.T2276_InDel2",
+        "UserRight": "6",
+        "TextID": "&B_E7262_FWText2",
+        "Text": "Input Delay 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2372_CBFW2",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1277_InDel3",
+        "OPCID": "TA.T2277_InDel3",
+        "UserRight": "6",
+        "TextID": "&A_E7263_FWText3",
+        "Text": "Input Delay 3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2373_CBFW3",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1277_InDel3",
+        "OPCID": "TA.T2277_InDel3",
+        "UserRight": "6",
+        "TextID": "&B_E7263_FWText3",
+        "Text": "Input Delay 3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2373_CBFW3",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1278_InDel4",
+        "OPCID": "TA.T2278_InDel4",
+        "UserRight": "6",
+        "TextID": "&A_E7264_FWText4",
+        "Text": "Input Delay 4",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2374_CBFW4",
+        "IntTimeMin": "0"
+       },
+       "1000015-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1278_InDel4",
+        "OPCID": "TA.T2278_InDel4",
+        "UserRight": "6",
+        "TextID": "&B_E7264_FWText4",
+        "Text": "Input Delay 4",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2374_CBFW4",
+        "IntTimeMin": "0"
+       },
+       "RegAutoHide": "1"
+      }
+     },
+     "RegAutoHide": "1",
+     "Text": "Parameters 1-4",
+     "TextID": "Parameters1-4",
+     "VisibleAtRight": "0"
+    },
+    "1000016-Messages": {
+     "1000017-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000018-AddPageTab": {
+     "1000019-AddPageControl": {
+      "1000020-AddPageTab": {
+       "Text": "Parameters 5-8",
+       "TextID": "Parameters5-8",
+       "VisibleAtRight": "0",
+       "1000021-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000022-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1279_InDel5",
+        "OPCID": "TA.T2279_InDel5",
+        "UserRight": "6",
+        "TextID": "&A_E7265_FWText5",
+        "Text": "Input Delay 5",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2375_CBFW5",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1279_InDel5",
+        "OPCID": "TA.T2279_InDel5",
+        "UserRight": "6",
+        "TextID": "&B_E7265_FWText5",
+        "Text": "Input Delay 5",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2375_CBFW5",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1280_InDel6",
+        "OPCID": "TA.T2280_InDel6",
+        "UserRight": "6",
+        "TextID": "&A_E7266_FWText6",
+        "Text": "Input Delay 6",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2376_CBFW6",
+        "IntTimeMin": "0"
+       },
+       "1000025-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1280_InDel6",
+        "OPCID": "TA.T2280_InDel6",
+        "UserRight": "6",
+        "TextID": "&B_E7266_FWText6",
+        "Text": "Input Delay 6",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2376_CBFW6",
+        "IntTimeMin": "0"
+       },
+       "1000026-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1281_InDel7",
+        "OPCID": "TA.T2281_InDel7",
+        "UserRight": "6",
+        "TextID": "&A_E7267_FWText7",
+        "Text": "Input Delay 7",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2377_CBFW7",
+        "IntTimeMin": "0"
+       },
+       "1000027-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1281_InDel7",
+        "OPCID": "TA.T2281_InDel7",
+        "UserRight": "6",
+        "TextID": "&B_E7267_FWText7",
+        "Text": "Input Delay 7",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2377_CBFW7",
+        "IntTimeMin": "0"
+       },
+       "1000028-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1282_InDel8",
+        "OPCID": "TA.T2282_InDel8",
+        "UserRight": "6",
+        "TextID": "&A_E7268_FWText8",
+        "Text": "Input Delay 8",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2378_CBFW8",
+        "IntTimeMin": "0"
+       },
+       "1000029-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1282_InDel8",
+        "OPCID": "TA.T2282_InDel8",
+        "UserRight": "6",
+        "TextID": "&B_E7268_FWText8",
+        "Text": "Input Delay 8",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2378_CBFW8",
+        "IntTimeMin": "0"
+       },
+       "RegAutoHide": "1"
+      }
+     },
+     "RegAutoHide": "1",
+     "Text": "Parameters 5-8",
+     "TextID": "Parameters5-8",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU221",
+ "DiagnosisControl": "FU221.01",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 889173889
+}

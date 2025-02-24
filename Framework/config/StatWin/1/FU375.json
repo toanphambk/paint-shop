@@ -1,0 +1,135 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "10-20",
+   "Name": "FU375.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2258_Reset",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C2258",
+        "OffLED": "O",
+        "Text": "Reset",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "1000009-AddText": {
+        "Position": "R",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2916_OpHoCoLiRea",
+        "Position": "R",
+        "TextID": "S2916",
+        "OffLED": "O",
+        "Text": "Operation Hours Counter Limit Reached",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000011-Messages": {
+     "1000012-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000013-AddPageTab": {
+     "1000014-AddPageControl": {
+      "1000015-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000016-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "showHide": true
+       },
+       "1000017-AddTextOperatingCounterLong": {
+        "OPCID": "AA.I2728_OpHoCo",
+        "TextID": "I2728",
+        "Text": "Operation Hours Counter",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextOperatingCounterInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID": "AS.P2281_OpHoCoLi",
+        "UserRight": "0",
+        "TextID": "P2281",
+        "Text": "Operation Hours Counter Limit",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU375",
+ "DiagnosisControl": "FU375",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 341845270
+}

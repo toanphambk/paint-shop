@@ -1,0 +1,98 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1262_EnAV",
+     "Position": "L",
+     "TextID": "S1262",
+     "OffLED": "O",
+     "Text": "Enable Averaging",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU303.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000008-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "TextID2": "Setpoint"
+       },
+       "1000009-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1291_RunUp",
+        "OPCID": "TA.T2291_RunUp",
+        "UserRight": "1",
+        "TextID": "T2291",
+        "Text": "Delay of Averaging during Run-Up Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextIntegerInput": {
+        "OPCID": "AS.V2280_Quantity",
+        "UserRight": "1",
+        "TextID": "V2280",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMin": "1",
+        "IntInputMax": "50",
+        "Text": "Quantity of Measured Values (1-50)",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": ""
+       },
+       "1000011-AddTextReal": {
+        "OPCID": "AA.R2257_Average",
+        "Precision": "1",
+        "TextID": "R2257",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Average Value",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": ""
+       }
+      }
+     },
+     "Text": "Parameters",
+     "TextID": "Parameters"
+    },
+    "1000012-Messages": {
+     "1000013-AlarmClient": {},
+     "Text": "Messages"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU303",
+ "DiagnosisControl": "FU303.01",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1933618523
+}

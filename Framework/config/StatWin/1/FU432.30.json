@@ -1,0 +1,281 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000004-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "30-20",
+   "Name": "FU432.30",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Modes",
+       "TextID": "Modes",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback1WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "Switch Device back to Automatic",
+        "OffLED": "O",
+        "Text": "Switch Device back to Automatic",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2263_Auto",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S1251_Auto",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "1000010-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2810_Zero",
+        "UserRight": "9",
+        "Position": "L",
+        "TextID": "C2810",
+        "OffLED": "O",
+        "Text": "Zero Balance",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000011-AddPageTab": {
+       "Text": "ControlSignals",
+       "TextID": "ControlSignals",
+       "VisibleAtRight": "0",
+       "1000012-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000013-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2803_LockButComp",
+        "UserRight": "9",
+        "Position": "L",
+        "TextID": "C2803",
+        "OffLED": "O",
+        "Text": "Lock Buttons Complete",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2804_LockButUcal",
+        "UserRight": "9",
+        "Position": "L",
+        "TextID": "C2804",
+        "OffLED": "O",
+        "Text": "Lock Buttons Ucal",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2809_UnLockBut",
+        "UserRight": "9",
+        "Position": "L",
+        "TextID": "C2809",
+        "OffLED": "O",
+        "Text": "Unlock Buttons",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2263_Auto",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C2263",
+        "OffLED": "O",
+        "Text": "Switch Device back to Automatic",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "automatic"
+       },
+       "1000017-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2810_Zero",
+        "UserRight": "9",
+        "Position": "L",
+        "TextID": "C2810",
+        "OffLED": "O",
+        "Text": "Zero Balance",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000018-AddPageTab": {
+     "1000019-AddPageControl": {
+      "1000020-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "1",
+       "1000021-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000022-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T3198_CycCommuMC",
+        "OPCID": "TA.T4198_CycCommuMC",
+        "UserRight": "7",
+        "TextID": "T4198",
+        "Text": "Cycle Communication Motion Control",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T3197_ComCommuMC",
+        "OPCID": "TA.T4197_ComCommuMC",
+        "UserRight": "7",
+        "TextID": "T4197",
+        "Text": "Command Communication Motion Control",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddTextReal": {
+        "OPCID": "AA.R2444_BalActValue",
+        "Precision": "1",
+        "TextID": "R2444",
+        "UnitInit": "2",
+        "UnitMetric": "kg",
+        "Text": "X10 Balance Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "kg",
+        "UnitImperial": "kg",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "1"
+    },
+    "1000025-Messages": {
+     "1000026-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU432",
+ "DiagnosisControl": "FU432.30",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 2072759865
+}

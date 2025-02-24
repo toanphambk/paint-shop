@@ -1,0 +1,56 @@
+<div class="wizard wizards-container standard" ng-click="closeRelatedOverlay()">
+    <header>
+        <h2 class="{{ selectedTile.productionRelevance}}">{{ selectedTile.name}}</h2>
+        <div class="button favorites">
+            <span class="icon favorites"></span>
+        </div>
+    </header>
+    <div class="tabbar">
+        <div class="status-icon {{ selectedTile.productionRelevance}}"></div>
+    </div>
+    <div class="content">
+        <div class="top-line">
+            <span class="pagerHead">Symptom &amp; Maincauses</span>
+            <div class="button linkout" style="display:none;">
+                <span class="linkout-icon"></span>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="scrollPanel">
+                <p class="red">{{ selectedTile.infoText}}</p>
+                <p class="neutral" ng-show="selectedTile.predictionTime !== null">Predicted value:{{selectedTile.predictionTime}}</p>
+                <!--<p class="neutral" ng-show="selectedTile.predictionTime === null"><span ng-show="selectedTile.predictionText === ''">Predicted Value:</span><span ng-show="selectedTile.predictionText !== ''">{{selectedTile.predictionText}}</span> {{selectedTile.predictionTime}}</p>-->
+                <div class="button start-button" ng-click="toggleHandling(selectedTile.id)">
+                    <div class="center">
+                        <span class="icon handling"></span>
+                        <span ng-show="!selectedTile.inProcess">Start</span>
+                        <span ng-show="selectedTile.inProcess">Stop</span>
+                    </div>
+                    <span class="time" ng-show="selectedTile.inProcess">{{ selectedTile.durationHandling}}</span>
+                </div>
+                <ol>
+                    <li class="errorItem" dir-paginate="item in wizardData | itemsPerPage:3"  pagination-id="wizard">
+                        <span>{{ item.name}}</span>
+                        <button class="button info" ng-click="openTrending($event, $index)">
+                            <span class="icon info"></span>
+                        </button>
+                        <div ng-click="closeTrendingOverlay()" class="info connection-element">
+                            <span class="icon info"></span>
+                        </div>
+                    </li>
+                </ol>
+                <p class="red">SEM</p>
+                <button style="margin-left: 20px; margin-bottom: 20px;" class="button info" ng-click="openWindow($event, $index)">
+                    <span class="icon info"></span>
+                </button>
+                <div class="pagination-conatiner">
+                    <dir-pagination-controls pagination-id="wizard" template-url="directives/wizard/paginationWizard.tpl.html"></dir-pagination-controls>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="overlay" ng-click="closeAllOverlays()"></div>
+<wizard-solutions></wizard-solutions>
+<wizard-trending></wizard-trending>
+<wizard-related></wizard-related>

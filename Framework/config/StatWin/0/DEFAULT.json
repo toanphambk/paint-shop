@@ -1,0 +1,20 @@
+{
+  "data": {
+    "windowData": {
+      "Comment": "",
+      "Head": {},
+      "OPCVersionID": "EMOSDEFAULT",
+      "Version": "00-00",
+      "PageControl": {
+        "1000001-Messages": { "1000002-AlarmClient": {}, "Visible": "2" }
+      },
+      "Name": "DEFAULT"
+    }
+  },
+  "GroupRightIndex": "0",
+  "PLC": "110_02F",
+  "DiagnosisLibID": "0",
+  "HeadControls": false,
+  "Tag": ".I20_201_Heinz",
+  "DiagnosisControl": "DEFAULT"
+}

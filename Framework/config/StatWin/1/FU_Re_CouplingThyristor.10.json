@@ -1,0 +1,241 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "FU_Re_CouplingThyristor.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2841_CTOn",
+        "Position": "L",
+        "TextID": "S2841",
+        "OffLED": "O",
+        "Text": "Coupling Thyristor is On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3113_CTFOn",
+        "Position": "L",
+        "TextID": "S3113",
+        "OffLED": "O",
+        "Text": "Coupling Thyristor Fan On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000011-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "acknowledge"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000012-Messages": {
+     "1000013-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000014-AddPageTab": {
+     "1000015-AddPageControl": {
+      "1000016-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000017-AddText": {
+        "Position": "L",
+        "TextID": "Timer",
+        "Text": "Timer",
+        "showHide": false,
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "30000000",
+        "OPCID2": "AS.I2490_CTFOff",
+        "OPCID": "AA.I2490_CTFOff",
+        "UserRight": "1",
+        "TextID": "I2490",
+        "Text": "Coupling Thyristor Fan Off Delay Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Base": "ms",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000019-AddPageTab": {
+       "Text": "Diagnostics",
+       "TextID": "Diagnostics",
+       "VisibleAtRight": "0",
+       "1000020-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Coupling Thyristor",
+        "TextID": "CouplingThyristor",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000021-AddTextOperatingCounterInputLong": {
+        "OPCID": "AA.I2004_OperTimeCT",
+        "TextID": "I2004",
+        "Text": "Operation Time Coupling Thyristor",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "UserRight": "11",
+        "IntTimeMin": "0",
+        "IntTimeMax": "2147483640",
+        "Position": "L"
+       },
+       "1000022-AddTextIntegerInput": {
+        "OPCID": "AA.I2003_OpCycCT",
+        "UserRight": "11",
+        "Position": "L",
+        "IntInputMin": "",
+        "Text": "Operating Cycles Coupling Thyristor",
+        "UnitLocale": "",
+        "TextID": "I2003",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640",
+        "InputMin": "0"
+       },
+       "1000023-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Coupling Thyristor Fan",
+        "TextID": "CouplingThyristorFan",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000024-AddTextOperatingCounterInputLong": {
+        "OPCID": "AA.I2006_OperTimeCTF",
+        "TextID": "I2006",
+        "Text": "Operation Time Coupling Thyristor Fan",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "UserRight": "11",
+        "IntTimeMin": "0",
+        "IntTimeMax": "2147483640",
+        "Position": "L"
+       },
+       "1000025-AddTextIntegerInput": {
+        "OPCID": "AA.I2005_OpCycCTF",
+        "UserRight": "11",
+        "Position": "L",
+        "IntInputMin": "",
+        "Text": "Operating Cycles Coupling Thyristor Fan",
+        "UnitLocale": "",
+        "TextID": "I2005",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640",
+        "InputMin": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Re_CouplingThyristor",
+ "DiagnosisControl": "FU_Re_CouplingThyristor.10",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1624536858
+}

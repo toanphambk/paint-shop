@@ -1,0 +1,17 @@
+[
+{
+"id":0,
+"name":"Chiller in WK113 ist kaputt",
+"plant":"ASU",
+"plantType":"ASU1",
+"functionGroup":"WK113",
+"solution":["Check valve","get smoke", "Fix valve"]
+},
+{"id":1,
+"name":"Chiller wurde von den Borg assimiliert",
+"plant":"ASU",
+"plantType":"ASU1",
+"functionGroup":"WK113",
+"solution":["Check valve","Fix valve"]
+}
+]

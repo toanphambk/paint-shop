@@ -1,0 +1,236 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU265.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "R",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3569_EnNMPos",
+        "Position": "R",
+        "TextID": "S3569",
+        "OffLED": "O",
+        "Text": "Enable No Middle Position Allowed",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3569_EnNMPos",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3567_EnOpen",
+        "Position": "R",
+        "TextID": "S3567",
+        "OffLED": "O",
+        "Text": "Enable Open",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3568_EnClse",
+        "Position": "R",
+        "TextID": "S3568",
+        "OffLED": "O",
+        "Text": "Enable Close",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3570_PosSelOpen",
+        "Position": "R",
+        "TextID": "S3570",
+        "OffLED": "O",
+        "Text": "Position Selection Open",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3571_PosSelClse",
+        "Position": "R",
+        "TextID": "S3571",
+        "OffLED": "O",
+        "Text": "Position Selection Close",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2264_Open",
+        "Position": "R",
+        "TextID": "S2264",
+        "OffLED": "O",
+        "Text": "Drive Opened",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2265_Clsd",
+        "Position": "R",
+        "TextID": "S2265",
+        "OffLED": "O",
+        "Text": "Drive Closed",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000015-Messages": {
+     "1000016-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000017-AddPageTab": {
+     "1000018-AddPageControl": {
+      "1000019-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000020-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000021-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "TextID2": "Setpoint",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1709_NMPos",
+        "OPCID": "TA.T2709_NMPos",
+        "UserRight": "6",
+        "TextID": "T2709",
+        "Text": "No Middle Position Allowed",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3569_EnNMPos",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1259_MOp",
+        "OPCID": "TA.T2259_MOp",
+        "UserRight": "6",
+        "TextID": "T2259",
+        "Text": "Motion Control Open",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1260_MCl",
+        "OPCID": "TA.T2260_MCl",
+        "UserRight": "6",
+        "TextID": "T2260",
+        "Text": "Motion Control Close",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1710_PosOpLost",
+        "OPCID": "TA.T2710_PosOpLost",
+        "UserRight": "6",
+        "TextID": "T2710",
+        "Text": "Position Opened Lost",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1711_PosClLost",
+        "OPCID": "TA.T2711_PosClLost",
+        "UserRight": "6",
+        "TextID": "T2711",
+        "Text": "Position Closed Lost",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU265",
+ "DiagnosisControl": "FU265",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 665026916
+}

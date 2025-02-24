@@ -1,0 +1,91 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU2333.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "VisibleOPCID": "",
+        "showHide": true
+       },
+       "1000008-AddTextTimerInputLong": {
+        "IntTimeMax": "86400",
+        "OPCID": "TS.T1417_AcRun",
+        "UserRight": "1",
+        "TextID": "T1417",
+        "Text": "Actuator Running Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextTimerInputLong": {
+        "IntTimeMax": "86400",
+        "OPCID": "TS.T1386_Pulse",
+        "UserRight": "1",
+        "TextID": "T1386",
+        "Text": "Min Impulse Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextRealInput": {
+        "OPCID": "AS.V2295_Cycle",
+        "UserRight": "1",
+        "RealInputMax": "10000",
+        "Text": "Cycle Time Sample",
+        "UnitLocale": "ms",
+        "Precision": "0",
+        "TextID": "V2295",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "100",
+        "InputMin": "-100",
+        "Position": "L"
+       }
+      }
+     },
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    },
+    "1000011-Messages": {
+     "1000012-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU2333",
+ "DiagnosisControl": "FU2333",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1906233494
+}

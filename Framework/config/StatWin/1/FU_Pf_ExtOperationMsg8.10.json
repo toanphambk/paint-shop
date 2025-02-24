@@ -1,0 +1,281 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1261_EnblOM",
+     "Position": "L",
+     "TextID": "S1261",
+     "OffLED": "O",
+     "Text": "Enable Operation Message",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "FU_Pf_ExtOperationMsg8.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7271_ExtOM1",
+        "Position": "L",
+        "TextID": "&S_G7271_OMText1",
+        "OffLED": "O",
+        "Text": "External Operation Message 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C2331_ConfIn1",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7272_ExtOM2",
+        "Position": "L",
+        "TextID": "&S_G7272_OMText2",
+        "OffLED": "O",
+        "Text": "External Operation Message 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C2332_ConfIn2",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7273_ExtOM3",
+        "Position": "L",
+        "TextID": "&S_G7273_OMText3",
+        "OffLED": "O",
+        "Text": "External Operation Message 3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C2333_ConfIn3",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7274_ExtOM4",
+        "Position": "L",
+        "TextID": "&S_G7274_OMText4",
+        "OffLED": "O",
+        "Text": "External Operation Message 4",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C2334_ConfIn4",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7275_ExtOM5",
+        "Position": "L",
+        "TextID": "&S_G7275_OMText5",
+        "OffLED": "O",
+        "Text": "External Operation Message 5",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C2335_ConfIn5",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7276_ExtOM6",
+        "Position": "L",
+        "TextID": "&S_G7276_OMText6",
+        "OffLED": "O",
+        "Text": "External Operation Message 6",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C2336_ConfIn6",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7277_ExtOM7",
+        "Position": "L",
+        "TextID": "&S_G7277_OMText7",
+        "OffLED": "O",
+        "Text": "External Operation Message 7",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C2337_ConfIn7",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7278_ExtOM8",
+        "Position": "L",
+        "TextID": "&S_G7278_OMText8",
+        "OffLED": "O",
+        "Text": "External Operation Message 8",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C2338_ConfIn8",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000016-AddPageTab": {
+       "Text": "Config",
+       "TextID": "Config",
+       "VisibleAtRight": "0",
+       "1000017-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Configuration Messages",
+        "TextID": "ConfigurationMessages",
+        "VisibleAtRight": "0",
+        "showHide": false
+       },
+       "1000018-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CO.C2331_ConfIn1",
+        "Position": "L",
+        "UserRight": "1",
+        "TextID": "C2331",
+        "OffLED": "O",
+        "Text": "Configuration Input 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "on"
+       },
+       "1000019-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CO.C2332_ConfIn2",
+        "Position": "L",
+        "UserRight": "1",
+        "TextID": "C2332",
+        "OffLED": "O",
+        "Text": "Configuration Input 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "on"
+       },
+       "1000020-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CO.C2333_ConfIn3",
+        "Position": "L",
+        "UserRight": "1",
+        "TextID": "C2333",
+        "OffLED": "O",
+        "Text": "Configuration Input 3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "on"
+       },
+       "1000021-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CO.C2334_ConfIn4",
+        "Position": "L",
+        "UserRight": "1",
+        "TextID": "C2334",
+        "OffLED": "O",
+        "Text": "Configuration Input 4",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "on"
+       },
+       "1000022-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CO.C2335_ConfIn5",
+        "Position": "L",
+        "UserRight": "1",
+        "TextID": "C2335",
+        "OffLED": "O",
+        "Text": "Configuration Input 5",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "on"
+       },
+       "1000023-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CO.C2336_ConfIn6",
+        "Position": "L",
+        "UserRight": "1",
+        "TextID": "C2336",
+        "OffLED": "O",
+        "Text": "Configuration Input 6",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "on"
+       },
+       "1000024-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CO.C2337_ConfIn7",
+        "Position": "L",
+        "UserRight": "1",
+        "TextID": "C2337",
+        "OffLED": "O",
+        "Text": "Configuration Input 7",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "on"
+       },
+       "1000025-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CO.C2338_ConfIn8",
+        "Position": "L",
+        "UserRight": "1",
+        "TextID": "C2338",
+        "OffLED": "O",
+        "Text": "Configuration Input 8",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "on"
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000026-Messages": {
+     "1000027-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Pf_ExtOperationMsg8",
+ "DiagnosisControl": "FU_Pf_ExtOperationMsg8.10",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1370270621
+}

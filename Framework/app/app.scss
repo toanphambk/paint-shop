@@ -1,0 +1,39 @@
+$fa-font-path: "../bower_components/font-awesome/fonts";
+@import '../bower_components/font-awesome/scss/font-awesome';
+
+/**
+ * App-wide Styles 
+ */
+  
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+// Component styles are injected through grunt
+// injector
+@import '_colors.scss';
+@import '_fonts.scss';
+@import '_global.scss';
+@import 'main/main.scss';
+@import 'plant/plant.scss';
+@import '../directives/contentsection/contentsection.scss';
+@import '../directives/contentsectionPlant/contentsectionPlant.scss';
+@import '../directives/gridelement/gridelement.scss';
+@import '../directives/gridelementPlant/gridelementPlant.scss';
+@import '../directives/mainmenu/mainmenu.scss';
+@import '../directives/navigationBar/navigationBar.scss';
+@import '../directives/statusbar/statusbar.scss';
+@import '../directives/wizard/wizard.scss';
+@import '../directives/wizardRelated/wizardRelated.scss';
+@import '../directives/wizardSolutions/wizardSolutions.scss';
+// endinjector

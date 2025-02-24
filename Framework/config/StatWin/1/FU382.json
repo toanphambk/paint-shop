@@ -1,0 +1,437 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU382.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "OperationModes",
+        "Text": "Operation Modes",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1251_Auto",
+        "Position": "L",
+        "TextID": "S1251",
+        "OffLED": "O",
+        "Text": "Automatic Mode",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1257_Manu",
+        "Position": "L",
+        "TextID": "S1257",
+        "OffLED": "O",
+        "Text": "Manual Mode",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000011-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2308_ResQty",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C2308",
+        "OffLED": "O",
+        "Text": "Reset Quantity",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "1000012-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2258_Reset",
+        "Position": "L",
+        "UserRight": "11",
+        "TextID": "C2258",
+        "OffLED": "O",
+        "Text": "Reset",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "1000013-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2251_On",
+        "Position": "R",
+        "TextID": "S2251",
+        "OffLED": "O",
+        "Text": "Drive is On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S3800_CBValve",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2264_Open",
+        "Position": "R",
+        "TextID": "S2264",
+        "OffLED": "O",
+        "Text": "Device Opened",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3800_CBValve",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2265_Clsd",
+        "Position": "R",
+        "TextID": "S2265",
+        "OffLED": "O",
+        "Text": "Device Closed",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3800_CBValve",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000017-Messages": {
+     "1000018-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000019-AddPageTab": {
+     "1000020-AddPageControl": {
+      "1000021-AddPageTab": {
+       "Text": "Quantity",
+       "TextID": "Quantity",
+       "VisibleAtRight": "0",
+       "1000022-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000023-AddTextRealInput": {
+        "OPCID": "AS.V2412_QtyPTSP",
+        "UserRight": "0",
+        "RealInputMax": "100",
+        "Text": "Quantity per Time (30s)",
+        "UnitLocale": "l",
+        "Precision": "3",
+        "TextID": "V2412",
+        "UnitInit": "2",
+        "UnitMetric": "l",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "l",
+        "VisibleOPCID": "SB.S3813_CBOnQTi",
+        "VisibleAtRight": "0",
+        "InputMax": "100.00",
+        "InputMin": "0.00",
+        "Position": "L"
+       },
+       "1000024-AddTextRealInput": {
+        "OPCID": "AS.V2411_QtyPSSP",
+        "UserRight": "0",
+        "RealInputMax": "100",
+        "Text": "Quantity per Stroke",
+        "UnitLocale": "l",
+        "Precision": "3",
+        "TextID": "V2411",
+        "UnitInit": "2",
+        "UnitMetric": "l",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "l",
+        "VisibleOPCID": "SB.S3814_CBOnQCo",
+        "VisibleAtRight": "0",
+        "InputMax": "100.00",
+        "InputMin": "0.00",
+        "Position": "L"
+       },
+       "1000025-AddTextReal": {
+        "OPCID": "AA.R2379_QtyTimeAV",
+        "Precision": "3",
+        "TextID": "R2379",
+        "UnitInit": "2",
+        "UnitMetric": "l",
+        "Text": "Quantity per Time Equivent",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "l",
+        "UnitImperial": "l",
+        "VisibleOPCID": "SB.S3816_CBOnQ",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2308_ResQty",
+        "UserRight": "0",
+        "TextID": "C2308",
+        "OffLED": "O",
+        "Text": "Reset Quantity per Time Equivalent",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3816_CBOnQ",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset",
+        "Position": "L"
+       },
+       "1000027-AddTextReal": {
+        "OPCID": "AA.R2380_QtyTotAV",
+        "Precision": "3",
+        "TextID": "R2380",
+        "UnitInit": "2",
+        "UnitMetric": "l",
+        "Text": "Quantity Totally",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "l",
+        "UnitImperial": "l",
+        "VisibleOPCID": "SB.S3816_CBOnQ",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "1"
+      },
+      "1000028-AddPageTab": {
+       "Text": "Dosing",
+       "TextID": "Dosing",
+       "VisibleAtRight": "0",
+       "1000029-AddText": {
+        "Position": "L",
+        "TextID": "Timer",
+        "Text": "Timer",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000030-AddTextTimerLong": {
+        "OPCID": "TA.T2868_OnTiAVM",
+        "TextID": "T2868",
+        "Text": "On Duration Time Actual Value Memory",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S3817_CBOn",
+        "VisibleAtRight": "0"
+       },
+       "1000031-AddText": {
+        "Position": "L",
+        "TextID": "Counter",
+        "Text": "Counter",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000032-AddTextInteger": {
+        "OPCID": "AA.I2682_OnCountAVM",
+        "TextID": "I2682",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "On Duration Counter Actual Value Memory",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "SB.S3817_CBOn",
+        "VisibleAtRight": "0"
+       },
+       "1000033-AddText": {
+        "Position": "L",
+        "TextID": "Quantity",
+        "Text": "Quantity",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000034-AddTextReal": {
+        "OPCID": "AA.R2518_OnQtyAVM",
+        "Precision": "3",
+        "TextID": "R2518",
+        "UnitInit": "2",
+        "UnitMetric": "l",
+        "Text": "On Duration Quantity Actual Value Memory",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "l",
+        "UnitImperial": "l",
+        "VisibleOPCID": "SB.S3816_CBOnQ",
+        "VisibleAtRight": "0"
+       },
+       "1000035-AddText": {
+        "Position": "L",
+        "TextID": "PulseIntervalMonitoring",
+        "Text": "Pulse Interval Monitoring",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000036-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1869_OnPul",
+        "OPCID": "TA.T2869_OnPul",
+        "UserRight": "0",
+        "TextID": "T2869",
+        "Text": "On Duration Pulse Interval Monitoring",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3817_CBOn",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Base": "s",
+        "Position": "L"
+       },
+       "1000037-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.I2680_OnTSP",
+        "OPCID": "AA.I2681_OnTAV",
+        "TextID": "I2681",
+        "Text": "On Duration Counter Time Limit",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3817_CBOn",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000038-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000039-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000040-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.P2451_OnDurSP",
+        "OPCID": "AA.I2451_OnDurAV",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "On Duration Time",
+        "UnitLocale": "x0,1s",
+        "TextID": "I2451",
+        "UnitInit": "2",
+        "UnitMetric": "x0,1s",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "x0,1s",
+        "VisibleOPCID": "SB.S3799_CBBiPump",
+        "VisibleAtRight": "0",
+        "InputMax": "1000",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000041-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.P2452_BrkDurSP",
+        "OPCID": "AA.I2452_BrkDurAV",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Break Duration Time",
+        "UnitLocale": "x0,1s",
+        "TextID": "I2452",
+        "UnitInit": "2",
+        "UnitMetric": "x0,1s",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "x0,1s",
+        "VisibleOPCID": "SB.S3799_CBBiPump",
+        "VisibleAtRight": "0",
+        "InputMax": "1000",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "1"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU382",
+ "DiagnosisControl": "FU382",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 2059973427
+}

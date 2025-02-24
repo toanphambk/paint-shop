@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Ebene_1"
+   x="0px"
+   y="0px"
+   width="140"
+   height="100"
+   viewBox="0 0 140 100"
+   xml:space="preserve"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="wetElectricConveyor.svg"><metadata
+     id="metadata25"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs23" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="742"
+     inkscape:window-height="480"
+     id="namedview21"
+     showgrid="false"
+     inkscape:zoom="2.5"
+     inkscape:cx="70"
+     inkscape:cy="45"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Ebene_1" /><style
+     type="text/css"
+     id="style3">
+	.st0{fill:none;}
+	.st1{fill:#3B4654;}
+	.st2{fill:#196FA3;}
+</style><rect
+     class="st0"
+     width="140"
+     height="90"
+     id="rect5"
+     x="0"
+     y="10"
+     style="fill:none" /><g
+     id="g7"
+     transform="translate(0,10)"><path
+       class="st1"
+       d="M 98.3,71 95,71 c -1,0 -2,-0.5 -2.5,-1.4 -0.6,-0.9 -0.6,-2 -0.2,-2.9 L 98.5,53.6 C 94.1,43.1 85.6,30 85.6,30 c 0,0 -2.7,4 -5.8,9.4 2.8,6.6 4.2,11.7 4.2,15.3 0,7.9 -4,14.3 -9.3,18.7 3.3,3 7.6,4.6 10.9,4.6 4,0 9.4,-2.6 12.7,-7 z"
+       id="path9"
+       inkscape:connector-curvature="0"
+       style="fill:#3b4654" /><polygon
+       class="st1"
+       points="107,84 117,76 110,76 117,63 104,63 111,50 104.1,50 95,68 108.1,68 104.1,76 98,76 "
+       id="polygon11"
+       style="fill:#3b4654" /><path
+       class="st1"
+       d="M 58.6,6 C 58.6,6 36,40.8 36,55 c 0,1.4 0.1,2.8 0.4,4 l 19.8,0 c 6.6,0 12,5.4 12,12 l 0,1 c 0,0.8 -0.1,1.7 -0.3,2.4 C 74.7,70.9 81,63.9 81,54.7 81,41.2 58.6,6 58.6,6 Z m 9.6,57.7 c -0.3,0.2 -0.6,0.3 -0.9,0.3 -0.4,0 -0.9,-0.2 -1.2,-0.6 -0.5,-0.6 -0.4,-1.6 0.2,-2.1 1.6,-1.3 4.2,-3.9 4.2,-7.6 0,-1.2 -0.5,-3.7 -2.8,-8.9 -0.3,-0.8 0,-1.6 0.8,-2 0.8,-0.3 1.6,0 2,0.8 2.1,4.6 3.1,7.9 3.1,10.1 -0.1,4.9 -3.4,8.4 -5.4,10 z"
+       id="path13"
+       inkscape:connector-curvature="0"
+       style="fill:#3b4654" /><g
+       id="g15"><path
+         class="st2"
+         d="m 56.1,63 c 4.4,0 8,3.6 8,8 l 0,1 c 0,4.4 -3.6,8 -8,8 l -45,0 c -4.4,0 -8,-3.6 -8,-8 l 0,-1 c 0,-4.4 3.6,-8 8,-8 l 45,0 m 0,-2 -45,0 c -5.5,0 -10,4.5 -10,10 l 0,1 c 0,5.5 4.5,10 10,10 l 45,0 c 5.5,0 10,-4.5 10,-10 l 0,-1 c 0,-5.5 -4.5,-10 -10,-10 l 0,0 z"
+         id="path17"
+         inkscape:connector-curvature="0"
+         style="fill:#196fa3" /><path
+         class="st2"
+         d="m 56.1,65 -45,0 c -3.3,0 -6,2.7 -6,6 l 0,1 c 0,3.3 2.7,6 6,6 l 45,0 c 3.3,0 6,-2.7 6,-6 l 0,-1 c 0,-3.3 -2.7,-6 -6,-6 z M 13.6,75.8 c -2.3,0 -4.2,-1.9 -4.2,-4.2 0,-2.3 1.9,-4.2 4.2,-4.2 2.3,0 4.2,1.9 4.2,4.2 0,2.2 -1.9,4.2 -4.2,4.2 z m 20,0 c -2.3,0 -4.2,-1.9 -4.2,-4.2 0,-2.3 1.9,-4.2 4.2,-4.2 2.3,0 4.2,1.9 4.2,4.2 0,2.2 -1.9,4.2 -4.2,4.2 z m 20,0 c -2.3,0 -4.2,-1.9 -4.2,-4.2 0,-2.3 1.9,-4.2 4.2,-4.2 2.3,0 4.2,1.9 4.2,4.2 0,2.2 -1.9,4.2 -4.2,4.2 z"
+         id="path19"
+         inkscape:connector-curvature="0"
+         style="fill:#196fa3" /></g></g></svg>

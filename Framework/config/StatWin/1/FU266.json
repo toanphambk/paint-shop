@@ -1,0 +1,119 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "10-20",
+   "Name": "FU266.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "showHide": true
+       },
+       "1000008-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "TextID2": "Setpoint",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextSiemensTimeInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID": "TS.T3218_DmpMovTime",
+        "UserRight": "0",
+        "TextID": "T3218",
+        "Text": "Damper Moving Time Setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T3219_CycleTime",
+        "OPCID": "TA.T4219_CycleTime",
+        "UserRight": "6",
+        "TextID": "T4219",
+        "Text": "Damper Sequence Cycle Time Setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T3220_PurgeTime1",
+        "OPCID": "TA.T4220_PurgeTime1",
+        "UserRight": "6",
+        "TextID": "T4220",
+        "Text": "Purge Time 1 Setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T3221_PurgeTime2",
+        "OPCID": "TA.T4221_PurgeTime2",
+        "UserRight": "6",
+        "TextID": "T4221",
+        "Text": "Purge Time 2 Setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T3222_PurgeTime3",
+        "OPCID": "TA.T4222_PurgeTime3",
+        "UserRight": "6",
+        "TextID": "T4222",
+        "Text": "Purge Time 3 Setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    },
+    "1000014-Messages": {
+     "1000015-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU266",
+ "DiagnosisControl": "FU266",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1610998811
+}

@@ -1,0 +1,500 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000004-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "20-20",
+   "Name": "FU444.20",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Modes",
+       "TextID": "Modes",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "Position": "L",
+        "UserRight": "3",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "1000009-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2737_TDReq",
+        "Position": "R",
+        "TextID": "S2737",
+        "OffLED": "O",
+        "Text": "Trolley Dock Request",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2736_TDAct",
+        "Position": "R",
+        "TextID": "S2736",
+        "OffLED": "O",
+        "Text": "Trolley Dock Active",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S2738_TDIsOpen",
+        "Position": "R",
+        "TextID": "S2738",
+        "OffLED": "O",
+        "Text": "Trolley Dock Is Open",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5419_B18TDOccu",
+        "Position": "R",
+        "TextID": "S5419",
+        "OffLED": "O",
+        "Text": "B18 Trolley Dock Occupied",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2741_TrollLoadOk",
+        "Position": "R",
+        "TextID": "S2741",
+        "OffLED": "O",
+        "Text": "Trolley Loading Ok",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2817_EnChBodyCount",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S2739_TrollMuBeChang",
+        "Position": "R",
+        "TextID": "S2739",
+        "OffLED": "O",
+        "Text": "Trolley Must Be Changed",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2817_EnChBodyCount",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "Y",
+        "OPCID": "SB.S2740_TrollShBePreChang",
+        "Position": "R",
+        "TextID": "S2740",
+        "OffLED": "O",
+        "Text": "Trolley Should Be Prepared For Change",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2817_EnChBodyCount",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000017-AddPageTab": {
+       "Text": "Reset",
+       "TextID": "Reset",
+       "VisibleAtRight": "0",
+       "1000018-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000019-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C3044_ResetCount",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C3044",
+        "OffLED": "O",
+        "Text": "Reset Body Counter",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000020-AddPageTab": {
+       "Text": "Activate TD",
+       "TextID": "ActivateTD",
+       "VisibleAtRight": "1",
+       "1000021-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000022-AddCommandFeedback2WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C3047",
+        "OffLED": "O",
+        "Text": "Trolley Dock Deactivate",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C3047_TDDeactiv",
+        "writeTagWR2": "CB.C3046_TDActiv",
+        "readTagRD1": "SB.S2735_TDDeactiv",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "1"
+      },
+      "1000023-AddPageTab": {
+       "Text": "Config",
+       "TextID": "Config",
+       "VisibleAtRight": "1",
+       "1000024-AddText": {
+        "Position": "L",
+        "TextID": "ConfigurationSignals",
+        "Text": "Configuration Signals",
+        "Bold": "2",
+        "VisibleAtRight": "1",
+        "showHide": true
+       },
+       "1000025-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2817_EnChBodyCount",
+        "Position": "L",
+        "TextID": "C2899",
+        "OffLED": "O",
+        "Text": "Enable Change over Body Counter",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "1"
+       },
+       "1000026-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2818_GhoAdBodyPos",
+        "Position": "L",
+        "TextID": "C2900",
+        "OffLED": "O",
+        "Text": "Ghost Added Body Counter Possible",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "1"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "1"
+    },
+    "1000027-Messages": {
+     "1000028-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000029-AddPageTab": {
+     "1000030-AddPageControl": {
+      "1000031-AddPageTab": {
+       "Text": "Trolley",
+       "TextID": "Trolley",
+       "VisibleAtRight": "0",
+       "1000032-AddText": {
+        "Position": "L",
+        "TextID": "Trolley",
+        "Text": "Trolley",
+        "showHide": true
+       },
+       "1000033-AddTextInteger": {
+        "OPCID": "AA.I3501_TDNoLab",
+        "TextID": "I3501",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Trolley Dock Number Labeled",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000034-AddPageTab": {
+       "Text": "Body Counter",
+       "TextID": "BodyCounter",
+       "VisibleAtRight": "0",
+       "1000035-AddText": {
+        "Position": "L",
+        "TextID": "Body",
+        "Text": "Body",
+        "showHide": true
+       },
+       "1000036-AddTextReal": {
+        "OPCID": "AA.R3338_BCActValPer",
+        "Precision": "1",
+        "TextID": "R3338",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "Text": "Body Counter Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "%",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000037-AddTextReal": {
+        "OPCID": "AA.V3353_BCTrollWasChangF",
+        "Precision": "1",
+        "TextID": "V3353",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "Text": "Body Counter Trolley Wasn't Changed Fault Setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "%",
+        "UnitImperial": "%",
+        "VisibleOPCID": "SB.S2817_EnChBodyCount",
+        "VisibleAtRight": "0"
+       },
+       "1000038-AddTextReal": {
+        "OPCID": "AA.V3354_BCTrollMuBeChang",
+        "Precision": "1",
+        "TextID": "V3354",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "Text": "Body Counter Trolley Must Be Changed Setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "%",
+        "UnitImperial": "%",
+        "VisibleOPCID": "SB.S2817_EnChBodyCount",
+        "VisibleAtRight": "0"
+       },
+       "1000039-AddTextReal": {
+        "OPCID": "AA.V3355_BCTrollShBePreCha",
+        "Precision": "1",
+        "TextID": "V3355",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "Text": "Body Counter Trolley Should Be Prepared For Change Setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "%",
+        "UnitImperial": "%",
+        "VisibleOPCID": "SB.S2817_EnChBodyCount",
+        "VisibleAtRight": "0"
+       },
+       "1000040-AddTextIntegerInput": {
+        "OPCID": "AS.P3135_BCTCMaxAmount",
+        "UserRight": "0",
+        "IntInputMin": "-2147483640",
+        "UnitLocale": "",
+        "Text=Body Counter Trolley Change Max Amount ": " 100 % Setpoint",
+        "TextID": "P3135",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Text": "Body Counter Trolley Change Max Amount = 100 % Setpoint",
+        "InputMax": "2147483640",
+        "InputMin": "-2147483640",
+        "Position": "L"
+       },
+       "1000041-AddTextInteger": {
+        "OPCID": "AA.I3503_BodyCountActVal",
+        "TextID": "I3503",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Body Counter Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000042-AddTextInteger": {
+        "OPCID": "AA.P3136_GhoAdBodyCount",
+        "TextID": "P3136",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Ghost Added Body Counter Setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "SB.S2818_GhoAdBodyPos",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000043-AddPageTab": {
+       "Text": "Dly Times",
+       "TextID": "DlyTimes",
+       "VisibleAtRight": "0",
+       "1000044-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000045-AddTextDoubleTimerLong": {
+        "OPCID2": "TA.T3377_B18TDIsOpenFlt",
+        "OPCID": "TA.T4377_B18TDIsOpenFlt",
+        "TextID": "T4377",
+        "Text": "B18 Trolley Dock Is Open Fault",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "1"
+       },
+       "1000046-AddTextDoubleTimerLong": {
+        "OPCID2": "TA.T3378_B18TDIsOpenWarn",
+        "OPCID": "TA.T4378_B18TDIsOpenWarn",
+        "TextID": "T4378",
+        "Text": "B18 Trolley Dock Is Open Warning",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "1"
+       },
+       "RegAutoHide": "1"
+      },
+      "1000047-AddPageTab": {
+       "Text": "Consu",
+       "TextID": "Consu",
+       "VisibleAtRight": "1",
+       "1000048-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000049-AddTextOperatingCounterLong": {
+        "OPCID": "AA.I2723_OperatingCou",
+        "TextID": "I2723",
+        "Text": "Total Operating Hour Counter",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU444",
+ "DiagnosisControl": "FU444.20",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -2142130938
+}

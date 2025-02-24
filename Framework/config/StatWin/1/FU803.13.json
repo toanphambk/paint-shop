@@ -1,0 +1,382 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "13-20",
+   "Name": "FU803.13",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2323_PreEnc1",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C2323",
+        "OffLED": "O",
+        "Text": "Preselection Encoder 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2324_PreEnc2",
+        "Position": "L",
+        "UserRight": "4",
+        "TextID": "C2324",
+        "OffLED": "O",
+        "Text": "Preselection Encoder 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3081_Enc1Act",
+        "Position": "R",
+        "TextID": "S3081",
+        "OffLED": "O",
+        "Text": "Encoder 1 Active",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3084_Enc2Act",
+        "Position": "R",
+        "TextID": "S3084",
+        "OffLED": "O",
+        "Text": "Encoder 2 Active",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3082_ConvRun",
+        "Position": "R",
+        "TextID": "S3082",
+        "OffLED": "O",
+        "Text": "Conveyor Running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3083_ConvStop",
+        "Position": "R",
+        "TextID": "S3083",
+        "OffLED": "O",
+        "Text": "Conveyor Stop",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000015-Messages": {
+     "1000016-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000017-AddPageTab": {
+     "1000018-AddPageControl": {
+      "1000019-AddPageTab": {
+       "Text": "Parameters 1",
+       "TextID": "Parameters1",
+       "VisibleAtRight": "0",
+       "1000020-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000021-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1516_ConvRunSwOn",
+        "OPCID": "TA.T2516_ConvRunSwOn",
+        "UserRight": "6",
+        "TextID": "T2516",
+        "Text": "Conveyor Running Switch On Delay",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextIntegerInput": {
+        "OPCID": "AS.P2455_MaxDiffCyc",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Max. Difference per 100ms Cycle",
+        "UnitLocale": "Steps",
+        "TextID": "P2455",
+        "UnitInit": "2",
+        "UnitMetric": "Steps",
+        "IntInputMax": "32767",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "Steps",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "32767",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000023-AddTextRealInput": {
+        "OPCID": "AS.V2420_LenEncCom",
+        "UserRight": "0",
+        "RealInputMax": "100",
+        "Text": "Length Encoder Comperison",
+        "UnitLocale": "m",
+        "Precision": "1",
+        "TextID": "V2420",
+        "UnitInit": "2",
+        "UnitMetric": "m",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "m",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "100.00",
+        "InputMin": "0.00",
+        "Position": "L"
+       },
+       "1000024-AddTextIntegerInput": {
+        "OPCID": "AS.P2370_MaxDiffEnCyc",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Max. Difference Encoder 1/2 between one Cycle Fault",
+        "UnitLocale": "Steps",
+        "TextID": "P2370",
+        "UnitInit": "2",
+        "UnitMetric": "Steps",
+        "IntInputMax": "32767",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "Steps",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "32767",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000025-AddTextIntegerInput": {
+        "OPCID": "AS.P2456_MaxDiffEncCom",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Max. Difference Encoder Comparison",
+        "UnitLocale": "Steps",
+        "TextID": "P2456",
+        "UnitInit": "2",
+        "UnitMetric": "Steps",
+        "IntInputMax": "32767",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "Steps",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "327567",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000026-AddTextInteger": {
+        "OPCID": "AA.I2489_DiffAfEncCom",
+        "TextID": "I2489",
+        "UnitInit": "2",
+        "UnitMetric": "Steps",
+        "Text": "Difference after Comparison (Encoder 1 minus Encoder 2)",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "Steps",
+        "UnitImperial": "Steps",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000027-AddTextInteger": {
+        "OPCID": "AA.I2496_Enc1AV",
+        "TextID": "I2496",
+        "UnitInit": "2",
+        "UnitMetric": "Steps",
+        "Text": "Encoder 1 Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "Steps",
+        "UnitImperial": "Steps",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddTextInteger": {
+        "OPCID": "AA.I2497_Enc2AV",
+        "TextID": "I2497",
+        "UnitInit": "2",
+        "UnitMetric": "Steps",
+        "Text": "Encoder 2 Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "Steps",
+        "UnitImperial": "Steps",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000029-AddPageTab": {
+       "Text": "Parameters 2",
+       "TextID": "Parameters2",
+       "VisibleAtRight": "0",
+       "1000030-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000031-AddTextIntegerInput": {
+        "OPCID": "AS.P2454_IncPerRev",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Increments per Revolution",
+        "UnitLocale": "Steps",
+        "TextID": "P2454",
+        "UnitInit": "2",
+        "UnitMetric": "Steps",
+        "IntInputMax": "32767",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "Steps",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "32767",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000032-AddTextRealInput": {
+        "OPCID": "AS.V2418_LenPerRev",
+        "UserRight": "0",
+        "RealInputMax": "100",
+        "Text": "Length per Revolution",
+        "UnitLocale": "m",
+        "Precision": "3",
+        "TextID": "V2418",
+        "UnitInit": "2",
+        "UnitMetric": "m",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "m",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "100.00",
+        "InputMin": "0.00",
+        "Position": "L"
+       },
+       "1000033-AddTextRealInput": {
+        "OPCID": "CO.V2336_PDis",
+        "UserRight": "0",
+        "RealInputMax": "100",
+        "Text": "Puls Distance",
+        "UnitLocale": "m",
+        "Precision": "3",
+        "TextID": "V2336",
+        "UnitInit": "2",
+        "UnitMetric": "m",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "m",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "100.00",
+        "InputMin": "0.00",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU803",
+ "DiagnosisControl": "FU803.13",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -625490557
+}

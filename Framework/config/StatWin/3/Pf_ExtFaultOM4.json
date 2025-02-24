@@ -1,0 +1,303 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1261_EnblOM",
+     "Position": "L",
+     "TextID": "S1261",
+     "OffLED": "O",
+     "Text": "Enable Operation Message",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "L",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults to Visu",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "Pf_ExtFaultOM4",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status",
+       "TextID": "Status",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2371_CBFW1",
+        "Position": "L",
+        "TextID": "S2371",
+        "OffLED": "O",
+        "Text": "Status Bit for CBFW1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2372_CBFW2",
+        "Position": "L",
+        "TextID": "S2372",
+        "OffLED": "O",
+        "Text": "Status Bit for CBFW2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2373_CBFW3",
+        "Position": "L",
+        "TextID": "S2373",
+        "OffLED": "O",
+        "Text": "Status Bit for CBFW3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2374_CBFW4",
+        "Position": "L",
+        "TextID": "S2374",
+        "OffLED": "O",
+        "Text": "Status Bit for CBFW3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7271_ExtOM1",
+        "Position": "L",
+        "TextID": "S7271",
+        "OffLED": "O",
+        "Text": "External Operation Message 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7272_ExtOM2",
+        "Position": "L",
+        "TextID": "S7272",
+        "OffLED": "O",
+        "Text": "External Operation Message 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7273_ExtOM3",
+        "Position": "L",
+        "TextID": "S7273",
+        "OffLED": "O",
+        "Text": "External Operation Message 3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7274_ExtOM4",
+        "Position": "L",
+        "TextID": "S7274",
+        "OffLED": "O",
+        "Text": "External Operation Message 4",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0",
+       "10000001-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       },
+       "10000002-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1261_EnblOM",
+        "Position": "L",
+        "TextID": "S1261",
+        "OffLED": "O",
+        "Text": "Enable Operation Message",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0",
+        "VisibleOPCID": ""
+       },
+       "10000003-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1255_EnFV",
+        "Position": "L",
+        "TextID": "S1255",
+        "OffLED": "O",
+        "Text": "Enable Faults to Visu",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0",
+        "VisibleOPCID": ""
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000016-Messages": {
+     "1000017-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000018-AddPageTab": {
+     "1000019-AddPageControl": {
+      "1000020-AddPageTab": {
+       "Text": "Set points",
+       "TextID": "SetPoints",
+       "VisibleAtRight": "0",
+       "1000021-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Set Points",
+        "TextID": "SetPoints",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000022-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.I1262_InDel1",
+        "OPCID": "AA.I1262_InDel1",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Input Delay 1",
+        "UnitLocale": "x0,1s",
+        "TextID": "I1262",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "x0,1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483647",
+        "InputMin": "-100",
+        "Position": "L"
+       },
+       "1000023-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.I1263_InDel2",
+        "OPCID": "AA.I1263_InDel2",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Input Delay 2",
+        "UnitLocale": "x0,1s",
+        "TextID": "I1263",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "x0,1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483647",
+        "InputMin": "-100",
+        "Position": "L"
+       },
+       "1000024-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.I1264_InDel3",
+        "OPCID": "AA.I1264_InDel3",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Input Delay 3",
+        "UnitLocale": "x0,1s",
+        "TextID": "I1264",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "x0,1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483647",
+        "InputMin": "-100",
+        "Position": "L"
+       },
+       "1000025-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.I1265_InDel4",
+        "OPCID": "AA.I1265_InDel4",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Input Delay 4",
+        "UnitLocale": "x0,1s",
+        "TextID": "I1264",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "x0,1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483647",
+        "InputMin": "-100",
+        "Position": "L"
+       }
+      }
+     },
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "Pf_ExtFaultOM4",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -877159303
+}

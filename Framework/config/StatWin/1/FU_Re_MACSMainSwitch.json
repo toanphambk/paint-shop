@@ -1,0 +1,304 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "FU_Re_MACSMainSwitch.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback1WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "S1251",
+        "OffLED": "O",
+        "Text": "Automatic Mode",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2263_Auto",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S1251_Auto",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddCommandFeedback2WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "S2880",
+        "OffLED": "O",
+        "Text": "Main Switch Is On",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2251_Off",
+        "writeTagWR2": "CB.C2254_On",
+        "readTagRD1": "SB.S2880_MSOn",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true,
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2880_MSOn",
+        "Position": "R",
+        "TextID": "S2880",
+        "OffLED": "O",
+        "Text": "Main Switch is On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2879_RCEOn",
+        "Position": "L",
+        "TextID": "S2879",
+        "OffLED": "O",
+        "Text": "Release Control Electronic On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2761_HVOn",
+        "Position": "L",
+        "TextID": "S2761",
+        "OffLED": "O",
+        "Text": "High Voltage Switch is On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2760_HV",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000015-Messages": {
+     "1000016-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000017-AddPageTab": {
+     "1000018-AddPageControl": {
+      "1000019-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000020-AddText": {
+        "Position": "L",
+        "TextID": "Timer",
+        "Text": "Timer",
+        "showHide": false,
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4698_MSOnM",
+        "OPCID": "AA.I4698_MSOnM",
+        "UserRight": "1",
+        "TextID": "I4698",
+        "Text": "Main Switch On Monitoring Timer",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Base": "ms",
+        "Position": "L"
+       },
+       "1000022-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4699_MSOffM",
+        "OPCID": "AA.I4699_MSOffM",
+        "UserRight": "1",
+        "TextID": "I4699",
+        "Text": "Main Switch Off Monitoring Timer",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Base": "ms",
+        "Position": "L"
+       },
+       "1000023-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4700_MSOn",
+        "OPCID": "AA.I4700_MSOn",
+        "UserRight": "1",
+        "TextID": "I4700",
+        "Text": "Main Switch On Delay Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Base": "ms",
+        "Position": "L"
+       },
+       "1000024-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4702_MSOffSeq",
+        "OPCID": "AA.I4702_MSOffSeq",
+        "UserRight": "1",
+        "TextID": "I4702",
+        "Text": "Switch Off Sequence max. Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000025-AddPageTab": {
+       "Text": "Diagnostics",
+       "TextID": "Diagnostics",
+       "VisibleAtRight": "0",
+       "1000026-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Operation",
+        "TextID": "Operation",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000027-AddTextOperatingCounterInputLong": {
+        "OPCID": "AA.I2001_OperTime",
+        "TextID": "I2001",
+        "Text": "Operation Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "UserRight": "11",
+        "IntTimeMin": "0",
+        "IntTimeMax": "2147483640",
+        "Position": "L"
+       },
+       "1000028-AddTextIntegerInput": {
+        "OPCID": "AA.I2000_OpCyc",
+        "UserRight": "11",
+        "Position": "L",
+        "IntInputMin": "",
+        "Text": "Operating Cycles",
+        "UnitLocale": "",
+        "TextID": "I2000",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640",
+        "InputMin": "0"
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Re_MACSMainSwitch",
+ "DiagnosisControl": "FU_Re_MACSMainSwitch",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -649667548
+}

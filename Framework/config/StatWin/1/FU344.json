@@ -1,0 +1,107 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU344.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000008-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1445_CCW",
+        "OPCID": "TA.T2445_CCW",
+        "UserRight": "6",
+        "TextID": "T2445",
+        "Text": "Cell Comparsion Warning Delay",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextRealInput": {
+        "OPCID": "AS.V2369_HystW",
+        "UserRight": "6",
+        "RealInputMax": "5000",
+        "Text": "Warning Hysterisis",
+        "UnitLocale": "A",
+        "Precision": "1",
+        "TextID": "V2369",
+        "UnitInit": "2",
+        "UnitMetric": "A",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "A",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextReal": {
+        "OPCID": "AA.R2340_LCellAV",
+        "Precision": "1",
+        "TextID": "R2340",
+        "UnitInit": "2",
+        "UnitMetric": "A",
+        "Text": "Left Cell Actual Value",
+        "Border": "B",
+        "UnitLocale": "A",
+        "UnitImperial": "A",
+        "VisibleOPCID": ""
+       },
+       "1000011-AddTextReal": {
+        "OPCID": "AA.R2341_RCellAV",
+        "Precision": "1",
+        "TextID": "R2341",
+        "UnitInit": "2",
+        "UnitMetric": "A",
+        "Text": "Right Cell Actual Value",
+        "Border": "B",
+        "UnitLocale": "A",
+        "UnitImperial": "A",
+        "VisibleOPCID": ""
+       }
+      }
+     },
+     "Text": "Parameters",
+     "TextID": "Parameters"
+    },
+    "1000012-Messages": {
+     "1000013-AlarmClient": {},
+     "Text": "Messages"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU344",
+ "DiagnosisControl": "FU344",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -397769329
+}

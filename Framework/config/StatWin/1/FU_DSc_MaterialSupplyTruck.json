@@ -1,0 +1,294 @@
+{
+ "data": {
+  "windowData": {
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "50-10",
+   "Head": {},
+   "Name": "FU_DSc_MaterialSupplyTruck.50",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Modes",
+       "TextID": "Modes",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1252_Enbl",
+        "Position": "L",
+        "TextID": "S1252",
+        "OffLED": "O",
+        "Text": "Enable Device",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1255_EnFV",
+        "Position": "L",
+        "TextID": "S1255",
+        "OffLED": "O",
+        "Text": "Enable Faults",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1254_EnMV",
+        "Position": "L",
+        "TextID": "S1254",
+        "OffLED": "O",
+        "Text": "Enable Manual Mode",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Control Signals",
+        "TextID": "Control Signals",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000012-AddCommandFeedback1WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "4",
+        "TextID": "S1251",
+        "OffLED": "O",
+        "Text": "Automatic",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2263_Auto",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S1251_Auto",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "writeTagWR2": "CB.C2263_Auto"
+       },
+       "1000013-AddCommandFeedback2WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "S5607",
+        "OffLED": "O",
+        "Text": "Fill-Up Running",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C3592_FilUpSiloSto",
+        "writeTagWR2": "CB.C3656_FilUpSiloOn",
+        "readTagRD1": "SB.S5607_FilUpRun",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "Position": "L",
+        "UserRight": "3",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "acknowledge"
+       },
+       "1000015-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Response Signals",
+        "TextID": "ResponseSignals",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S5753_SiloIsFul",
+        "Position": "L",
+        "TextID": "S5753",
+        "OffLED": "O",
+        "Text": "Silo Is Full",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5799_TrkStatnIsOn",
+        "Position": "L",
+        "TextID": "S5799",
+        "OffLED": "O",
+        "Text": "Truck Station Is On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5605_FilUpPrsl",
+        "Position": "L",
+        "TextID": "S5605",
+        "OffLED": "O",
+        "Text": "Fill-Up Preselected",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5606_FilUpRel",
+        "Position": "L",
+        "TextID": "S5606",
+        "OffLED": "O",
+        "Text": "Fill-Up Release",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5519_B08RelChar",
+        "Position": "L",
+        "TextID": "S5519",
+        "OffLED": "O",
+        "Text": "B08 Release Charging",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      },
+      "1000021-AddPageTab": {
+       "Text": "Aggregates",
+       "TextID": "Aggregates",
+       "VisibleAtRight": "0",
+       "1000022-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Control Signals",
+        "TextID": "ControlSignals",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000023-AddCommandFeedback2WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "S5672",
+        "OffLED": "O",
+        "Text": "Q07 Fill-Up Valve Is Open",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C3676_Q07FilUpCls",
+        "writeTagWR2": "CB.C3614_Q07FilUpOp",
+        "readTagRD1": "SB.S5672_Q07FilUpIsOp",
+        "leftIcon": "closeCommand",
+        "rightIcon": "openCommand",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000024-Messages": {
+     "1000025-AlarmClient": {},
+     "Text": "Messages"
+    },
+    "1000026-AddPageTab": {
+     "1000027-AddPageControl": {
+      "1000028-AddPageTab": {
+       "Text": "General",
+       "TextID": "General",
+       "VisibleAtRight": "0",
+       "1000029-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Timer",
+        "TextID": "Timer",
+        "VisibleAtRight": "0",
+        "showHide": false
+       },
+       "1000030-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483647",
+        "OPCID2": "AS.I8556_FilUpSiloMC",
+        "OPCID": "AA.I8556_FilUpSiloMC",
+        "UserRight": "7",
+        "TextID": "I8556",
+        "Text": "Fill-Up Silo Motion Control",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Base": "ms",
+        "Position": "L"
+       },
+       "1000031-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483647",
+        "OPCID2": "AS.I1641_ExtAckn",
+        "OPCID": "AA.I1641_ExtAckn",
+        "UserRight": "7",
+        "TextID": "I1641",
+        "Text": "Extension Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Base": "ms",
+        "Position": "L"
+       }
+      }
+     },
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "childWindows": null,
+ "childWindowsData": {},
+ "type": "OpenDiagnosisWindow",
+ "PLC": "Simulator_01",
+ "Tag": ".New_Elements_FU_DSc_MaterialSupply",
+ "DiagnosisLibID": "1",
+ "DiagnosisControl": "FU_DSc_MaterialSupplyTruck",
+ "GroupRightIndex": "1",
+ "HeadControls": "true",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 654663947
+}

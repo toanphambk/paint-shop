@@ -1,0 +1,289 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Border": "B"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Border": "B"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU279.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback2WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2263",
+        "OffLED": "O",
+        "Text": "Switch Device back to Automatic",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2263_Auto",
+        "writeTagWR2": "SB.S1251_Auto",
+        "readTagRD1": "SB.S1257_Manu",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddCommandFeedback2WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2257",
+        "OffLED": "O",
+        "Text": "Manual Open",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2250_Clse",
+        "writeTagWR2": "CB.C2257_Open",
+        "readTagRD1": "SB.S1257_Manu",
+        "leftIcon": "closeCommand",
+        "rightIcon": "openCommand",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddText": {
+        "Position": "R",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3459_Ded",
+        "Position": "R",
+        "TextID": "S3459",
+        "OffLED": "O",
+        "Text": "Dedusting running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "VisibleOPCID=AA.I2647_QV >": " 1",
+        "OPCID": "SB.S2801_ValveAO",
+        "Position": "R",
+        "TextID": "S2801",
+        "OffLED": "O",
+        "Text": "Valve A",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "VisibleOPCID=AA.I2647_QV >": " 2",
+        "OPCID": "SB.S2802_ValveBO",
+        "Position": "R",
+        "TextID": "S2802",
+        "OffLED": "O",
+        "Text": "Valve B",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "VisibleOPCID=AA.I2647_QV >": " 3",
+        "OPCID": "SB.S2803_ValveCO",
+        "Position": "R",
+        "TextID": "S2803",
+        "OffLED": "O",
+        "Text": "Valve C",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "VisibleOPCID=AA.I2647_QV >": " 4",
+        "OPCID": "SB.S2804_ValveDO",
+        "Position": "R",
+        "TextID": "S2804",
+        "OffLED": "O",
+        "Text": "Valve D",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "G",
+        "VisibleOPCID=AA.I2647_QV >": " 5",
+        "OPCID": "SB.S2805_ValveEO",
+        "Position": "R",
+        "TextID": "S2805",
+        "OffLED": "O",
+        "Text": "Valve E",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextLED": {
+        "OnLED": "G",
+        "VisibleOPCID=AA.I2647_QV >": " 6",
+        "OPCID": "SB.S2806_ValveFO",
+        "Position": "R",
+        "TextID": "S2806",
+        "OffLED": "O",
+        "Text": "Valve F",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextLED": {
+        "OnLED": "G",
+        "VisibleOPCID=AA.I2647_QV >": " 7",
+        "OPCID": "SB.S2807_ValveGO",
+        "Position": "R",
+        "TextID": "S2807",
+        "OffLED": "O",
+        "Text": "Valve G",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextLED": {
+        "OnLED": "G",
+        "VisibleOPCID=AA.I2647_QV >": " 8",
+        "OPCID": "SB.S2808_ValveHO",
+        "Position": "R",
+        "TextID": "S2808",
+        "OffLED": "O",
+        "Text": "Valve H",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000020-Messages": {
+     "1000021-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000022-AddPageTab": {
+     "1000023-AddPageControl": {
+      "1000024-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000025-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000026-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "Bold": "2",
+        "Bold2": "2",
+        "VisibleOPCID": "",
+        "TextID2": "Setpoint",
+        "VisibleAtRight": "0"
+       },
+       "1000027-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.P2645_VOTS",
+        "OPCID": "AA.I2645_VOTAV",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "On Duration Time",
+        "UnitLocale": "x0,1s",
+        "TextID": "I2645",
+        "UnitInit": "2",
+        "UnitMetric": "x0,1s",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "x0,1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.P2646_VBTS",
+        "OPCID": "AA.I2646_VBTAV",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Break Duration Time",
+        "UnitLocale": "x0,1s",
+        "TextID": "I2646",
+        "UnitInit": "2",
+        "UnitMetric": "x0,1s",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "x0,1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU279",
+ "DiagnosisControl": "FU279.01",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1709082822
+}

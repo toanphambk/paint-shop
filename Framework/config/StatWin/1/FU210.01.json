@@ -1,0 +1,127 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU210.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "TextID": "$E_E7310_ILMDes",
+        "Text": "Interlock Message Descripton",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0"
+       },
+       "1000008-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "Bold": "2",
+        "Bold2": "2",
+        "TextID2": "Setpoint",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1446_AAckn",
+        "OPCID": "TA.T2446_AAckn",
+        "UserRight": "6",
+        "TextID": "T2446",
+        "Text": "Automatic Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1448_HBRS",
+        "OPCID": "TA.T2448_HBRS",
+        "UserRight": "6",
+        "TextID": "T2448",
+        "Text": "Motion Control Heartbeat Remote Station",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddText": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "showHide": true
+       },
+       "1000012-AddTextInteger": {
+        "OPCID": "AA.I2486_HBRS",
+        "TextID": "I2486",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Heartbeat from Remote Station",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000013-AddTextInteger": {
+        "OPCID": "AA.I2487_HBS",
+        "TextID": "I2487",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Heartbeat from Station (PLC)",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    },
+    "1000014-Messages": {
+     "1000015-AlarmClient": {},
+     "Text": "Messages"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_210",
+ "DiagnosisControl": "FU210.01",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -559400235
+}

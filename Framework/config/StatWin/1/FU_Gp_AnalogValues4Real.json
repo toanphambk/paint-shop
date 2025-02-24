@@ -1,0 +1,186 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-19",
+   "Name": "FU_Gp_AnalogValues4Real.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "TextID": "&G_G7470_AnaValHead",
+        "Text": "Analog Values Headline",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "showHide": true
+       },
+       "1000008-AddTextReal": {
+        "OPCID": "AA.R7471_AnaVal1",
+        "Precision": "1",
+        "TextID": "G7471_AnaValText1",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "Text": "$O_Analog Value 1",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "°C",
+        "UnitImperial": "°F",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextReal": {
+        "OPCID": "AA.R7472_AnaVal2",
+        "Precision": "1",
+        "TextID": "G7472_AnaValText2",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "Text": "$I_Analog Value 2",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "°C",
+        "UnitImperial": "°F",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextReal": {
+        "OPCID": "AA.R7473_AnaVal3",
+        "Precision": "1",
+        "TextID": "G7473_AnaValText3",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "Text": "$O_Analog Value 3",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "°C",
+        "UnitImperial": "°F",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextReal": {
+        "OPCID": "AA.R7474_AnaVal4",
+        "Precision": "1",
+        "TextID": "G7474_AnaValText4",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "Text": "$O_Analog Value 4",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "°C",
+        "UnitImperial": "°F",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextRealInput": {
+        "OPCID": "AS.R2685_ReplAnaVal1",
+        "UserRight": "7",
+        "RealInputMax": "2147483640",
+        "Text": "Replacement Value of Analog Value 1",
+        "UnitLocale": "°C",
+        "Precision": "1",
+        "TextID": "R2685",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "°F",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextRealInput": {
+        "OPCID": "AS.R2686_ReplAnaVal2",
+        "UserRight": "7",
+        "RealInputMax": "2147483640",
+        "Text": "Replacement Value of Analog Value 2",
+        "UnitLocale": "°C",
+        "Precision": "1",
+        "TextID": "R2686",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "°F",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextRealInput": {
+        "OPCID": "AS.R2687_ReplAnaVal3",
+        "UserRight": "7",
+        "RealInputMax": "2147483640",
+        "Text": "Replacement Value of Analog Value 3",
+        "UnitLocale": "°C",
+        "Precision": "1",
+        "TextID": "R2687",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "°F",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextRealInput": {
+        "OPCID": "AS.R2688_ReplAnaVal4",
+        "UserRight": "7",
+        "RealInputMax": "2147483640",
+        "Text": "Replacement Value of Analog Value 4",
+        "UnitLocale": "°C",
+        "Precision": "1",
+        "TextID": "R2688",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "°F",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000016-Messages": {
+     "1000017-AlarmClient": {},
+     "Text": "Messages"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Gp_AnalogValues4Real",
+ "DiagnosisControl": "FU_Gp_AnalogValues4Real",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 595398403
+}

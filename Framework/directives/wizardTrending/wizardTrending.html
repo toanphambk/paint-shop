@@ -1,0 +1,46 @@
+<div id="quickcontrol" class="trending-container" style="display: none; padding: 20px;">
+     
+    <div class="top-solution-container">
+            <div class="solution-header solutionHead solutionHeadLine"> 
+                <h2 class="0">{{selectedTile.name}}</h2>
+                <button class="button close" ng-click="closeTrendingOverlay()" style="float: right;">
+                    <span class="icon close"></span>
+                </button>
+            </div>
+            <h3>Solution:</h3>
+	    <ol>
+	      <li>{{ openSolution.solution }}</li>
+	    </ol>
+    </div>
+    <div class="top-container">
+        <span class="FloatLeft trendingSpans" style="width: 170px; margin:0">Error Occurrence:</span> 
+        <span class="FloatLeft trendingSpans">{{ selectedTile.trendTimestampStart | date:'medium' }}</span>
+        <div id="dropdownFilterChart" class="filter-dropdown emosbutton filter-icon" ng-click="chartOverlay($event)" placeholder="Filter Auswahl">Chart Selection 
+            <span class="filter-icon"></span>
+        </div>
+        <ul id="chartSelection" class="faultsFilter listOverlay">
+            
+            <li ng-repeat="chart in selectedTile.additionalInfo" ng-if="chart.metaData !== ''">{{chart.metaData}}
+                <input type="checkbox" ng-model="chart.selected" value={{chart.name}} id="buttonCheckChart" ng-change="changeCheckbox(chart)" ng-init="initCheckbox(chart)"  >
+            </li>
+        </ul> 
+        <br class="cl">
+        </div>
+    <div id="TrendPageContainer" class="img-container">
+        		
+    </div>	
+</div>
+
+<div class="trending-container html" style="display: none; padding: 20px;">
+    <div class="top-solution-container">
+        <div class="solution-header solutionHead solutionHeadLine"> 
+            <h2 class="0">{{selectedTile.name}}</h2>
+            <button class="button close" ng-click="closeTrendingOverlay()" style="float: right;">
+                <span class="icon close"></span>
+            </button>
+        </div>
+    </div>
+    <div class="frameOverlay">
+        <iframe id="frame" class="frameHtml" src="{{openSolution.dashboardUrl}}"></iframe>
+    </div>
+</div>

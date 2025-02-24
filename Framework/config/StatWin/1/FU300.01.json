@@ -1,0 +1,381 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1253_EnP",
+     "Position": "L",
+     "TextID": "S1253",
+     "OffLED": "O",
+     "Text": "Enable Process",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU300.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "R",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "VisibleOPCID": ""
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2287_SwpH",
+        "Position": "R",
+        "TextID": "&V_E7297_SPText8",
+        "OffLED": "O",
+        "Text": "Switch-Point H",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2286_SwpG",
+        "Position": "R",
+        "TextID": "&V_E7296_SPText7",
+        "OffLED": "O",
+        "Text": "Switch-Point G",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2285_SwpF",
+        "Position": "R",
+        "TextID": "&V_E7295_SPText6",
+        "OffLED": "O",
+        "Text": "Switch-Point F",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2284_SwpE",
+        "Position": "R",
+        "TextID": "&V_E7294_SPText5",
+        "OffLED": "O",
+        "Text": "Switch-Point E",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2283_SwpD",
+        "Position": "R",
+        "TextID": "&V_E7293_SPText4",
+        "OffLED": "O",
+        "Text": "Switch-Point D",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2282_SwpC",
+        "Position": "R",
+        "TextID": "&V_E7292_SPText3",
+        "OffLED": "O",
+        "Text": "Switch-Point C",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2281_SwpB",
+        "Position": "R",
+        "TextID": "&V_E7291_SPText2",
+        "OffLED": "O",
+        "Text": "Switch-Point B",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2280_SwpA",
+        "Position": "R",
+        "TextID": "&V_E7290_SPText1",
+        "OffLED": "O",
+        "Text": "Switch-Point A",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000016-AddTextReal": {
+        "OPCID": "AA.R2251_ActValue",
+        "Position": "R",
+        "Text": "Actual Value",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "R2251",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000017-Messages": {
+     "1000018-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000019-AddPageTab": {
+     "1000020-AddPageControl": {
+      "1000021-AddPageTab": {
+       "Text": "Parameters 1",
+       "TextID": "Parameters1",
+       "VisibleAtRight": "0",
+       "1000022-AddText": {
+        "TextID": "Setpoints",
+        "Text": "Setpoints",
+        "Border": "N"
+       },
+       "1000023-AddTextRealInput": {
+        "OPCID": "AS.V7297_SwpH",
+        "UserRight": "6",
+        "RealInputMax": "2147483640",
+        "Text": "Switch-Point H Setpoint",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7297_SPText8",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddTextRealInput": {
+        "OPCID": "AS.V7296_SwpG",
+        "UserRight": "6",
+        "RealInputMax": "2147483640",
+        "Text": "Switch-Point G Setpoint",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7296_SPText7",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddTextRealInput": {
+        "OPCID": "AS.V7295_SwpF",
+        "UserRight": "7",
+        "RealInputMax": "2147483640",
+        "Text": "Switch-Point F Setpoint",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7295_SPText6",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddTextRealInput": {
+        "OPCID": "AS.V7294_SwpE",
+        "UserRight": "7",
+        "RealInputMax": "2147483640",
+        "Text": "Switch-Point E Setpoint",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7294_SPText5",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000027-AddTextRealInput": {
+        "OPCID": "AS.V7293_SwpD",
+        "UserRight": "7",
+        "RealInputMax": "2147483640",
+        "Text": "Switch-Point D Setpoint",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7293_SPText4",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "-2147483640",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": ""
+       },
+       "1000028-AddTextRealInput": {
+        "OPCID": "AS.V7292_SwpC",
+        "UserRight": "7",
+        "RealInputMax": "2147483640",
+        "Text": "Switch-Point C Setpoint",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7292_SPText3",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "-2147483640",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": ""
+       },
+       "1000029-AddTextRealInput": {
+        "OPCID": "AS.V7291_SwpB",
+        "UserRight": "6",
+        "RealInputMax": "2147483640",
+        "Text": "Switch-Point B Setpoint",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7291_SPText2",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "-2147483640",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": ""
+       },
+       "1000030-AddTextRealInput": {
+        "OPCID": "AS.V7290_SwpA",
+        "UserRight": "6",
+        "RealInputMax": "2147483640",
+        "Text": "Switch-Point A Setpoint",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7290_SPText1",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "-2147483640",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": ""
+       },
+       "RegAutoHide": "0"
+      },
+      "1000031-AddPageTab": {
+       "Text": "Parameters 2",
+       "TextID": "Parameters2",
+       "VisibleAtRight": "0",
+       "1000032-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000033-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "TextID2": "Setpoint"
+       },
+       "1000034-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1361_DelMaxH",
+        "OPCID": "TA.T2361_DelMaxH",
+        "UserRight": "6",
+        "TextID": "&V_E7297_SPText8",
+        "Text": "Switch-Point H Setpoint",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000035-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1362_DelMaxG",
+        "OPCID": "TA.T2362_DelMaxG",
+        "UserRight": "6",
+        "TextID": "&V_E7296_SPText7",
+        "Text": "Switch-Point G Setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000036-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1360_DelMinB",
+        "OPCID": "TA.T2360_DelMinB",
+        "UserRight": "6",
+        "TextID": "&V_E7291_SPText2",
+        "Text": "Switch-Point B Setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000037-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1359_DelMinA",
+        "OPCID": "TA.T2359_DelMinA",
+        "UserRight": "6",
+        "TextID": "&V_E7290_SPText1",
+        "Text": "Switch-Point A Setpoint",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU300",
+ "DiagnosisControl": "FU300.01",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 969647827
+}

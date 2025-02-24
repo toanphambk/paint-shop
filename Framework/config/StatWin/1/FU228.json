@@ -1,0 +1,616 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU228.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback1WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2263",
+        "OffLED": "O",
+        "Text": "Switch Device back to Automatic",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2263_Auto",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S1251_Auto",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddCommandFeedback2WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2265",
+        "OffLED": "O",
+        "Text": "Manual Start",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2261_Stop",
+        "writeTagWR2": "CB.C2265_Start",
+        "readTagRD1": "SB.S2446_Stop",
+        "readTagRD2": "SB.S2445_Start",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddCommandFeedback1WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2281",
+        "OffLED": "O",
+        "Text": "Manual Start Range",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2281_Range",
+        "readTagRD1": "SB.S2447_Range",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2258_Reset",
+        "UserRight": "11",
+        "Position": "L",
+        "TextID": "C2258",
+        "OffLED": "O",
+        "Text": "Reset",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000012-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2299_Running",
+        "Position": "R",
+        "TextID": "S2299",
+        "OffLED": "O",
+        "Text": "Sequencer Running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2448_Seq1Run",
+        "Position": "R",
+        "VisibleOPCID=1 <": " AA.I2321_QtySeq",
+        "TextID": "S2448",
+        "OffLED": "O",
+        "Text": "Sequencer 1 Running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "VisibleOPCID=2 <": " AA.I2321_QtySeq",
+        "OPCID": "SB.S2449_Seq2Run",
+        "Position": "R",
+        "TextID": "S2449",
+        "OffLED": "O",
+        "Text": "Sequencer 2 Running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2450_Seq3Run",
+        "VisibleOPCID=3 <": " AA.I2321_QtySeq",
+        "Position": "R",
+        "TextID": "S2450",
+        "OffLED": "O",
+        "Text": "Sequencer 3 Running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextLED": {
+        "OnLED": "G",
+        "VisibleOPCID=4 <": " AA.I2321_QtySeq",
+        "OPCID": "SB.S2451_Seq4Run",
+        "Position": "R",
+        "TextID": "S2451",
+        "OffLED": "O",
+        "Text": "Sequencer 4 Running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000018-Messages": {
+     "1000019-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000020-AddPageTab": {
+     "1000021-AddPageControl": {
+      "1000022-AddPageTab": {
+       "Text": "Actual Sequenzer",
+       "TextID": "ActualSequenzer",
+       "VisibleAtRight": "0",
+       "1000023-AddText": {
+        "Position": "L",
+        "TextID": "ActualSequenzer",
+        "Text": "Actual Sequenzer",
+        "showHide": true
+       },
+       "1000024-AddTextInteger": {
+        "OPCID": "AA.I2321_QtySeq",
+        "TextID": "I2321",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Quantity of Cascading Sequencers",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2299_Running",
+        "TextID": "S2299",
+        "OffLED": "O",
+        "Text": "Sequencer Running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddTextInteger": {
+        "OPCID": "AA.I2283_ActStepSeq",
+        "TextID": "I2283",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Actual Step of Sequencer",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": ""
+       },
+       "1000027-AddTextIntegerInput": {
+        "OPCID": "AS.P2264_StartSeq",
+        "UserRight": "7",
+        "TextID": "P2264",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMin": "0",
+        "IntInputMax": "32",
+        "Text": "Start at Step",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": ""
+       },
+       "1000028-AddTextIntegerInput": {
+        "OPCID": "AS.P2265_StopSeq",
+        "UserRight": "7",
+        "TextID": "P2265",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMin": "0",
+        "IntInputMax": "32",
+        "Text": "Stop after Step",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": ""
+       },
+       "1000029-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.I2319_SPTime",
+        "OPCID": "AA.I2284_AVTime",
+        "TextID": "I2284",
+        "Text": "Step Timing",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000030-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.I2320_SPMon",
+        "OPCID": "AA.I2294_AVMon",
+        "TextID": "I2294",
+        "Text": "Step Monitoring",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "RegAutoHide": "0"
+      },
+      "1000031-AddPageTab": {
+       "Text": "Sequencer 1",
+       "TextID": "Sequencer1",
+       "VisibleAtRight": "0",
+       "1000032-AddText": {
+        "Position": "L",
+        "TextID": "Sequencer1",
+        "Text": "Sequencer 1",
+        "showHide": true
+       },
+       "1000033-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2448_Seq1Run",
+        "VisibleOPCID=1 <": " AA.I2321_QtySeq",
+        "TextID": "S2448",
+        "OffLED": "O",
+        "Text": "Sequencer 1 Running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000034-AddTextInteger": {
+        "OPCID": "AA.I2263_ActStepSeq1",
+        "VisibleOPCID=1 <": " AA.I2321_QtySeq",
+        "TextID": "I2263",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Actual Step of Sequencer 1",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleAtRight": "0"
+       },
+       "1000035-AddTextInteger": {
+        "OPCID": "AA.I2324_StartSeq1",
+        "VisibleOPCID=1 <": " AA.I2321_QtySeq",
+        "TextID": "I2324",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Start at Step for Sequencer 1",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleAtRight": "0"
+       },
+       "1000036-AddTextInteger": {
+        "OPCID": "AA.I2325_StopSeq1",
+        "VisibleOPCID=1 <": " AA.I2321_QtySeq",
+        "TextID": "I2325",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Sequencer 1 Stop after Step",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleAtRight": "0"
+       },
+       "1000037-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.I2290_SPTime1",
+        "OPCID": "AA.I2267_AVTime1",
+        "VisibleOPCID=1 <": " AA.I2321_QtySeq",
+        "TextID": "I2267",
+        "Text": "Step Time Value of Sequencer 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000038-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.I2299_SPMon1",
+        "OPCID": "AA.I2295_AVMon1",
+        "VisibleOPCID=1 <": " AA.I2321_QtySeq",
+        "TextID": "I2295",
+        "Text": "Timer Value of Step Monitoring 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "1"
+      },
+      "1000039-AddPageTab": {
+       "Text": "Sequencer 2",
+       "TextID": "Sequencer2",
+       "VisibleAtRight": "0",
+       "1000040-AddText": {
+        "Position": "L",
+        "TextID": "Sequencer2",
+        "Text": "Sequencer 2",
+        "showHide": true
+       },
+       "1000041-AddTextLED": {
+        "OnLED": "G",
+        "VisibleOPCID=2 <": " AA.I2321_QtySeq",
+        "OPCID": "SB.S2449_Seq2Run",
+        "TextID": "S2449",
+        "OffLED": "O",
+        "Text": "Sequencer 2 Running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000042-AddTextInteger": {
+        "VisibleOPCID=2 <": " AA.I2321_QtySeq",
+        "OPCID": "AA.I2264_ActStepSeq2",
+        "TextID": "I2264",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Actual Step of Sequencer 2",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleAtRight": "0"
+       },
+       "1000043-AddTextInteger": {
+        "VisibleOPCID=2 <": " AA.I2321_QtySeq",
+        "OPCID": "AA.I2326_StartSeq2",
+        "TextID": "I2326",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Start at Step for Sequencer 2",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleAtRight": "0"
+       },
+       "1000044-AddTextInteger": {
+        "VisibleOPCID=2 <": " AA.I2321_QtySeq",
+        "OPCID": "AA.I2327_StopSeq2",
+        "TextID": "I2327",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Sequencer 2 Stop after Step",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleAtRight": "0"
+       },
+       "1000045-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.I2291_SPTime2",
+        "VisibleOPCID=2 <": " AA.I2321_QtySeq",
+        "OPCID": "AA.I2268_AVTime2",
+        "TextID": "I2268",
+        "Text": "Step Time Value of Sequencer 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000046-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.I2300_SPMon2",
+        "VisibleOPCID=2 <": " AA.I2321_QtySeq",
+        "OPCID": "AA.I2296_AVMon2",
+        "TextID": "I2296",
+        "Text": "Timer Value of Step Monitoring 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "1"
+      },
+      "1000047-AddPageTab": {
+       "Text": "Sequencer 3",
+       "TextID": "Sequencer3",
+       "VisibleAtRight": "0",
+       "1000048-AddText": {
+        "Position": "L",
+        "TextID": "Sequencer3",
+        "Text": "Sequencer 3",
+        "showHide": true
+       },
+       "1000049-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2450_Seq3Run",
+        "VisibleOPCID=3 <": " AA.I2321_QtySeq",
+        "TextID": "S2450",
+        "OffLED": "O",
+        "Text": "Sequencer 3 Running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000050-AddTextInteger": {
+        "OPCID": "AA.I2265_ActStepSeq3",
+        "VisibleOPCID=3 <": " AA.I2321_QtySeq",
+        "TextID": "I2265",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Actual Step of Sequencer 3",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleAtRight": "0"
+       },
+       "1000051-AddTextInteger": {
+        "OPCID": "AA.I2328_StartSeq3",
+        "VisibleOPCID=3 <": " AA.I2321_QtySeq",
+        "TextID": "I2328",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Start at Step for Sequencer 3",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleAtRight": "0"
+       },
+       "1000052-AddTextInteger": {
+        "OPCID": "AA.I2329_StopSeq3",
+        "VisibleOPCID=3 <": " AA.I2321_QtySeq",
+        "TextID": "I2329",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Sequencer 3 Stop after Step",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleAtRight": "0"
+       },
+       "1000053-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.I2292_SPTime3",
+        "OPCID": "AA.I2269_AVTime3",
+        "VisibleOPCID=3 <": " AA.I2321_QtySeq",
+        "TextID": "I2269",
+        "Text": "Step Time Value of Sequencer 3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000054-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.I2301_SPMon3",
+        "OPCID": "AA.I2297_AVMon3",
+        "VisibleOPCID=3 <": " AA.I2321_QtySeq",
+        "TextID": "I2297",
+        "Text": "Timer Value of Step Monitoring 3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "1"
+      },
+      "1000055-AddPageTab": {
+       "Text": "Sequencer 4",
+       "TextID": "Sequencer4",
+       "VisibleAtRight": "0",
+       "1000056-AddText": {
+        "Position": "L",
+        "TextID": "Sequencer4",
+        "Text": "Sequencer 4",
+        "showHide": true
+       },
+       "1000057-AddTextLED": {
+        "OnLED": "G",
+        "VisibleOPCID=4 <": " AA.I2321_QtySeq",
+        "OPCID": "SB.S2451_Seq4Run",
+        "TextID": "S2451",
+        "OffLED": "O",
+        "Text": "Sequencer 4 Running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000058-AddTextInteger": {
+        "VisibleOPCID=4 <": " AA.I2321_QtySeq",
+        "OPCID": "AA.I2266_ActStepSeq4",
+        "TextID": "I2266",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Actual Step of Sequencer 4",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleAtRight": "0"
+       },
+       "1000059-AddTextInteger": {
+        "VisibleOPCID=4 <": " AA.I2321_QtySeq",
+        "OPCID": "AA.I2330_StartSeq4",
+        "TextID": "I2330",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Start at Step for Sequencer 4",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleAtRight": "0"
+       },
+       "1000060-AddTextInteger": {
+        "VisibleOPCID=4 <": " AA.I2321_QtySeq",
+        "OPCID": "AA.I2331_StopSeq4",
+        "TextID": "I2331",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Sequencer 4 Stop after Step",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleAtRight": "0"
+       },
+       "1000061-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.I2293_SPTime4",
+        "VisibleOPCID=4 <": " AA.I2321_QtySeq",
+        "OPCID": "AA.I2270_AVTime4",
+        "TextID": "I2270",
+        "Text": "Step Time Value of Sequencer 4",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "1000062-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.I2302_SPMon4",
+        "VisibleOPCID=4 <": " AA.I2321_QtySeq",
+        "OPCID": "AA.I2298_AVMon4",
+        "TextID": "I2298",
+        "Text": "Timer Value of Step Monitoring 4",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "1"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU228",
+ "DiagnosisControl": "FU228",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1298920207
+}

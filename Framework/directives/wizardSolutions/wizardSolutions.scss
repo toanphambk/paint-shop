@@ -1,0 +1,119 @@
+.solutions-container {
+    display: none;
+    position: absolute;
+    right: 390px;
+    bottom: 0;
+    height: 872px;
+    width: 830px;
+    z-index: 20;
+
+    background: #f2f2f2;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.25);
+
+    .top-container {
+        @extend %clearfix;
+        min-height: 120px;
+
+        h3 {
+            display: block;
+            float: left;
+            margin-left: 80px;
+            margin-top: 20px;
+            @extend .MA1c;
+        }
+
+        ol {
+            float: left;
+            margin-top: 20px;
+            margin-left: 10px;
+            @extend .RA1a;
+
+            li {
+            	line-height: 25px;
+            }
+        }
+
+        button {
+        	float: right;
+        	margin-top: 5px;
+        	margin-right: 15px;
+        }
+    }
+
+    .top-container,
+    .img-container {
+        border-bottom: 1px solid #969ca3;
+    }
+
+    .img-container {
+    	height: 321px;
+        padding-left: 42px;
+
+        figure {
+            margin: 0;
+            margin-left: 70px;
+            margin-top: 3px;
+            float: left;
+            width: 275px;
+
+
+            figcaption {
+                @extend .RA2a;
+                margin: 10px 0;
+                float: left;
+                width: 100%;
+            }
+
+            img {
+                height: 250px;
+                width: 275px;
+                background: white;
+            }
+        }
+    }
+
+    .comments-container {
+        padding: 0 60px;
+        @extend %clearfix;
+
+        .headline {
+            display: block;
+            padding-left: 110px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            @extend .MA3a;
+        }
+
+        .comments {
+            border-top: 1px solid #969ca3;
+        }
+
+        .input-container {
+            position: absolute;
+            bottom: 0;
+
+            padding-left: 110px;
+            padding-top: 40px;
+            padding-bottom: 42px;
+            border-top: 1px solid #969ca3;
+
+            input {
+                height: 42px;
+                width: 520px;
+                padding-left: 10px;
+                float: left;
+                border: 2px solid #d1d7e0;
+                border-radius: 4px;
+                @extend .RA1a;
+                @extend .box-shadow;
+            }
+
+            .button {
+                float: left;
+                margin-left: 10px;
+            }
+        }
+
+    }
+}

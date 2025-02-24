@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), url('./assets/fonts/Roboto-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src:  local('Roboto'), url('./assets/fonts/Roboto-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), url('./assets/fonts/Roboto-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* font definitions from screen design documentation */
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+    color: $font_text;
+    font-size: 16px;
+    text-align: left;
+}
+
+.LA3a {
+    font-weight: 300;
+}
+
+.RA1b {
+    font-size: 18px;
+    text-align: center;
+}
+
+.RA2c {
+    font-size: 13px;
+    text-align: right;
+}
+
+.RA1a {
+    font-size: 18px;
+}
+
+.RA2a {
+    font-size: 13px;
+}
+
+.RA3a {
+    // default
+}
+
+.RA3c {
+    text-align: right;
+}
+
+.RB4a {
+    font-size: 20px;
+    color: $font_headline;
+}
+
+.RB1a {
+    font-size: 18px;
+    color: $font_headline;
+}
+
+.MA1c {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: right;
+}
+
+.MA3a {
+    font-weight: 500;
+}
+
+.MA3c {
+    font-weight: 500;
+    text-align: right;
+}
+
+.MA1a {
+    font-weight: 500;
+    font-size: 18px;
+}

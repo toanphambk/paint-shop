@@ -1,0 +1,337 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "",
+   "Version": "10-10",
+   "Name": "HBSDLocalOrders",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Control",
+       "TextID": "Control",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1813_LocalInlet",
+        "Position": "L",
+        "TextID": "S1813",
+        "OffLED": "O",
+        "Text": "Local Inlet",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1814_LocalOutlet",
+        "Position": "L",
+        "TextID": "S1814",
+        "OffLED": "O",
+        "Text": "Local Outlet",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1815_Bypass",
+        "Position": "L",
+        "TextID": "S1815",
+        "OffLED": "O",
+        "Text": "Bypass",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000012-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1007_LocalInlet",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1007",
+        "OffLED": "O",
+        "Text": "Local Inlet",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1008_LocalOutlet",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1008",
+        "OffLED": "O",
+        "Text": "Local Outlet",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1009_Bypass",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1009",
+        "OffLED": "O",
+        "Text": "Bypass",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1064_ClrCmd",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1064",
+        "OffLED": "O",
+        "Text": "Clear Command",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0",
+       "10000001-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000017-Messages": {
+     "1000018-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "1"
+    },
+    "1000019-AddPageTab": {
+     "1000020-AddPageControl": {
+      "1000021-AddPageTab": {
+       "Text": "Actual values",
+       "TextID": "ActualValues",
+       "VisibleAtRight": "0",
+       "1000022-AddText": {
+        "Position": "L",
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000023-AddTextInteger": {
+        "OPCID": "AA.I1531_InletPosX",
+        "Position": "L",
+        "TextID": "I1531",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Inlet Pos X",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddTextInteger": {
+        "OPCID": "AA.I1532_InletPosY",
+        "Position": "L",
+        "TextID": "I1532",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Inlet Pos Y",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddTextInteger": {
+        "OPCID": "AA.I1533_InletPosZ",
+        "Position": "L",
+        "TextID": "I1533",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Inlet Pos Z",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddTextInteger": {
+        "OPCID": "AA.I1534_OutletPosX",
+        "Position": "L",
+        "TextID": "I1534",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Outlet Pos X",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000027-AddTextInteger": {
+        "OPCID": "AA.I1535_OutletPosY",
+        "Position": "L",
+        "TextID": "I1535",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Outlet Pos Y",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddTextInteger": {
+        "OPCID": "AA.I1536_OutletPosZ",
+        "Position": "L",
+        "TextID": "I1536",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Outlet Pos Z",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000029-AddTextInteger": {
+        "OPCID": "AA.I1537_OccCells",
+        "Position": "L",
+        "TextID": "I1537",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Occ Cells",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000030-AddTextInteger": {
+        "OPCID": "AA.I1538_EmptyCells",
+        "Position": "L",
+        "TextID": "I1538",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Empty Cells",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000031-AddTextInteger": {
+        "OPCID": "AA.I1539_FifoLastTime",
+        "Position": "L",
+        "TextID": "I1539",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Fifo Last Time",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000032-AddTextIntegerInput": {
+        "OPCID": "AS.I1530_FillLevel",
+        "UserRight": "7",
+        "Position": "L",
+        "IntInputMin": "",
+        "Text": "Fill Level",
+        "UnitLocale": "",
+        "TextID": "I1530",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "99",
+        "InputMin": "0"
+       },
+       "RegAutoHide": "0",
+       "VisibleOPCID": ""
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "2",
+     "VisibleOPCID": ""
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "HBSDLocalOrders",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 2139953819
+}

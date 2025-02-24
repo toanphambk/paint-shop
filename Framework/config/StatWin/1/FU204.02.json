@@ -1,0 +1,192 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "02-20",
+   "Name": "FU204.02",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S3425_FDIM",
+        "Position": "R",
+        "TextID": "S3425",
+        "OffLED": "O",
+        "Text": "DIM-Module Collective Fault",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "Y",
+        "OPCID": "SB.S3426_WDIM",
+        "Position": "R",
+        "TextID": "S3426",
+        "OffLED": "O",
+        "Text": "DIM-Module Collective Warning",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2295_MainSw",
+        "Position": "R",
+        "TextID": "S2295",
+        "OffLED": "O",
+        "Text": "Main Switch is On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2298_CompOn",
+        "Position": "R",
+        "TextID": "S2298",
+        "OffLED": "O",
+        "Text": "Compensation is On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000012-Messages": {
+     "1000013-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000014-AddPageTab": {
+     "1000015-AddPageControl": {
+      "1000016-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000017-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000018-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1358_DelFlt",
+        "OPCID": "TA.T2358_DelFlt",
+        "UserRight": "1",
+        "TextID": "T2358",
+        "Text": "Delay for Faults to Visu",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000019-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1352_ExtAckn",
+        "OPCID": "TA.T2352_ExtAckn",
+        "UserRight": "1",
+        "TextID": "T2352",
+        "Text": "Impulse Extension Fault Acknowledge",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000020-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1357_ExtMute",
+        "OPCID": "TA.T2357_ExtMute",
+        "UserRight": "1",
+        "TextID": "T2357",
+        "Text": "Impulse Extension Horn Silence",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000021-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1353_ExtLT",
+        "OPCID": "TA.T2353_ExtLT",
+        "UserRight": "1",
+        "TextID": "T2353",
+        "Text": "Impulse Extension Lamp Test",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000022-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1356_DelComp",
+        "OPCID": "TA.T2356_DelComp",
+        "UserRight": "1",
+        "TextID": "T2356",
+        "Text": "Switch On Delay for Compensation",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "1000023-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1393_Comp",
+        "OPCID": "TA.T2393_Comp",
+        "UserRight": "6",
+        "TextID": "T2393",
+        "Text": "Compensation Monitoring On timer",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU204",
+ "DiagnosisControl": "FU204.02",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 229356580
+}

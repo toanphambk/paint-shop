@@ -1,0 +1,514 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "Sf_OpBit16",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status 1",
+       "TextID": "Status1",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "TextID": "SelectorSwitch",
+        "Text": "Selector Switch",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1231_OpBit1",
+        "UserRight": "4",
+        "TextID": "C1231",
+        "OffLED": "O",
+        "Text": "Operation Bit 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7451_OpBit1",
+        "TextID": "G7451_SelText1",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000010-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1232_OpBit2",
+        "UserRight": "4",
+        "TextID": "C1232",
+        "OffLED": "O",
+        "Text": "Operation Bit 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7452_OpBit2",
+        "TextID": "G7452_SelText2",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000012-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1233_OpBit3",
+        "UserRight": "4",
+        "TextID": "C1233",
+        "OffLED": "O",
+        "Text": "Operation Bit 3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7453_OpBit3",
+        "TextID": "G7453_SelText3",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000014-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1234_OpBit4",
+        "UserRight": "4",
+        "TextID": "C1234",
+        "OffLED": "O",
+        "Text": "Operation Bit 4",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7454_OpBit4",
+        "TextID": "G7454_SelText4",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 4",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0",
+       "10000001-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       },
+       "10000002-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1254_EnMV",
+        "Position": "R",
+        "TextID": "S1254",
+        "OffLED": "O",
+        "Text": "Enable Manual Operation",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0",
+        "VisibleOPCID": ""
+       }
+      },
+      "1000016-AddPageTab": {
+       "Text": "Status 2",
+       "TextID": "Status2",
+       "VisibleAtRight": "0",
+       "1000017-AddText": {
+        "TextID": "SelectorSwitch",
+        "Text": "Selector Switch",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "showHide": true
+       },
+       "1000018-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1235_OpBit5",
+        "UserRight": "4",
+        "TextID": "C1235",
+        "OffLED": "O",
+        "Text": "Operation Bit 5",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7455_OpBit5",
+        "TextID": "G7455_SelText5",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 5",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000020-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1236_OpBit6",
+        "UserRight": "4",
+        "TextID": "C1236",
+        "OffLED": "O",
+        "Text": "Operation Bit 6",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7456_OpBit6",
+        "TextID": "G7456_SelText6",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 6",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000022-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1237_OpBit7",
+        "UserRight": "4",
+        "TextID": "C1237",
+        "OffLED": "O",
+        "Text": "Operation Bit 7",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000023-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7457_OpBit7",
+        "TextID": "G7457_SelText7",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 7",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000024-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1238_OpBit8",
+        "UserRight": "4",
+        "TextID": "C1238",
+        "OffLED": "O",
+        "Text": "Operation Bit 8",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7458_OpBit8",
+        "TextID": "G7458_SelText8",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 8",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000026-AddPageTab": {
+       "Text": "Status 3",
+       "TextID": "Status3",
+       "VisibleAtRight": "0",
+       "1000027-AddText": {
+        "TextID": "SelectorSwitch",
+        "Text": "Selector Switch",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "showHide": true
+       },
+       "1000028-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1239_OpBit9",
+        "UserRight": "4",
+        "TextID": "C1239",
+        "OffLED": "O",
+        "Text": "Operation Bit 9",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000029-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7459_OpBit9",
+        "TextID": "G7459_SelText9",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 9",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000030-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1240_OpBit10",
+        "UserRight": "4",
+        "TextID": "C1240",
+        "OffLED": "O",
+        "Text": "Operation Bit 10",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000031-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7460_OpBit10",
+        "TextID": "G7460_SelText10",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 10",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000032-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1241_OpBit11",
+        "UserRight": "4",
+        "TextID": "C1241",
+        "OffLED": "O",
+        "Text": "Operation Bit 11",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000033-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7461_OpBit11",
+        "TextID": "G7461_SelText11",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 11",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000034-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1242_OpBit12",
+        "UserRight": "4",
+        "TextID": "C1242",
+        "OffLED": "O",
+        "Text": "Operation Bit 12",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000035-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7462_OpBit12",
+        "TextID": "G7462_SelText12",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 12",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000036-AddPageTab": {
+       "Text": "Status 4",
+       "TextID": "Status4",
+       "VisibleAtRight": "0",
+       "1000037-AddText": {
+        "TextID": "SelectorSwitch",
+        "Text": "Selector Switch",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "showHide": true
+       },
+       "1000038-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1243_OpBit13",
+        "UserRight": "4",
+        "TextID": "C1243",
+        "OffLED": "O",
+        "Text": "Operation Bit 13",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000039-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7463_OpBit13",
+        "TextID": "G7463_SelText13",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 13",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000040-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1244_OpBit14",
+        "UserRight": "4",
+        "TextID": "C1244",
+        "OffLED": "O",
+        "Text": "Operation Bit 14",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000041-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7464_OpBit14",
+        "TextID": "G7464_SelText14",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 14",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000042-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1245_OpBit15",
+        "UserRight": "4",
+        "TextID": "C1245",
+        "OffLED": "O",
+        "Text": "Operation Bit 15",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000043-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7465_OpBit15",
+        "TextID": "G7465_SelText15",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 15",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000044-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1246_OpBit16",
+        "UserRight": "4",
+        "TextID": "C1246",
+        "OffLED": "O",
+        "Text": "Operation Bit 16",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000045-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7466_OpBit16",
+        "TextID": "G7466_SelText16",
+        "OffLED": "O",
+        "Text": "Selector Switch Bit 16",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000046-Messages": {
+     "1000047-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "Sf_OpBit16",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 2117720915
+}

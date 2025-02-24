@@ -1,0 +1,350 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-20",
+   "Name": "FU_Mtr_DutyStandBy.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback2WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2252",
+        "OffLED": "O",
+        "Text": "Manual Switch Pump 1 ",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2253_OffP1",
+        "writeTagWR2": "CB.C2252_OnP1",
+        "readTagRD1": "SB.S2252_P1On",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddCommandFeedback2WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2255",
+        "OffLED": "O",
+        "Text": "Manual Switch On Pump 2",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2256_OffP2",
+        "writeTagWR2": "CB.C2255_OnP2",
+        "readTagRD1": "SB.S2253_P2On",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddCommandFeedback1WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2263",
+        "OffLED": "O",
+        "Text": "Switch Device back to Automatic",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2263_Auto",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S1251_Auto",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddCommandFeedback1WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "0",
+        "TextID": "C1252",
+        "OffLED": "O",
+        "Text": "Auto Select Pump 1 as Priority",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C1252_Sel1",
+        "readTagRD1": "SB.S1258_Sel1",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddCommandFeedback1WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "4",
+        "TextID": "C1253",
+        "OffLED": "O",
+        "Text": "Auto Select Pump 2 as Priority",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C1253_Sel2",
+        "readTagRD1": "SB.S1259_Sel2",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "on"
+       },
+       "1000014-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3162_EnP",
+        "Position": "R",
+        "TextID": "S3162",
+        "OffLED": "O",
+        "Text": "Enable Seal Pumps",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000016-Messages": {
+     "1000017-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000018-AddPageTab": {
+     "1000019-AddPageControl": {
+      "1000020-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000021-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000022-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4582_Lim1On",
+        "OPCID": "AA.I4582_Lim1On",
+        "UserRight": "6",
+        "TextID": "I4582",
+        "Text": "Pressure Limit 1 Switch-On Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4583_Lim1Off",
+        "OPCID": "AA.I4583_Lim1Off",
+        "UserRight": "6",
+        "TextID": "I4583",
+        "Text": "Pressure Limit 1 Switch-Off",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4584_Lim2On",
+        "OPCID": "AA.I4584_Lim2On",
+        "UserRight": "6",
+        "TextID": "I4584",
+        "Text": "Pressure Limit 2 Switch-On Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4585_Lim2Off",
+        "OPCID": "AA.I4585_Lim2Off",
+        "UserRight": "6",
+        "TextID": "I4585",
+        "Text": "Pressure Limit 2 Switch-Off",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4585_Sens",
+        "OPCID": "AA.I4585_Sens",
+        "UserRight": "6",
+        "TextID": "I4585",
+        "Text": "Motion Control Sensor Time Limit 1/2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0"
+       },
+       "1000027-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4587_DelP1",
+        "OPCID": "AA.I4587_DelP1",
+        "UserRight": "1",
+        "TextID": "I4587",
+        "Text": "Pump 1 Switch-Off Delay",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4588_DelP2",
+        "OPCID": "AA.I4588_DelP2",
+        "UserRight": "1",
+        "TextID": "I4588",
+        "Text": "Pump 2 Switch-Off Delay",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0"
+       },
+       "1000029-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4804_OnDelEnbl",
+        "OPCID": "AA.I4804_OnDelEnbl",
+        "UserRight": "1",
+        "TextID": "I4804",
+        "Text": "Enable Pumps Switch-On Delay",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0"
+       },
+       "1000030-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4589_DelEnbl",
+        "OPCID": "AA.I4589_DelEnbl",
+        "UserRight": "0",
+        "TextID": "I4589",
+        "Text": "Enable Pumps Switch-Off Delay",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Mtr_DutyStandBy",
+ "DiagnosisControl": "FU_Mtr_DutyStandBy",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1515959508
+}

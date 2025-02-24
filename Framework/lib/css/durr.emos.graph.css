@@ -1,0 +1,32 @@
+/*
+Copyright (c) 2014 Duerr Systems GmbH. All rights reserved.
+
+*/
+path {
+    stroke: steelblue;
+    stroke-width: 1.5;
+    fill: none;
+}
+
+.axis {
+    shape-rendering: crispEdges;
+}
+
+.x.axis line {
+    stroke: lightgrey;
+}
+
+.x.axis .minor {
+    stroke-opacity: .5;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.y.axis line, .y.axis path {
+    fill: none;
+    stroke: lightgrey;
+}
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+   
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <title>Dürr chat</title>
+	<script type="text/javascript" src="js/jquery.1.10.2.min.js"></script>
+	<script type="text/javascript" src="socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="js/client.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <!--  ***** Sidebar Down, Userbox ********* -->
+        <div class="userbox" >
+            <div>
+                <div class="update-item" style="" >
+                     User (<span id="usercount">0</span>)
+                </div>
+                <div class="update-line"></div>
+            </div>
+            <div id="onlineusers" class="onlineusers">
+            </div>
+        </div><!-- /userbox -->
+
+        <!--  ***** Right Bar, Headline, Greeting, Logo...  ********* -->
+        <div class="top-header-chat">
+            <div class="top-servermessage" id="statusBar"></div>
+            <!-- Chat Box Input Wrapper -->
+            <div class="chat-box-plain">
+            <!-- Chat Content Area, wrapper for chat messages -->
+                <div id="talk-box-output" class="chat-box-output">
+                </div>  
+                
+            </div>
+            <span id="layer-pm-to" style="position: absolute; right: 555px; bottom: 5px; letter-spacing: 0px; font-size: 17px; color: orange; margin: 0 5px 0 0;" ></span>
+            <input id="text" class="chat-box-input" placeholder="chat, min. 4 char." maxlength="210" />
+            <button id="senden" class="chat-box-button">Send</button>
+            
+        </div><!-- /top-header-chat -->
+
+		
+    </div><!-- /main -->
+</body>
+</html>

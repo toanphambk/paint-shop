@@ -1,0 +1,37 @@
+<div class="navigation-bar">
+  <a ng-href="#/" class="breadcrumb general {{ overviewStatus }}">
+    General Plant Overview
+  </a>
+  <div class="breadcrumb plant {{ plant.status }}">{{ plant.name }}</div>
+
+  <div class="filter-dropdown">Filter Auswahl <span class="filter-icon"></span></div>
+  <div class="button-wrapper">
+    <label for="button-error">
+      <div class="button filter error">
+        <input type="checkbox" ng-model="filter.error" name="" value="" id="button-error">
+        <label for="button-error"><span></span></label>
+        <span class="icon"></span>
+        <span class="count">{{ plant.errorCount }}</span>
+      </div>
+    </label>
+    <label for="button-warning">
+      <div class="button filter warning">
+        <input type="checkbox" ng-model="filter.warning" name="" value="" id="button-warning">
+        <label for="button-warning"><span></span></label>
+        <span class="icon"></span>
+        <span class="count">{{ plant.warningCount }}</span>
+      </div>
+    </label>
+    <label for="button-info">
+      <div class="button filter info">
+        <input type="checkbox" ng-model="filter.info" name="" value="" id="button-info">
+        <label for="button-info"><span></span></label>
+        <span class="icon"></span>
+        <span class="count">{{ plant.infoCount }}</span>
+      </div>
+    </label>
+    <button class="button reset" ng-click="resetFilter()" ng-disabled="filter.info && filter.warning && filter.error" ng-model="isDisabled">
+      <span class="icon refresh"></span>
+    </button>
+  </div>
+</div>

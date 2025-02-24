@@ -1,0 +1,15 @@
+{
+    "Manual_IsOn": ".SB.S1257_Manu",
+    "Manual_TurnOn": ".CB.C1258_Manu",
+    "Auto_IsOn": ".SB.S1251_Auto",
+    "Auto_TurnOn": ".CB.C1259_Auto",
+    "Remote_IsOn": ".SB.S1264_SSEn",
+    "Remote_TurnOn": ".CB.C1261_SSEn",
+    "Local_IsOn": ".SB.S1265_SSBl",
+    "Local_TurnOn": ".CB.C1260_SSBl",
+    "CentralStart_IsOn": ".SB.S1260_CSOn",
+    "CentralStart_TurnOn": ".CB.C1255_VisuCSOn",
+    "CentralStart_IsStripeOut": ".SB.S1271_PlStrOut",
+    "CentralStart_TurnOffPE": ".CB.C1265_VisuCSOffPE",
+	"CentralStart_TurnOffDirect": ".CB.C1254_VisuCSOff"
+}

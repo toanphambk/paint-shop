@@ -1,0 +1,239 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "Rd_FuCarrierEP1",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status",
+       "TextID": "Status",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Response Signals",
+        "TextID": "ResponseSignals",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1329_Ocpd",
+        "Position": "L",
+        "TextID": "S1329",
+        "OffLED": "O",
+        "Text": "Occupied",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1268_CFV",
+        "Position": "L",
+        "TextID": "S1268",
+        "OffLED": "O",
+        "Text": "Collective fault",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Body Type",
+        "TextID": "BodyType",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000011-AddTextInteger": {
+        "OPCID": "AA.I1047_BodyType",
+        "TextID": "I1047",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Body Type",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000012-AddString": {
+        "OPCID": "M1004_BodyType",
+        "Position": "L",
+        "StrStart": "0",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "StrLen": "40",
+        "VisibleAtRight": "0",
+        "Text": "Body Type",
+        "TextID": "M1004"
+       },
+       "RegAutoHide": "0",
+       "VisibleOPCID": "",
+       "10000001-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000013-Messages": {
+     "1000014-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000015-AddPageTab": {
+     "1000016-AddPageControl": {
+      "1000017-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000018-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Parameters",
+        "TextID": "Parameters",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000019-AddTextInteger": {
+        "OPCID": "AA.I1403_LightId",
+        "TextID": "I1403",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Light ID",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000020-AddTextInteger": {
+        "OPCID": "AA.I1045_OpArea",
+        "TextID": "I1045",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Operating Area",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000021-AddTextInteger": {
+        "OPCID": "AA.I1565_SafArea1",
+        "TextID": "I1565",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Safety Area 1",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000022-AddTextInteger": {
+        "OPCID": "AA.I1566_SafArea2",
+        "TextID": "I1566",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Safety Area 2",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000023-AddTextInteger": {
+        "OPCID": "AA.I1567_SafArea3",
+        "TextID": "I1567",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Safety Area 3",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000024-AddTextInteger": {
+        "OPCID": "AA.I1557_TrackNode",
+        "TextID": "I1557",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Track Node",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000025-AddString": {
+        "OPCID": "M1030_Timestamp",
+        "Position": "L",
+        "StrStart": "0",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "StrLen": "20",
+        "VisibleAtRight": "0",
+        "Text": "Time Stamp",
+        "TextID": "M1030"
+       },
+       "VisibleOPCID": ""
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "Rd_FuCarrierEP1",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 576845344
+}

@@ -1,0 +1,131 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "",
+   "Version": "01-3",
+   "Name": "LVARI",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "EcoEMOS Version",
+       "TextID": "EcoEMOSVersion",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "showHide": false,
+        "VisibleAtRight": "0"
+       },
+       "1000008-AddText": {
+        "TextID": "SoftwareVersion",
+        "Text": "You are using the Software Version:",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "library  StWiDe05.xml",
+        "Bold": "1",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddText": {
+        "Position": "R",
+        "TextID": "",
+        "Text": "8.001.003",
+        "Bold": "1",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "EcoEMOS General Textfile T05",
+        "Bold": "1",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddText": {
+        "Position": "R",
+        "TextID": "EcoEMOSGenTextVer",
+        "Text": "?.???.???",
+        "Bold": "1",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "Bold": "1",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddText": {
+        "Position": "R",
+        "TextID": "",
+        "Text": "",
+        "Bold": "1",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddText": {
+        "Position": "L",
+        "TextID": "LoginAdmin",
+        "Text": "Actual login: Administrator",
+        "Bold": "2",
+        "VisibleAtRight": "17"
+       },
+       "1000016-AddText": {
+        "Position": "R",
+        "TextID": "LoginCommissioning",
+        "Text": "Actual login: Commissioning",
+        "Bold": "2",
+        "VisibleAtRight": "1"
+       },
+       "1000017-AddText": {
+        "TextID": "VersionNote1",
+        "Text": "Make sure that only EcoEMOS software components",
+        "Bold": "1",
+        "Border": "N",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddText": {
+        "TextID": "VersionNote2",
+        "Text": "with same Interface Version is used",
+        "Bold": "1",
+        "Border": "N",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddText": {
+        "TextID": "",
+        "Text": "Notes: 4369 not tested",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "Text": "EcoEMOS Version",
+     "TextID": "EcoEMOSVersion",
+     "VisibleAtRight": "0"
+    },
+    "1000020-Messages": {
+     "1000021-AlarmClient": {},
+     "Visible": "1",
+     "Text": "Messages"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "5",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "LVARI",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1863719961
+}

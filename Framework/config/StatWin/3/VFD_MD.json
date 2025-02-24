@@ -1,0 +1,329 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "VFD_MD",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status 1",
+       "TextID": "Status1",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1255_EnFV",
+        "Position": "M",
+        "TextID": "S1255",
+        "OffLED": "O",
+        "Text": "Enable Faults",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0",
+        "VisibleOPCID": ""
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1252_Enbl",
+        "Position": "L",
+        "TextID": "S1252",
+        "OffLED": "O",
+        "Text": "Enable Device",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0",
+        "VisibleOPCID": ""
+       },
+       "1000010-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextReal": {
+        "OPCID": "AA.R1002_ActValSpeed",
+        "Position": "L",
+        "Text": "Actual Value Speed",
+        "UnitLocale": "m/min",
+        "Precision": "1",
+        "TextID": "R1002",
+        "UnitInit": "2",
+        "UnitMetric": "m/min",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "m/min",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextInteger": {
+        "OPCID": "AA.I1059_StatNr",
+        "Position": "L",
+        "TextID": "I1059",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Status Number",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextInteger": {
+        "OPCID": "AA.I1054_FNr",
+        "Position": "L",
+        "TextID": "I1054",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Fault Number",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000014-AddPageTab": {
+       "Text": "Status 2",
+       "TextID": "Status2",
+       "VisibleAtRight": "0",
+       "1000015-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1150_EnOp",
+        "Position": "R",
+        "TextID": "S1150",
+        "OffLED": "O",
+        "Text": "Enable Operation",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1154_NoOp",
+        "Position": "R",
+        "TextID": "S1154",
+        "OffLED": "O",
+        "Text": "No Operation",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1155_NoRel",
+        "Position": "R",
+        "TextID": "S1155",
+        "OffLED": "O",
+        "Text": "No Release",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1156_UfContRel",
+        "Position": "R",
+        "TextID": "S1156",
+        "OffLED": "O",
+        "Text": "U/f Control Release",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1151_OutSet1",
+        "Position": "L",
+        "TextID": "S1151",
+        "OffLED": "O",
+        "Text": "Output Preselect Set Point 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1152_OutSet2",
+        "Position": "L",
+        "TextID": "S1152",
+        "OffLED": "O",
+        "Text": "Output Preselect Set Point 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1153_OutSet3",
+        "Position": "L",
+        "TextID": "S1153",
+        "OffLED": "O",
+        "Text": "Output Preselect Set Point 3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000023-Messages": {
+     "1000024-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000025-AddPageTab": {
+     "1000026-AddPageControl": {
+      "1000027-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000028-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000029-AddTextIntegerInput": {
+        "OPCID": "AS.I1013_SetRamp",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Setpoint Ramp",
+        "UnitLocale": "ms",
+        "TextID": "I1013",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "IntInputMax": "32767",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": 100,
+        "InputMin": -100,
+        "Position": "L"
+       },
+       "1000030-AddTextRealInput": {
+        "OPCID": "AS.R1213_FacCorr",
+        "UserRight": "7",
+        "RealInputMax": "1000",
+        "Text": "Correction Factor",
+        "UnitLocale": "",
+        "Precision": "3",
+        "TextID": "R1213",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": 100,
+        "InputMin": -100,
+        "Position": "L"
+       },
+       "1000031-AddTextRealInput": {
+        "OPCID": "AS.R1214_FacConv",
+        "UserRight": "7",
+        "RealInputMax": "1000",
+        "Text": "Conversion Factor",
+        "UnitLocale": "",
+        "Precision": "3",
+        "TextID": "R1214",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "100",
+        "InputMin": "-100",
+        "Position": "L"
+       },
+       "RegAutoHide": "0",
+       "VisibleOPCID": ""
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "VFD_MD",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1072447629
+}

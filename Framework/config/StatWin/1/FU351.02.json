@@ -1,0 +1,212 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254_EnMV",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation ",
+     "Border": "B"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252_Enbl",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Border": "B"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255_EnFV",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "02-20",
+   "Name": "FU351.02",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback2WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2270",
+        "OffLED": "O",
+        "Text": "Light 1/3 On",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2271_L13Off",
+        "writeTagWR2": "CB.C2270_L13On",
+        "readTagRD1": "SB.S2366_L13On",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddCommandFeedback2WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2277",
+        "OffLED": "O",
+        "Text": "Light 2/3 On",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2278_L23Off",
+        "writeTagWR2": "CB.C2277_L23On",
+        "readTagRD1": "SB.S2367_L23On",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "Position": "L",
+        "UserRight": "3",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000011-Messages": {
+     "1000012-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000013-AddPageTab": {
+     "1000014-AddPageControl": {
+      "1000015-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000016-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000017-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "TextID2": "Setpoint"
+       },
+       "1000018-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1441_MCT13L",
+        "OPCID": "TA.T2441_MCT13L",
+        "UserRight": "6",
+        "TextID": "T2441",
+        "Text": "Motion Control Timer 1/3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1442_MCT23L",
+        "OPCID": "TA.T2442_MCT23L",
+        "UserRight": "6",
+        "TextID": "T2442",
+        "Text": "Motion Control Timer 2/3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.P2348_PulDurSP13L",
+        "OPCID": "AA.I2348_PulDurAV13L",
+        "UserRight": "1",
+        "IntInputMin": "0",
+        "Text": "Pulse Duration 1/3 Light",
+        "UnitLocale": "*0,1s",
+        "TextID": "I2348",
+        "UnitInit": "2",
+        "UnitMetric": "*0,1s",
+        "IntInputMax": "32767",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "*0,1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.P2349_PulDurSP23L",
+        "OPCID": "AA.I2349_PulDurAV23L",
+        "UserRight": "1",
+        "IntInputMin": "0",
+        "Text": "Pulse Duration 2/3 Light",
+        "UnitLocale": "*0,1s",
+        "TextID": "I2349",
+        "UnitInit": "2",
+        "UnitMetric": "*0,1s",
+        "IntInputMax": "32767",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "*0,1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU351",
+ "DiagnosisControl": "FU351.02",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1260578063
+}

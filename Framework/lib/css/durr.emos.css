@@ -1,0 +1,980 @@
+/*
+	Copyright (c) 2014 Duerr Systems GmbH. All rights reserved.
+    Created on : Oct 12, 2015, 11:22:43 AM
+    Author     : Khanh Do
+*/
+
+body {
+    font: 12px sans-serif;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+.AlarmFilter{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 100%;
+    height: 100%;    
+}
+
+.PlaceHolder{
+    position: fixed;     
+}
+
+.ForeignObject{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 100%;
+    height: 100%;
+}
+
+.foCheckbox{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    height: 100%;
+}
+
+
+.foRadioHorizonal{
+    height: 100%;
+}
+.foRadioVertial{
+    width: 100%;
+}
+
+.AlarmFilterSingleLineWrapper{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;   
+    border:1px solid #EEE;
+    overflow: hidden;
+}
+
+.AlarmFilterWrapper{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;   
+    border:1px solid #EEE;    
+    overflow: auto;
+}
+
+.TrendPageWrapper{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;   
+    //border:1px solid #EEE;    
+    overflow: hidden;
+}
+.TrendPageTable
+{
+    display: table;
+    width: 100%;
+    height: 100%;
+    border-collapse:collapse;
+    overflow: hidden;
+}
+.TrendPageRow
+{
+    display:table-row;
+}
+
+.TrendPageDiagramsWrapper
+{
+    width: 100%;
+    height: 100%;      
+}
+.TrendPageDiagrams
+{
+    height: 100%;  
+    width: 100%;
+    overflow: hidden;
+}
+
+.TrendPageDiagram
+{
+    height: 100%;
+    //height: 50%;
+    width: 100%;
+    border: 1px solid lightgray;
+    //background-color:whitesmoke ;
+    background-color:white ;
+    overflow: hidden;
+}
+.TrendPageDiagramChart
+{   
+    position: relative;
+    height: 100%;
+    //padding-right: 10px;
+    overflow:visible;
+}
+
+.TrendPageDiagramBackNext:hover
+{    
+    background-color: #D6FF5C;  
+    cursor: pointer;
+}
+.TrendPageDiagramBackNext
+{    
+    display:table-cell;
+    width: 20px;    
+}
+
+.TrendPageDiagramBack
+{   
+}
+.TrendPageDiagramNext
+{    
+}
+
+
+.TrendPageDiagramTimeLine
+{
+    position: relative;
+    //height: 10%;
+    width: 100%;
+}
+.TrendPageDiagramPreview
+{
+    position: relative;
+    height: 10%;
+    width: 100%;
+}
+
+.VariableDialog{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.AlarmFilterHeader
+{    
+    font-weight:bold;        
+    background-color:whitesmoke;
+}
+
+.AlarmFilterReport{
+    //border:1px solid linen;    
+    border-spacing: 0px;
+}
+
+.AlarmFilterSingleLine{
+    position: absolute;
+    border-spacing: 0px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;    
+}
+
+.debugSymbol{
+
+
+
+
+    position: absolute;    
+    height: 100px;
+    width: 100px;
+    right: 0;
+
+    bottom: 0;
+    overflow: hidden; 
+	cursor: pointer;
+	animation: blinker 2s linear infinite;	
+	display: none;	
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+span.dsBackground{
+    position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 0;
+	width: 0;	
+	border-right: 50px solid #F27019;
+	border-bottom: 50px solid #F27019;
+	border-left: 50px solid transparent;
+	border-top: 50px solid transparent; 	
+}
+span.dsIcon{
+    width: 25px;
+    height: 25px;
+    background-image: url(/lib/images/svg/status/warning.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 70px;
+    left: 70px;
+    transform: scale(2.5); 	
+}
+
+.debugLogin{       
+	outline: 0;
+	box-shadow: 0 0 3px #ddd;
+	cursor: pointer;
+	border-radius: 15px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	display: inline-block;    
+	width: 100%;		
+	box-sizing: border-box;	
+}
+
+.debugP {
+    margin: 0;
+    padding: 0;
+	padding-top: 10px;
+}
+
+.FloatLeft {
+    float: left;
+}
+
+.FloatRight {
+    float: right;	
+}
+
+.DebugDataTable, .DebugDataTable tr, .DebugDataTable td, .DebugDataTable th {
+	border-collapse:collapse;    
+    border:1px solid lightgray;
+    table-layout:fixed;
+	text-overflow: ellipsis;
+	overflow: hidden;	
+	white-space: nowrap;
+}
+
+
+
+
+.debugHalf
+{    
+    width: 50%
+}
+
+.debugGood
+{    
+    background-color:#4AA02C;
+	color:white;
+}
+
+.debugBad
+{
+    background-color:red;
+    color:white;
+}
+
+.debugCache
+{    
+    background-color:#FFFFCC;
+}
+
+.debugDataTabFilter {
+	width:100%;
+	margin: 10px 0 10px 0;
+	float: left;
+}
+
+.resizer {
+ position: absolute;
+  top: 0;
+  right: -8px;
+  bottom: 0;
+  left: auto;
+  width: 16px;    
+  cursor: col-resize;        
+}
+
+.QR{
+    visibility: hidden;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 250px;
+    height: 250px;    
+    border: 0px;
+}
+
+
+
+table.AlarmFilterReport td, table.AlarmFilterSingleLine td{
+    border: 1px solid lightgrey;
+    padding:3px 3px 3px 3px;
+    border-collapse: collapse; 
+    white-space: nowrap;
+}
+
+.alarmTable, .alarmTable tr, .alarmTable td
+{    
+    border-collapse:collapse;    
+    border:1px solid lightgray;
+    table-layout:fixed;
+}
+
+.alarmTable.header
+{    
+    font-weight:bold;        
+    background-color:#CCCCCC;
+}
+
+.alarmTable.warning tr, .alarmTable.warning td
+{    
+    background-color:yellow;
+}
+
+.alarmTable.alarm tr, .alarmTable.alarm td
+{
+
+    background-color:red;
+    color:white;
+}
+
+.alarmTable.alarmnew tr, .alarmTable.alarmnew td{
+    background-color: red;
+    color:white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.alarmTable.alarmack tr, .alarmTable.alarmack td{
+    background-color:lightcoral;
+    color:white;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+.alarmTable.warningnew tr, .alarmTable.warningnew td{
+    background-color:yellow;
+    color:black;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.alarmTable.warningack tr, .alarmTable.warningack td{
+    background-color:lightgoldenrodyellow;
+    color:black;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.alarmTable.othernew tr, .alarmTable.othernew td{
+    background-color:grey;
+    color:white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.alarmTable.otherack tr, .alarmTable.otherack td{
+    background-color:gainsboro;
+    color:white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+div.container {
+    min-width: 980px;
+    margin: 0 auto;
+}
+
+/*.alarmTable td {
+    overflow: hidden;          // this is what fixes the expansion 
+    //text-overflow: ellipsis; // not supported in all browsers, but I accepted the tradeoff
+    white-space: nowrap;
+}*/
+
+
+
+.EmosHeader {   
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;//1024px;
+    height:10%;//78px;
+    overflow: hidden;
+    background-color: lightsteelblue;
+    border: 0px;
+    display: block;
+    scrolling:no;
+}
+.EmosMainContent {            
+    position:fixed;
+    top:10%;//78px;
+    left:0px;
+    width:100%;//1024px;
+    height:90%;//695px;
+    overflow:hidden; 
+    background-color: #EEE;
+    border: 0px;
+    display: block;
+    scrolling:no;
+}
+
+.emosIFrame {
+    position:fixed;
+    top:10%;//78px;
+    left:0px;
+    width:100%;//1024px;
+    height:100%;//695px;
+    overflow:hidden; 
+    background-color: #EEE;
+    border: 0px;
+    display: block;
+    scrolling:no;
+}
+
+.emoslogin {    
+    position:absolute;
+    left:0px;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    border: 0px;
+    display: block;
+    scrolling:no;
+}
+
+.gauges {        
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.systemInfo {        
+    position: fixed;
+    top: 62px;
+    right: 0px;
+}
+
+.svgContent {        
+    position:absolute;
+    top:0; left:0;   
+    width: 100%;
+    height:100%;
+    visibility: hidden;
+}
+
+.DiagnosisDialog{
+    font-size:  x-small;
+}
+
+.DiagnosisWindow{
+    //position: absolute;
+    //top: 0px;
+    //left: 0px;
+    font-size:  x-small;
+    width: 100%;
+    height: 100%;
+}
+
+.DiagnosisDatePickerContainer{
+    text-align:center;
+}
+
+.DiagnosisDatePickerCenter{
+    display:inline-block;
+    margin:0 auto;
+}
+
+.DiagnosisExtraContent{
+    font-size:  x-small;
+}
+
+.DiagnosisHeadOld{
+    position: absolute;    
+    top: -5px;
+    left: 0px;
+    width: 100%;
+    height: 10%;
+}
+
+.DiagnosisBodyOld{
+    position: absolute;
+    top: 10%;
+    width: 97.5%;
+    height: 90%;
+}
+
+.DiagnosisHead{
+    position: absolute;    
+    top: -5px;
+    left: 0px;
+    width: 100%;
+    height: 10%;
+}
+
+.DiagnosisBody{
+    //position: absolute;
+    //top: 10%;
+    width: 97.5%;
+    height: 100%;
+}
+
+.DiagnosisTopTextLEDLEFT{
+    position: absolute;
+    width: 33%;
+    top: 10px;
+    left: 0px;
+}
+.DiagnosisTopTextLEDMIDDLE{
+    position: absolute;
+    width: 33%;
+    top: 10px;
+    left: 33.5%;
+}
+.DiagnosisTopTextLEDRIGHT{
+    position: absolute;
+    width: 33%;
+    top: 10px;
+    left: 67%;
+}
+
+.DiagnosisPageBlank{
+    width: 96%;
+    height: 85.5%;
+}
+
+.DiagnosisLRLeft{
+    //position: absolute;
+    //top: 33px;
+    //left: 2px;
+    //width: 20%;//48%;
+    //vertical-align:middle ;
+    float:left; 
+    width:48%;
+}
+.DiagnosisLRRight{
+    //position: absolute;
+    //top: 33px;
+    //left: 50%;
+    //width: 20%;//48%;
+    //vertical-align:middle ;
+    float:right; 
+    width:48%;
+}
+.DiagnosisLong{
+    //position: absolute;
+    //top: 33px;//50px;
+    //left: 2px;
+    width: 100%;
+    float:left; 
+
+}
+.DiagnosisLMRLeft{
+    //position: absolute;
+    //top: 33px;
+    //left: 0px;
+    float:left;
+    width: 33%;    
+    //height: 100%;        
+}
+.DiagnosisLMRMiddle{
+    //position: absolute;
+    //top: 33px;
+    //left: 33.5%;
+    float:left;
+    width: 33%;    
+}
+.DiagnosisLMRRight{
+    //position: absolute;
+    //top: 33px;
+    //left: 67%;
+    float:right;
+    width: 33%;    
+    //height: 100%; 
+}
+.DiagnosisBarSVG{    
+    //background-color: yellow; 
+    width: 140px; 
+    height: 237px;
+}
+.DiagnosisRampBarSVG{    
+    //background-color: yellow; 
+    width: 70px; 
+    height: 200px; //237px;
+}
+.DiagnosisRampBar{        
+    fill: whitesmoke;
+    stroke-width:1;
+    stroke:black;
+}
+.DiagnosisRampBarTextSVG{    
+    height: 30px;
+    width: 140px; 
+}
+.DiagnosisRampBarText{    
+    position: absolute;
+    top: 50px;
+    //text-align :center;    
+}
+
+
+.DiagnosisBarDegreeText{        
+    text-anchor: left;
+    fill: grey;
+    font-size:xx-small; 
+}
+.DiagnosisNumberLRSVG{    
+    width: 100%; 
+    height: 20px;
+}
+.DiagnosisBitBarSVG{    
+    width: 100%; 
+    height: 25px;
+}
+.DiagnosisBitSVG{    
+    fill: orange;
+}
+
+.DiagnosisControlArraySVG{    
+    width: 100%; 
+}
+.DiagnosisTextDoubleTimer{    
+    width: 100%; 
+    //height: 25px;
+}
+.DiagnosisTextDoubleSVG{    
+    width: 100%; 
+    height: 20px;
+}
+.DiagnosisTextTimer{    
+    width: 100%; 
+}
+
+.DiagnosisNumberLRRectBorderSVG{    
+    fill: white;
+    stroke-width: 1;
+    stroke: grey;
+}
+.DiagnosisControlRectSVG{    
+    fill: orange;
+}
+.DiagnosisNumberLRRectwriteRectSVG{        
+    fill: lightgrey;
+}
+.DiagnosisNumberLRTextTextSVG{    
+    fill: black;
+}
+.DiagnosisNumberNumberTextSVG{    
+    fill: black;
+}
+.DiagnosisControlTextSVG{    
+    fill: black;
+}
+.DiagnosisNumberLRTextNumberSVG{        
+    fill: orange;
+    font-weight:bold;
+}
+.DiagnosisNumberLRTextSVG{    
+    width: 100%; 
+    height: 20px;
+}
+.DiagnosisSpace{        
+    width: 100%; 
+    height: 15px;
+}
+
+
+.DiagnosisPageControl {
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: 100%;
+    height: 98%;
+}
+.DiagnosisPageTextAlarm {    
+    color:red;
+}
+.DiagnosisPageTextWarning {    
+    color:darkorange;
+}
+.DiagnosisPageTextNormal {    
+    color:grey;
+}
+.DiagnosisGerneralElement {
+    width: 100%;
+}
+
+.DiagnosisText {
+    width: 100%;
+    font-weight:bold;
+}
+
+.DiagnosisString {
+    width: 100%;
+}
+
+.DiagnosisStringEdit textarea{
+    width: 100%;
+}
+
+.DiagnosisStringEdit {
+    width: 100%;
+}
+
+.DiagnosisStringText {
+    width: 100%;
+    background-color: orange;
+}
+.DiagnosisStringField {
+    width: 100%;
+}
+.DiagnosisStringFieldTextArea {
+    width: 100%;
+    background-color: orange;
+}
+
+.DiagnosisText p, .DiagnosisTextLong p {
+    line-height: 90%;
+    margin-top: 1em; 
+    margin-bottom: 0.5em;
+}
+
+.DiagnosisTextLong {
+    width: 100%;
+    font-weight:bold;
+    text-align :center;
+}
+
+.TrendListOption {
+    width: 100%;
+    //overflow: auto;
+}
+
+.TrendListListButton {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.LoginText {
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: whitesmoke;
+    font-weight:bold;
+    text-align :center;
+    height: 2em;
+    line-height: 2em;    
+    vertical-align: middle;
+    overflow: hidden;    
+    cursor: pointer;
+	color: yellow;
+	background-color: black;
+}
+
+.DiagnosisDoubleText {
+    width: 100%;
+    height: 20px;
+    font-weight:bold;
+}
+.DiagnosisDoubleTextDiv {
+    width: 26%;
+    font-weight:bold;
+    float: right;
+}
+
+
+.DiagnosisTextLed {
+    width: 100%;    
+}
+
+.DiagnosisTextInteger {
+    width: 100%;    
+}
+.DiagnosisTextNumberNumber {
+    width: 100%;    
+}
+
+.DiagnosisLedText {
+    width: 100%;    
+}
+.DiagnosisBitBar {
+    width: 100%;    
+}
+.DiagnosisBrowserPage {
+    width: 100%; 
+    height: 100%;
+}
+.DiagnosisBrowserIFrame {
+    width: 100%; 
+    height: 100%;
+}
+.DiagnosisControlNetArray {
+    width: 100%;    
+}
+
+.DiagnosisBar {
+    width: 100%;    
+}
+
+.DiagnosisAlarmClient {
+    position: absolute;
+    top: 12%;
+    left: 2px;
+    width: 99%;
+}
+
+table.DiagnosisAlarmTable , .DiagnosisAlarmTable th, .DiagnosisAlarmTable td {
+    border:1px solid grey;
+    border-collapse:collapse;
+}
+
+.DiagnosisAlarmTable th {
+    background-color: lightgrey;
+    text-align: left;
+}
+
+table.DiagnosisAlarmTable { 
+    width: 100%;
+    height: 100%;    
+}
+
+.FilterDateLeft {
+    width: 45%;
+    float: left
+}
+
+.FilterDateRight {
+    width: 45%;
+    float: right
+}
+
+
+.controls > span { display: inline-block; margin: 2px}
+.vertical input { width: 1.5em; }
+
+.css-treeview ul,
+.css-treeview li
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.css-treeview input
+{
+    position: absolute;
+    opacity: 0;
+}
+
+.css-treeview
+{
+    font: normal 11px "Segoe UI", Arial, Sans-serif;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.css-treeview p
+{
+    //color: #3366FF;
+    text-decoration: none;
+}
+
+.css-treeview p:hover
+{
+    text-decoration: underline;
+    cursor: copy;
+}
+
+.css-treeview input + label + ul
+{
+    margin: 0 0 0 22px;
+}
+
+.css-treeview input ~ ul
+{
+    display: none;
+}
+
+.css-treeview label,
+.css-treeview label::before
+{
+    cursor: pointer;
+}
+
+.css-treeview input:disabled + label
+{
+    cursor: default;
+    opacity: .6;
+}
+
+.css-treeview input:checked:not(:disabled) ~ ul
+{
+    display: block;
+}
+
+.css-treeview label,
+.css-treeview label::before
+{
+    background: url("/lib/css/images/treeview/icons.png") no-repeat;
+}
+
+.css-treeview label,
+.css-treeview a,
+.css-treeview label::before
+{
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+
+.css-treeview label
+{
+    background-position: 18px 0;
+}
+
+.css-treeview label::before
+{
+    content: "";
+    width: 16px;
+    margin: 0 22px 0 0;
+    vertical-align: middle;
+    background-position: 0 -32px;
+}
+
+.css-treeview input:checked + label::before
+{
+    background-position: 0 -16px;
+}
+
+/* webkit adjacent element selector bugfix */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+    .css-treeview 
+    {
+        -webkit-animation: webkit-adjacent-element-selector-bugfix infinite 1s;
+    }
+
+    @-webkit-keyframes webkit-adjacent-element-selector-bugfix 
+    {
+        from 
+        { 
+            padding: 0;
+        } 
+        to 
+        { 
+            padding: 0;
+        }
+    }
+}
+
+.ui-dialog .myDialogBtn {
+    height: 18px;
+    margin: -10px 0 0;
+    padding: 1px;
+    position: absolute;
+    right: 2em;
+    top: 50%;
+    width: 19px;
+}
+.ui-dialog .myDialogBtn span {
+    display: block;
+    margin: 1px;
+}
+.noTitleStuff .ui-dialog-titlebar {display:none}

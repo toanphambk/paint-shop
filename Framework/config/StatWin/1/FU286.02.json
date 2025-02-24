@@ -1,0 +1,405 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "02-20",
+   "Name": "FU286.02",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "OperatingModes",
+        "Text": "Operating Modes"
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1251_Auto",
+        "Position": "L",
+        "TextID": "S1251",
+        "OffLED": "O",
+        "Text": "Automatic Mode",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1257_Manu",
+        "Position": "L",
+        "TextID": "S1257",
+        "OffLED": "O",
+        "Text": "Manual Mode",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000011-AddCommandFeedback2WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2282",
+        "OffLED": "O",
+        "Text": "Manual Setpoint On",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2283_MSetOff",
+        "writeTagWR2": "CB.C2282_MSetOn",
+        "readTagRD1": "SB.S1257_Manu",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddText": {
+        "Position": "R",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2273_NWOn",
+        "Position": "R",
+        "TextID": "S2273",
+        "OffLED": "O",
+        "Text": "Network Contactor On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3538_EHG1",
+        "Position": "R",
+        "TextID": "S3538",
+        "OffLED": "O",
+        "Text": "Electro Heating Group 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3542_VisEHG1",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3539_EHG2",
+        "Position": "R",
+        "TextID": "S3539",
+        "OffLED": "O",
+        "Text": "Electro Heating Group 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3543_VisEHG2",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3540_EHG3",
+        "Position": "R",
+        "TextID": "S3540",
+        "OffLED": "O",
+        "Text": "Electro Heating Group 3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3544_VisEHG3",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3541_EHG4",
+        "Position": "R",
+        "TextID": "S3541",
+        "OffLED": "O",
+        "Text": "Electro Heating Group 4",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3545_VisEHG4",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000018-Messages": {
+     "1000019-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000020-AddPageTab": {
+     "1000021-AddPageControl": {
+      "1000022-AddPageTab": {
+       "Text": "Parameters 1",
+       "TextID": "Parameters1",
+       "VisibleAtRight": "0",
+       "1000023-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000024-AddTextReal": {
+        "OPCID": "AA.R2321_ActSet",
+        "Precision": "1",
+        "TextID": "R2321",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "Text": "Actual Setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "%",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V2324_MSet",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Manual Setpoint",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "V2324",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "LEDOPCID": "SB.S2327_MSetA",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddLEDTextRealLong": {
+        "OnLED": "G",
+        "OPCID": "AA.R7256_ActExtSet",
+        "OffLED": "O",
+        "Text": "External Setpoint",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7256_TextES",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "Bold": "1",
+        "Border": "B",
+        "LEDOPCID": "SB.S2328_ESetA",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000027-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V7381_ISet1",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Setpoint 1",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7381_TextISet1",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "LEDOPCID": "SB.S2329_ISet1A",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V7382_ISet2",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Setpoint 2",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7382_TextISet2",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "LEDOPCID": "SB.S2330_ISet2A",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000029-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V7383_ISet3",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Setpoint 3",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7383_TextISet3",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "LEDOPCID": "SB.S2331_ISet3A",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000030-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V7384_ISet4",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Setpoint 4",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "E7384_TextISet4",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "LEDOPCID": "SB.S2332_ISet4A",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      },
+      "1000031-AddPageTab": {
+       "Text": "Parameters 2",
+       "TextID": "Parameters2",
+       "VisibleAtRight": "0",
+       "1000032-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000033-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "Bold": "2",
+        "Bold2": "2",
+        "VisibleOPCID": "",
+        "TextID2": "Setpoint",
+        "VisibleAtRight": "0"
+       },
+       "1000034-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1253_MOn",
+        "OPCID": "TA.T2253_MOn",
+        "UserRight": "6",
+        "TextID": "T2253",
+        "Text": "Motion Control On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000035-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1267_NWOff",
+        "OPCID": "TA.T2267_NWOff",
+        "UserRight": "6",
+        "TextID": "T2267",
+        "Text": "Network Contactor Switch Off Delay Off",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000036-AddTextInteger": {
+        "OPCID": "AA.I2354_QEHG",
+        "TextID": "I2354",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Quantity Electro Heating Groups",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU286",
+ "DiagnosisControl": "FU286.02",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -734682836
+}

@@ -1,0 +1,76 @@
+// main stylesheet 
+
+@import "variablen";
+@import "mixins";
+@import "globals";
+html:before, html:after, body:before, body:after {
+    content: "";
+    position: fixed;
+    display: none;
+}
+html.offline:before, html.offline:after, body.offline:before, body.offline:after {
+    display: block;
+}
+html:before{
+    height:30px;
+    left:0;
+    right:0;
+    top:0;
+    z-index: 3000;
+    background: linear-gradient(to bottom, rgba(255,50,50,1) 0%,rgba(125,185,232,0) 100%);
+}
+html:after{
+    width:30px;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index: 3000;
+    background: linear-gradient(to left, rgba(255,50,50,1) 0%,rgba(125,185,232,0) 100%);
+}
+body:before{
+    height:30px;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 3000;
+    background: linear-gradient(to top, rgba(255,50,50,1) 0%,rgba(125,185,232,0) 100%);
+}
+body:after{
+    width:30px;
+    top:0;
+    bottom:0;
+    left:0;
+    z-index: 3000;
+    background: linear-gradient(to right, rgba(255,50,50,1) 0%,rgba(125,185,232,0) 100%);
+}
+html, body, main{
+  height:100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  background: #f2f2f2;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none; 
+}
+IE11 .editor{
+    -webkit-user-select: all;  /* Chrome all / Safari all */
+    -moz-user-select: all;     /* Firefox all */
+    -ms-user-select: all;      /* IE 10+ */
+    user-select: all;
+}
+/*::-webkit-scrollbar {
+    background: transparent;
+    height: 0;
+    width: 0;
+}
+::-webkit-scrollbar-thumb {
+    height: 0;
+    width: 0;
+} */
+
+
+@import "header";
+@import "leftside";
+@import "center";
+@import "diagnose";

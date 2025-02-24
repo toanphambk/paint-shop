@@ -1,0 +1,150 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Border": "B"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "11-20",
+   "Name": "FU820.11",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Config",
+       "TextID": "Config",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "Operation",
+        "Text": "Operation",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CO.C3021_ConEnWarn",
+        "UserRight": "1",
+        "TextID": "C3021",
+        "OffLED": "O",
+        "Text": "Configuration Enable Warning",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "1"
+       },
+       "RegAutoHide": "1"
+      }
+     },
+     "RegAutoHide": "1",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000009-Messages": {
+     "1000010-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000011-AddPageTab": {
+     "1000012-AddPageControl": {
+      "1000013-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000014-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000015-AddTextInteger": {
+        "OPCID": "AA.R2323_AVCuB",
+        "TextID": "R2323",
+        "UnitInit": "2",
+        "UnitMetric": "A",
+        "Text": "Actual Value Current Busbar",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "A",
+        "UnitImperial": "A",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextIntegerInput": {
+        "OPCID": "CO.P2919_StartPos",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Start Pos of Area referred to Start Pos of booth",
+        "UnitLocale": "",
+        "TextID": "P2919",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000017-AddTextIntegerInput": {
+        "OPCID": "CO.P2931_EndPos",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Start End of Area referred to Start Pos of booth",
+        "UnitLocale": "",
+        "TextID": "P2931",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU820",
+ "DiagnosisControl": "FU820.11",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1164274781
+}

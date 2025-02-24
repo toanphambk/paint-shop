@@ -1,0 +1,37 @@
+{
+ "sidebuttons": [
+  {
+   "tiles": [
+      {
+        "name": "P1Y2C5",
+        "textId": "P1Y2C5",
+        "iconclass": "workingArea",
+        "link": "/contents/VinFast/P1Y2C5/2C5CD06.htm",
+        "alarm": "P1Y2C5",
+        "alarm_security": "2C5CD06",
+        "plcsoftware": "DGOS_4.x_Conveyor.",
+        "plc": "P1Y2C5",
+        "cabinetname": ".P1Y2C5_ZS01_A01_PAN1"
+      },
+      {
+        "name": "PickCar",
+        "textId": "PickCar",
+        "iconclass": "workingArea",
+        "link": "/contents/VinFast/PickCar/MixCar.htm",
+        "alarm": "PickCar",
+        "alarm_security": "MixCar",
+        "plcsoftware": "DGOS_4.x_Conveyor.",
+        "plc": "P1Y2C5",
+        "cabinetname": ".P1Y2C5_ZS01_A01_PAN1"
+      }
+   ],
+   "name": "Conveyor",
+   "textId": "Conveyor",
+   "iconclass": "conveyor",
+   "alarm": "Conveyor",
+   "alarm_buttons": [],
+   "link": ""
+  }
+ ],
+ "homestation": []
+}

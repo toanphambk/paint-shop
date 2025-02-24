@@ -1,0 +1,278 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "FU_Re_MACSDialysis2CellMonitoring.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "UserRight": "9",
+        "Position": "L",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1066_Reset",
+        "UserRight": "11",
+        "Position": "L",
+        "TextID": "C2258",
+        "OffLED": "O",
+        "Text": "Reset",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000010-AddPageTab": {
+       "Text": "Config",
+       "TextID": "Config",
+       "VisibleAtRight": "1",
+       "1000011-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true,
+        "VisibleAtRight": "1"
+       },
+       "1000012-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CO.C3023_EnWChMes",
+        "UserRight": "1",
+        "TextID": "C3023",
+        "OffLED": "O",
+        "Text": "Enable Warning Charge Measurement",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "1",
+        "Position": "L"
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000013-Messages": {
+     "1000014-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000015-AddPageTab": {
+     "1000016-AddPageControl": {
+      "1000017-AddPageTab": {
+       "Text": "General",
+       "TextID": "General",
+       "VisibleAtRight": "0",
+       "1000018-AddText": {
+        "TextID": "Current",
+        "Text": "Current",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "showHide": false
+       },
+       "1000019-AddTextReal": {
+        "OPCID": "AA.R2340_LCellAV",
+        "Precision": "1",
+        "TextID": "R2340",
+        "UnitInit": "2",
+        "UnitMetric": "A",
+        "Text": "Left Cell Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "A",
+        "UnitImperial": "A",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextReal": {
+        "OPCID": "AA.R2341_RCellAV",
+        "Precision": "1",
+        "TextID": "R2341",
+        "UnitInit": "2",
+        "UnitMetric": "A",
+        "Text": "Right Cell Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "A",
+        "UnitImperial": "A",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000021-AddTextRealRealInputLong": {
+        "OPCID2": "AS.R4081_HystW",
+        "OPCID": "AA.R2342_CurDifCell",
+        "UserRight": "7",
+        "RealInputMax": "5000",
+        "Text": "Current Difference Cells",
+        "UnitLocale": "",
+        "Precision": "1",
+        "TextID": "R2342",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "5000.00",
+        "InputMin": "0.00",
+        "Position": "L"
+       },
+       "1000022-AddText": {
+        "TextID": "ChargeMeasurement",
+        "Text": "Charge Measurement",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "showHide": false
+       },
+       "1000023-AddTextInteger": {
+        "OPCID": "AA.I2333_CelLChMes",
+        "TextID": "I2333",
+        "UnitInit": "2",
+        "UnitMetric": "Ah",
+        "Text": "Cell Left Charge Measurement",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "Ah",
+        "UnitImperial": "Ah",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000024-AddTextInteger": {
+        "OPCID": "AA.I2332_CelRChMes",
+        "TextID": "I2332",
+        "UnitInit": "2",
+        "UnitMetric": "Ah",
+        "Text": "Cell Right Charge Measurement",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "Ah",
+        "UnitImperial": "Ah",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000025-AddTextIntegerInput": {
+        "OPCID": "AA.I2335_WLCelLChMes",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Warn Limit Cell Left Charge Measurement",
+        "UnitLocale": "Ah",
+        "TextID": "I2335",
+        "UnitInit": "2",
+        "UnitMetric": "Ah",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "Ah",
+        "VisibleOPCID": "CO.C3023_EnWChMes",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000026-AddTextIntegerInput": {
+        "OPCID": "AA.I2334_WLCelRChMes",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Warn Limit Cell Right Charge Measurement",
+        "UnitLocale": "Ah",
+        "TextID": "I2334",
+        "UnitInit": "2",
+        "UnitMetric": "Ah",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "Ah",
+        "VisibleOPCID": "CO.C3023_EnWChMes",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000027-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4671_CCW",
+        "OPCID": "AA.I4671_CCW",
+        "UserRight": "7",
+        "VisuBase": "s",
+        "Text": "Cell Comparsion Warning Delay",
+        "Base": "ms",
+        "TextID": "I4671",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C3023_EnWChMes",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Re_MACSDialysis2CellMonitoring",
+ "DiagnosisControl": "FU_Re_MACSDialysis2CellMonitoring.10",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1806347448
+}

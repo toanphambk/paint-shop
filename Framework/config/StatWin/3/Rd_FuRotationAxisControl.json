@@ -1,0 +1,244 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "20-20",
+   "PageControl": {
+    "1000001-AddPageTab": {
+     "1000001-AddPageControl": {
+      "1000001-AddPageTab": {
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1336_AngPos",
+        "Position": "R",
+        "TextID": "S1336",
+        "OffLED": "O",
+        "Text": "Positioning active",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextReal": {
+        "OPCID": "AA.R1203_MaxPos",
+        "Position": "L",
+        "Text": "Max. Position",
+        "UnitLocale": "°",
+        "Precision": "3",
+        "TextID": "R1203",
+        "UnitInit": "2",
+        "UnitMetric": "°",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "°",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1332_RFwd",
+        "Position": "R",
+        "TextID": "S1332",
+        "OffLED": "O",
+        "Text": "Rotating Forward",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextReal": {
+        "OPCID": "AA.R1204_MaxFwdSpd",
+        "Position": "L",
+        "Text": "Max. Forward Speed",
+        "UnitLocale": "°/s",
+        "Precision": "3",
+        "TextID": "R1204",
+        "UnitInit": "2",
+        "UnitMetric": "°/s",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "°/s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextReal": {
+        "OPCID": "AA.R1205_MaxRevSpd",
+        "Position": "L",
+        "Text": "Max. Reverse Speed",
+        "UnitLocale": "°/s",
+        "Precision": "3",
+        "TextID": "R1205",
+        "UnitInit": "2",
+        "UnitMetric": "°/s",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "°/s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000005-AddText": {
+        "Position": "R",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "Text": "Operations",
+       "1000004-AddText": {
+        "Position": "L",
+        "TextID": "ActualValues",
+        "Text": "Actual Values",
+        "Bold": "2",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1017_TarRchd",
+        "Position": "R",
+        "TextID": "S1017",
+        "OffLED": "O",
+        "Text": "Target reached",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000006-AddTextReal": {
+        "OPCID": "AA.R1019_Angle",
+        "Position": "L",
+        "Text": "Actual Position",
+        "UnitLocale": "°",
+        "Precision": "3",
+        "TextID": "R1019",
+        "UnitInit": "2",
+        "UnitMetric": "°",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "°",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000008-AddTextReal": {
+        "OPCID": "AA.R1002_ActValSpeed",
+        "Position": "L",
+        "Text": "Actual Speed",
+        "UnitLocale": "°/s",
+        "Precision": "3",
+        "TextID": "R1002",
+        "UnitInit": "2",
+        "UnitMetric": "°/s",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "°/s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "AA.S1114_Stop",
+        "Position": "R",
+        "TextID": "S1114",
+        "OffLED": "O",
+        "Text": "Stop active",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "TextID": "Operations",
+       "1000009-AddTextReal": {
+        "OPCID": "AA.R1007_SetSpd",
+        "Position": "L",
+        "Text": "Set Speed",
+        "UnitLocale": "°/s",
+        "Precision": "3",
+        "TextID": "R1007",
+        "UnitInit": "2",
+        "UnitMetric": "°/s",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "°/s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1333_RRev",
+        "Position": "R",
+        "TextID": "S1333",
+        "OffLED": "O",
+        "Text": "Rotating Reverse",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0",
+       "1000010-AddTextReal": {
+        "OPCID": "AA.R1202_MinPos",
+        "Position": "L",
+        "Text": "Min. Position",
+        "UnitLocale": "°",
+        "Precision": "3",
+        "TextID": "R1202",
+        "UnitInit": "2",
+        "UnitMetric": "°",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "°",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "VisibleAtRight": "0",
+       "1000007-AddTextReal": {
+        "OPCID": "AA.R1016_TgtAng",
+        "Position": "L",
+        "Text": "Target Position",
+        "UnitLocale": "°",
+        "Precision": "3",
+        "TextID": "R1016",
+        "UnitInit": "2",
+        "UnitMetric": "°",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "°",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "10000001-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       }
+      }
+     },
+     "Text": "Operations",
+     "TextID": "Operations",
+     "RegAutoHide": "0",
+     "VisibleAtRight": "0"
+    },
+    "Bold": "1",
+    "1000003-Messages": {
+     "1000002-AlarmClient": {},
+     "Visible": "2"
+    },
+    "RegAutoHide": "0",
+    "VisibleAtRight": "0"
+   },
+   "Name": "Rd_FuRotationAxisControl"
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": false,
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "Rd_FuRotationAxisControl"
+}

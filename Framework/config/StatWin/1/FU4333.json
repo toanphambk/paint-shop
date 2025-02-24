@@ -1,0 +1,165 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU4333.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2274_Opening",
+        "Position": "R",
+        "TextID": "S2274",
+        "OffLED": "O",
+        "Text": "Drive Opening",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2294_Closing",
+        "Position": "R",
+        "TextID": "S2294",
+        "OffLED": "O",
+        "Text": "Drive Closing",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000010-Messages": {
+     "1000011-AlarmClient": {},
+     "Text": "Messages"
+    },
+    "1000012-AddPageTab": {
+     "1000013-AddPageControl": {
+      "1000014-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000015-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000016-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1264_ExtOpen",
+        "OPCID": "TA.T2264_ExtOpen",
+        "UserRight": "1",
+        "TextID": "T2264",
+        "Text": "Impulse Extension Open",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1265_ExtClse",
+        "OPCID": "TA.T2265_ExtClse",
+        "UserRight": "1",
+        "TextID": "T2265",
+        "Text": "Impulse Extension Close",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextTimerInputLong": {
+        "IntTimeMax": "86400",
+        "OPCID": "TS.T1385_Drive",
+        "UserRight": "1",
+        "TextID": "T1385",
+        "Text": "Drive Runtime",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextIntegerInput": {
+        "OPCID": "AS.P2271_MPulse",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Min Impulse Time",
+        "UnitLocale": "*0.1s",
+        "TextID": "P2271",
+        "UnitInit": "2",
+        "UnitMetric": "*0.1s",
+        "IntInputMax": "32767",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "*0.1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "32767",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000020-AddTextIntegerInput": {
+        "OPCID": "AS.P2272_MBreak",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Min Break Time",
+        "UnitLocale": "*0.1s",
+        "TextID": "P2272",
+        "UnitInit": "2",
+        "UnitMetric": "*0.1s",
+        "IntInputMax": "32767",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "*0.1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "32767",
+        "InputMin": "0",
+        "Position": "L"
+       }
+      }
+     },
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU4333",
+ "DiagnosisControl": "FU4333",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -873428897
+}

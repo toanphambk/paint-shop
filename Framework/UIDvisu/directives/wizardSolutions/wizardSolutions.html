@@ -1,0 +1,31 @@
+<div class="solutions-container" style="display: none;">
+	<div class="top-container">
+		<h3>Lösung: {{ item.id }}</h3>
+	    <ol>
+	      <li ng-repeat="solution in openSolution.solution">{{ solution }}</li>
+	    </ol>
+		<button class="button close" ng-click="closeSolutionOverlay()">
+			<span class="icon close"></span>
+		</button>
+	</div>
+	<div class="img-container">
+		<figure>
+			<figcaption>Maschine</figcaption>
+			<img src="../assets/images/data/pic_maschine.png">
+		</figure>
+		<figure>
+			<figcaption>Pumpe 11</figcaption>
+			<img src="../assets/images/data/pic_qrcode.png">
+		</figure>
+	</div>
+	<div class="comments-container">
+		<span class="headline">Systemnachrichten und Kommentar Einträge</span>
+		<div class="comments"></div>
+		<div class="input-container">
+			<input type="text" name="comment" placeholder="Kommentar eintragen" disabled="disabled">
+			<button class="button plus" disabled="disabled">
+				<span class="icon plus"></span>
+			</button>
+		</div>
+	</div>
+</div>

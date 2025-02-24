@@ -1,0 +1,368 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000004-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "20-20",
+   "Name": "FU443.20",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Modes",
+       "TextID": "Modes",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback1WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C2263",
+        "OffLED": "O",
+        "Text": "Switch Device back to Automatic",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C2263_Auto",
+        "readTagRD1": "SB.S1257_Manu",
+        "readTagRD2": "SB.S1251_Auto",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "Position": "L",
+        "UserRight": "3",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "1000010-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5421_FESReq",
+        "Position": "R",
+        "TextID": "S5421",
+        "OffLED": "O",
+        "Text": "Filter Exchange Station Request",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5420_FESAct",
+        "Position": "R",
+        "TextID": "S5420",
+        "OffLED": "O",
+        "Text": "Filter Exchange Station Active",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5422_B28VWeigDuLift",
+        "Position": "R",
+        "TextID": "S5422",
+        "OffLED": "O",
+        "Text": "B28V Weighting During Lifting",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S5423_B28RWeigDuLow",
+        "Position": "R",
+        "TextID": "S5423",
+        "OffLED": "O",
+        "Text": "B28R Weighting During Lowering",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000015-AddPageTab": {
+       "Text": "Reset",
+       "TextID": "Reset",
+       "VisibleAtRight": "0",
+       "1000016-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000017-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C3079_B20ZerBal",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C3079",
+        "OffLED": "O",
+        "Text": "B20 Zero Balance",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C3078_B20Bal",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "RegAutoHide": "1"
+      },
+      "1000018-AddPageTab": {
+       "Text": "Config",
+       "TextID": "Config",
+       "VisibleAtRight": "1",
+       "1000019-AddText": {
+        "Position": "L",
+        "TextID": "ConfigurationSignals",
+        "Text": "Configuration Signals",
+        "Bold": "2",
+        "VisibleAtRight": "1",
+        "showHide": true
+       },
+       "1000020-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CO.C3078_B20Bal",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C3078",
+        "OffLED": "O",
+        "Text=B20 Balance (0=Without Balance, 1": "With Balance)",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Text": "B20 Balance (0=Without Balance, 1=With Balance)"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000021-Messages": {
+     "1000022-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000023-AddPageTab": {
+     "1000024-AddPageControl": {
+      "1000025-AddPageTab": {
+       "Text": "Aggr",
+       "TextID": "Aggr",
+       "VisibleAtRight": "0",
+       "1000026-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000027-AddTextInteger": {
+        "OPCID": "AA.I3506_FESNoLab",
+        "TextID": "I3506",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Filter Exchange Station Number Labeled",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddTextReal": {
+        "OPCID": "AA.R3345_B20BalActVal",
+        "Precision": "1",
+        "TextID": "R3345",
+        "UnitInit": "2",
+        "UnitMetric": "kg",
+        "Text": "B20 Balance Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "kg",
+        "UnitImperial": "kg",
+        "VisibleOPCID": "CO.C3078_B20Bal",
+        "VisibleAtRight": "0"
+       },
+       "1000029-AddTextReal": {
+        "OPCID": "AA.R3346_B20BalValAftMLif",
+        "Precision": "1",
+        "TextID": "R3346",
+        "UnitInit": "2",
+        "UnitMetric": "kg",
+        "Text": "B20 Balance Value After Measurement Lifting",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "kg",
+        "UnitImperial": "kg",
+        "VisibleOPCID": "CO.C3078_B20Bal",
+        "VisibleAtRight": "0"
+       },
+       "1000030-AddTextReal": {
+        "OPCID": "AA.R3347_B20BalValAftMLow",
+        "Precision": "1",
+        "TextID": "R3347",
+        "UnitInit": "2",
+        "UnitMetric": "kg",
+        "Text": "B20 Balance Value After Measurement Lowering",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "kg",
+        "UnitImperial": "kg",
+        "VisibleOPCID": "CO.C3078_B20Bal",
+        "VisibleAtRight": "0"
+       },
+       "1000031-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T3380_B20ZerBalOnTime",
+        "OPCID": "TA.T4380_B20ZerBalOnTime",
+        "UserRight": "0",
+        "VisuBase": "s",
+        "Text": "B20 Zero Balance On-Time",
+        "Base": "s",
+        "TextID": "T6xxx",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "CO.C3078_B20Bal",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000032-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T3381_B22MinPreF",
+        "OPCID": "TA.T4381_B22MinPreF",
+        "UserRight": "0",
+        "VisuBase": "s",
+        "Text": "B22 Minimum Pressure Fault Limit Switch-On Delay",
+        "Base": "s",
+        "TextID": "T4381",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000033-AddPageTab": {
+       "Text": "Consu",
+       "TextID": "Consu",
+       "VisibleAtRight": "1",
+       "1000034-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000035-AddTextOperatingCounterLong": {
+        "OPCID": "AA.I2723_OperatingCou",
+        "TextID": "I2723",
+        "Text": "Total Operating Hour Counter",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU443",
+ "DiagnosisControl": "FU443.20",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 582010751
+}

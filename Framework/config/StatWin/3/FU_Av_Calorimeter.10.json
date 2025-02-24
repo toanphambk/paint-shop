@@ -1,0 +1,242 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-20",
+   "Name": "FU_Av_Calorimeter.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "11",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1066_Reset",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C1066",
+        "OffLED": "O",
+        "Text": "Reset",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "1000009-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "UserRight": "7",
+        "Position": "L",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "11"
+    },
+    "1000010-Messages": {
+     "1000011-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000012-AddPageTab": {
+     "1000013-AddPageControl": {
+      "1000014-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000015-AddText": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextReal": {
+        "OPCID": "AA.R4125_HeatWatSupplyLine",
+        "Precision": "1",
+        "TextID": "R4125",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "Text": "Heating Water Supply Line",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "°C",
+        "UnitImperial": "°C",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextReal": {
+        "OPCID": "AA.R4126_HeatWatRetLine",
+        "Precision": "1",
+        "TextID": "R4126",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "Text": "Heating Water Return Line",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "°C",
+        "UnitImperial": "°C",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextReal": {
+        "OPCID": "AA.R4127_VolFlowRate",
+        "Precision": "1",
+        "TextID": "R4127",
+        "UnitInit": "2",
+        "UnitMetric": "m³/h",
+        "Text": "Volumetric Flow Rate",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "m³/h",
+        "UnitImperial": "m³/h",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextReal": {
+        "OPCID": "AA.R4128_HeatAV",
+        "Precision": "1",
+        "TextID": "R4128",
+        "UnitInit": "2",
+        "UnitMetric": "kJ",
+        "Text": "Heat",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "kJ",
+        "UnitImperial": "kJ",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextReal": {
+        "OPCID": "AA.R2256_CounterAV",
+        "Precision": "0",
+        "TextID": "R2256",
+        "UnitInit": "2",
+        "UnitMetric": "kJ",
+        "Text": "Counter",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "kJ",
+        "UnitImperial": "kJ",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextReal": {
+        "OPCID": "AA.R4129_ContCounterAV",
+        "Precision": "0",
+        "TextID": "R4129",
+        "UnitInit": "2",
+        "UnitMetric": "kJ",
+        "Text": "Continuous Counter",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "kJ",
+        "UnitImperial": "kJ",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddText": {
+        "TextID": "Setpoint",
+        "Text": "Setpoint",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextRealInput": {
+        "OPCID": "AS.R4018_OverflowSP",
+        "UserRight": "1",
+        "RealInputMax": "9999990",
+        "Text": "Warning Overflow",
+        "UnitLocale": "kJ",
+        "Precision": "0",
+        "TextID": "R4018",
+        "UnitInit": "2",
+        "UnitMetric": "kJ",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "kJ",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Av_Calorimeter",
+ "DiagnosisControl": "FU_Av_Calorimeter.10",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 238130649
+}

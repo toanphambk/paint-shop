@@ -1,0 +1,151 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1266_Enab",
+     "Position": "L",
+     "TextID": "S1266",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Border": "B"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "FU_Pf_PumpProtection.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1066_Reset",
+        "UserRight": "11",
+        "Position": "L",
+        "TextID": "C1066",
+        "OffLED": "O",
+        "Text": "Reset",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2436_OffShift",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation"
+    },
+    "1000009-Messages": {
+     "1000010-AlarmClient": {},
+     "Text": "Messages"
+    },
+    "1000011-AddPageTab": {
+     "1000012-AddPageControl": {
+      "1000013-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000014-AddText": {
+        "Position": "L",
+        "TextID": "Times",
+        "Text": "Times",
+        "showHide": true
+       },
+       "1000015-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4622_RunTime",
+        "OPCID": "AA.I4622_RunTime",
+        "UserRight": "7",
+        "TextID": "I4622",
+        "Text": "Drive Inhibit Run Time ",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2436_OffShift",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Base": "s",
+        "Position": "L"
+       },
+       "1000016-AddTextDoubleTimerInputLongMin": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I3158_OffShiftSP",
+        "OPCID": "AA.I2315_OffShiftAV",
+        "UserRight": "7",
+        "TextID": "I2315",
+        "Text": "Off Shift Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2436_OffShift",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000017-AddTextSiemensTimeLong": {
+        "OPCID": "GP.G2204_TimeAV",
+        "TextID": "G2204",
+        "Text": "TIME Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2436_OffShift",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000018-AddTextSiemensTimeInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID": "GP.G2203_TimeSP",
+        "UserRight": "7",
+        "TextID": "G2203",
+        "Text": "TIME Setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2436_OffShift",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Pf_PumpProtection",
+ "DiagnosisControl": "FU_Pf_PumpProtection",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1565624397
+}

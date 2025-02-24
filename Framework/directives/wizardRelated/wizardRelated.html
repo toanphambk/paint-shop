@@ -1,0 +1,56 @@
+<div class="related-container" style="display: none;" ng-show="showOverview" ng-class="{ fixwidth : relatedErrors.length > 3 }">
+  <div class="inner-container">
+    <div class="wizards-container" dir-paginate="item in relatedErrors | itemsPerPage:3" pagination-id="wizardrelated">
+      <header>
+        <button class="button related" ng-model="isDisabled">
+          <span class="icon related"></span>
+          <span class="related-items">{{ item.relatesTo.length }}</span>
+        </button>
+        <h2 class="{{ item.productionRelevance }}">{{ item.functionGroup }}</h2>
+        <div class="button favorites">
+          <span class="icon favorites"></span>
+        </div>
+      </header>
+      <div class="tabbar">
+        <div class="status-icon {{ item.productionRelevance }}"></div>
+      </div>
+      <div class="content standard">
+          <div class="top-line">
+          <span>Symptom &amp; Hauptursachen</span>
+          <div class="button linkout" style="display:none;">
+            <span class="icon linkout"></span>
+          </div>
+        </div>
+        <p class="red">{{ item.name }}</p>
+        <div class="button start-button" ng-click="toggleHandling(item.id)">
+          <div class="center">
+            <span class="icon handling"></span>
+            <span>Start</span>
+          </div>
+          <span class="time">{{ item.timeStop | amDifference : clock : 'minutes' | minutesToHHmm}}</span>
+        </div>
+        <ol>
+          <li dir-paginate="mainCause in relatedMainCauses[$index] | itemsPerPage:3" pagination-id="'wizardRelatedItem_' + $index">
+            <span>{{ mainCause.name }}</span>
+            <button class="button info" disabled="disabled">
+              <span class="icon info"></span>
+            </button>
+          </li>
+        </ol>
+        <div class="pagination-container">
+          <dir-pagination-controls pagination-id="'wizardRelatedItem_' + $index" template-url="directives/wizard/paginationWizard.tpl.html"></dir-pagination-controls>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="button close" ng-click="closeRelatedOverlay()">
+    <span class="icon close"></span>
+  </button>
+  <div class="pagination-container related">
+    <dir-pagination-controls pagination-id="wizardrelated" template-url="directives/wizardRelated/paginationDetail.tpl.html"></dir-pagination-controls>
+  </div>
+  <div class="connection-element">
+    <span class="icon related"></span>
+    <span class="count">{{ selectedTile.relatesTo.length }}</span>
+  </div>
+</div>

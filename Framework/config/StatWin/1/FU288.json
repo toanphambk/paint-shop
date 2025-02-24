@@ -1,0 +1,161 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "11-20",
+   "Name": "FU288.11",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "R",
+        "TextID": "",
+        "Text": "Text Line",
+        "Bold": "2",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2334_ArBusy",
+        "Position": "R",
+        "TextID": "S2334",
+        "OffLED": "O",
+        "Text": "Area is Busy",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2335_ArBuCoSt",
+        "Position": "R",
+        "TextID": "S2335",
+        "OffLED": "O",
+        "Text": "Area is Busy  and Conv. Stopped",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000010-Messages": {
+     "1000011-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000012-AddPageTab": {
+     "1000013-AddPageControl": {
+      "1000014-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000015-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000016-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "Bold": "2",
+        "Bold2": "2",
+        "VisibleOPCID": "",
+        "TextID2": "Setpoint",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1345_DelStopConv",
+        "OPCID": "TA.T2345_DelStopConv",
+        "UserRight": "6",
+        "TextID": "T2345",
+        "Text": "Switch-On Delay after Conveyor Stopped",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextIntegerInput": {
+        "OPCID": "CO.P3439_StAr",
+        "UserRight": "1",
+        "IntInputMin": "0",
+        "Text": "Startpoint Area",
+        "UnitLocale": "Imp",
+        "TextID": "P3439",
+        "UnitInit": "2",
+        "UnitMetric": "Imp",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "Imp",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextIntegerInput": {
+        "OPCID": "CO.P3440_EnAr",
+        "UserRight": "1",
+        "IntInputMin": "0",
+        "Text": "Endpoint Area",
+        "UnitLocale": "Imp",
+        "TextID": "P3440",
+        "UnitInit": "2",
+        "UnitMetric": "Imp",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "Imp",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU288",
+ "DiagnosisControl": "FU288",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1456513650
+}

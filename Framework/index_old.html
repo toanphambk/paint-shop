@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>    
+    <head>
+
+        <title>New Emos</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=1920">
+
+        <link rel="stylesheet" href="/lib/css/durr.emos.css">
+        <link rel="stylesheet" href="/lib/css/jquery-ui.css">
+
+        <!-- TrendPage css -->
+        <link rel="stylesheet" type="text/css" href="js/amstockchart/amcharts/style.css">		
+        <link rel="stylesheet" type="text/css" href="js/amstockchart/amcharts/plugins/export/export.css">
+        <link rel="stylesheet" type="text/css" href="js/TrendPage/css/trendpage.css">
+        <!-- TrendPage css / -->        
+
+        <link rel="Stylesheet" media="screen" href="css/reset.css" />
+        <link rel="Stylesheet" media="screen" href="css/styles.css" />
+        <!--        <link rel="Stylesheet" media="screen" href="css/style.css" />-->
+
+        <link href="/lib/test_mobiscroll/css/mobiscroll.animation.css" rel="stylesheet" type="text/css" />
+        <link href="/lib/test_mobiscroll/css/mobiscroll.icons.css" rel="stylesheet" type="text/css" />
+        <link href="/lib/test_mobiscroll/css/mobiscroll.frame.css" rel="stylesheet" type="text/css" />
+        <link href="/lib/test_mobiscroll/css/mobiscroll.frame.wp.css" rel="stylesheet" type="text/css" />
+        <link href="/lib/test_mobiscroll/css/mobiscroll.scroller.css" rel="stylesheet" type="text/css" />
+        <link rel="Stylesheet" media="screen" href="/lib/test_mobiscroll/css/mobiscroll.scroller.wp.css" />
+        <link href="/lib/test_mobiscroll/css/mobiscroll.image.css" rel="stylesheet" type="text/css" />
+        <link href="keyboard/keyboard.css" rel="stylesheet" type="text/css" />
+
+
+    </head>
+    <body onload="tick();">
+        <main>
+            <header>
+                <div class="left">
+                    <div class="top"></div>
+                    <div class="bottom"></div>
+                </div>
+                <div class="center">
+                    <div id="bluebox" class="bluebox">
+                        <div id="configheader">
+                            <ul>
+                                <li id="user"><span class="username">Guest</span></li>
+                                <li class="emosbutton" id="login"></li>
+                                <li class="emosbutton" id="config"></li>
+                                <li class="emosbutton" id="help"></li>
+                                <li class="emosbutton" id="language"></li>                                 
+                                <li id="act_lang"></li>
+                            </ul>
+                        </div>
+                        <div id="alarmheader"></div>  
+                        <span class="actDate"></span>
+                        <span id="stationname"></span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="top"></div>
+                    <div class="bottom"></div>
+                </div>
+            </header>
+            <section id="left" class="left"></section>
+            <section id="breadcrump"></section>
+            <section id="quickcontrol" class="quickcontrol"></section>
+            <section id="precenter"><div id="alarmpage" class="alarmpage"><div class="alarmheader"><span class="alarmtabwrapper active"><span class="alarmtab icon1 emosbutton"></span></span><span class="alarmtabwrapper"><span class="alarmtab icon2 emosbutton"></span></span><span class="alarmtabwrapper"><span class="alarmtab icon3 emosbutton"></span></span><span class="alarmtabwrapper"><span class="alarmtab icon4 emosbutton"></span></span></div><div id="alarmpage_content"></div></div></section>
+            <section id="center">                
+            </section>
+        </main> 
+        <script type="text/javascript">
+//             navigator.sayswho= (function(){
+//                var ua= navigator.userAgent, tem,
+//                M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];                
+//                if(/trident/i.test(M[1])){
+//                    tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];                    
+//                    return 'IE'+(tem[1] || '');
+//                }
+//                if(M[1]=== 'Chrome'){
+//                    tem= ua.match(/\b(OPR|Edge)\/(\d+)/);
+//                    if(tem!= null) return tem[1].replace('OPR', 'Opera');
+//                }
+//                M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+//                
+//                if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+//                
+//                return M[0];
+//            })();
+            navigator.sayswho = (function () {
+                var ua = navigator.userAgent, tem,
+                        M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+                if (/trident/i.test(M[1])) {
+                    tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
+                    return 'IE ' + (tem[1] || '');
+                }
+                if (M[1] === 'Chrome') {
+                    tem = ua.match(/\b(OPR|Edge)\/(\d+)/);
+                    if (tem != null)
+                        return tem.slice(1).join(' ').replace('OPR', 'Opera');
+                }
+                M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
+                if ((tem = ua.match(/version\/(\d+)/i)) != null)
+                    M.splice(1, 1, tem[1]);
+                return M.join(' ');
+            })();
+
+            document.getElementsByTagName('html')[0].setAttribute('class', navigator.sayswho);
+            //temporary to show which broser
+            var node = document.createElement("SPAN");
+            node.style.position = 'absolute';
+            node.style.top = "-20px";
+            var textnode = document.createTextNode(navigator.sayswho);
+            node.appendChild(textnode);
+            document.getElementById("bluebox").appendChild(node);
+            function tick() {
+                var now = new Date();
+                var year = now.getFullYear();
+                var month = now.getMonth() + 1;
+                var day = now.getDate();
+                var hour = now.getHours();
+                var minute = now.getMinutes();
+                var second = now.getSeconds();
+                if (month.toString().length === 1) {
+                    var month = '0' + month;
+                }
+                if (day.toString().length === 1) {
+                    var day = '0' + day;
+                }
+                if (hour.toString().length === 1) {
+                    var hour = '0' + hour;
+                }
+                if (minute.toString().length === 1) {
+                    var minute = '0' + minute;
+                }
+                if (second.toString().length === 1) {
+                    var second = '0' + second;
+                }
+                var dateTime = day + '.' + month + '.' + year + ' - ' + hour + ':' + minute;
+
+                $('.actDate').text(dateTime);
+                window.setTimeout("tick();", 1000);
+            }
+        </script>
+        <script src="js/site.configuration.js"></script>
+        <script src="js/durr.emos.js"></script>        
+        <!--<script src="js/jquery.js"></script>-->       
+        <script src="/lib/js/jquery.js"></script>       
+        <script src="/lib/js/jquery-ui.js"></script>
+
+
+        <script src="/lib/test_mobiscroll/js/mobiscroll.core.js"></script>
+        <script src="/lib/test_mobiscroll/js/mobiscroll.frame.js"></script>
+        <script src="/lib/test_mobiscroll/js/mobiscroll.scroller.js"></script>
+
+        <script src="/lib/test_mobiscroll/js/mobiscroll.util.datetime.js"></script>
+
+        <script src="/lib/test_mobiscroll/js/mobiscroll.datetimebase.js"></script>   
+        <script src="/lib/test_mobiscroll/js/mobiscroll.datetime.js"></script>    
+        <script src="/lib/test_mobiscroll/js/mobiscroll.select.js"></script>
+        <script src="js/jquery.qrcode.min.js"></script>
+        <script type="text/javascript" src="js/qrcodelib.js"></script>
+        <script type="text/javascript" src="js/webcodecamjquery.js"></script>
+        <script src="keyboard/keyboard.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- TrendPage js -->
+        <script src="js/amstockchart/amcharts/amcharts.js"></script>
+        <script src="js/amstockchart/amcharts/serial.js"></script>
+        <script src="js/amstockchart/amcharts/amstock.js"></script>
+        <script src="js/amstockchart/amcharts/plugins/export/export.js"></script>
+		<script src="js/amstockchart/amcharts/themes/durr.js"></script>
+        <script src="js/TrendPage/js/emos-ui-trendpage.js"></script>
+        <!-- TrendPage js / -->
+
+        <div id="dialog-message" style="display: none;">            
+            Please choose another Process!
+        </div>
+        <ul id="contextMenu">
+        </ul>
+        <div class="myPage"></div>
+    </body>
+</html>

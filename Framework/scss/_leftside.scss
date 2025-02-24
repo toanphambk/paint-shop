@@ -1,0 +1,284 @@
+/* start leftside */
+//@import "variablen";
+//@import "globals";
+//@import "mixins";
+// mainmenu on the left
+
+#left{
+    clear: both;
+    height: 100%;  
+    position: fixed;
+    top: 97px;
+    background: $default_blue;
+    /*z-index: 1000;*/
+}
+ul.maincats, ul.configcats{
+    margin-top: -3px;
+    padding-left: 5px;
+}
+li.cats > span, .chat{
+    height: 48px;
+    width: 76px;
+    background-repeat: no-repeat;
+    display: block;
+    margin-bottom: 43px;
+    padding: 0;
+    box-shadow: none;
+    top: 2px;
+}
+li.cats > span:after, .chat:after{
+    box-shadow: none;
+}
+li.cats{
+    margin: 3px 0 3px 0;
+    padding: 8px 0 2px 8px;
+}
+li.cats:hover, .chat:hover{
+    cursor: pointer;
+}
+li.cats.active{
+    background-color: $default-background;    
+}
+/*li .process{
+    background-image:url(../svg/Mainmenu/process.svg),$gradient;
+}
+li.active .process{
+    background-image:url(../svg/Mainmenu/process.svg);
+}
+li.active .process:active{
+    background-image:url(../svg/Mainmenu/process.svg),$reversegradient;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+li .conveyor{
+    background-image:url(../svg/Mainmenu/conveyor.svg),$gradient;
+}
+li .conveyor:active{
+    background-image:url(../svg/Mainmenu/conveyor.svg),$reversegradient;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+li.active .conveyor{
+    background-image:url(../svg/Mainmenu/conveyor.svg);
+}
+li .application{
+    background-image:url(../svg/Mainmenu/application.svg),$gradient;
+}
+li .application:active{
+    background-image:url(../svg/Mainmenu/application.svg),$reversegradient;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+li.active .application{
+    background-image:url(../svg/Mainmenu/application.svg);
+}
+li .supervisory{
+    background-image:url(../svg/Mainmenu/supervisory.svg),$gradient;
+}
+li .supervisory:active{
+    background-image:url(../svg/Mainmenu/supervisory.svg),$reversegradient;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+li.active .supervisory{
+    background-image:url(../svg/Mainmenu/supervisory.svg);
+}
+li .diagnosis{
+    background-image:url(../svg/Mainmenu/diagnosis.svg),$gradient;
+}
+li .diagnosis:active{
+    background-image:url(../svg/Mainmenu/diagnosis.svg),$reversegradient;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+li.active .diagnosis{
+    background-image:url(../svg/Mainmenu/diagnosis.svg);
+}
+li .OnSite{
+    background-image:url(../svg/Mainmenu/OnSite.svg),$gradient;
+}
+li .OnSite:active{
+    background-image:url(../svg/Mainmenu/OnSite.svg),$reversegradient;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+li.active .OnSite{
+    background-image:url(../svg/Mainmenu/OnSite.svg);
+}
+li .boothOverview{
+    background-image:url(../svg/Mainmenu/boothOverview.svg),$gradient;
+}
+li .boothOverview:active{
+    background-image:url(../svg/Mainmenu/boothOverview.svg),$reversegradient;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+li.active .boothOverview{
+    background-image:url(../svg/Mainmenu/boothOverview.svg);
+}
+li .operatingMonitoring{
+    background-image:url(../svg/Mainmenu/operatingMonitoring.svg),$gradient;
+}
+li .operatingMonitoring:active{
+    background-image:url(../svg/Mainmenu/operatingMonitoring.svg),$reversegradient;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+li.active .operatingMonitoring{
+    background-image:url(../svg/Mainmenu/operatingMonitoring.svg);
+}
+li .reports{
+    background-image:url(../svg/Mainmenu/reports.svg),$gradient;
+}
+li .reports:active{
+    background-image:url(../svg/Mainmenu/reports.svg),$reversegradient;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+li.active .reports{
+    background-image:url(../svg/Mainmenu/reports.svg);
+}
+li .stationOverview{
+    background-image:url(../svg/Mainmenu/stationOverview.svg),$gradient;
+}
+li .stationOverview:active{
+    background-image:url(../svg/Mainmenu/stationOverview.svg),$reversegradient;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+li.active .stationOverview{
+    background-image:url(../svg/Mainmenu/stationOverview.svg);
+}*/
+.trenner{
+    background: url("../images/trenner.png");
+    display: block;
+    width: 100%;
+    height: 1px;
+}
+li.cats .buttontext{
+    padding-top: 55px;
+    color : #FEFEFE;
+    font-size: $mid-size;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0;
+}
+li.cats.active .buttontext{    
+    color: $dark-fontcolor;
+}
+ul.maincats li .alert, ul.maincats li .warn {
+    @extend %alarmsigns;
+    //margin: 5px !important;
+    margin-right: 1px;
+}
+#chatwrapper{
+    position: absolute;
+    bottom: 2px;
+    left: 120px;
+    width: 950px;
+    height: 350px;
+    background: #ececec;
+    border: 1px solid #cecece;
+}
+.chat{
+    width: 66px;
+    margin-left: 13px;
+    bottom: 20px;
+    position: absolute;
+    top: initial;
+    text-align: center;
+    padding: 5px;
+    display: none;
+}
+#chat{
+    width: 950px;
+    height: 350px;
+}
+
+#zoom{
+    position: absolute;
+    height: 60px;
+    width: 100px;
+    background-color: transparent;
+    z-index: 99;
+    bottom: 0;
+    left: 3px; 
+}
+
+.noshadow {
+    width: 70%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 15px;
+    top: 3px;
+    left: 3px;
+    height: 25px;
+    box-shadow: none;
+    background-image: url(../svg/icons_start/zoom.svg), linear-gradient(#fff, #d1d7e0);
+}
+
+.noshadow:active {
+    background-image: url(../svg/icons_start/zoom.svg), linear-gradient(#d1d7e0, #fff);
+}
+
+.noshadow:after{
+    box-shadow: none;
+}
+
+.noshadow.active {
+    background-image: url(../svg/icons_start/zoom.svg);
+    background-color: #ececec;
+    border: 1px solid #cecece !important;
+    border-right: none !important;
+    height: 27px !important;
+    width: 100px !important;
+    background-position: 26px 4px !important;
+    top: 3px;
+    left: 3px;
+    border-radius: 4px 0px 0px 4px !important;
+}
+
+.noshadow.active:after {
+    position: unset;
+}
+
+.zoompanel {
+    width: 300px;
+    height: 100px;
+    background-color: #ececec;
+    position: absolute;
+    bottom: 8px;
+    left: 125px;
+    border: 1px solid #cecece;
+    border-radius: 3px;
+    z-index: 98;
+    overflow: hidden
+}
+
+.zoompanel .zminus:active{
+    background-image: url(../svg/icons_start/zoomminus.svg), linear-gradient(#d1d7e0, #fff);
+}
+.zoompanel .zminus{
+    background-image: url(../svg/icons_start/zoomminus.svg), linear-gradient(#fff, #d1d7e0);
+}
+.zoompanel .zplus:active{
+    background-image: url(../svg/icons_start/zoomplus.svg), linear-gradient(#d1d7e0, #fff);
+}
+.zoompanel .zplus{
+    background-image: url(../svg/icons_start/zoomplus.svg), linear-gradient(#fff, #d1d7e0);
+}
+
+.zoompanel .plusminus{
+    float: left;
+    background-repeat: no-repeat;
+    height: 76px;
+    width: 112px;
+    border-radius: 4px;
+    padding: 0;
+    top: 3px;
+    box-shadow: none;
+    margin: 7px 16px;
+}
+
+/* end leftside */

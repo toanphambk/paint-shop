@@ -1,0 +1,139 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU225.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "1000007-AddText": {
+        "TextID": "Timer1",
+        "Text": "Timer 1",
+        "Border": "N",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "showHide": true
+       },
+       "1000008-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1453_MOn1",
+        "OPCID": "TA.T2453_MOn1",
+        "UserRight": "6",
+        "TextID": "T2453",
+        "Text": "Motion Control On timer 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2388_S1NotUsed",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1454_MOff1",
+        "OPCID": "TA.T2454_MOff1",
+        "UserRight": "6",
+        "TextID": "T2454",
+        "Text": "Motion Control Off timer 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2388_S1NotUsed",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1455_Sens1",
+        "OPCID": "TA.T2455_Sens1",
+        "UserRight": "6",
+        "TextID": "T2455",
+        "Text": "Motion Control Sensor timer 1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2388_S1NotUsed",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddText": {
+        "TextID": "Timer2",
+        "Text": "Timer 2",
+        "Border": "N",
+        "Position": "L",
+        "showHide": true
+       },
+       "1000012-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1456_MOn2",
+        "OPCID": "TA.T2456_MOn2",
+        "UserRight": "7",
+        "TextID": "T2456",
+        "Text": "Motion Control On timer 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2391_S2NotUsed",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1457_MOff2",
+        "OPCID": "TA.T2457_MOff2",
+        "UserRight": "7",
+        "TextID": "T2457",
+        "Text": "Motion Control Off timer 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2391_S2NotUsed",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1458_Sens2",
+        "OPCID": "TA.T2458_Sens2",
+        "UserRight": "7",
+        "TextID": "T2458",
+        "Text": "Motion Control Sensor timer 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2391_S2NotUsed",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "Text": "Parameters",
+     "TextID": "Parameters"
+    },
+    "1000015-Messages": {
+     "1000016-AlarmClient": {},
+     "Text": "Messages"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU225",
+ "DiagnosisControl": "FU225",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1224029843
+}

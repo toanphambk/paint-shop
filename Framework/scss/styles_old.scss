@@ -1,0 +1,54 @@
+// main stylesheet
+
+@import "variablen";
+@import "mixins";
+
+html:before, html:after, body:before, body:after {
+    content: "";
+    position: fixed;
+    display: none;
+}
+html:before{
+    height:30px;
+    left:0;
+    right:0;
+    top:0;
+    z-index: 3000;
+    background: linear-gradient(to bottom, rgba(255,50,50,1) 0%,rgba(125,185,232,0) 100%);
+}
+html:after{
+    width:30px;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index: 3000;
+    background: linear-gradient(to left, rgba(255,50,50,1) 0%,rgba(125,185,232,0) 100%);
+}
+body:before{
+    height:30px;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 3000;
+    background: linear-gradient(to top, rgba(255,50,50,1) 0%,rgba(125,185,232,0) 100%);
+}
+body:after{
+    width:30px;
+    top:0;
+    bottom:0;
+    left:0;
+    z-index: 3000;
+    background: linear-gradient(to right, rgba(255,50,50,1) 0%,rgba(125,185,232,0) 100%);
+}
+html, body, main{
+  height:100%;
+  font-family: "Roboto-Light";
+  font-size: 12px;
+  background: #f2f2f2;
+}
+ 
+@import "globals";
+@import "header";
+@import "leftside";
+@import "center";
+@import "diagnose";

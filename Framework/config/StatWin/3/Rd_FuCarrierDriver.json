@@ -1,0 +1,306 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "Rd_FuCarrierDriver",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status",
+       "TextID": "Status",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "OperatingModes",
+        "Text": "Operating Modes",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1251_Auto",
+        "Position": "L",
+        "TextID": "S1251",
+        "OffLED": "O",
+        "Text": "Automatic",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1257_Manu",
+        "Position": "L",
+        "TextID": "S1257",
+        "OffLED": "O",
+        "Text": "Manual",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1526_SetModeAct",
+        "Position": "L",
+        "TextID": "S1526",
+        "OffLED": "O",
+        "Text": "Setup Mode Active",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Response Signals",
+        "TextID": "ResponseSignals",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1114_Stop",
+        "Position": "L",
+        "TextID": "S1114",
+        "OffLED": "O",
+        "Text": "Stop",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1114_Stop1",
+        "Position": "L",
+        "TextID": "s1114",
+        "OffLED": "O",
+        "Text": "Stop 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1268_CFV",
+        "Position": "L",
+        "TextID": "S1268",
+        "OffLED": "O",
+        "Text": "Collective Fault",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Control",
+        "TextID": "Control",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000016-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1164_IgnoreTrLight",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1164",
+        "OffLED": "O",
+        "Text": "Ignore Actual Lighting",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Body Type",
+        "TextID": "BodyType",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000018-AddTextInteger": {
+        "OPCID": "AA.I1403_LightId",
+        "TextID": "I1403",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Light ID",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0",
+       "VisibleOPCID": "",
+       "10000001-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000019-Messages": {
+     "1000020-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000021-AddPageTab": {
+     "1000022-AddPageControl": {
+      "1000023-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000024-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Parameters",
+        "TextID": "Parameters",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000025-AddTextInteger": {
+        "OPCID": "AA.I1403_LightId",
+        "TextID": "I1403",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Light ID",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000026-AddTextInteger": {
+        "OPCID": "AA.I1045_OpArea",
+        "TextID": "I1045",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Operating Area",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000027-AddTextInteger": {
+        "OPCID": "AA.I1565_SafArea1",
+        "TextID": "I1565",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Safety Area 1",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000028-AddTextInteger": {
+        "OPCID": "AA.I1566_SafArea2",
+        "TextID": "I1566",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Safety Area 2",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000029-AddTextInteger": {
+        "OPCID": "AA.I1567_SafArea3",
+        "TextID": "I1567",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Safety Area 3",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000030-AddTextInteger": {
+        "OPCID": "AA.I1557_TrackNode",
+        "TextID": "I1557",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Track Node",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000031-AddString": {
+        "OPCID": "MS.M1040_StopReason",
+        "Position": "L",
+        "StrStart": "0",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "StrLen": "10000",
+        "VisibleAtRight": "0",
+        "Text": "Stop Reason",
+        "TextID": "M1040"
+       },
+       "VisibleOPCID": ""
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "Rd_FuCarrierDriver",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 737714921
+}

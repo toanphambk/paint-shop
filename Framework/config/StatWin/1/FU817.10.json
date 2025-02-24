@@ -1,0 +1,124 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Border": "B"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "10-20",
+   "Name": "FU817.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000008-AddTextIntegerInput": {
+        "OPCID": "CO.P2358_CuMonFeed",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Current Monitoring Feed",
+        "UnitLocale": "",
+        "TextID": "P2358",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000009-AddTextIntegerInput": {
+        "OPCID": "CO.P2359_CuMonLag",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Current Monitoring Lag",
+        "UnitLocale": "",
+        "TextID": "P2359",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000010-AddTextIntegerInput": {
+        "OPCID": "CO.P2360_CuMonCh",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Current Monitoring Checkpoint",
+        "UnitLocale": "",
+        "TextID": "P2360",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    },
+    "1000011-Messages": {
+     "1000012-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU817",
+ "DiagnosisControl": "FU817.10",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -71172396
+}

@@ -1,0 +1,450 @@
+{  
+   "PP":{  
+      "Description":"3-Point Converter (Siemens)",
+      "WinName":"FU333"
+   },
+   "PQ":{  
+      "Description":"3-Point Converter (Rockwell)",
+      "WinName":"FU2333"
+   },
+   "PR":{  
+      "Description":"Closed-loop controller/constantly with ramp (Siemens)",
+      "WinName":"FU321"
+   },
+   "PV":{  
+      "Description":"PLC information (Mitsubishi)",
+      "WinName":"FU4201"
+   },
+   "PW":{  
+      "Description":"Controller (Mitsubishi) Complete",
+      "WinName":"FU4320"
+   },
+   "PX":{  
+      "Description":"3-Point Converter (Mitsubishi)",
+      "WinName":"FU4333"
+   },
+   "PY":{  
+      "Description":"Controller (Mitsubishi) Incomplete",
+      "WinName":"FU4321"
+   },
+   "QA":{  
+      "Description":"MACS Management Cycle-Plant",
+      "WinName":"FU807"
+   },
+   "QB":{  
+      "Description":"MACS Setpoints Cycle-Plant",
+      "WinName":"FU813"
+   },
+   "AA":{  
+      "Description":"Analog value average",
+      "WinName":"FU303"
+   },
+   "AB":{  
+      "Description":"Heat Quantity  Limiter",
+      "WinName":"FU890"
+   },
+   "AC":{  
+      "Description":"Analog Value Actual Value Check",
+      "WinName":"FU302"
+   },
+   "AD":{  
+      "Description":"Analog value dosing",
+      "WinName":"FU304"
+   },
+   "AF":{  
+      "Description":"Analog value positioning feedback",
+      "WinName":"FU305"
+   },
+   "AH":{  
+      "Description":"Conversion of Relative Humidity to Absolute Humidity Conversion of Relative Humidity to Absolute Humidity Conversion of Relative Humidity to Absolute Humidity",
+      "WinName":"FU309"
+   },
+   "IR":{  
+      "Description":"Infrared radiator management",
+      "WinName":"FU290"
+   },
+   "AL":{  
+      "Description":"Analog value limit comparator",
+      "WinName":"FU306"
+   },
+   "IU":{  
+      "Description":"4 Analog Values",
+      "WinName":"FU213"
+   },
+   "IW":{  
+      "Description":"4 Analog Values (Integer)",
+      "WinName":"FU316"
+   },
+   "AP":{  
+      "Description":"Setpoint pre-selection of 4 Setpoints",
+      "WinName":"FU308"
+   },
+   "IX":{  
+      "Description":"8 Interlocks Meessages",
+      "WinName":"FU208"
+   },
+   "RA":{  
+      "Description":"Rectifier Current Pulse",
+      "WinName":"FU349"
+   },
+   "IY":{  
+      "Description":"16 Interlocks Meessages",
+      "WinName":"FU209"
+   },
+   "RB":{  
+      "Description":"Switches for Rectifier",
+      "WinName":"FU355"
+   },
+   "AR":{  
+      "Description":"Dry Scrubber Management, FB for one Area",
+      "WinName":"FU423"
+   },
+   "IZ":{  
+      "Description":"1 Interlock Analog Value",
+      "WinName":"FU214"
+   },
+   "RC":{  
+      "Description":"Coating Monitoring",
+      "WinName":"FU345"
+   },
+   "AS":{  
+      "Description":"Analog value standardization 4-20mA",
+      "WinName":"FU300"
+   },
+   "RD":{  
+      "Description":"Rectifier Dialysis Cell Monitoring",
+      "WinName":"FU344"
+   },
+   "RF":{  
+      "Description":"MACS Setpoint",
+      "WinName":"FU809"
+   },
+   "RG":{  
+      "Description":"Rectifier General",
+      "WinName":"FU343"
+   },
+   "RH":{  
+      "Description":"MACS Coating Monitoring",
+      "WinName":"FU816"
+   },
+   "AX":{  
+      "Description":"Analog Leakage Value Control",
+      "WinName":"FU403"
+   },
+   "RI":{  
+      "Description":"Body Type Identification",
+      "WinName":"FU346"
+   },
+   "AY":{  
+      "Description":"Analog Value Control Consumption Control",
+      "WinName":"FU404"
+   },
+   "RJ":{  
+      "Description":"AMS Body Tracker",
+      "WinName":"FU804"
+   },
+   "AZ":{  
+      "Description":"Stroke Control",
+      "WinName":"FU406"
+   },
+   "RK":{  
+      "Description":"Conventional Body Tracker",
+      "WinName":"FU805"
+   },
+   "RL":{  
+      "Description":"MACS Management",
+      "WinName":"FU808"
+   },
+   "RM":{  
+      "Description":"Rectifier Management",
+      "WinName":"FU341"
+   },
+   "RN":{  
+      "Description":"MACS Conventional Position",
+      "WinName":"FU806"
+   },
+   "RO":{  
+      "Description":"RoDip4e Carriage Program Interpreter",
+      "WinName":"FU85"
+   },
+   "RP":{  
+      "Description":"Rectifier General Panel",
+      "WinName":"FU340"
+   },
+   "RQ":{  
+      "Description":"MACS Main Switch",
+      "WinName":"FU801"
+   },
+   "RR":{  
+      "Description":"MACS AMS Coating Monitoring",
+      "WinName":"FU820"
+   },
+   "RS":{  
+      "Description":"Main Switch ED Rectifier",
+      "WinName":"FU342"
+   },
+   "RT":{  
+      "Description":"RoDip4e Turn Table Control",
+      "WinName":"FU83"
+   },
+   "RU":{  
+      "Description":"MACS Hardeware Deutschmann",
+      "WinName":"FU810"
+   },
+   "RV":{  
+      "Description":"MACS Hardeware TLU",
+      "WinName":"FU812"
+   },
+   "RW":{  
+      "Description":"MACS Hardeware Munk",
+      "WinName":"FU811"
+   },
+   "RX":{  
+      "Description":"MACS Dialysis Cell Monitoring",
+      "WinName":"FU815"
+   },
+   "RY":{  
+      "Description":"MobyI Read only",
+      "WinName":"FU347"
+   },
+   "RZ":{  
+      "Description":"Encoder Monitoring",
+      "WinName":"FU803"
+   },
+   "SA":{  
+      "Description":"Supervisory System General Part",
+      "WinName":"FU360"
+   },
+   "SB":{  
+      "Description":"Supervisory System Control Desk Area",
+      "WinName":"FU361"
+   },
+   "BR":{  
+      "Description":"Interlock Visu/Safety - F_Burn2Stag",
+      "WinName":"FU874"
+   },
+   "SC":{  
+      "Description":"Spray rings control",
+      "WinName":"FU230"
+   },
+   "SD":{  
+      "Description":"Supervisory System Switching Commands for 6 Areas",
+      "WinName":"FU362"
+   },
+   "BT":{  
+      "Description":"Interlock Visu/Safety - F_BurnTAR",
+      "WinName":"FU873"
+   },
+   "SE":{  
+      "Description":"Solenoid Dedusting Sequenz",
+      "WinName":"FU279"
+   },
+   "SF":{  
+      "Description":"AMS Position",
+      "WinName":"FU288"
+   },
+   "SI":{  
+      "Description":"Supervisory Identsystem",
+      "WinName":"FU369"
+   },
+   "SM":{  
+      "Description":"Sequence start manual step assignment",
+      "WinName":"FU228"
+   },
+   "SN":{  
+      "Description":"Sequence start with 8 steps",
+      "WinName":"FU227"
+   },
+   "CD":{  
+      "Description":"Compensation with 8 Steps",
+      "WinName":"FU236"
+   },
+   "KL":{  
+      "Description":"RTO Damper Step Chain",
+      "WinName":"FU266"
+   },
+   "ST":{  
+      "Description":"Switch on 8 steps with constant time",
+      "WinName":"FU205"
+   },
+   "SX":{  
+      "Description":"Selector switch 8",
+      "WinName":"FU231"
+   },
+   "SY":{  
+      "Description":"Selector switch 16",
+      "WinName":"FU232"
+   },
+   "CM":{  
+      "Description":"Frequency inverter SEW MOVIMOT",
+      "WinName":"FU177"
+   },
+   "CN":{  
+      "Description":"ControlNet Diagnosis",
+      "WinName":"FU2208"
+   },
+   "CO":{  
+      "Description":"Counter with scaled output (totalizer)",
+      "WinName":"FU229"
+   },
+   "CP":{  
+      "Description":"Frequency Inverter SEW PHC (Movidrive-like) with Profibus Interface",
+      "WinName":"FU89"
+   },
+   "TA":{  
+      "Description":"Table with 8 lines",
+      "WinName":"FU235"
+   },
+   "TB":{  
+      "Description":"Temperature/Humidity Pre-settings (Rockwell)",
+      "WinName":"FU2301"
+   },
+   "CS":{  
+      "Description":"Motor module SEW MOVISWITCH",
+      "WinName":"FU176"
+   },
+   "CU":{  
+      "Description":"Energy measurement Polluwatt",
+      "WinName":"FU239"
+   },
+   "CV":{  
+      "Description":"Frequency inverter SEW MOVIDRIVE",
+      "WinName":"FU175"
+   },
+   "TH":{  
+      "Description":"Temperature/Humidity Pre-settings",
+      "WinName":"FU307"
+   },
+   "LB":{  
+      "Description":"Life Bit",
+      "WinName":"FU210"
+   },
+   "LI":{  
+      "Description":"Lighting Control ",
+      "WinName":"FU350"
+   },
+   "LJ":{  
+      "Description":"Lighting Selective 1/3-2/3 ",
+      "WinName":"FU351"
+   },
+   "LT":{  
+      "Description":"Control Desk Life Bit",
+      "WinName":"FU47"
+   },
+   "DN":{  
+      "Description":"Device Net Diagnosis",
+      "WinName":"FU2207"
+   },
+   "DP":{  
+      "Description":"Profibus Diagnosis",
+      "WinName":"FU206"
+   },
+   "DQ":{  
+      "Description":"Profibus Diagnosis (Mitsubishi)",
+      "WinName":"FU4206"
+   },
+   "DR":{  
+      "Description":"Profibus Diagnosis (Rockwell)",
+      "WinName":"FU2206"
+   },
+   "DS":{  
+      "Description":"Switch-on delay, switch-on time, pause, repetition (selectable)",
+      "WinName":"FU234"
+   },
+   "DU":{  
+      "Description":"Dosing Unit",
+      "WinName":"FU381"
+   },
+   "MA":{  
+      "Description":"Motor, 1 Direction, 1 Speed",
+      "WinName":"FU240"
+   },
+   "MD":{  
+      "Description":"Motor for Dosing Pump/Bistable Valve Motor for Dosing Pump/Bistable Valve Motor for Dosing Pump/Bistable Valve",
+      "WinName":"FU252"
+   },
+   "MF":{  
+      "Description":"Registration of 4 external faults and operation messages",
+      "WinName":"FU224"
+   },
+   "EC":{  
+      "Description":"Overload Relay E3Plus",
+      "WinName":"FU2245"
+   },
+   "MM":{  
+      "Description":"Registration of 8 external operation messages",
+      "WinName":"FU223"
+   },
+   "MS":{  
+      "Description":"Registration of 1 external operation message",
+      "WinName":"FU222"
+   },
+   "ET":{  
+      "Description":"External timer",
+      "WinName":"FU226"
+   },
+   "FM":{  
+      "Description":"Registration of 8 external faults",
+      "WinName":"FU221"
+   },
+   "FS":{  
+      "Description":"Registration of 1 external fault",
+      "WinName":"FU220"
+   },
+   "FT":{  
+      "Description":"Registration of 2 external fault warnings with 3 timer",
+      "WinName":"FU225"
+   },
+   "OP":{  
+      "Description":"Operating Hours Counter",
+      "WinName":"FU375"
+   },
+   "OU":{  
+      "Description":"Dosing Output Unit",
+      "WinName":"FU382"
+   },
+   "PB":{  
+      "Description":"Pump blocking protection",
+      "WinName":"FU233"
+   },
+   "PC":{  
+      "Description":"Pump blocking protection",
+      "WinName":"FU2233"
+   },
+   "PG":{  
+      "Description":"Pulse generator",
+      "WinName":"FU202"
+   },
+   "PI":{  
+      "Description":"PLC information (Siemens)",
+      "WinName":"FU201"
+   },
+   "PJ":{  
+      "Description":"PLC information (Rockwell)",
+      "WinName":"FU2201"
+   },
+   "HC":{  
+      "Description":"Heat Wheel Setpoint Calculation",
+      "WinName":"FU280"
+   },
+   "PK":{  
+      "Description":"PLC information (Schneider)",
+      "WinName":"FU3201"
+   },
+   "PL":{  
+      "Description":"Controller (Siemens)",
+      "WinName":"FU320"
+   },
+   "PM":{  
+      "Description":"Controller (Rockwell)",
+      "WinName":"FU2321"
+   },
+   "PN":{  
+      "Description":"Controller (Schneider)",
+      "WinName":"FU3320"
+   },
+   "CE":{  
+      "Description":"Energy Meter (Rockwell)",
+      "WinName":"FU900"
+   }
+}

@@ -1,0 +1,144 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "10-20",
+   "Name": "FU891.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "Operation",
+        "Text": "Operation",
+        "showHide": true
+       },
+       "1000008-AddTextReal": {
+        "OPCID": "AA.R2268_Flow",
+        "Precision": "1",
+        "TextID": "R2268",
+        "UnitInit": "2",
+        "UnitMetric": "m³/h",
+        "Text": "Flow",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "m³/h",
+        "UnitImperial": "m³/h",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "1"
+      }
+     },
+     "RegAutoHide": "1",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000009-AddPageTab": {
+     "1000010-AddPageControl": {
+      "1000011-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000012-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000013-AddTextIntegerInput": {
+        "OPCID": "CO.V2662_SeQuPu",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Sensor Quantity Pulses per m³",
+        "UnitLocale": "I/m³",
+        "TextID": "V2662",
+        "UnitInit": "2",
+        "UnitMetric": "I/m³",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "I/m³",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000014-AddTextIntegerInput": {
+        "OPCID": "CO.V2280_Quantity",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Quantity of Measured Values",
+        "UnitLocale": "",
+        "TextID": "V2280",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    },
+    "1000015-Messages": {
+     "1000016-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU891",
+ "DiagnosisControl": "FU891.10",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1120474295
+}

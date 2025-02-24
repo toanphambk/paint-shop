@@ -1,0 +1,121 @@
+html, body {
+	font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+svg div.Overlay{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.scrollPanel {
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	overflow-y: scroll;
+	left: 0;
+	bottom: 45px;
+	right: -16px;
+}
+
+.tableHeader {
+	position: absolute;
+    width: calc(100% - 8px);
+    top: 0;
+	border-collapse: collapse;
+}
+
+.tableHeader tr {
+	background: #bfbfbf;
+    height: 27px;
+}
+
+.tableOverlay{
+	position: absolute;
+    top: 27px;
+	overflow: hidden;
+	overflow-y: scroll;
+	bottom: 45px;
+	right: -16px;
+	left: 0;
+}
+
+.tableBody {
+	position: absolute;
+    width: 100%;
+	border-collapse: separate;
+}
+
+.tableBodyDe {
+	position: absolute;
+    top: 54px;
+    bottom: 45px;
+    right: -16px;
+    left: 0;
+    width: calc(100% - 6px);
+	border-collapse: separate;
+}
+
+.thStyle {
+	width: 15%;
+	text-align: left;
+    padding: 5px;
+	height: 17px;
+}
+
+.tableBody tr:nth-child(odd), .tableBodyDe tr:nth-child(odd) {
+    background: #D9DFE4;
+}
+
+.status {
+	width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-color: lightgrey;
+    margin-left: 10px;
+}
+
+.scrollDown, .scrollUp {
+    height: 47px;
+    width: 101px;
+    display: block;
+    background-image: url(../../images/scroll.png);
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 0;
+	left: 50%;
+}
+
+.scrollUp {
+	margin-left: -120px;
+	background-position: 0 -49px;
+}
+
+.scrollDown {
+	background-position: -108px 0;
+}
+
+.scrollDown.active {
+    background-position: -108px -49px;
+}
+
+.scrollUp.active {
+    background-position: 0 0;
+}
+
+.layoutTable{
+    position: relative;
+	float: left;
+	width: calc(50% - 20px);
+	height: 340px;
+	margin: 10px;
+}
+
+.content{
+	position: absolute;
+	width: 100%;
+}

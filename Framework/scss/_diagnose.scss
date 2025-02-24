@@ -1,0 +1,2309 @@
+/* start diagnose */
+
+.DiagnosisWindow.ui-dialog-content.ui-widget-content{
+    height: 92% !important;
+    width: 100% !important;
+    background: #fff;
+}
+.diagnose{        
+    margin-left: 20px;
+    background: $default-background;
+    border-radius: 3px 0 0 0;
+    border: 1px solid #d0d0d0;
+    box-shadow: $box-shadow_3;
+    /*z-index: 1;*/
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 375px;
+    display:flex; 
+    flex-direction:column;
+    /*overflow: auto;*/
+    right: 1px;
+      }
+.diagnose .diahead{
+    height: 55px;
+    padding: 0;
+}
+.diahead .processname{
+    display: block;
+    line-height: 12px;
+    font-size: $big-size;
+    color: $blue-font;
+    font-weight: bold;
+}
+.diagnose .DiagnosisContent{
+    flex-grow:1;
+    display:flex; 
+    flex-direction:inherit;
+    overflow: hidden;
+}
+.IE11 .diagnose .DiagnosisContent{
+    position: absolute;
+    bottom: 80px;
+    top: 55px;
+    left: 0;
+    right: 0;
+}
+.diagnose .diatabs{
+    padding: 0;
+    border-radius: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    position: relative;
+    background: $default-background;
+}
+.diagnose .diatabs > ul{
+    background: $default_blue;
+    border-radius: 0;
+    border: none;
+    padding-left: 16px;
+    padding-top: 8px;
+    z-index: 0;
+    display: inline-flex;
+}
+.diagnose .diatabs ul.ui-tabs-nav li{
+    margin-right: 35px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    //width: 55px;
+    height: 40px;
+    
+    @extend %noshadow;
+    
+    background: $default-background;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+.diagnose .diatabs ul li:last-of-type{
+    margin-right: 0;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active{
+    padding-bottom: 2px;
+}
+.diagnose .diatabs ul li:after{
+    @extend %noshadow;
+}
+.diagnose .diatabs ul li a.ui-tabs-anchor{
+    width: 29px;
+    height: 28px;
+}
+
+.diagnose .diatabs ul li.ui-state-focus a{
+    outline-color: transparent;
+}
+.diagnose .diatabs ul li.Parameters{
+    background-image:url(../svg/tabs/parameter.svg), $gradient;
+}
+.diagnose .diatabs ul li.Parameters:active{
+    background-image:url(../svg/tabs/parameter.svg), $reversegradient;
+}
+.diagnose .diatabs ul li.Operation{
+    background-image:url(../svg/tabs/operatingMonitoring.svg), $gradient;
+}
+.diagnose .diatabs ul li.Operation:active{
+    background-image:url(../svg/tabs/operatingMonitoring.svg), $reversegradient;
+}
+.diagnose .diatabs ul li.Messages{
+    background-image:url(../svg/tabs/messages.svg), $gradient;
+}
+.diagnose .diatabs ul li.Messages:active{
+    background-image:url(../svg/tabs/messages.svg), $reversegradient;
+}
+.diagnose .diatabs ul li.Chronology{
+    background-image:url(../svg/tabs/chronologie.svg), $gradient;
+}
+.diagnose .diatabs ul li.Chronology:active{
+    background-image:url(../svg/tabs/chronologie.svg), $reversegradient;
+}
+/*.diagnose .diatabs ul li.ui-state-active.Parameters{
+    background-image:url(../svg/tabs/parameter.svg);
+}
+.diagnose .diatabs ul li.ui-state-active.Operation{
+    background-image:url(../svg/tabs/operatingMonitoring.svg);
+}
+.diagnose .diatabs ul li.ui-state-active.Messages{
+    background-image:url(../svg/tabs/messages.svg);
+}*/
+.diagnose .diatabs ul .emosbutton>span:before{
+    border: 6px solid rgba(0,0,0,0);
+    border-top: 0 solid;
+    content: " ";
+    display: block;
+    height: 0;
+    width: 0;
+    top: -3px;
+    right: -5px;
+    position: absolute;
+    border-bottom-color: $default_blue;
+    
+}
+.diagnose .diatabs ul .emosbutton>span{
+    border: 5px solid rgba(0,0,0,0);
+    border-top: 0 solid;
+    content: " ";
+    display: block;
+    height: 0;
+    width: 2px;
+    top: -2px;
+    right: -5px;
+    position: absolute;
+    border-bottom-color: #d1d7e0;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+.diagnose .diatabs ul li.Messages.alert>span .warn_image, .diagnose .diatabs ul li.Messages.warn>span .warn_image, .diagnose .diatabs ul li.Duerr.alert>span .warn_image{
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+    transform: rotateZ(-45deg);
+    position: absolute;
+}
+.diagnose .diatabs ul li.Messages.warn>span .warn_image, .diagnose .diatabs ul li.Messages.alert>span .warn_image, .diagnose .diatabs ul li.Duerr.alert>span .warn_image{
+    top: 3px;
+    right: -15px;
+}
+.diagnose .diatabs ul li.Messages.alert>span .warn_image{
+    background-image:url(../svg/tabs/errorTab.svg);
+    
+}
+.diagnose .diatabs ul li.Duerr.alert>span .warn_image{
+    background-image:url(../svg/tabs/errorVersionTab.svg);
+    
+}
+.diagnose .diatabs .scrollTabAlert.alert{
+    background-image: url(../svg/Tabs/versionError.svg);
+    width: 24px;
+    height: 24px;
+    position: relative;
+    right: -48px;
+    top: -10px;
+}
+.diagnose .diatabs .activeAlarms.scrollleft .scrollTabAlert.alert{
+    background-image: url(../svg/Tabs/activeAlarms.svg);
+    width: 24px;
+    height: 24px;
+    position: relative;
+    right: 11px;
+    top: -10px;
+}
+.diagnose .diatabs ul li.Messages.warn>span .warn_image{
+    background-image:url(../svg/tabs/warningTab.svg);
+    
+}
+.diagnose .diatabs ul li.Private{
+    background-image:url(../svg/tabs/4Tab.svg), $gradient;
+}
+.diagnose .diatabs ul li.Duerr{
+    background-image:url(../svg/tabs/5Tab.svg), $gradient;
+}
+.diagnose .diatabs ul li.Scanner{
+    background-image:url(../svg/tabs/qr.svg), $gradient;
+}
+.diagnose .versionerror{
+    background-image:url(../svg/status/versionerror.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 20px;
+    display: inline-block;
+}
+.diatabs > .pager{
+    position: absolute;
+    top: 80px;
+    padding-left: 10px;
+    //z-index: 1;
+}
+.diagnose.fixedPart{
+    position: absolute !important;
+    right: 0;
+    float: none !important;
+    top: 0 !important;
+    left: auto !important;
+    
+}
+.DiagnosisLine{
+    margin: 5px 0;
+}
+.diagnose.second{
+    right: 376px;    
+}
+.diahead{
+    height: 55px;
+    line-height: 26px;
+}
+.publishcheck{
+    position: relative;
+    float: right;
+    
+    span{
+        display: block;
+        margin-top: -20px;
+        /* margin-right: 10px; */
+        text-align: left;
+        float: left;
+    }
+    
+    &.hideme{
+        display: none;
+    }
+    &.showme{
+        display: block;
+    }
+}
+.privatecheckbox{
+    top: -20px;
+    right: 10px;
+    float: left;
+    position: relative;
+}
+.diahead_left{
+    width: 110px;
+    float: left;
+    margin: 10px 22px 0 10px ;
+}
+
+.emosbutton.diahead_left{
+    width: 90px;
+    float: left;
+    top: 0;
+    height: 30px;
+    margin: 0px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 25px;
+}
+
+.diahead_left.pushbarClose{
+    background-image: url(../svg/tabs/pushbarClose.svg), $gradient;
+}
+
+.diahead_left.pushbarClose:active{
+    background-image: url(../svg/tabs/pushbarClose.svg), $reversegradient;
+}
+
+.diahead_left.pushbarOpen{
+    background-image: url(../svg/tabs/pushbarOpen.svg), $gradient;
+}
+
+.diahead_left.pushbarOpen:active{
+    background-image: url(../svg/tabs/pushbarOpen.svg), $reversegradient;
+}
+
+.emosbutton.diahead_left:after{
+    content: '';
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border-left: 24px solid transparent;
+    border-top: 24px solid #f2f2f2;
+    border-bottom: 24px solid #f2f2f2;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.dieahead_head{
+    height: 46px;
+}
+.diahead_right ul li, .closeTabs{
+    background-repeat: no-repeat; 
+    width: 56px;
+    height: 38px;
+    float: left;
+    margin-right: 0;
+    margin-left: 20px;
+    cursor: pointer;
+    top: 5px;
+    padding: 0;
+}
+.diahead_right .arrangeTabs{    
+    background-image:url(../svg/tabs/comparison.svg), $gradient;
+}
+.diahead_right .arrangeTabs:active{    
+    background-image:url(../svg/tabs/comparison.svg), $reversegradient;
+}
+.diahead_right .arrangeTabs.hasChild{    
+    background-image:url(../svg/tabs/comparison_hasChild.svg), $gradient;
+}
+.diahead_right .arrangeTabs.hasChild:active{    
+    background-image:url(../svg/tabs/comparison_hasChild.svg), $reversegradient;
+}
+.diahead_right .copyTab{
+    background-image:url(../svg/tabs/copy.svg), $gradient;
+    margin: 0;
+}
+.diahead_right .copyTab:active{
+    background-image:url(../svg/tabs/copy.svg), $reversegradient;
+}
+.diahead_right .copyTab.hasChild{    
+    background-image:url(../svg/tabs/copy_hasChild.svg), $gradient;
+    margin: 0;
+}
+.diahead_right .copyTab.hasChild:active{    
+    background-image:url(../svg/tabs/copy_hasChild.svg), $reversegradient;
+}
+.diahead_right .arrangeTabs.inactive{
+    background-image:url(../svg/tabs/comparison_inact.svg), $gradient;
+    cursor: default;
+}
+.diahead_right .copyTab.inactive{
+    background-image:url(../svg/tabs/copy_inact.svg), $gradient;
+    cursor: default;
+}
+.diahead_right .pin {
+    background-image:url(../svg/tabs/pin.svg), $gradient;
+    float: right;
+    margin-right: 15px;
+}
+.diahead_right .pin.act {
+    background-image:url(../svg/tabs/pin.svg), linear-gradient(#89b9d2, #89b9d2);
+}
+.closeTabs{
+    background-image:url(../svg/tabs/close.svg), $gradient;
+}
+.closeTabs:active{
+    background-image:url(../svg/tabs/close.svg), $reversegradient;
+}
+.closeTabs.inactive{
+    cursor: default;
+}
+.diahead_right .arrangeTabs.childWin{
+    /*background-position: -1px -538px;*/
+}
+.diahead_right .arrangeTabs.childWin.inactive{
+    /*background-position: -70px 1px;*/
+    cursor: default;
+}
+.diahead .subMenu{
+    border-radius: 3px;
+    background: $gradient;
+    border: 2px solid #d2d8e0;
+    width: 250px;
+    display: none;
+    z-index: 10;
+    left: 10px;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    top: -25px;
+}
+.diahead .subMenu li{
+    padding: 3px; 
+}
+.diahead .subMenu li:hover{
+    cursor: pointer;
+    background: $lightblue;
+}
+.diagnose .DiagnoseBody{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.diagnose .addMess{
+    margin-bottom: 15px;
+    width: 330px;
+    padding: 10px 10px 5px;
+    border: 1px solid #618cb6;
+}
+
+.DiagnosisNumberLRTextTextSVG {
+    display: block;
+    padding: 5px 0;
+    /*font-weight: bold;*/
+    /*margin:10px 0;*/
+    margin:0;
+    /*color: $blue-font;*/
+    font-size: $bigger-size;
+    width: 55%;
+    float: left;
+}
+.priv .DiagnosisNumberLRTextTextSVG{
+    float: none;
+}
+.DiagnosisNumberLRText {
+    padding: 5px;
+    font-weight: bold;
+    color: $blue-font;
+    font-size: $bigger-size;
+    margin-bottom: 10px;
+}
+.pickertime.blue{
+    color: blue;
+}
+.pickertime.orange, .DiagnosisNumberLRTextNumberSVG.orange{
+    color: $orange;
+    background: none;
+    margin: 0;
+    width: auto;
+    height: auto;    
+}
+.DiagnosisNumberLRTextNumberSVG.orange{
+    float: none;
+}
+.DiagnosisNumbers {
+    display: inline-block;
+    width: 80px;
+    padding:3px;
+    margin-left: 10px;
+}
+.pickertime {
+    display: inline-block;
+}
+.DiagnosisNumberLRTextText.without{
+    width: 123px;
+    float: left;
+}
+.DiagnosisNumbers.without{
+    width: 65px;
+    float: left;
+    margin-left: 0;
+}
+.pickertext{ 
+    display: inline-block;
+    width: 100px;
+    padding:3px 0;
+}
+.setButton{
+    background-image:url(../images/small_button.png);
+    background-repeat: no-repeat; 
+    height: 28px;
+    padding-top: 6px;
+    margin-top: 5px;
+}
+.Groupbox .mbsc-wp .dwwb span{
+    display: block !important;
+    color: transparent;
+}
+.Groupbox .mbsc-wp .dwwb{
+    background: none;
+    height: 46px !important;
+    line-height: 46px !important;
+}
+.Groupbox .mbsc-wp .dwwr{
+    background: $default-background;
+    color: $dark-fontcolor;
+}
+.Groupbox .longtype .dwfl{
+    margin-right: 0;
+}
+.pdfHolder{
+    position: absolute;
+    right: 375px;
+    bottom: 40px;
+    top: -105px;
+    padding: 10px;
+    background: $overlay-back;
+    border: 1px solid $greyborder;
+    width: 900px;
+    
+    .cancelbutton{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        display: block;
+    }
+    .pdfSubHolder{
+        margin-top: 50px;
+    }
+    .errortext{
+        margin-top: 400px;
+        font-size: 54px;
+        text-align: center;
+    }
+}
+.infobuttontext{
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: super;
+}
+.Duerr .Groupbox .DiagnosisText{
+    padding-top: 0;
+}
+.Duerr .Groupbox .breadoverlay_li{
+    display:block;
+}
+.hours, .minutes, .seconds, .doppelpunkt, .dpunkt{
+    float: left;
+}
+.doppelpunkt{
+    padding: 0 20px;
+}
+.mbsc-wp .dwwr{
+    padding: 0 !important;
+}
+.Groupbox .mbsc-wp .dwb, .Groupbox .mbsc-wp .dw-li .dw-i{
+    color: $dark-fontcolor;
+    text-align: center;
+}
+.Groupbox .dw-li.dw-v.dw-sel .dw-i{
+    background: $default-background;
+    border: none;
+    text-align: center;
+    font-size: $normalplus-size;
+}
+.Groupbox .mbsc-wp .dwb{
+    padding: 0.636em .455em 0 .455em;
+}
+.DiagnosisStringButtons{
+    height: 0;
+    overflow: hidden;
+    padding-top: 5px;
+    display: block;
+}
+.DiagnosisStringButtons button{
+    margin: 10px;
+}
+#center .plcTag{
+    word-wrap: break-word; 
+    margin-bottom: 5px;
+    display: block;
+    float: left;
+}
+/* das hier ist mist! überabrbeiten  */
+.priv .plcTag~*{
+    margin-top: 10px;
+}
+.DiagnosisLRLeft{
+    width: 100%;  
+    padding: 0 10px;
+}
+.DiagnosisLong{
+    float: none;
+}
+.DiagnosisLMRMiddle, .DiagnosisLMRLeft, .DiagnosisLMRRight{
+    width: initial;
+}
+.elementbox, .Groupbox, .innerbox, .parentbox, table.DiagnosisAlarmTable.Groupbox,table.DiagnosisRestAlarmTable.Groupbox, .docBox, .aboutBox {
+    padding: 10px 10px;
+    border: 1px solid $blueborder;
+    margin-bottom: 15px;
+}
+.elementbox, .Groupbox, .innerbox, .parentbox{
+    width: 330px;
+}
+.Groupbox.priv{
+    padding-top: 0;
+    margin-bottom: 0;
+    width: 320px;
+}
+.Groupbox.showBlock, .Groupbox.hideBlock{
+    position: relative;
+}
+.Groupbox.showBlock{
+    height: auto;
+    overflow: visible;
+    min-height: 25px;
+}
+.Groupbox.showBlock:last-child{
+    clear: both;
+}
+.Groupbox.hideBlock{
+    height: 25px;
+    overflow: hidden;    
+}
+/*.Groupbox.hideBlock .DiagnosisText, .Groupbox.hideBlock .DiagnosisText *{
+    display: block;    
+}
+.Groupbox.hideBlock .showhideblockbutton{
+    display: block;    
+}*/
+.elementbox:last-child{
+    margin-bottom: 0;
+}
+.innerbox{
+    padding: 10px 0 10px 10px;
+}
+.DiagnosisLRRight{
+    float: none;
+}
+.blockText{
+    display: block;
+}
+.ui-widget-content{
+    border: none;
+}
+.dw-inline{
+    text-align: right;
+    margin-right: 15px;
+}
+.dwfl{
+    width: 64px !important;
+    max-width: 64px !important;
+    min-width: 64px !important;
+    margin-right: 10px;
+}
+.dwwbp span, .dwwbm span{
+/*    background-image: url(../images/scroll.png);
+    background-repeat: no-repeat;*/
+    @extend .emosbutton;
+    top: 0;
+}
+
+.dwwbm span, .minus{
+    background-image:url(../svg/tabs/downArrow.svg), $gradient;
+    background-size: 80px;
+}
+.dwwbm span:active, .minus:active{
+    background-image:url(../svg/tabs/downArrow.svg), $reversegradient;
+    background-size: 80px;
+}
+.dwwbp span, .plus{
+    background-image:url(../svg/tabs/upArrow.svg), $gradient;
+    background-size: 80px;
+}
+.dwwbp span:active, .plus:active{
+    background-image:url(../svg/tabs/upArrow.svg), $reversegradient;
+    background-size: 80px;
+}
+
+.mbsc-wp .dw-i{
+    border: none !important;
+}
+.mbsc-wp .dw-li {
+    font-size: 1.625em;
+}
+.diagnose .DiagnosisPageBlank,.DiagnosisSubPageBlank {
+    flex-grow: 1;
+    background: $default-background;
+    /*padding: 10px 13px 15px 13px;*/  
+    padding: 10px 28px 15px 13px;
+    width: 350px;    
+    /*overflow: hidden;*/
+    overflow-x: hidden;
+    overflow-y: scroll;
+    right: -15px;
+    position: absolute;
+    bottom: 70px;
+    top: 120px;
+    height: auto;
+    
+}
+.DiagnosisPageBlank.Operation .topleds .DiagnosisText{
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+.DiagnosisPageBlank.Operation .DiagnosisTopText .messageCircle{
+    margin: 0 5px;
+}
+.configcenter.full.editor .DiagnosisPageBlank{
+    top: 130px;
+}
+.IE11 .diagnose .DiagnosisPageBlank,.DiagnosisSubPageBlank {
+    bottom: 0;
+}
+.DiagnosisSubPageBlank{
+    top: 0;
+    bottom: -7px;
+}
+.Edge .DiagnosisSubPageBlank{
+    bottom: 20px;
+}
+.DiagnosisText{
+    color: $blue-font;
+    margin: 10px 0;
+    padding-top: 10px;    
+    font-size: $bigger-size;
+}
+.parentsbox:not(.noBottomBorder):not(.priv){
+    border-bottom: 1px solid $blueborder;
+    
+    &:first-of-type{
+        border-top: 1px solid $blueborder;
+    }
+    &:last-of-type{
+        border-bottom: none;
+    }
+}
+.DiagnosisText p, .DiagnosisTextLong p{
+    margin: 0;
+    margin-top: -10px;
+    width: 290px;
+    word-wrap: break-word;
+    word-break: break-all;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+.DiagnosisTextInteger{
+    /*margin: 10px 0;*/
+    clear: both;
+    margin: 5px 0 0 0;
+    form{
+        padding-top: 4px;
+        padding-bottom: 5px;
+    }
+}
+.DiagnosisTextDoubleTimer{
+    border-Bottom: 1px solid $blueborder;
+    margin: 10px 0;
+    padding-bottom: 10px;
+}
+.DiagnosisTextDoubleTimer:last-of-type{
+    border-Bottom: none;
+    padding-bottom: 0;
+}
+.textLed{
+    float: left;
+    margin: 5px;
+    word-wrap: break-word; 
+    max-height: 50px;
+}
+.textLed p{
+    display: block;
+    margin: 0;
+}
+.textLed span{
+    display: block;
+    -webkit-user-select: none;  
+    -moz-user-select: none;     
+    -ms-user-select: none;     
+    user-select: none; 
+}
+.textHolder{
+    margin: 5px;
+    word-wrap: break-word; 
+    max-height: 50px;
+}
+.sliderHolder{
+    margin-top: 20px;
+    
+    input{
+        width: 180px;
+        display: block;
+        
+    }
+    .datalist{
+        width: 20px;
+        display: block;
+        float: left;
+        
+        &.labelline{
+            font-size: 8px;
+        }
+    }
+    output{
+        display: block;
+        float: left;
+        margin-left: 40px;
+    }
+    input.iText{
+        display: block;
+        float: left;
+        margin-left: 60px;
+        margin-top: -15px;
+        width: 40px;
+    }
+}
+.Private .textTag span{
+    width: 130px;
+    display: inline-block;
+    word-break: break-word;
+    float: left;
+}
+.Private .numberType{
+    width: 100px;
+    float: left;
+    display: inline-block;
+    min-height: 1px;
+    text-align: center;
+}
+.writable ~ .textLed{
+    width: 175px;
+    padding-top: 15px;
+    display: inline-block;
+    
+    &.smallerText{
+        width: 110px;
+    }
+}
+.priv .writable ~ .textLed{
+    width: 165px;
+}
+.priv .writable ~ .textLed.smallerText{
+    width: 100px;
+}
+.lightgrey, .green, .orange, .red, .yellow, .pink, .blue, .black{ 
+/*    background-image: url(../images/toggles.png);
+    background-repeat: no-repeat;*/
+    display: block;
+    margin: 5px 0;
+    width: 137px;
+/*    height: 49px;*/
+    float: left;
+}
+.lightgrey.notwritable ~ .textLed, .green.notwritable ~ .textLed{
+    height: 0;
+    width: auto;
+    max-width: 290px;
+}
+.priv .lightgrey.notwritable ~ .textLed{
+    width: 280px;
+}
+.lightgrey.notwritable, .green.notwritable, .orange.notwritable, .red.notwritable, .yellow.notwritable, .pink.notwritable, .blue.notwritable, .black.notwritable{
+    margin: 5px !important;
+}
+.lightgrey.notwritable{
+    background-color: lightgrey;
+}
+.lightgrey{    
+    /*background-position: 0 -50px;*/ 
+    background-color: $lightgrey;
+}
+
+.green{   
+    /*background-position: 0 0;*/ 
+    background-color: $green;
+}
+.orange{
+    background-color: $orange;
+    /*background-position: 0 -200px;*/
+}
+.red{
+    background-color: $red;
+    /*background-position: 0 0;*/
+/*    background-image: none;*/
+}
+.yellow{
+    background-color: $yellow;
+    /*background-position: 0 0;*/
+}
+.pink{
+    background-color: $pink;
+    /*background-position: 0 0;*/
+}
+.blue{
+    background-color: $blue;
+    /*background-position: 0 0;*/
+}
+.black{
+    background-color: #000;
+    /*background-position: 0 0;*/
+}
+.DiagnosisTextLed, .priv{
+    width: 100%;
+    
+    &.multibutton{
+        width: unset;
+        float: left;
+        margin-right: 15px;
+        
+        .textButton.emosbutton{
+            width: 125px;
+            max-width: 125px;
+            
+            &.orange{
+                background: #f27019;
+            }
+        }
+    }
+    &.multibutton:last-of-type{
+        float: initial;
+    }
+    
+    .emosbutton:not(.dropdown){
+        width: 46px;
+        top: 0;
+        float: left;
+        margin: 8px 0;
+        
+        &.links{
+            border-radius: 4px 0 0 4px;
+        }
+        &.rechts{
+            border-radius: 0 4px 4px 0;
+            margin-left: -2px;
+        }
+        &.switchMode{
+            border: 8px solid #89b9d2;
+            height: 9px;
+        }
+        
+    }
+}
+@each $alarm in automatic, handMode, localRemote, safety, off, on, closeCommand, openCommand, stopCommand, off_time, plantStartStop, messages, acknowledge, conveyor_empty, conveyor_occupied, reset, down, left_previous, pause, start_right_next, up{
+    .DiagnosisTextLed .emosbutton.#{$alarm}, .priv .emosbutton.#{$alarm} {
+        background-image: url('../svg/StatWinButtons/#{$alarm}.svg'),$gradient;
+    }
+    .DiagnosisTextLed .emosbutton.#{$alarm}:active, .priv .emosbutton.#{$alarm}:active, .DiagnosisTextLed .emosbutton.notactive.#{$alarm}, .priv .emosbutton.notactive.#{$alarm} {
+        background-image: url('../svg/StatWinButtons/#{$alarm}.svg'),$reversegradient;
+    }
+    .DiagnosisTextLed .emosbutton.onMode.#{$alarm}, .DiagnosisTextLed .emosbutton.green.#{$alarm}, .priv .emosbutton.green.#{$alarm}, .priv .emosbutton.onMode.#{$alarm} {
+        background-image: url('../svg/StatWinButtons/#{$alarm}.svg'),$bluegradient;
+    }     
+    .DiagnosisTextLed .emosbutton.orange.#{$alarm}, .priv .emosbutton.orange.#{$alarm} {
+        background-image: url('../svg/StatWinButtons/#{$alarm}.svg'),$orangegradient;
+    } 
+    .alarm_solo li.emosbutton.#{$alarm} {
+        background-image: url('../svg/StatWinButtons/#{$alarm}.svg'),$gradient;
+    }  
+    .alarm_solo li.emosbutton.#{$alarm}:active {
+        background-image: url('../svg/StatWinButtons/#{$alarm}.svg'),$reversegradient;
+    } 
+    .alarm_solo li.emosbutton.onMode.#{$alarm} {
+        background-image: url('../svg/StatWinButtons/#{$alarm}.svg'),$bluegradient;
+    } 
+}
+.emosbutton.switchmode, .DiagnosisTextLed .emosbutton.switchmode, .parentsbox.priv .emosbutton.switchmode {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 4px;
+    border: 8px solid #89b9d2;
+    width: 70px;
+    height: 44px;
+}
+.DiagnosisTextLed.minHeight {
+    min-height: 65px;
+}
+.DiagnosisFooter{
+    height: 74px;
+    width: 375px;
+    position: absolute;
+    bottom: 1px;
+    background: $default-background;
+    right: 1px;
+    box-shadow: $box-shadow_4;
+    padding-top: 3px;
+    z-index: 1;
+}
+.ui-helper-clearfix{
+    min-height: auto;
+}
+
+.Firefox .DiagnosisFooter.subpage{
+    bottom: 0;
+}
+    
+.Firefox .diagnose .DiagnosisPageBlank{
+    bottom:78px;
+}
+/*.Firefox .DiagnosisNumberLRTextText{
+    margin-left: -135px !important;
+}
+.Firefox .DiagnosisLedText .messageCircle{
+    margin-left: -155px !important;
+}*/
+
+.Edge .DiagnosisPageBlank{
+    margin-bottom: 7px;
+}
+
+.IE .DiagnosisPageControl{
+    padding-bottom: 30px;
+}
+.IE .DiagnosisPageBlank {
+    height: 335px;
+    max-height: 395px;
+    margin-bottom: 80px !important;
+    position: relative;
+    top: 80px;
+    padding-bottom: 0;
+}
+
+.IE .DiagnosisSubPageBlank {
+   height: 320px;
+}
+
+.DiagnosisFooter .footerHead{
+    height: 22px;
+    display: inline-block;
+    background: $grey;
+    width: 99%;
+    margin-top: 1px;
+    text-align: center;
+    position: relative;
+}
+.DiagnosisFooter .DiagnoseBody{
+    height: 22px;
+    background: $grey;
+    width: 100%;
+    display: inline-block;
+}
+.IE .DiagnosisFooter{
+    
+}
+.scrollDown, .scrollUp{
+    height: 47px;
+    width: 101px;
+    display: block;
+    background-image: url(../images/scroll.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    
+}
+.DiagnosisFooter .scrollDown.active, .scrollDown.active, .subFooter .scrollDown.active{
+    background-position: -108px -49px;
+}
+.DiagnosisFooter .scrollUp, .subFooter .scrollUp{
+    background-position: 0 -49px;
+    left: 80px
+}
+.DiagnosisFooter .scrollDown, .subFooter .scrollDown{
+    background-position: -108px 0;
+    right: 80px;
+}
+.scrollUp.active, .subFooter .scrollUp.active{
+    background-position: 0 0;
+}
+.DiagnosisPageControl.diasubtabs{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.DiagnosisPageControl.diasubtabs{
+    position: static;
+}
+.Firefox .DiagnosisPageControl.diasubtabs{
+    bottom: 20px;
+    height: auto;
+}
+.DiagnosisPageControl input, .DiagnosisNumbers, .numpadMaintenance input{
+    font-size: $bigger-size;
+    font-weight: bold;
+    font-family: "Roboto";
+    padding: 3px;
+    border: 2px solid $blueborder;
+}
+.DiagnosisPageControl .pager input:not([type=radio]){
+    padding: 0 3px;
+    float: left;
+    width: 130px;
+}
+.IE11 .DiagnosisPageControl .pager input:not([type=radio]){
+    height: 30px;
+}
+.statusWelcome .DiagnosisPageControl .pager input:not([type=radio]){
+    padding: 0 3px;
+    float: left;
+    width: 170px;
+}
+#center .DiagnosisPageControl .pager .radiobox{
+    margin-top: 8px; 
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    
+    &.hideme{
+        display: none;
+    }
+    &.showme{
+        display: block;
+    }
+    .showPrivate{
+        top: -6px;
+        padding: 14px 10px 6px;
+        float: right;
+    }
+}
+.pagerHead{
+    width: 355px;
+    display: block;
+    background: url(../images/underHead.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 8px;
+    font-size: $mid-size;
+}
+input.pagerHeadLine, .docBox p, .aboutBox p{
+    margin-top: 8px;
+    display: block;
+    font-size: $mid-size;
+    font-weight: 400;
+    color: $diagnoseHead;
+    padding-left: 13px;
+    background: transparent;
+    border: none;
+}
+.footerHead.sub{
+    cursor: pointer;
+}
+.DiagnosisFooter .scrollLeft, .DiagnosisFooter .scrollRight{
+    height: 47px;
+    width: 107px;
+    display: block;
+    background-image: url(../images/scroll.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3px;
+}
+.DiagnosisFooter .scrollRight.active{
+    background-position: -113px -100px;
+}
+.DiagnosisFooter .scrollLeft.active{
+    background-position: 0 -101px;
+}
+.DiagnosisFooter .scrollRight{
+    background-position: -113px -149px;
+    right: 0;
+}
+.DiagnosisFooter .scrollLeft{
+    background-position: 0 -149px;
+    left: 0;
+}
+.circle{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    background: $dark-grey;
+    display: none;
+    margin: 2px 5px;
+    box-shadow: 1px 1px 5px 0 #a9a8a8;
+    color: white;
+    position: absolute;
+    left: 174px;
+}
+.circle.big{
+    background: $light-blue;
+    display: inline-block;
+}
+.circle:first-child{    
+    left: 149px !important;
+    display: inline-block;
+}
+.circle:last-of-type{
+    left: 199px;
+    display: inline-block;
+}
+.circle.c0.big + .circle{
+    display: inline-block;
+}
+.circle.prevbig{
+    display: inline-block;
+}
+.circlenum{
+    display: inline-block;
+    margin-top: 1px;
+}
+.DiagnosisAlarmClient{
+    position: static;
+}
+
+.detailTable.detailAlarmingLiveDataTable.bigTable .DiagnosisAlarmClient{
+    width: 100%;
+}
+
+.detailTable.detailAlarmingLiveDataTable.bigTable table.DiagnosisAlarmTable.Groupbox{
+    border: none;
+    border-spacing: 0 1px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.detailTable.detailAlarmingLiveDataTable.bigTable .Groupbox .alarmTable td{
+    font-weight: normal;
+}
+.messageCircle, .lightgrey.notwritable, .green.notwritable, .orange.notwritable, .red.notwritable, .yellow.notwritable, .pink.notwritable, .blue.notwritable, .black.notwritable{
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0 5px;
+    background-image: none;
+}
+.DiagnosisTopText{
+    height: 25px;
+    font-weight: bold;
+}
+.DiagnosisTopText .green,.DiagnosisTopText .lightgrey, .DiagnosisLedText .green, .DiagnosisLedText .lightgrey {
+    background-image: none;
+}
+
+.DiagnosisLedText form {
+    float: left;
+    padding-top: 1px;
+}
+.DiagnosisLedText{
+    margin-bottom: 10px;
+    
+    &.withborder{
+        border-bottom: 1px solid $blueborder;
+        padding-bottom: 10px;
+    }
+    &.withborder:last-of-type{
+        border-bottom: none;
+    }
+}
+.DiagnosisLedText .messageCircle,.DiagnosisLedText .DiagnosisNumberLRTextText, .Groupbox .messageCircle,.Groupbox .DiagnosisNumberLRTextText {
+    left: initial;
+    margin: 10px 10px 10px 0;
+    float: left;
+}
+.DiagnosisLedText .DiagnosisNumberLRTextText, .Groupbox .DiagnosisNumberLRTextText {
+    /*max-width: 110px;*/
+    /*width: 120px;*/
+    width: 142px;
+    left: 122px;
+}
+.DiagnosisLedText .messageCircle, .Groupbox .messageCircle{
+    /*left: 100px;*/
+}
+.DiagnosisLedText .messageCircle.without,.DiagnosisNumberLRTextText.without {
+    margin-top: 3px;
+/*    margin-left: 0;    
+    float: left;
+    position: inherit;*/
+}
+.DiagnosisStringFieldTextArea{
+    background: #fff;
+}
+.DiagnosisLedText .DiagnosisNumberLRTextNumberSVG {
+    width: 60px;
+    display: inline-block;
+    /*float: left;*/
+}
+.DiagnosisNumberLRTextText.doubleText{
+    left: 190px;
+    margin-top: 10px;
+    float: left;
+    position: static;
+}
+.messageCircle.doubleText{
+/*    left: initial;
+    margin: 10px 10px 10px 0;
+    float: left;*/
+}
+.unitSymbol {
+    display: inline-block;
+    width: 20px;
+    min-height: 13px;
+    padding: 15px 0 0 5px;
+}
+.DiagnosisNumberLRTextText{
+    display: block;
+    width: 170px;
+    margin-left: 0;
+}
+.IE .DiagnosisNumberLRTextText, .IE .DiagnosisLedText .messageCircle{
+    position: absolute;
+    top: inherit;
+    left: 155px;
+    margin-left: 0;
+}
+.IE .DiagnosisNumberLRTextText{
+    left: 175px;
+}
+input[type=range]{
+    -webkit-appearance: none;
+    height: 4px;
+    background: #d5d5d5;
+}
+input[type=range]::-webkit-slider-thumb, input[type=range]::-moz-range-thumb, input[type=range]::-ms-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+#dialog-message {
+    position: absolute;
+    right: 2px;
+    width: 375px;
+    bottom: 0;
+    top: 208px;
+    background: $default-background;
+    font-size: $headline-size;
+    /*padding: 50px;*/
+    z-index: 1;
+}
+.chooseIcon {
+    background-image: url(../svg/tabs/pushButton.svg);
+    width: 100%;
+    height: 220px;
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+.closeDialogMsg{
+    background-image: url(../svg/tabs/close.svg), linear-gradient(#fff, #d1d7e0);
+    background-repeat: no-repeat;
+    width: 56px;
+    height: 38px;
+    float: right;
+    margin-right: 13px;
+    cursor: pointer;
+    top: 5px;
+    padding: 0;
+}
+.diagnose .footerHead .subTabMenu{
+    width: 170px;
+    z-index: 10;
+    padding: 5px 0;
+    left: 100px;
+    bottom: 25px;
+    @extend %overlay;
+}
+/*.diagnose .footerHead .subTabMenu li{
+    line-height: 30px;
+    margin: 0;
+}*/
+.diagnose .footerHead .subTabMenu li.active,.diagnose .footerHead .subTabMenu li:hover {
+    cursor: pointer;
+    background: $lightblue;
+    font-weight: bold;
+}
+.diagnose.bigone{
+/*    z-index: 1000;*/
+    overflow: visible;
+    /*width: 775px;*/
+    
+    .DiagnosisContent {
+        overflow: visible;
+    }
+    .pager{
+        left: -400px;
+        right: 0;
+        background: #f2f2f2;
+        height: 50px;
+    }
+    .DiagnosisPageControl .placeholderBtn{
+        width: 713px;
+        left: -400px;
+    }
+    .DiagnosisPageControl .quitChrono{
+        width: 703px;
+    }
+    .DiagnosisPageBlank, .DiagnosisSubPageBlank{
+        width: 749px;
+    }
+    
+    .DiagnosisAlarmTableHead {
+        .thTagname, .thBegin, .thPriority, .thOldValue, .thNewValue {
+            display: table-cell;
+        }
+        .thBegin{
+            width: 12%
+        }
+        .thArea{
+            width: 30%
+        }
+        .thTagname{
+            width: 24%
+        }
+        .thDuration{
+            width: 11%
+        }
+        .thPriority, .thOldValue, .thNewValue{
+            width: 8%
+        }
+    }
+    table{
+       width: 725px !important; 
+    }
+    .Chronology .DiagnosisAlarmTable .alarmTable{
+        .tdTagname, .tdBegin, .tdPriority, .tdOldValue, .tdNewValue {
+            display: table-cell;
+        }
+        .tdBegin {
+            width: 12%;
+        }
+        .tdArea {
+            width: 30%;
+        }
+        .tdTagname {
+            width: 24%;
+        }
+        .tdDuration {
+            width: 11%;
+        }
+        .tdPriority, .tdOldValue, .tdNewValue {
+            width: 8%;
+            text-align: center;
+        }
+    }
+    
+    table.DiagnosisAlarmTable{
+        .thBegin, .thTagname, .thPriority, .thOldValue, .thNewValue{
+            display: table-cell;
+        }
+        .thBegin {
+            width: 12%;
+        }
+        .thArea {
+            width: 30%;
+        }
+        .thTagname {
+            width: 24%;
+        }
+        .thDuration {
+            width: 11%;
+        }
+        .thPriority, .thOldValue, .thNewValue {
+            width: 8%;
+        }
+    }
+    .emosbutton.quit{
+        left: calc(50% - 160px);
+    }
+    ul.ui-tabs-nav{
+        width: 356.5px;
+        position: absolute;
+        right: 0;
+    }
+    .DiagnosisFooter{
+        width: 773px;
+        
+        .scrollUp{
+            left: calc(50% - 101px);
+        }
+        .scrollDown{
+            right: calc(50% - 111px);
+        }
+    }
+}
+/* Context menu */
+#contextMenu {
+    top: 0; 
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 100px;
+    @extend %overlay;
+    height: auto;
+    z-index: 1000;
+}
+ 
+#contextMenu li {
+    position: relative;
+    width: 200px;
+}
+ 
+#contextMenu li:hover {
+    background: #444;
+}
+ 
+#contextMenu a {
+    color: $dark-fontcolor;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+/*    width: 85%;*/
+}
+ 
+#contextMenu li:hover a {
+    color: $overlay-back;
+}
+ 
+#contextMenu li:last-child a {
+    border-bottom: none;
+}
+// kann ggf gelöscht werden. dann auch im html
+.myPage{
+    width: 400px;
+    height: 400px;
+    display: none;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    background: #fff;
+}
+// ende
+.numpad{
+    margin-top: 20px;
+}
+.numpad td{
+    vertical-align: middle;
+    border: none !important;
+    //padding: 0 !important;
+    /*display: inline-block;*/
+}
+.numpad td a, .plus, .minus, .done, .clear, span.writebutton, span.cancelbutton, span.savebutton, span.savemebutton, span.search{
+    width: 56px;
+    height: 38px;    
+    background-repeat: no-repeat;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: $bigger-size;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    top: 0;
+}
+.numpad td a{
+    width: 60px;
+    height: 41px;
+    //background-position: -140px -302px;
+    //background-image: url(../images/scroll.png);
+}
+.numpad td a.plus{
+    //background-position: -139px -198px;
+}
+.numpad td a.minus{
+    //background-position: -139px -245px;
+}
+.numpad td a.done{
+    /*background-position: 0 -546px;*/
+}
+.numpad td .tdplusminus{
+    vertical-align: bottom;
+}
+
+.tableRight{
+    padding-left: 30px;
+    height: 60px;
+}
+.tableRight.tdplus{
+    vertical-align: top;
+}
+.tableRight.tddone{
+    vertical-align: bottom;
+}
+span.writebutton{
+    background-image:url(../svg/tabs/edit.svg), $gradient;
+    float: right;
+    display: none;
+    margin-right: 3px;
+}
+span.writebutton:active{
+    background-image:url(../svg/tabs/edit.svg), $reversegradient;
+}
+.grey{
+    background: $grey;
+    margin: 5px -10px;
+    padding: 4px 10px 3px;
+}
+span.cancelbutton{
+    background-image:url(../svg/tabs/close.svg), $gradient;
+    display: none;
+    float: left;
+}
+span.cancelbutton:active{
+    background-image:url(../svg/tabs/close.svg), $reversegradient;
+}
+span.savebutton, span.savemebutton{
+    background-image:url(../svg/tabs/accept.svg), $gradient;
+    display: none;
+    float: left;
+}
+span.savebutton:active, span.savemebutton:active{
+    background-image:url(../svg/tabs/accept.svg), $reversegradient;
+}
+span.cancelbutton, span.savebutton, span.savemebutton, .textnumnum span.savebutton, .textnumnum span.cancelbutton{
+    float: right;
+    margin-right: 3px;
+}
+span.qrBlock{
+    background-image:url(../svg/tabs/qrBlock.svg), $gradient;
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+span.qrBlock:active{
+    background-image:url(../svg/tabs/qrBlock.svg), $reversegradient;
+}
+span.closeBlock{
+    background-image:url(../svg/tabs/closeBlock.svg), $gradient;
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+span.closeBlock:active{
+    background-image:url(../svg/tabs/closeBlock.svg), $reversegradient;
+}
+span.openBlock{
+    background-image:url(../svg/tabs/openBlock.svg), $gradient;
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+span.openBlock:active{
+    background-image:url(../svg/tabs/openBlock.svg), $reversegradient;
+}
+.DiagnosisNumberLRTextNumberSVG, .DiagnosisStringText {
+    font-size: $bigger-size;
+    background: #fff;
+    padding: 4px 8px;
+    margin: 0;
+    box-shadow: $box-shadow_3;
+}
+.DiagnosisNumberLRTextNumberSVG.notwritable{
+    background: none;
+    box-shadow: none;
+    width: auto;    
+}
+.DiagnosisNumberLRTextNumberSVG.flR{
+    float: right;
+}
+.Private .DiagnosisNumberLRTextNumberSVG{
+    width: 40px;
+    display: inline-block;
+}
+table.privTable{
+    text-align: left;
+    table-layout: fixed;
+    clear: both;
+    width: 100%;
+}
+.IE table.privTable{
+    border-collapse: separate;
+}
+.IE .dPage:after{
+    border-collapse: collapse;
+}
+table.privTable tr.even {background: $grey}
+table.privTable tr.odd {background: #FFF}
+table.privTable tr{
+    border: 1px solid #105395;
+    
+    &.noBottom{
+        border-bottom: none;
+    }
+    &.subcompact{
+        border-top: none;
+    }
+    &.noBorder{
+        border: none;
+    }
+}
+table.privTable td{
+    border-left: 1px solid #105395;
+    /*border-bottom: 1px solid #105395;*/
+    padding: 3px;
+    vertical-align: middle;
+    word-break: break-word;
+    word-wrap: break-word;
+    
+    &.tdFirst{
+        width: 210px;
+        
+        div{
+            margin: 5px 0;
+        }
+    }
+    &.tdSecond{
+        width: 70px;
+    }
+    &.tdThird{
+        width: 70px;
+    }
+}
+table.privTable tr:hover{
+    cursor: pointer;
+}
+.radio{
+    margin-bottom: 10px;
+    
+    &.empty{
+        height: 18px;
+    }
+}
+.radio input{
+    margin-right: 10px;
+}
+table.DiagnosisAlarmTable.Groupbox, table.DiagnosisRestAlarmTable.Groupbox, table.DiagnosisRestParamTable.Groupbox{    
+    border-spacing: 0 2px;
+    border-collapse: separate;
+    padding: 0;
+    table-layout: fixed;
+}
+table.DiagnosisAlarmTable.Groupbox{
+    width: 352px;
+    margin-top: -10px;
+}
+table.DiagnosisAlarmTable.Groupbox{
+    //width: 352px;
+}
+table.DiagnosisAlarmTable{
+    .thBegin, .thTagname, .thPriority, .thOldValue, .thNewValue {
+        display: none;
+    }
+    .thArea {
+        width: 75%;
+    }
+    .thDuration {
+        width: 25%;
+    }
+}
+.DiagnosisAlarmTable th,.DiagnosisRestAlarmTableHead th, .DiagnosisAlarmTableHead th {
+    background: none;
+    height: 35px;
+    border: none;
+    padding: 5px;
+    text-align: left;
+}
+.DiagnosisAlarmTable tr:first-child{
+    visibility: hidden;
+}
+.DiagnosisAlarmTableHead{
+    position: fixed;
+    width: 329px;
+    background: #f2f2f2;
+    border: 1px solid #89BAD3;
+    border-bottom: none;
+    
+    .thBegin, .thTagname, .thPriority, .thOldValue, .thNewValue {
+        display: none;
+    }
+    .thArea {
+        width: 75%;
+    }
+    .thDuration {
+        width: 25%;
+    }
+}
+.DiagnosisBarSVG{
+    width: 90px;
+}
+.DiagnosisRampBarSVG{
+    width: 55px;
+}
+.DiagnosisRampBar{
+    fill: #3b4654;
+}
+.DiagnosisBar {
+/*    float: left;*/
+    width: initial;   
+    display: inline-block;
+}
+.DiagnosisNumberNumberTextSVG, .DiagnosisBarSVG text, .DiagnosisRampBarTextSVG text, .DiagnosisRampBarSVG text{
+    fill: $default_blue;
+}
+
+div.scrollTabs{
+    right: 3px;
+    top: 6px;
+    position: absolute;
+    box-shadow: none; 
+    height: 19px;
+    width: 63px;
+}
+.scrollTabs {           
+    width: 70px;
+    background-image:url(../svg/tabs/scrollRight.svg), $gradient;
+}
+.scrollTabs:active {    
+    background-image:url(../svg/tabs/scrollRight.svg), $reversegradient;
+}
+
+.scrollTabs:after{
+    box-shadow: none;
+}
+.scrollTabs.scrollleft{
+    background-image:url(../svg/tabs/scrollArrow.svg), $gradient;
+}
+.scrollTabs.scrollleft:active{
+    background-image:url(../svg/tabs/scrollArrow.svg), $reversegradient;
+}
+.scrollTabs.scrollleft.scrollright{
+    background-image:url(../svg/tabs/scrollLeftRight.svg), $gradient;
+}
+.scrollTabs.scrollleft.scrollright:active{
+    background-image:url(../svg/tabs/scrollLeftRight.svg), $reversegradient;
+}
+#generateQR:hover{
+    cursor: pointer;
+}
+#qrOverlay{
+    position: absolute;
+    top: 0;
+    right: 390px;
+    bottom: 0;
+    background: #f2f2f2;
+    border: 1px solid #d0d0d0;
+    
+    .result{
+        display: block;
+        float: left;
+        margin: 20px;
+    }
+    .cancelbutton{
+        margin: 20px 20px 0 0;
+        display: block;
+        right: 0px;
+        position: absolute;
+    }
+}
+#qrOverlay canvas{
+    top: 30px;
+    position: relative;
+    margin: 60px;
+}
+#qrScanOverlay{
+    float: left;
+    margin-left: 20px;
+}
+#keyboardInputMaster table td{
+    @extend .emosbutton; 
+}
+.DiagnosisAlarmClient .quit{
+    width: 320px;
+    background-image: url(../svg/content/acknowledge.svg), linear-gradient(#fff, #d1d7e0);
+    top: 0;
+    display: none;
+    
+    &.noAction{
+        background-image:url(../svg/content/acknowledgeNoAction.svg),linear-gradient(#fff, #d1d7e0);
+        cursor: default !important;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+    &:active{
+        background-image: url(../svg/content/acknowledge.svg), linear-gradient(#d1d7e0, #fff);
+    }
+}
+
+.DiagnosisPageControl .placeholderBtn{
+    top: 125px;
+    height: 60px;
+    position: absolute;
+    background: #f2f2f2;
+    width: 100%;
+    &.noAction{
+        display: none;
+    }
+}
+
+.DiagnosisPageControl .quitChrono{
+    width: 304px;
+    background-image: url(../svg/status/reload.svg), linear-gradient(#fff, #d1d7e0);
+    top: 0px;
+    left: 10px;
+    display: inline-block;
+    &:hover{
+        cursor: pointer;
+    }
+    &:active{
+        background-image: url(../svg/status/reload.svg), linear-gradient(#d1d7e0, #fff);
+    }
+}
+.diagnose .DiagnosisPageBlank.dPage.Chronology{
+    top: 180px;
+}
+
+.diagnose .scrollbar{
+    right: 0;
+}
+.scrollbar{
+    position: absolute;
+    background: $dark-grey;
+    width: 5px;    
+    border-radius: 3px;
+    top: 0;
+    right: 5px;
+    /*right: 3px;*/
+}
+.xtext1{
+    width: 100px;
+    font-weight: bold;
+    display: inline-block;
+    height: 25px;
+}
+.welcome{
+    top: 0;
+    height: 27px;
+    width: 26px;
+    font-size: 30px;
+    padding: 5px 6px 5px 25px;
+}
+.Groupbox .inputGroup.linkselector{
+    margin: 10px 0 0 10px;
+    ul{
+        width: 145px;
+    }
+}
+#statusWinIframe{
+    /*height: 685px;*/
+    flex-grow: 1;
+    width: 100%;
+}
+.IE11 .diagnose.apt{
+    .DiagnosisContent{
+        bottom:0;
+    }
+    #statusWinIframe{
+        height: 100%;
+/*        width: 100%;*/
+    }
+}
+.Groupbox.browser{
+    height: calc(100% - 20px);
+}
+.DiagnosisBrowserPage{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+}
+.emosbutton.subsubPage, .emosbutton.subsubsubPage{
+    background-repeat: no-repeat;
+    background-image: url(../svg/Tabs/ico_expand.svg), $gradient;
+    background-position: left;
+    margin: 0 20px 20px;
+    display: block;
+    text-align: center;
+    
+    &:active{
+        background-image: url(../svg/Tabs/ico_expand.svg), $reversegradient;
+    }
+    &.active{
+        background-image: url(../svg/Tabs/ico_expand.svg);
+        border-radius: 0 4px 4px 0;
+        border: 1px solid #cecece;
+        border-left: none;
+        background-color: #f2f2f2;
+        background-position: 22px 2px;
+        box-shadow: none;
+        height: 24px;
+        padding-left: 50px;
+        margin-left: -22px;
+        
+        .subsubpageOverlay{
+            display: block;
+            border-left: 1px solid #cecece;
+        }
+        
+    }
+}
+.emosbutton.subsubsubPage:after{
+    box-shadow: none;
+}
+.emosbutton.subsubsubPage.active {
+    &:after{
+        box-shadow: none;
+        content: none;
+    }
+    .subsubsubpageOverlay{
+        display: block;
+        right: 774px;
+        border-left: 1px solid #cecece;
+    }
+}
+.emosbutton.extContent{
+    background-image:url(../svg/tabs/ico_expand.svg), $gradient;
+    margin-left: 0;
+    
+    &:active{
+        background-image:url(../svg/tabs/ico_expand.svg), $reversegradient;
+    }
+    &.active{
+        background-image: url(../svg/Tabs/ico_expand.svg);
+        border-radius: 0 4px 4px 0;
+        border: 1px solid #cecece;
+        border-left: none;
+        background-color: #f2f2f2;
+        background-position: 26px 2px;
+        box-shadow: none;
+        height: 24px;
+        padding-left: 23px;
+        margin-left: -10px;        
+    }
+}
+.extContentLinktext{
+    margin-top: 25px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.contentOverlay{
+    left: 120px;
+    right: 378px !important;
+    width: unset !important;
+    top: 207px !important;
+}
+.contentOverlayHtml{
+    width: 100%;
+    height: 90%;
+}
+.subsubpageOverlay, .contentOverlay, .subsubsubpageOverlay{
+    text-align: left;
+    display: none;
+    z-index: 2;
+    background: transparent;
+    width: 375px;
+    position: fixed;
+    top: 206px;
+    right: 398px;
+    bottom: 0;
+    /*padding: 10px;*/
+    
+    .blindHead{
+        background: #f2f2f2;
+        height: 109px;
+        opacity: 0.8;
+    }
+    .overlayContent{
+        background: #f2f2f2;
+        bottom: 0;
+        top: 109px;
+        position: absolute;
+        padding-left: 7px;
+        padding-top: 10px;
+    }
+    .closeTabs{
+        float: right !important;
+        top: 0;
+        margin-right: 10px;
+    }
+    .pagerHeadLine{
+        text-align: left;
+        margin-bottom: 15px !important;
+        float: none;
+        line-height: 24px;
+        text-align: left;
+    }
+    .overlayContentElements{
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        bottom: 30px;
+        top: 78px;
+        padding-bottom: 10px;
+    }
+    .subFooter{
+        background: #f2f2f2;
+        height: 45px;
+        position: absolute;
+        bottom: 0;
+        width: 355px;
+    }
+}    
+.ControllerElement{
+    padding: 10px 0;    
+}
+.actual{
+    float: left;
+    color: $dark-fontcolor;
+    /*margin-right: 25px;*/
+    width: 120px;
+    
+    &:last-of-type{
+        margin-right: 0;
+    }
+    &.output{
+        width: 90px;
+        .tempratureouterbox{
+            width: 23px;
+        }
+        .tempratureinnerbox{
+            width: 17px;
+        }
+    }
+}
+.barhead{
+    text-align: center;
+    padding-right: 4px;
+    margin-bottom: 5px
+}
+.tempratureouterbox{
+    width: 39px;
+    height: 160px;
+    background: $lightgrey;
+    position: relative;
+    left: 40px;
+    float: left;
+}
+.tempratureinnerbox{
+    width: 33px;
+    /*height: 60px;*/
+    background: $diagnoseHead;
+    border: 1px solid #fff;
+    position: absolute;
+    /*top: 96px;*/
+    left: 2px;
+    bottom: 2px;
+}
+.valuepointerbox{
+    width: 44px;
+    height: 20px;
+    position: absolute;
+    left: -42px;
+    bottom: 0px;
+    /*top: 83px;*/
+    /*color: $dark-fontcolor;*/
+}
+.valuepointer{
+    width: 44px;
+    height: 3px;
+    background: $diagnoseHead;
+    border: 1px solid #fff;
+    border-right: none;    
+}
+.scala{
+    float: left;
+    margin-left: 43px;
+    position: relative;
+    
+    .bartext{
+        position: absolute;
+        font-size: 10px;
+        display: block;
+        text-align: center;
+        width: 20px;
+        /*color: $dark-fontcolor;*/
+    }
+    .bartext0{
+        top: 150px;
+    }
+    .bartext25{
+        top: 115px;
+    }
+    .bartext50{
+        top: 75px;
+    }
+    .bartext75{
+        top: 35px;
+    }
+    .bartext100{
+        top: 0;
+    }   
+}
+.setpointbar{
+    width:57px;
+    height: 7px;
+    border: 1px solid #fff;
+    position: absolute;
+    background: #89b9d2;
+    right: -8px; 
+    bottom: 0px;
+}
+.setpointbarvalue{
+    position: absolute;
+    right: -50px;
+    color: #89b9d2;
+    font-weight: bold;
+}
+.textfeld{
+    display: inline-block;
+}
+.textLed span.sercosChain:first-child{
+    background-image: url(../images/APT/arrowLeft.png);
+    margin-left: 0;
+}
+.textLed span.sercosChain.active:first-child{
+    background-image: url(../images/APT/arrowLeftActive.png);
+    margin-left: 0;
+}
+.textLed span.sercosChain.active{
+    background-image: url(../images/APT/arrowNextActive.png);
+}
+.textLed span.sercosChain:nth-child(3){
+    background-image: url(../images/APT/arrowNextActive.png);
+}
+.textLed span.sercosChain{
+    display: block;
+    color: #fff;
+    float: left;
+    text-align: center;
+    width: 41px;
+    height: 21px;
+    background-image: url(../images/APT/arrowNext.png);
+    padding-top: 3px;
+    background-repeat: no-repeat;
+    margin-right: -12px;
+    margin-bottom: 10px;
+}
+/* end diagnose */
+
+/* start Smart Diagnosis  */
+
+//soll später wieder gelöscht werden
+header button{
+    width: 0 !important;
+    visibility: hidden;
+    margin: 0 !important;
+}
+.comments-container{
+    display: none;
+}
+.wizards-container .content .top-line .icon.trending{
+    background: url("../assets/images/buttons/ico_info.png") no-repeat; 
+    border: none;
+    width: 40px;
+    margin-top: 0;
+    margin-left: 2px;
+    
+}
+.wizards-container .content .top-line .button.trending{
+    float: left;
+    width: 56px;
+    margin-left: 20px;
+    top: 4px;
+}
+.wizards-container .connection-element.trending{
+    left: -17px;
+    top: 123px;
+    height: 46px;
+    width: 95px;
+}
+.wizards-container .content .top-line div.trending .icon.trending{
+    margin-left: 19px;
+}
+.trending-container{
+    left: 25px; 
+}
+
+.trending-container h3{
+    width: 170px;
+    margin-bottom: 20px;
+}
+    
+.trending-container h3, .trending-container span{
+    font-size: 18px; 
+    font-weight: 500;
+    margin-left: 0;
+}
+.trending-container span span{
+    margin-bottom: 0;
+}
+.trending-container span.link.active{
+    font-weight: bold;
+    border: 3px solid #89b9d2;
+}
+.trending-container span.link{
+    display: inline-block;
+    margin-Right: 20PX;
+    margin-left: 20%;
+    top: 0;
+    
+    &:hover{
+        cursor: pointer;
+    }
+}
+.TrendPageWrapper{
+    top: 220px;
+    bottom: 0;
+    height: inherit;
+}
+.button.favorites{
+    display: none;
+}
+
+.trendingSpans{
+    display: inline-block;
+    margin-right: 90px;
+    /*border: 1px solid #89BAD3;*/
+    padding: 5px;
+}
+/* end Smart Diagnosis  */
+
+
+/*secial for Editor*/
+.configcenter.full.editor .diagnose {
+    .writebutton, .cancelbutton, .savebutton{
+        display: none;
+    }
+    
+}
+.configcenter.full.editor > .scrollbar{
+    right: 400px;
+}

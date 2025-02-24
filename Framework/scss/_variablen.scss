@@ -1,0 +1,57 @@
+// variables for e.g. color, font-size etc.
+
+//colors
+$default_blue: #003254; // blue background on header / left side
+$default-background: #f2f2f2; // background
+$overlay-back: #ececec; // background overlays
+$dark-fontcolor: #353944;
+$diagnoseHead: #3b4654;
+$blue-font: #105395; // blue font in diagnose header
+$green: #a1bc3f; // green led
+$lightgrey: #D9E1E8;//lightgrey; // lightgrey led
+$grey: #dadada;  // grey background at DiagnosisTextDoubleTimer,footerhead
+$dark-grey: #a0a0a0; // background for paging bubbles
+$light-blue: #89bad3; //background for active paging bubble
+$orange: #f27019; // orange led = magenta
+$red: red;  // red led
+$yellow: #f27019; // yellow led
+$pink: #ffc0cb; // rosa led
+$blue:#0000ff; // blue led
+$lightblue: $light-blue; //hover on submenu
+$clock: #3B4654;;
+//$blueborder: #618cb6;
+$blueborder: #89BAD3;
+$greyborder: #cecece;
+
+$alert_red: #b53030;
+$warn: #f27019;
+
+$AlarmNEW: rgb(236,203,203);  // leicht-rot #eccbcb;
+$AlarmACK: rgb(217,225,232); //leicht-blau #d9ffe8
+$AlarmGONE: rgb(236,203,203); //leicht-rot #eccbcb
+$WarningNEW: rgb(252,219,197); //leicht-orange #fcdbc5
+$WarningACK: rgb(217,225,232); //leicht-blau #d9ffe8
+$WarningGONE: rgb(252,219,197); //leicht-orange #fcdbc5
+$Other: $grey; //mittel-grau
+//$OtherACK:                 mittel-grau (RGB 218-218-218)//
+//$OtherGONE:              mittel-grau (RGB 218-218-218)//
+
+$gradient: linear-gradient(#fff, #d1d7e0);
+$reversegradient: linear-gradient(#d1d7e0, #fff);
+$bluegradient: linear-gradient(#89b9d2, #89b9d2);
+$orangegradient: linear-gradient(#f27019, #f27019);
+
+// font-size
+$normal-size: 12px;
+$normalplus-size: 13px; //1.1em;
+$bigger-size: 14px; //1.167em;
+$mid-size: 16px;
+$big-size: 18px; //1.333em;
+$headline-size: 1.500em;
+
+
+//shadow
+$box-shadow_1: 0 4px 5px 0 #d0d0d0;
+$box-shadow_2: 1px 1px 6px #cecece;
+$box-shadow_3: 0 -2px 5px 1px #d0d0d0;
+$box-shadow_4: 0 -1px 5px 1px #d0d0d0;

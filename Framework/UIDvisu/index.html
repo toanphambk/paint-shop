@@ -1,0 +1,83 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(client) app/vendor.css -->
+      <!-- bower:css -->
+      <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,client}) app/app.css -->
+      <link rel="stylesheet" href="app/app.css">
+      <!-- injector:css -->
+      <!-- endinjector -->
+    <!-- endbuild -->
+  </head>
+  <body ng-app="duerrDiagnoseApp">
+    <!--[if lt IE 7]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+<!--    <statusbar></statusbar>
+    <mainmenu></mainmenu>-->
+    <div ui-view=""></div>
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    <!-- build:js({client,node_modules}) app/vendor.js -->
+      <!-- bower:js -->
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+      <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+      <script src="bower_components/restangular/dist/restangular.js"></script>
+      <script src="bower_components/angularUtils-pagination/dirPagination.js"></script>
+      <script src="bower_components/moment/moment.js"></script>
+      <script src="bower_components/angular-moment/angular-moment.js"></script>
+      <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,client}) app/app.js -->
+      <script src="app/app.js"></script>
+      <!-- injector:js -->
+      <script src="app/app-config.js"></script>
+      <script src="app/main/main.controller.js"></script>
+      <script src="app/main/main.js"></script>
+      <script src="app/plant/plant.controller.js"></script>
+      <script src="app/plant/plant.js"></script>
+      <script src="directives/contentsection/contentsection.controller.js"></script>
+      <script src="directives/contentsection/contentsection.directive.js"></script>
+      <script src="directives/contentsectionPlant/contentsectionPlant.controller.js"></script>
+      <script src="directives/contentsectionPlant/contentsectionPlant.directive.js"></script>
+      <script src="directives/gridelement/gridelement.directive.js"></script>
+      <script src="directives/gridelementPlant/gridelementPlant.directive.js"></script>
+      <script src="directives/mainmenu/mainmenu.directive.js"></script>
+      <script src="directives/navigationBar/navigationBar.directive.js"></script>
+      <script src="directives/statusbar/statusbar.controller.js"></script>
+      <script src="directives/statusbar/statusbar.directive.js"></script>
+      <script src="directives/wizard/wizard.controller.js"></script>
+      <script src="directives/wizard/wizard.directive.js"></script>
+      <script src="directives/wizardRelated/wizardRelated.controller.js"></script>
+      <script src="directives/wizardRelated/wizardRelated.directive.js"></script>
+      <script src="directives/wizardSolutions/wizardSolutions.controller.js"></script>
+      <script src="directives/wizardSolutions/wizardSolutions.directive.js"></script>
+      <script src="factories/dataFactory/dataFactory.service.js"></script>
+      <script src="filters/messageFilter/messageFilter.filter.js"></script>
+      <script src="filters/minutesToHHmm/minutesToHHmm.filter.js"></script>
+      <script src="filters/slice/slice.filter.js"></script>
+      <!-- endinjector -->
+    <!-- endbuild -->
+    <script src="app/app-config.js"></script>
+  </body>
+</html>

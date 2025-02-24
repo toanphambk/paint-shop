@@ -1,0 +1,158 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "00-00",
+   "Name": "EvacuationTime",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Evacuation Time",
+       "TextID": "EvacuationTime",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S9999_EvacuationModeActive",
+        "Position": "L",
+        "TextID": "S9999",
+        "OffLED": "O",
+        "Text": "Evacuation Mode Active",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S9999_FireProtectionActive",
+        "Position": "L",
+        "TextID": "S9999",
+        "OffLED": "O",
+        "Text": "Fire Protection Active",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S9999_EvacuationTimeElapsed",
+        "Position": "L",
+        "TextID": "S9999",
+        "OffLED": "O",
+        "Text": "Evacuation Time Elapsed",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Evacuation Time",
+        "TextID": "EvacuationTime",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000012-AddTextReal": {
+        "OPCID": "AA.I9999_RemainingTime",
+        "Position": "L",
+        "Text": "Remaining Time",
+        "UnitLocale": "s",
+        "Precision": "1",
+        "TextID": "I9999",
+        "UnitInit": "2",
+        "UnitMetric": "s",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.I9999_EvacuationTime",
+        "OPCID": "AA.I9999_EvacuationTime",
+        "UserRight": "0",
+        "IntInputMin": "",
+        "Text": "Evacuation Time",
+        "UnitLocale": "s",
+        "TextID": "I9999",
+        "UnitInit": "2",
+        "UnitMetric": "s",
+        "IntInputMax": "",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": 100,
+        "InputMin": -100,
+        "Position": "L"
+       },
+       "RegAutoHide": "0",
+       "VisibleOPCID": ""
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000014-Messages": {
+     "1000015-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "EvacuationTime",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 939873510
+}

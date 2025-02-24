@@ -1,0 +1,27 @@
+{
+ "tabs": {
+  "Private1": {
+   "1": {
+    "data": {
+     "OnLED": "G",
+     "OPCID": "CB.C1251_Ackn",
+     "Position": "L",
+     "UserRight": "4",
+     "TextID": "C1251",
+     "OffLED": "O",
+     "Text": "Fault Acknowledge",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleOPCID": "",
+     "VisibleAtRight": "0",
+     "leftIcon": "reset",
+     "writable": true,
+     "DiagnosisLibID": 1
+    },
+    "myPLC": "P1C1T1.P1C1T1_KL01_VZ366_Q16",
+    "myKey": "1000014-AddTextInputLED",
+    "writable": false
+   }
+  }
+ }
+}

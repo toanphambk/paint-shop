@@ -1,0 +1,162 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Border": "B"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU395.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2258_Reset",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C2258",
+        "OffLED": "O",
+        "Text": "Reset",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000009-Messages": {
+     "1000010-AlarmClient": {},
+     "Text": "Messages"
+    },
+    "1000011-AddPageTab": {
+     "1000012-AddPageControl": {
+      "1000013-AddPageTab": {
+       "Text": "Parameters 1",
+       "TextID": "Parameters1",
+       "VisibleAtRight": "0",
+       "1000014-AddText": {
+        "Position": "L",
+        "TextID": "AA.M2XXX_InBType",
+        "Text": "Input Type of Body",
+        "Bold": "1",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000015-AddTextInteger": {
+        "OPCID": "AA.I2XXX_InBType",
+        "TextID": "I2XXX",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Input Type of Body",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddText": {
+        "Position": "L",
+        "TextID": "AA.M2XXX_InPType",
+        "Text": "Input Type of Paint",
+        "Bold": "1",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000017-AddTextInteger": {
+        "OPCID": "AA.I2XXX_InPGroup",
+        "TextID": "I2XXX",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Input Group of Paint Type",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextInteger": {
+        "OPCID": "AA.I2XXX_OutBType",
+        "TextID": "I2XXX",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Output Type of Body",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextInteger": {
+        "OPCID": "AA.I2XXX_OutPGroup",
+        "TextID": "I2XXX",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Output Group of Paint Type",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU395",
+ "DiagnosisControl": "FU395",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 762591201
+}

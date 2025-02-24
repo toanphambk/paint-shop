@@ -1,0 +1,243 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "12-20",
+   "Name": "FU805.12",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "Operation",
+        "Text": "Operation",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2326_SysEmpty",
+        "TextID": "S2326",
+        "OffLED": "O",
+        "Text": "Empty",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2496_EnblConv",
+        "TextID": "S2496",
+        "OffLED": "O",
+        "Text": "Enable from Conveyor",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000011-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2258_Reset",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C2258",
+        "OffLED": "O",
+        "Text": "Reset from Visu",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000012-Messages": {
+     "1000013-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000014-AddPageTab": {
+     "1000015-AddPageControl": {
+      "1000016-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000017-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000018-AddTextIntegerInput": {
+        "OPCID": "AS.P2966_BodyTypeDef",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Default Body Type",
+        "UnitLocale": "",
+        "TextID": "P2966",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "48",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "48",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000019-AddTextInteger": {
+        "OPCID": "AA.I2288_JobsOnConv",
+        "TextID": "I2288",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Quantity of Jobs on Conveyor Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1253_MOn",
+        "OPCID": "TA.T2253_MOn",
+        "UserRight": "1",
+        "TextID": "T2253",
+        "Text": "Motion Control On Timer Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1342_DelStopConv",
+        "OPCID": "TA.T2342_DelStopConv",
+        "UserRight": "1",
+        "TextID": "T2342",
+        "Text": "Switch Off Delay after Con.has Stopped",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextIntegerInput": {
+        "OPCID": "CO.P2929_QtyImp",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Quantity of Impulses for Conveyor Length (Pulse)",
+        "UnitLocale": "",
+        "TextID": "P2929",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "100000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "100000",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000023-AddTextIntegerInput": {
+        "OPCID": "CO.P3201_TrackOffset",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Tracking Offset",
+        "UnitLocale": "",
+        "TextID": "P3201",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "100000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "100000",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU805",
+ "DiagnosisControl": "FU805",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 83699821
+}

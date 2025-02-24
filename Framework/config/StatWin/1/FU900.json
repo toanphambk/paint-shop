@@ -1,0 +1,370 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "L",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000004-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1268_CFV",
+     "Position": "L",
+     "TextID": "S1268",
+     "OffLED": "O",
+     "Text": "Collective Faults Visu",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "10-10",
+   "Name": "FU900.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2258_Reset",
+        "UserRight": "11",
+        "Position": "L",
+        "TextID": "C2258",
+        "OffLED": "O",
+        "Text": "Reset",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "on"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000009-Messages": {
+     "1000010-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000011-AddPageTab": {
+     "1000012-AddPageControl": {
+      "1000013-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "1",
+       "1000014-AddText": {
+        "Position": "L",
+        "TextID": "Power",
+        "Text": "Power",
+        "showHide": true
+       },
+       "1000015-AddTextReal": {
+        "OPCID": "AA.R32000_ActPwL1",
+        "Precision": "2",
+        "TextID": "R32000",
+        "UnitInit": "2",
+        "UnitMetric": "KW",
+        "Text": "Power L1",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "KW",
+        "UnitImperial": "KW",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000016-AddTextReal": {
+        "OPCID": "AA.R32001_ActPwL2",
+        "Precision": "2",
+        "TextID": "R32001",
+        "UnitInit": "2",
+        "UnitMetric": "KW",
+        "Text": "Power L2",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "KW",
+        "UnitImperial": "KW",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000017-AddTextReal": {
+        "OPCID": "AA.R32002_ActPwL3",
+        "Precision": "2",
+        "TextID": "R32002",
+        "UnitInit": "2",
+        "UnitMetric": "KW",
+        "Text": "Power L3",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "KW",
+        "UnitImperial": "KW",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000018-AddTextReal": {
+        "OPCID": "AA.R2291_ActPw",
+        "Precision": "2",
+        "TextID": "R2291",
+        "UnitInit": "2",
+        "UnitMetric": "KW",
+        "Text": "Active Power",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "KW",
+        "UnitImperial": "KW",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000019-AddText": {
+        "Position": "L",
+        "TextID": "Current",
+        "Text": "Current",
+        "showHide": true
+       },
+       "1000020-AddTextReal": {
+        "OPCID": "AA.R2281_IL1",
+        "Precision": "2",
+        "TextID": "R2281",
+        "UnitInit": "2",
+        "UnitMetric": "A",
+        "Text": "Current L1",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "A",
+        "UnitImperial": "A",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000021-AddTextReal": {
+        "OPCID": "AA.R2282_IL2",
+        "Precision": "2",
+        "TextID": "R2282",
+        "UnitInit": "2",
+        "UnitMetric": "A",
+        "Text": "Current L2",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "A",
+        "UnitImperial": "A",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000022-AddTextReal": {
+        "OPCID": "AA.R2283_IL3",
+        "Precision": "2",
+        "TextID": "R2283",
+        "UnitInit": "2",
+        "UnitMetric": "A",
+        "Text": "Current L3",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "A",
+        "UnitImperial": "A",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000023-AddTextReal": {
+        "OPCID": "AA.R2284_AvCurr",
+        "Precision": "2",
+        "TextID": "R2284",
+        "UnitInit": "2",
+        "UnitMetric": "A",
+        "Text": "Average Current",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "A",
+        "UnitImperial": "A",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000024-AddText": {
+        "Position": "L",
+        "TextID": "Voltage",
+        "Text": "Voltage",
+        "showHide": true
+       },
+       "1000025-AddTextReal": {
+        "OPCID": "AA.R2275_UL1N",
+        "Precision": "2",
+        "TextID": "R2275",
+        "UnitInit": "2",
+        "UnitMetric": "V",
+        "Text": "Voltage L1-N",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "V",
+        "UnitImperial": "V",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000026-AddTextReal": {
+        "OPCID": "AA.R2276_UL2N",
+        "Precision": "2",
+        "TextID": "R2276",
+        "UnitInit": "2",
+        "UnitMetric": "V",
+        "Text": "Voltage L2-N",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "V",
+        "UnitImperial": "V",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000027-AddTextReal": {
+        "OPCID": "AA.R2277_UL3N",
+        "Precision": "2",
+        "TextID": "R2277",
+        "UnitInit": "2",
+        "UnitMetric": "V",
+        "Text": "Voltage L3-N",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "V",
+        "UnitImperial": "V",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000028-AddTextReal": {
+        "OPCID": "AA.R32003_LN_Ave",
+        "Precision": "2",
+        "TextID": "R32003",
+        "UnitInit": "2",
+        "UnitMetric": "V",
+        "Text": "Average Voltage LN",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "V",
+        "UnitImperial": "V",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000029-AddTextReal": {
+        "OPCID": "AA.R2278_UL1L2",
+        "Precision": "2",
+        "TextID": "R2278",
+        "UnitInit": "2",
+        "UnitMetric": "V",
+        "Text": "Voltage L1-L2",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "V",
+        "UnitImperial": "V",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000030-AddTextReal": {
+        "OPCID": "AA.R2279_UL2L3",
+        "Precision": "2",
+        "TextID": "R2279",
+        "UnitInit": "2",
+        "UnitMetric": "V",
+        "Text": "Voltage L2-L3",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "V",
+        "UnitImperial": "V",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000031-AddTextReal": {
+        "OPCID": "AA.R2280_UL3L1",
+        "Precision": "2",
+        "TextID": "R2280",
+        "UnitInit": "2",
+        "UnitMetric": "V",
+        "Text": "Voltage L3-L1",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "V",
+        "UnitImperial": "V",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000032-AddTextReal": {
+        "OPCID": "AA.R32004_LL_Ave",
+        "Precision": "2",
+        "TextID": "R32004",
+        "UnitInit": "2",
+        "UnitMetric": "V",
+        "Text": "Average Voltage LL",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "V",
+        "UnitImperial": "V",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU900",
+ "DiagnosisControl": "FU900",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1022098160
+}

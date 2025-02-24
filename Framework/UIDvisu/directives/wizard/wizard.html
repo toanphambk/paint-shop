@@ -1,0 +1,49 @@
+<div class="wizard wizards-container standard" ng-click="closeRelatedOverlay()">
+  <header>
+    <button class="button related" ng-click="openRelatedGroups(selectedTile.id)" ng-disabled="selectedTile.relatesTo.length == 0" ng-model="isDisabled">
+      <span class="icon related"></span>
+      <span class="count">{{ selectedTile.relatesTo.length }}</span>
+    </button>
+    <h2 class="{{ selectedTile.productionRelevance }}">{{ selectedTile.functionGroup }}</h2>
+    <div class="button favorites">
+      <span class="icon favorites"></span>
+    </div>
+  </header>
+  <div class="tabbar">
+    <div class="status-icon {{ selectedTile.productionRelevance }}"></div>
+  </div>
+  <div class="content">
+    <div class="top-line">
+      <span>Symptom &amp; Hauptursachen</span>
+      <div class="button linkout" style="display:none;">
+        <span class="linkout-icon"></span>
+      </div>
+    </div>
+    <p class="red">{{ selectedTile.name }}</p>
+    <div class="button start-button" ng-click="toggleHandling(selectedTile.id)">
+      <div class="center">
+        <span class="icon handling"></span>
+        <span ng-show="!selectedTile.inProcess">Start</span>
+        <span ng-show="selectedTile.inProcess">Stop</span>
+      </div>
+      <span class="time">{{ selectedTile.timeStop | amDifference : clock : 'minutes' | minutesToHHmm}}</span>
+    </div>
+    <ol>
+      <li class="errorItem" dir-paginate="item in wizardData | itemsPerPage:3"  pagination-id="wizard">
+        <span>{{ item.name }}</span>
+        <button class="button info" ng-click="openSolutions(item)" ng-disabled="areInfoButtonsDisabled" ng-model="areInfoButtonsDisabled" ng-class="{active : isSelected(item)}">
+          <span class="icon info"></span>
+        </button>
+        <div class="connection-element" ng-class="{active : isSelected(item)}">
+          <span class="icon info"></span>
+        </div>
+      </li>
+    </ol>
+    <div class="pagination-conatiner">
+      <dir-pagination-controls pagination-id="wizard" template-url="directives/wizard/paginationWizard.tpl.html"></dir-pagination-controls>
+    </div>
+  </div>
+</div>
+<div class="overlay" ng-click="closeAllOverlays()"></div>
+<wizard-solutions></wizard-solutions>
+<wizard-related></wizard-related>

@@ -1,0 +1,11 @@
+<DiagnosisWindows>
+   <Win Name="DEFAULT">
+      <Row Cont="OPCVersionID=EMOSDEFAULT" />
+      <Row Cont="Version=00-00" />
+      <Row Cont="Head" />
+      <Row Cont="PageControl" />
+      <Row Cont="#Messages" />
+      <Row Cont="##AlarmClient" />
+      <Row Cont="##Visible=2" />
+   </Win>
+</DiagnosisWindows>

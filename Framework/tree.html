@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://hmi.durr.com/emostestrd/mobile/files/tree.css">
+        <style>
+            .QR{display: none;}
+        </style>
+    </head>
+    <body>
+        <div style="width: 500px; height: 600px; overflow: scroll;" id="contentTree"><div class="widget"></div></div>
+    <script src="/lib/js/jquery.js"></script>
+        <script src="/lib/js/jquery-ui.js"></script>
+        <script src="../config/site.configuration.js"></script>
+        
+        <script src="js/durr.emos.js"></script>
+        <script src="js/treeStructure.js"></script>
+        <script>
+            var jsonResult = [];
+            $.ajax({
+                url: "https://hmi.durr.com/emostestrd/mobile/tree/tree.json",
+                type: 'get',
+                dataType: 'json',
+                async: false,
+                success: function (data) {
+                  jsonResult.push({
+                    FileName: 'tree.json',
+                    Data: data                    
+                  });
+                },
+                error: function () {
+                  console.log('error');
+                }
+              });
+            loadJsonFile();
+        </script>
+        
+    </body>
+</html>

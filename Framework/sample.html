@@ -1,0 +1,95 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script src="js/jquery.jsForm.controls.js"></script>
+<script src="js/jquery.jsForm.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css"/>
+
+<script>
+$(function(){
+	// some json data
+	jQuery.extend({
+            getValues: function () {
+                var result = null;
+                $.ajax({
+                    url: 'config/config1.json',
+                    type: 'get',
+                    dataType: 'json',
+                    async: false,
+                    success: function (data) {
+                        result = data;
+                    }
+                });
+                return result;
+            }
+        });
+        var results = $.getValues();
+
+	// initialize the form, prefix is optional and defaults to data
+	$("#details").jsForm({
+		data:results
+	});
+
+	$("#show").click(function() {
+		// show the json data
+		alert(JSON.stringify($("#details").jsForm("get"), null, " "));
+	});
+        
+        function saveText(text, filename){
+            var a = document.createElement('a');
+            a.setAttribute('href', 'data:text/plain;charset=utf-u,'+encodeURIComponent(text));
+            a.setAttribute('download', filename);
+            a.click();
+          }
+        
+        
+        
+        $("#save").click(function() {
+            saveText( JSON.stringify($("#details").jsForm("get"), null, " "), "filename.json" );
+		//alert(JSON.stringify($("#details").jsForm("get"), null, " "));
+	});
+});
+</script>
+</head>
+<body>
+
+<div id="details">	
+    <div class="collection sort" data-field="data.sidebuttons">
+    <fieldset>            
+            Sidebutton <input name="sidebuttons.name"/>
+            
+            <ul class="collection sort sortable" data-field="sidebuttons" data-sort="priority" data-sortable='{"placeholder":"ui-state-highlight"}'>
+                <li><span class="field">sidebuttons.$idx</span><input name="sidebuttons.name"/><input name="sidebuttons.textId"/><input name="sidebuttons.iconclass"/><input name="sidebuttons.alarm"/><span class="ui-icon ui-icon-trash delete" style="float:left"></span></li>
+                <li>Tiles    
+                        <ul class="collection sort sortable" data-field="sidebuttons.tiles" data-sort="priority" data-sortable='{"placeholder":"ui-state-highlight"}'>
+                            
+                            <li><span class="field">tiles.$idx</span><input name="tiles.name"/><input name="tiles.textId"/><input name="tiles.link"/><input name="tiles.iconclass"/><input name="tiles.alarm"/><span class="ui-icon ui-icon-trash delete" style="float:left"></span>
+                                
+                        </ul>
+                    <span>Add new Tile</span><span class="ui-icon ui-icon-plusthick add" data-field="sidebuttons.tiles"></span>
+                            <button class="sortUp">ups</button> <button class="sortDown">down</button> 
+                        
+                    </li>
+                    
+                <li>Alarmbuttons    
+                        <ul class="collection sort sortable" data-field="sidebuttons.alarm_buttons" data-sort="priority" data-sortable='{"placeholder":"ui-state-highlight"}'>
+                            
+                            <li><span class="field">alarm_buttons.$idx</span><input name="alarm_buttons.name"/><input name="alarm_buttons.link"/><input name="alarm_buttons.iconclass"/><input name="alarm_buttons.alarm"/><span class="ui-icon ui-icon-trash delete" style="float:left"></span>
+                                
+                        </ul>
+                    <span>Add new Alarmbutton</span><span class="ui-icon ui-icon-plusthick add" data-field="sidebuttons.alarm_buttons"></span>
+                            <button class="sortUp">up</button> <button class="sortDown">down</button> 
+                        
+                    </li>
+            </ul>
+            
+            <button class="sortUp">up</button> <button class="sortDown">down</button> 
+    </fieldset>
+    </div>
+    <span>Add new Sidebutton</span><span class="ui-icon ui-icon-plusthick add" data-field="data.sidebuttons"></span>
+
+</div>
+<button id="show">Show Object</button><button id="save">save</button>
+</body>
+</html>

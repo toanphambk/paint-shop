@@ -1,0 +1,239 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-20",
+   "Name": "FU_Brn_DuOvenManIF.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "Position": "L",
+        "UserRight": "7",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "1000009-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2960_MesPlantOn",
+        "Position": "L",
+        "TextID": "S2960",
+        "OffLED": "O",
+        "Text": "Message Plant On",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2961_AllPurProFin",
+        "Position": "L",
+        "TextID": "S2961",
+        "OffLED": "O",
+        "Text": "All Purging Procedure Finished",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2962_SwOnPurProFin",
+        "Position": "R",
+        "TextID": "S2962",
+        "OffLED": "O",
+        "Text": "Switch On Procedure Finished",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2963_SwOnPurProRun",
+        "Position": "R",
+        "TextID": "S2963",
+        "OffLED": "O",
+        "Text": "Switch On Procedure Running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2962_SwOnPurProFin",
+        "Position": "R",
+        "TextID": "S2962",
+        "OffLED": "O",
+        "Text": "Switch Off Purging Finished",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2966_SwOffPurProRun",
+        "Position": "R",
+        "TextID": "S2966",
+        "OffLED": "O",
+        "Text": "Switch Off Purging Running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2968_ExAirFanFaPurProFin",
+        "Position": "R",
+        "TextID": "S2968",
+        "OffLED": "O",
+        "Text": "Exhaust Air Fan Failure Purging Finished",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2969_ExAirFanFaPurProRun",
+        "Position": "R",
+        "TextID": "S2969",
+        "OffLED": "O",
+        "Text": "Exhaust Air Fan Failure Purging Running",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000018-Messages": {
+     "1000019-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000020-AddPageTab": {
+     "1000021-AddPageControl": {
+      "1000022-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000023-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000024-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.I2626_SwOnPurTimeSet",
+        "OPCID": "AA.I2623_SwOnPurTimeAV",
+        "TextID": "I2623",
+        "Text": "Switch On Purging Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "1000025-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.I2627_SwOffPurTimeSet",
+        "OPCID": "AA.I2624_SwOffPurTimeAV",
+        "TextID": "I2624",
+        "Text": "Switch Off Purging Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "1000026-AddTextDoubleTimerLong": {
+        "OPCID2": "AA.I2628_ExAirFanPurTimeSet",
+        "OPCID": "AA.I2625_ExAirFanPurTimeAV",
+        "TextID": "I2625",
+        "Text": "Exhaust Air Fan Failure Purging Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Brn_DuOvenManIF",
+ "DiagnosisControl": "FU_Brn_DuOvenManIF.10",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -980059674
+}

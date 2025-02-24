@@ -1,0 +1,202 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "Rd_FuVersionUpdaterCoor",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status",
+       "TextID": "Status",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Response Signals",
+        "TextID": "ResponseSignals",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3102_TestOn",
+        "Position": "L",
+        "TextID": "S3102",
+        "OffLED": "O",
+        "Text": "Test ON",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1268_CFV",
+        "Position": "L",
+        "TextID": "S1268",
+        "OffLED": "O",
+        "Text": "Collective fault to Visu",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Version",
+        "TextID": "Version",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000011-AddString": {
+        "OPCID": "MS.M1001_AppVersion",
+        "Position": "L",
+        "StrStart": "0",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "StrLen": "20",
+        "VisibleAtRight": "0",
+        "Text": "Application Version",
+        "TextID": "M1001"
+       },
+       "1000012-AddString": {
+        "OPCID": "MS.M1031_TSPlantPar",
+        "Position": "L",
+        "StrStart": "0",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "StrLen": "20",
+        "VisibleAtRight": "0",
+        "Text": "TS Plant Parameter",
+        "TextID": "M1031"
+       },
+       "1000013-AddString": {
+        "OPCID": "MS.M1034_TSPosTrans",
+        "Position": "L",
+        "StrStart": "0",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "StrLen": "20",
+        "VisibleAtRight": "0",
+        "Text": "TS Position Transfer",
+        "TextID": "M1034"
+       },
+       "1000014-AddString": {
+        "OPCID": "MS.M1035_TSRoute",
+        "Position": "L",
+        "StrStart": "0",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "StrLen": "20",
+        "VisibleAtRight": "0",
+        "Text": "TS Route",
+        "TextID": "M1035"
+       },
+       "1000015-AddString": {
+        "OPCID": "MS.M1036_TSMotionPrgr",
+        "Position": "L",
+        "StrStart": "0",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "StrLen": "20",
+        "VisibleAtRight": "0",
+        "Text": "TS Motion Program",
+        "TextID": "M1036"
+       },
+       "1000016-AddString": {
+        "OPCID": "MS.M1037_TSBodyDim",
+        "Position": "L",
+        "StrStart": "0",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "StrLen": "20",
+        "VisibleAtRight": "0",
+        "Text": "TS Body Dim",
+        "TextID": "M1037"
+       },
+       "1000017-AddString": {
+        "OPCID": "MS.M1038_TSDipTank",
+        "Position": "L",
+        "StrStart": "0",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "StrLen": "20",
+        "VisibleAtRight": "0",
+        "Text": "TS Dip Tank",
+        "TextID": "M1038"
+       },
+       "1000018-AddString": {
+        "OPCID": "MS.M1033_TSCarList",
+        "Position": "L",
+        "StrStart": "0",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "StrLen": "20",
+        "VisibleAtRight": "0",
+        "Text": "TS Car List",
+        "TextID": "M1033"
+       },
+       "1000019-AddString": {
+        "OPCID": "MS.M1032_TSCoorPar",
+        "Position": "L",
+        "StrStart": "0",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "StrLen": "20",
+        "VisibleAtRight": "0",
+        "Text": "TS Coordinator Parameters",
+        "TextID": "M1032"
+       },
+       "RegAutoHide": "0",
+       "VisibleOPCID": "",
+       "10000001-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000020-Messages": {
+     "1000021-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "Rd_FuVersionUpdaterCoor",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 380608982
+}

@@ -1,0 +1,49 @@
+{
+ "language": {
+  "70": {
+   "short": "de",
+   "long": "Deutsch",
+   "selected": "checked"
+  },
+  "71": {
+   "short": "en",
+   "long": "English",
+   "selected": "checked"
+  },
+  "72": {
+   "short": "es",
+   "long": "Español",
+   "selected": "unchecked"
+  },
+  "73": {
+   "short": "pt",
+   "long": "Português",
+   "selected": "checked"
+  },
+  "74": {
+   "short": "fr",
+   "long": "Français",
+   "selected": "checked"
+  },
+  "75": {
+   "short": "cn",
+   "long": "中国",
+   "selected": "unchecked"
+  },
+  "76": {
+   "short": "ko",
+   "long": "한국어",
+   "selected": "unchecked"
+  },
+  "77": {
+   "short": "jp",
+   "long": "日本語",
+   "selected": "unchecked"
+  }
+ },
+ "logo": "logo1.jpg",
+ "chatoption": "checked",
+ "ecodoku": "checked",
+ "defaultLanguage": "71",
+ "defaultMeasuring": "0"
+}

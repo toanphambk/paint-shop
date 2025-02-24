@@ -1,0 +1,28 @@
+CACHE MANIFEST
+# version: 16. Feb 2025 22:54:41
+
+CACHE:
+# Library resource
+/lib/js/jquery.js
+/lib/js/jquery-ui.js
+/lib/js/durr.emos.js
+/lib/css/jquery-ui.css
+/lib/css/durr.emos.css
+js/site.configuration.js
+
+# For every slide
+Mixcar.htm
+js/Mixcar.js
+Mixcar.svg
+
+
+# EndFor
+
+# For every image in folder images
+images/108006920_image1.PNG
+images/108006920_image2.PNG
+
+# EndFor
+
+NETWORK:
+*

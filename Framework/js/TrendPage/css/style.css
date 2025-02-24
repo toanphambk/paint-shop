@@ -1,0 +1,2123 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03.11.2015, 08:56:44
+    Author     : harald
+
+@font-face { 
+    font-family: "Roboto-Light"; 
+    src: url('../font/RobotoL.ttf') format('truetype'); 
+}*/
+/*
+@-ms-viewport {
+	width: device-width;
+}
+@-o-viewport {
+	width: device-width;
+}
+@-viewport {
+	width: device-width;
+}
+*/
+
+html:before, html:after, body:before, body:after {
+    content: "";
+    position: fixed;
+    display: none;
+}
+html:before{
+    height:30px;
+    left:0;
+    right:0;
+    top:0;
+    z-index: 3000;
+    background: linear-gradient(to bottom, rgba(255,50,50,1) 0%,rgba(125,185,232,0) 100%);
+}
+html:after{
+    width:30px;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index: 3000;
+    background: linear-gradient(to left, rgba(255,50,50,1) 0%,rgba(125,185,232,0) 100%);
+}
+body:before{
+    height:30px;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 3000;
+    background: linear-gradient(to top, rgba(255,50,50,1) 0%,rgba(125,185,232,0) 100%);
+}
+body:after{
+    width:30px;
+    top:0;
+    bottom:0;
+    left:0;
+    z-index: 3000;
+    background: linear-gradient(to right, rgba(255,50,50,1) 0%,rgba(125,185,232,0) 100%);
+}
+
+
+
+
+html, body, main{
+  height:100%;
+  font-family: "Roboto-Light";
+  font-size: 12px;
+  background: #f2f2f2;
+}
+.cl{clear: both;}
+.actDate{
+    display: block;
+    z-index: 4000;
+    text-align: center;
+    margin-left: -50px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    font-size: 1.333em;
+    color: #82858b;
+}
+#stationname{
+    position: absolute;
+    right: 10px;
+    top: -31px;
+    font-size: 1.167em;
+    width: 100%;
+    line-height: 18px;
+    text-align: center;
+}
+.myStation{
+    float: right;
+}
+.myStation .icon{
+    margin-right: 0;
+    margin-left: 10px;
+    background-image: url(../svg/SoftwareArea/connectionOn.svg);
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    
+}
+
+.myStation span{
+    font-weight: bold;
+}
+main{
+    width: 100%;
+}
+header{
+    height: 97px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    z-index: 1000;
+    background: #f2f2f2;
+}
+.left{
+    position: absolute;
+    left:0;
+}
+.left, .right{
+    width: 108px;
+}
+.left .top, .right .top{
+    height: 84px;
+}
+.left .top{    
+    background: url(../images/logo1.jpg) #f2f2f2 no-repeat 10px 10px;
+}
+.right{
+    position: absolute;
+    right:0;
+}
+.right .top{
+}
+.left .bottom, .right .bottom{
+    height: 13px;
+    background: #003254;
+}
+.center{
+    position:absolute;
+    left: 108px;
+    right: 97px;
+    bottom: 0;
+}
+.center .white{
+    background: #f2f2f2;
+    height: 35px;
+}
+.center .bluebox{
+    width: auto !important;
+    margin-left: -15px;
+    border-bottom: 62px solid #003254;
+    border-left: 68px solid transparent;
+    border-right: 53px solid transparent;
+    display: flex;
+    position: relative;
+}
+#left{
+    clear: both;
+    height: 100%;  
+    position: fixed;
+    top: 97px;
+    background: #003254;
+    z-index: 1000;
+}
+ul.maincats{
+    margin-top: -3px;
+}
+li.cats > span{
+    height: 48px;
+    width: 76px;
+/*    background-image:url(../images/icon_sprite.png);*/
+    background-repeat: no-repeat;
+    display: block;
+    margin-bottom: 43px;
+    padding: 0;
+    box-shadow: none;
+    top: 2px;
+}
+li.cats > span:after{
+    box-shadow: none;
+}
+li.cats{
+    margin: 3px 0 3px 0;
+    padding: 8px 0 2px 11px;
+}
+li.cats:hover{
+    cursor: pointer;
+}
+li.cats.active{
+    background-color: #f2f2f2;    
+}
+li .process{
+    background-image:url(../svg/Mainmenu/process.svg),linear-gradient(#fff, #d1d7e0);
+}
+li.active .process{
+    background-image:url(../svg/Mainmenu/process.svg);
+}
+li .conveyor{
+    background-image:url(../svg/Mainmenu/conveyor.svg),linear-gradient(#fff, #d1d7e0);
+}
+li.active .conveyor{
+    background-image:url(../svg/Mainmenu/conveyor.svg);
+}
+li .application{
+    background-image:url(../svg/Mainmenu/application.svg),linear-gradient(#fff, #d1d7e0);
+}
+li.active .application{
+    background-image:url(../svg/Mainmenu/application.svg);
+}
+li .supervisory{
+    background-image:url(../svg/Mainmenu/supervisory.svg),linear-gradient(#fff, #d1d7e0);
+}
+li.active .supervisory{
+    background-image:url(../svg/Mainmenu/supervisory.svg);
+}
+li .diagnosis{
+    background-image:url(../svg/Mainmenu/diagnosis.svg),linear-gradient(#fff, #d1d7e0);
+}
+li.active .diagnosis{
+    background-image:url(../svg/Mainmenu/diagnosis.svg);
+}
+.trenner{
+    background: url("../images/trenner.png");
+    display: block;
+    width: 100%;
+    height: 1px;
+}
+li.cats .buttontext{
+    padding-top: 55px;
+    color: #fff;
+    font-size: 1.333em;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0;
+}
+li.cats.active .buttontext{    
+    color: #353944;
+}
+#breadcrump{
+    position: absolute;
+    left: 125px;
+    top: 120px;
+}
+#breadcrump .bread_li{
+    background-image:url(../images/breadsprite.png);
+    background-repeat: no-repeat;
+    float: left;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    padding-top: 20px;
+    background-position: 0 -69px;
+    font-size: 1.333em;
+    margin-left: -12px;
+}
+#breadcrump .bread_li:first-child{
+    background-position: 0 0;
+    margin-left: 0;
+}
+
+#breadcrump .bread_li:last-child{
+    background-position: 0 -138px;
+}
+#center, #precenter{
+    position: absolute;
+    top: 192px;
+    left: 120px;
+    right: 0;
+    bottom: 2px;
+}
+#precenter{
+    z-index: 10;
+    display: none;
+}
+.frameWrapper{
+    position: absolute;
+    left: 0;
+    right: 390px;
+    top: 0;
+    padding-bottom: 12px;
+    box-shadow: 0 4px 5px 0 #d0d0d0;
+    bottom: 0;
+}
+ul.cars{
+    margin-left: 70px;
+}
+ul.cars li{
+    width:246px;
+    height: 156px;
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background: linear-gradient(#fff, #d1d7e0);
+    background-clip: padding-box;
+    
+    box-shadow:1px 1px 6px #cecece;
+    float: left;
+    margin:0 40px 30px 40px;
+}
+ul.cars li::after {
+    position: absolute;
+    top: -4px; bottom: -4px;
+    left: -4px; right: -4px;
+    background: linear-gradient(#d1d7e0, #fff);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}
+ul.cars li:hover{
+    cursor: pointer;
+}
+ul.cars li .tilename{
+    display: block;
+    width:137px;
+    height:0;
+    line-height: 42px;
+    border-bottom: 43px solid #c5cdd6;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    position: absolute;
+    bottom: 1px;
+    left: 10px;
+    font-size: 1.500em;
+    color: #353944;
+    font-weight: 300;
+    text-align: center;
+}
+ul.cars li .alert:before{
+    border-top: 43px solid #b53030; 
+}
+ul.cars li .warn:before{
+    border-top: 43px solid #f27019;
+}
+ul.cars li .alert:before, ul.cars li .warn:before {     
+    border-left: 45px solid transparent;
+    border-right: 0 solid transparent;
+    content:" ";
+    display:block;
+    height:0;
+    width:7px;
+    top: -43px;
+    right:0;
+    position:absolute;
+}
+
+ul.cars li .alert, ul.cars li .warn{
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 1px;
+    right: 0;
+    width:10px;
+    border-top: 43px solid #fff;
+    border-left: 45px solid transparent;
+    border-right: 0 solid transparent;
+}
+ul.cars li .alert .warn_image, ul.cars li .warn .warn_image{
+    bottom: 15px;
+    display: block;
+    height: 19px;
+    position: absolute;
+    right: 6px;
+    width: 15px;
+}
+ul.cars li .alert .warn_image{
+    background:url(../images/alert.png) no-repeat; 
+}
+ul.cars li .warn .warn_image{
+    background:url(../images/warn.png) no-repeat; 
+}
+/*ul.cars li.car1{
+    background-image:url(../images/cars.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+ul.cars li.car2{
+    background-image:url(../images/cars.png);
+    background-repeat: no-repeat;
+    background-position: 0 -160px;
+}
+ul.cars li.car3{
+    background-image:url(../images/cars.png);
+    background-repeat: no-repeat;
+    background-position: 0 -320px;
+}
+ul.cars li.car4{
+    background-image:url(../images/cars.png);
+    background-repeat: no-repeat;
+    background-position: 0 -480px;
+}*/
+ul.cars li{
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+ul li.tile.booth{
+    background-image:url(../svg/icons_start/booth.svg),linear-gradient(#fff, #d1d7e0);
+}
+ul li.tile.dry{
+    background-image:url(../svg/icons_start/dry.svg),linear-gradient(#fff, #d1d7e0);
+}
+ul li.tile.exhaustAir{
+    background-image:url(../svg/icons_start/exhaustAir.svg),linear-gradient(#fff, #d1d7e0);
+}
+ul li.tile.pvcSupply{
+    background-image:url(../svg/icons_start/pvcSupply.svg),linear-gradient(#fff, #d1d7e0);
+}
+ul li.tile.supplyAir{
+    background-image:url(../svg/icons_start/supplyAir.svg),linear-gradient(#fff, #d1d7e0);
+}
+ul li.tile.wet{
+    background-image:url(../svg/icons_start/wet.svg),linear-gradient(#fff, #d1d7e0);
+}
+ul li.tile.wetElectric{
+    background-image:url(../svg/icons_start/wetElectric.svg),linear-gradient(#fff, #d1d7e0);
+}
+ul li.tile.workingArea{
+    background-image:url(../svg/icons_start/workingArea.svg),linear-gradient(#fff, #d1d7e0);
+}
+
+#alarmheader, #configheader{
+    position: absolute;
+}
+#alarmheader{
+    top: 4px;
+    order: 1;
+    flex: 1;
+    bottom: 0;
+    right: 50%;
+    z-index: 0;
+}
+@media screen and (max-width: 1250px) { 
+    #configheader>ul>li{
+        margin:0 !important;
+    }
+    
+}
+ul.alarms{    
+    margin-top: 3px;
+}
+ul.alarms.active{
+    height: 76px;    
+    border-bottom: none;
+    background: #f2f2f2;
+    border-radius: 4px 4px 0 0;
+    box-shadow: inset 0 4px 6px #cecece;
+}
+ul.alarms.active li{
+    background: none;
+}
+ul.alarm_solo{
+    display: table;
+    margin: auto;
+}
+#configheader>ul>li{
+    float: left;
+    background-repeat: no-repeat;
+    height: 38px;
+    width: 56px;
+    border-radius: 4px;
+    margin: 0 10px;
+    padding: 0; 
+    top: 3px;
+    box-shadow: none;
+}
+#configheader>ul>li:after{
+    box-shadow: none;
+}
+#alarms:hover{
+    cursor: pointer;
+}
+ul.alarms li, ul.alarm_solo li{
+    border: none;
+    border-right: 1px solid #dbdee3;
+    border-radius: 0;
+    width: 83px;    
+    float: left;
+    height: 48px;
+    padding: 0;
+    box-shadow: none; 
+    top: 0;
+    margin-right: 0;
+/*    background: linear-gradient(#fff, #d1d7e0);*/
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+ul.alarms li:after{
+    border-radius: 0;
+    box-shadow: none;
+}
+ul.alarms.active li:after{
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom:0;
+}
+ul.alarms li:first-child, ul.alarms li:first-child:after{
+    border-radius: 4px 0 0 4px;
+}
+ul.alarms li:last-child, ul.alarms li:last-child:after{
+    border-radius: 0 4px 4px 0;
+}
+ul.alarm_solo li{
+    
+    margin-right: 10px;
+}
+ul.alarms li.automatic, ul.alarm_solo li.automatic{  
+    background-image: url(../svg/StatusAlarmLine/automatic.svg), linear-gradient(#fdfdfe, #dadee4);
+}
+ul.alarms li.safety, ul.alarm_solo li.safety{
+    background-image: url(../svg/StatusAlarmLine/safety.svg), linear-gradient(#fdfdfe, #dadee4);
+}
+ul.alarms li.messages, ul.alarm_solo li.messages{
+    background-image: url(../svg/StatusAlarmLine/messages.svg), linear-gradient(#fdfdfe, #dadee4);
+}
+ul.alarms li.localRemote, ul.alarm_solo li.localRemote{
+    background-image: url(../svg/StatusAlarmLine/localRemote.svg), linear-gradient(#fdfdfe, #dadee4);
+}
+ul.alarms li.plantStartStop, ul.alarm_solo li.plantStartStop{
+    background-image: url(../svg/StatusAlarmLine/plantStartStop.svg), linear-gradient(#fdfdfe, #dadee4);
+}
+ul.alarms.active li.automatic{  
+    background-image: url(../svg/StatusAlarmLine/automatic.svg);
+}
+ul.alarms.active li.safety{
+    background-image: url(../svg/StatusAlarmLine/safety.svg);
+}
+ul.alarms.active li.messages{
+    background-image: url(../svg/StatusAlarmLine/messages.svg);
+}
+ul.alarms.active li.localRemote{
+    background-image: url(../svg/StatusAlarmLine/localRemote.svg);
+}
+ul.alarms.active li.plantStartStop{
+    background-image: url(../svg/StatusAlarmLine/plantStartStop.svg);
+}
+ul.alarms.active li{
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+ul.maincats li .alert, ul.maincats li .warn, #alarmheader ul li .alert, #alarmheader ul li .warn, #alarmheader ul li .fine, #alarmpage .alarm_solo li .alert, #alarmpage .alarm_solo li .warn, .quit .warn, .quit .alert{
+    width: 20px;
+    height:16px;
+    display: block;
+    float:right;
+    margin: 2px 5px;
+    background-repeat: no-repeat;
+}
+ul.maincats li .alert, ul.maincats li .warn{
+    margin: 5px !important;
+}
+#alarmheader ul li .alert, ul.maincats li .alert, #alarmpage .alarm_solo li .alert, .quit .alert{
+    background-image:url(../svg/status/error.svg);
+}
+#alarmheader ul li .warn, ul.maincats li .warn, #alarmpage .alarm_solo li .warn, .quit .warn{
+    background-image:url(../svg/status/warning.svg);
+}
+#alarmheader ul li .fine{
+    background-image:url(../svg/status/ok.svg);
+}
+#alarmheader ul li:last-child{
+    margin-right: 0;
+}
+#configheader{
+    top: 7px;
+    min-width: 300px;
+    right: 10px;
+    order: 2;
+    z-index: 0;
+}
+
+#login{
+    cursor: pointer;
+    background-image:url(../svg/SoftwareArea/userLoggedIn.svg),linear-gradient(#fff, #d1d7e0);
+}
+#login.active{
+    background-image: url(../svg/SoftwareArea/userLoggedIn.svg);
+    background-color: #f2f2f2;
+}
+#login.active:after, #config.active:after, #language.active:after{
+    content: none;
+}
+#config{
+    cursor: pointer;
+    background-image:url(../svg/SoftwareArea/settings.svg),linear-gradient(#fff, #d1d7e0);
+}
+#config.active{
+    background-image: url(../svg/SoftwareArea/settings.svg);
+    background-color: #f2f2f2;
+}
+#help{
+    cursor: pointer;
+    background-image:url(../svg/SoftwareArea/help.svg),linear-gradient(#fff, #d1d7e0);
+}
+#language{
+    cursor: pointer;
+    background-image:url(../svg/SoftwareArea/language.svg),linear-gradient(#fff, #d1d7e0);
+}
+#language.active{
+    background-image:url(../svg/SoftwareArea/language.svg);
+    background-color: #f2f2f2;
+}
+
+#language ul li{
+    background-image: none;
+    background: transparent;
+    float: none;
+    height: 25px;
+    padding: 3px 10px;
+    font-size: 1.167em;
+    width: 94px;
+}
+#configheader>ul>li.active{
+    height: 73px;
+    border-radius: 4px 4px 0 0;
+    box-shadow: inset 0 4px 6px #cecece;
+    border: none;
+    width: 60px;
+    background-position: center 2px;
+}
+#language ul li:last-child{
+    clear: both;
+}
+#language ul li:hover, .breadoverlay_li:hover{
+    cursor: pointer;
+    background: #b1cbf7;
+}
+#language ul li span{
+    display: block;
+}
+#language ul{
+    border-radius: 4px;
+    background: #f2f2f2;
+    box-shadow: inset 0px 0px 6px 1px #cecece;
+    width: 100px;
+    display: none;
+    height: 0;
+    overflow:hidden;
+    position: relative;
+    top: 67px;
+    left: -18px;
+    z-index: -1;
+    padding: 10px 0 0;
+}
+#user{
+    background-image: none;
+    width: auto !important;
+}
+#user:hover{
+    cursor: pointer;
+}
+#user .username, .logout{
+    display: block;
+    color: white;
+    font-size: 1.333em;
+    position: relative;
+    top: 5px;
+    white-space: nowrap;
+    
+}
+#act_lang{
+    background: transparent;
+    color: #f2f2f2;
+    font-size: 1.333em;
+    height: 25px;
+    margin-top: 13px !important;
+    width: 40px;
+}
+#plants{
+    width:100%;
+    height:100%;
+    float: left;
+}
+.preferences{
+    width: 60%;
+    height: 0;
+    position: absolute;
+    border-radius: 4px;
+    background: #f2f2f2; 
+    box-shadow: inset 0px 0px 6px 1px #cecece;
+    top: -80px;
+    right: 0;
+    overflow-y: scroll;
+    display: none;
+    padding: 15px;
+    z-index: 500;
+}
+#save{
+    position: fixed;
+    top: 200px;
+    right: 30px;
+}
+.logmein{
+    top: 112px;
+    left: 50%;
+    height: 0;
+    display: none;
+    width: 500px;
+    position: absolute;
+    z-index: 101;
+    border-radius: 4px;
+    background: #f2f2f2;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 6px #cecece;
+    overflow: hidden;
+}
+.ui-widget{
+    font-family: "Roboto-Light" !important;
+}
+.logmein .ui-dialog{
+    position: relative;
+    height: 484px;
+    width: 494px;
+    bottom: 0;
+    background: #f2f2f2;
+    box-shadow: inset 1px 1px 6px #cecece;
+}
+.ui-dialog.logmein .ui-dialog-content iframe{
+    background: #f2f2f2; 
+}
+.emoslogin, #content, .emoslogin header{
+    background: #f2f2f2;
+}
+.DiagnosisWindow.ui-dialog-content.ui-widget-content{
+    height: 92% !important;
+    width: 100% !important;
+    background: #fff;
+}
+.diagnose{        
+    margin-left: 20px;
+    background: #f2f2f2;
+    border-radius: 3px 0 0 0;
+    border: 1px solid #d0d0d0;
+    box-shadow: -2px -2px 5px 1px #d0d0d0;
+    min-height: 100%;
+    max-height: 100%;
+    position: absolute;
+    width: 375px;
+    display:flex; 
+    flex-direction:column;
+    overflow: auto;
+    right: 1px;
+      }
+.diagnose .diahead{
+    height: 55px;
+    padding: 0;
+}
+.diahead .processname{
+    display: block;
+    line-height: 12px;
+    font-size: 1.333em;
+    color: #105395;
+    font-weight: bold;
+}
+.diagnose .DiagnosisContent{
+    flex-grow:1;
+    display:flex; 
+    flex-direction:inherit;
+    overflow: hidden;
+}
+
+
+.diagnose .diatabs{
+    padding: 0;
+    border-radius: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    position: relative;
+    background: #f2f2f2;
+}
+.diagnose .diatabs > ul{
+    background: #003254;
+    border-radius: 0;
+    border: none;
+    padding-left: 19px;
+    padding-top: 9px;
+    z-index: 0;
+}
+.diagnose .diatabs ul li{
+    margin-right: 39px;
+    margin-bottom: 4px;
+/*    border: none;
+    background: none;*/
+    cursor: pointer;
+    width: 55px;
+    height: 38px;
+    box-shadow: none;
+    border-radius: 0;
+    background: #f2f2f2;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+.diagnose .diatabs ul li:last-of-type{
+    margin-right: 0;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active{
+    padding-bottom: 2px;
+}
+.diagnose .diatabs ul li:after{
+    box-shadow: none;
+    border-radius: 0;
+}
+.diagnose .diatabs ul li a.ui-tabs-anchor{
+    width: 29px;
+    height: 28px;
+/*    background-image:url(../images/diagnosis1.png);
+    border: none;
+    background-repeat: no-repeat;          
+    padding: 0;*/
+}
+
+.diagnose .diatabs ul li.ui-state-focus a{
+    outline-color: transparent;
+}
+.diagnose .diatabs ul li.Parameters{
+    background-image:url(../svg/tabs/parameter.svg), linear-gradient(#fff, #d1d7e0);
+}
+.diagnose .diatabs ul li.Operation{
+    background-image:url(../svg/tabs/operatingMonitoring.svg), linear-gradient(#fff, #d1d7e0);
+}
+.diagnose .diatabs ul li.Messages{
+    background-image:url(../svg/tabs/messages.svg), linear-gradient(#fff, #d1d7e0);
+}
+.diagnose .diatabs ul li.ui-state-active.Parameters{
+    background-image:url(../svg/tabs/parameter.svg);
+}
+.diagnose .diatabs ul li.ui-state-active.Operation{
+    background-image:url(../svg/tabs/operatingMonitoring.svg);
+}
+.diagnose .diatabs ul li.ui-state-active.Messages{
+    background-image:url(../svg/tabs/messages.svg);
+}
+.diagnose .diatabs ul li.Messages.alarm{
+    
+}
+.diagnose .diatabs ul .emosbutton>span:before{
+    border: 6px solid rgba(0,0,0,0);
+    border-top: 0 solid;
+    content: " ";
+    display: block;
+    height: 0;
+    width: 0;
+    top: -3px;
+    right: -5px;
+    position: absolute;
+    border-bottom-color: #003254;
+    
+}
+.diagnose .diatabs ul .emosbutton>span{
+    border: 5px solid rgba(0,0,0,0);
+    border-top: 0 solid;
+    content: " ";
+    display: block;
+    height: 0;
+    width: 2px;
+    top: -2px;
+    right: -5px;
+    position: absolute;
+    border-bottom-color: #d1d7e0;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+.diagnose .diatabs ul li.Messages.alert>span .warn_image, .diagnose .diatabs ul li.Messages.warn>span .warn_image{
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+    transform: rotateZ(-45deg);
+    position: absolute;
+}
+.diagnose .diatabs ul li.Messages.warn>span .warn_image, .diagnose .diatabs ul li.Messages.alert>span .warn_image{
+    top: 3px;
+    right: -15px;
+}
+.diagnose .diatabs ul li.Messages.alert>span .warn_image{
+    background-image:url(../svg/tabs/errorTab.svg);
+    
+}
+.diagnose .diatabs ul li.Messages.warn>span .warn_image{
+    background-image:url(../svg/tabs/warningTab.svg);
+    
+}
+.diagnose .diatabs ul li.Private{
+    background-image:url(../svg/tabs/4Tab.svg), linear-gradient(#fff, #d1d7e0);
+}
+.diatabs > .pager{
+    position: absolute;
+    top: 80px;
+    padding-left: 10px;
+}
+.diagnose.fixedPart{
+    position: absolute !important;
+    right: 0;
+    float: none !important;
+    top: 0 !important;
+    left: auto !important;
+    
+}
+.diahead{
+    height: 55px;
+    line-height: 26px;
+}
+.diahead_left{
+    width: 110px;
+    float: left;
+    margin: 10px 22px 0 10px ;
+}
+.dieahead_head{
+    height: 46px;
+}
+.diahead_right ul li{
+    /*background-image:url(../images/diagnosis1.png);*/
+    background-repeat: no-repeat; 
+    width: 56px;
+    height: 38px;
+    float: left;
+    margin-right: 0;
+    margin-left: 12px;
+    cursor: pointer;
+    top: 5px;
+    padding: 0;
+}
+.diahead_right .arrangeTabs{    
+    background-image:url(../svg/tabs/comparison.svg), linear-gradient(#fff, #d1d7e0);
+}
+.diahead_right .copyTab{
+    background-image:url(../svg/tabs/copy.svg), linear-gradient(#fff, #d1d7e0);
+}
+.diahead_right .arrangeTabs.inactive{
+    background-image:url(../svg/tabs/comparison_inact.svg), linear-gradient(#fff, #d1d7e0);
+    cursor: default;
+}
+.diahead_right .copyTab.inactive{
+    background-image:url(../svg/tabs/copy_inact.svg), linear-gradient(#fff, #d1d7e0);
+    cursor: default;
+}
+.diahead_right .closeTabs{
+    background-image:url(../svg/tabs/close.svg), linear-gradient(#fff, #d1d7e0);
+}
+.diahead_right .closeTabs.inactive{
+    /*background-position: -70px -120px;*/
+    cursor: default;
+}
+.diahead_right .arrangeTabs.childWin{
+    /*background-position: -1px -538px;*/
+}
+.diahead_right .arrangeTabs.childWin.inactive{
+    /*background-position: -70px 1px;*/
+    cursor: default;
+}
+.diahead .subMenu{
+    border-radius: 3px;
+    background: linear-gradient(#fdfdfe, #dadee4);
+    border: 2px solid #d2d8e0;
+    width: 250px;
+    display: none;
+    z-index: 10;
+    left: 10px;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    top: -25px;
+}
+.diahead .subMenu li{
+    padding: 3px; 
+}
+.diahead .subMenu li:hover{
+    cursor: pointer;
+    background: #b1cbf7;
+}
+.diagnose .DiagnoseBody{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.diagnose .addMess{
+    margin-bottom: 15px;
+    width: 330px;
+    padding: 10px 10px 5px;
+    border: 1px solid #618cb6;
+}
+
+.DiagnosisNumberLRTextTextSVG {
+    display: block;
+    /*background: #d2d2d2;*/
+    padding: 5px;
+    font-weight: bold;
+    margin:10px 0;
+    color: #105395;
+    font-size: 1.167em;
+    width: 55%;
+    float: left;
+}
+.priv .DiagnosisNumberLRTextTextSVG{
+    float: none;
+}
+.DiagnosisNumberLRText {
+    padding: 5px;
+    font-weight: bold;
+    color: #105395;
+    font-size: 1.167em;
+    margin-bottom: 10px;
+}
+.pickertime.blue{
+    color: blue;
+}
+.pickertime.orange, .DiagnosisNumberLRTextNumberSVG.orange{
+    color: #ff00ff;
+    background: none;
+    margin: 0;
+    width: auto;
+    height: auto;
+    
+}
+.DiagnosisNumberLRTextNumberSVG.orange{
+    float: none;
+}
+.DiagnosisNumbers {
+    display: inline-block;
+    width: 80px;
+    padding:3px;
+    margin-left: 10px;
+}
+.pickertime {
+    display: inline-block;
+    /*width: 80px;*/
+}
+.DiagnosisNumberLRTextText.without{
+    width: 123px;
+    float: left;
+}
+.DiagnosisNumbers.without{
+    width: 65px;
+    float: left;
+}
+.pickertext{ 
+    display: inline-block;
+    width: 100px;
+    padding:3px;
+}
+.setButton{
+    background-image:url(../images/small_button.png);
+    background-repeat: no-repeat; 
+    height: 28px;
+    padding-top: 6px;
+    margin-top: 5px;
+}
+.Groupbox .mbsc-wp .dwwb span{
+    display: block !important;
+    color: transparent;
+}
+.Groupbox .mbsc-wp .dwwb{
+    background: none;
+    height: 46px !important;
+    line-height: 46px !important;
+}
+.Groupbox .mbsc-wp .dwwr{
+    /*width: 270px !important;*/
+    background: #f2f2f2;
+    color: #000;
+    /*border: 1px solid #d0d0d0;
+    border-radius: 3px;*/
+}
+.Groupbox .longtype .dwfl{
+    margin-right: 0;
+}
+.hours, .minutes, .seconds, .doppelpunkt, .dpunkt{
+    float: left;
+}
+.doppelpunkt{
+    padding: 0 20px;
+}
+.mbsc-wp .dwwr{
+    padding: 0 !important;
+}
+.Groupbox .mbsc-wp .dwb, .Groupbox .mbsc-wp .dw-li .dw-i{
+    color: #000;
+    text-align: center;
+}
+.Groupbox .dw-li.dw-v.dw-sel .dw-i{
+    background: #fff;
+    border: none;
+    text-align: center;
+    font-size: 1.1em;
+}
+.Groupbox .mbsc-wp .dwb{
+    padding: 0.636em .455em 0 .455em;
+}
+.DiagnosisStringButtons{
+    height: 0;
+    overflow: hidden;
+    padding-top: 5px;
+    display: block;
+}
+.DiagnosisStringButtons button{
+    margin: 10px;
+}
+#center .plcTag{
+    word-wrap: break-word; 
+    margin-bottom: 5px;
+    display: block;
+    float: left;
+}
+/* das hier ist mist! überabrbeiten  */
+.priv .plcTag~*{
+    margin-top: 10px;
+}
+.DiagnosisLRLeft{
+    width: 100%;  
+    padding: 0 10px;
+}
+.DiagnosisLong{
+    float: none;
+}
+.elementbox, .Groupbox, .innerbox, .parentbox, table.DiagnosisAlarmTable.Groupbox{
+    width: 330px;
+    padding: 10px 10px;
+    border: 1px solid #618cb6;
+    margin-bottom: 20px;
+}
+.Groupbox.priv{
+    padding-top: 0;
+    margin-bottom: 0;
+    width: 320px;
+}
+.elementbox:last-child{
+    margin-bottom: 0;
+}
+.innerbox{
+    /*border-bottom: 1px solid #618cb6;
+    margin: 0 -10px;
+    padding: 20px 10px;*/
+    padding: 10px 0 10px 10px;
+}
+/*.innerbox:last-child{
+    border: none;
+    padding-bottom: 10px;
+}*/
+.DiagnosisLRRight{
+    float: none;
+}
+.blockText{
+    display: block;
+}
+.DiagnosisTextDoubleTimer{
+    /*height: 60px;*/
+}
+.ui-widget-content{
+    border: none;
+}
+.dw-inline{
+    text-align: right;
+    margin-right: 15px;
+}
+.dwfl{
+    width: 64px !important;
+    max-width: 64px !important;
+    min-width: 64px !important;
+    margin-right: 10px;
+}
+.dwwbp span, .dwwbm span{
+    background-image: url(../images/scroll.png);
+    background-repeat: no-repeat;
+}
+.dwwbp span{
+    background-position: -140px -198px;
+}
+.dwwbm span{
+    background-position: -140px -245px;
+}
+.mbsc-wp .dw-i{
+    border: none !important;
+}
+.diagnose .DiagnosisPageBlank,.DiagnosisSubPageBlank {
+    flex-grow: 1;
+    background: #f2f2f2;
+    padding: 10px 13px 15px 13px;  
+    width: 350px;    
+    overflow: hidden;
+    right: 0;
+    position: absolute;
+    bottom: 70px;
+    top: 120px;
+    height: auto;
+}
+.DiagnosisSubPageBlank{
+    top: 0;
+    bottom: -7px;
+}
+.Edge .DiagnosisSubPageBlank{
+    bottom: 20px;
+}
+.DiagnosisText{
+    color: #105395;
+    margin: 10px 0;
+}
+.DiagnosisText p, .DiagnosisTextLong p{
+    margin: 0;
+}
+.DiagnosisTextInteger{
+    margin: 10px 0;
+}
+.textLed{
+    float: left;
+    margin: 5px;
+    word-wrap: break-word; 
+    /*width: 300px;
+    height: 50px;*/
+    max-height: 50px;
+}
+.textLed p{
+    display: block;
+    margin: 0;
+}
+.textLed span{
+    /*width: 290px;*/
+    display: inline-block;
+    -webkit-user-select: none;  
+    -moz-user-select: none;     
+    -ms-user-select: none;     
+    user-select: none; 
+}
+.Private .textTag span{
+    width: 130px;
+    display: inline-block;
+    word-break: break-word;
+    float: left;
+}
+.Private .numberType{
+    width: 100px;
+    float: left;
+    display: inline-block;
+    min-height: 1px;
+    text-align: center;
+}
+.writable ~ .textLed{
+    width: 175px;
+    padding-top: 15px;
+    display: inline-block;
+}
+.priv .writable ~ .textLed{
+    width: 165px;
+}
+.lightgrey, .green, .orange, .red, .yellow, .pink, .blue, .black{ 
+    background-image: url(../images/toggles.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin: 5px 0;
+    width: 137px;
+    height: 49px;
+    float: left;
+}
+.lightgrey.notwritable ~ .textLed, .green.notwritable ~ .textLed{
+    height: 0;
+    width: 290px;
+}
+.priv .lightgrey.notwritable ~ .textLed{
+    width: 280px;
+}
+.lightgrey.notwritable, .green.notwritable, .orange.notwritable, .red.notwritable, .yellow.notwritable, .pink.notwritable, .blue.notwritable, .black.notwritable{
+    margin: 5px !important;
+}
+.lightgrey.notwritable{
+    background-color: lightgrey;
+}
+.lightgrey{    
+    background-position: 0 -50px; 
+    background-color:lightgrey;
+}
+
+.green{   
+    background-position: 0 0; 
+    background-color: #a1bc3f;
+}
+.orange{
+    background-color: #ff00ff;
+    background-position: 0 -200px;
+}
+.red{
+    background-color: red;
+    background-position: 0 0;
+/*    background-image: none;*/
+}
+.yellow{
+    background-color: #f27019;
+    background-position: 0 0;
+}
+.pink{
+    background-color: #ffc0cb;
+    background-position: 0 0;
+}
+.blue{
+    background-color: #0000ff;
+    background-position: 0 0;
+}
+.black{
+    background-color: #000;
+    background-position: 0 0;
+}
+.DiagnosisTextLed{
+    width: 100%;
+}
+
+.DiagnosisFooter{
+    height: 74px;
+    width: 375px;
+    position: fixed;
+    bottom: 0;
+    background: #f2f2f2;
+    right: 1px;
+    box-shadow: -1px -1px 5px 0 #d0d0d0;
+    padding-top: 3px;
+}
+.ui-helper-clearfix{
+        min-height: auto;
+    }
+
+  
+.Firefox .DiagnosisFooter.subpage{
+    bottom: 0;
+}
+    
+.Firefox .diagnose .DiagnosisPageBlank{
+    /*max-height: 300px;*/
+    bottom:78px;
+}
+/*.Firefox .DiagnosisNumberLRTextText{
+    margin-left: -135px !important;
+}
+.Firefox .DiagnosisLedText .messageCircle{
+    margin-left: -155px !important;
+}*/
+
+.Edge .DiagnosisPageBlank{
+    /*max-height: 365px;*/
+    margin-bottom: 7px;
+}
+
+.IE11 .DiagnosisPageControl{
+    padding-bottom: 30px;
+}
+.IE11 .DiagnosisPageBlank {
+    height: 335px;
+    max-height: 395px;
+    margin-bottom: 80px !important;
+    position: relative;
+    top: 80px;
+    padding-bottom: 0;
+}
+
+.IE11 .DiagnosisSubPageBlank {
+   height: 320px;
+}
+
+.DiagnosisFooter .footerHead{
+    height: 22px;
+    display: inline-block;
+    background: #dadada;
+    width: 99%;
+    margin-top: 1px;
+    text-align: center;
+    position: relative;
+}
+.DiagnosisFooter .DiagnoseBody{
+    height: 22px;
+    background: #dadada;
+    width: 100%;
+    display: inline-block;
+}
+
+.DiagnosisFooter .scrollDown, .DiagnosisFooter .scrollUp{
+    height: 47px;
+    width: 101px;
+    display: block;
+    background-image: url(../images/scroll.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+}
+.DiagnosisFooter .scrollDown.active{
+    background-position: -108px -49px;
+}
+.DiagnosisFooter .scrollUp{
+    background-position: 0 -49px;
+    left: 80px
+}
+.DiagnosisFooter .scrollDown{
+    background-position: -108px 0;
+    right: 80px;
+}
+.DiagnosisFooter .scrollUp.active{
+    background-position: 0 0;
+}
+.DiagnosisPageControl.diasubtabs{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.Firefox .DiagnosisPageControl.diasubtabs{
+    bottom: 20px;
+    height: auto;
+}
+.DiagnosisPageControl input, .DiagnosisNumbers{
+    font-size: 1.167em;
+    font-weight: bold;
+    font-family: "Roboto-Light";
+    padding: 3px;
+}
+.DiagnosisPageControl .pager input{
+    padding: 0 3px;
+}
+/*
+.DiagnosisPageControl input:focus{
+    font-size: 32px;
+    width: 115px;
+}*/
+/*.pager{
+    width: auto;
+    height: 50px;
+    text-align: center;
+}*/
+.pagerHead{
+    width: 355px;
+    display: block;
+    background: url(../images/underHead.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 8px;
+}
+input.pagerHeadLine{
+    margin-top: 8px;
+    display: block;
+    font-size: 1.333em;
+    font-weight: bold;
+    color: #3b4654;
+    padding-left: 13px;
+    background: transparent;
+    border: none;
+}
+.footerHead.sub{
+    cursor: pointer;
+}
+.DiagnosisFooter .scrollLeft, .DiagnosisFooter .scrollRight{
+    height: 47px;
+    width: 107px;
+    display: block;
+    background-image: url(../images/scroll.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3px;
+}
+.DiagnosisFooter .scrollRight.active{
+    background-position: -113px -100px;
+}
+.DiagnosisFooter .scrollLeft.active{
+    background-position: 0 -101px;
+}
+.DiagnosisFooter .scrollRight{
+    background-position: -113px -149px;
+    right: 0;
+}
+.DiagnosisFooter .scrollLeft{
+    background-position: 0 -149px;
+    left: 0;
+}
+.circle{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    background: #a0a0a0;
+    display: none;
+    margin: 2px 5px;
+    box-shadow: 1px 1px 5px 0 #a9a8a8;
+    color: white;
+    position: absolute;
+    left: 174px;
+}
+.circle.big{
+    background: #89bad3;
+    display: inline-block;
+}
+.circle:first-child{    
+    left: 149px !important;
+    display: inline-block;
+}
+.circle:last-of-type{
+    left: 199px;
+    display: inline-block;
+}
+.circle.c0.big + .circle{
+    display: inline-block;
+}
+.circle.prevbig{
+    display: inline-block;
+}
+.circlenum{
+    display: inline-block;
+    margin-top: 1px;
+}
+.DiagnosisAlarmClient{
+    position: static;
+}
+.messageCircle, .lightgrey.notwritable, .green.notwritable, .orange.notwritable, .red.notwritable, .yellow.notwritable, .pink.notwritable, .blue.notwritable{
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0 5px;
+    background-image: none;
+}
+.DiagnosisTopText{
+    height: 25px;
+    font-weight: bold;
+}
+.DiagnosisTopText .green,.DiagnosisTopText .lightgrey, .DiagnosisLedText .green, .DiagnosisLedText .lightgrey {
+    background-image: none;
+}
+
+.DiagnosisLedText form {
+    float: left;
+    padding-top: 5px;
+}
+.DiagnosisLedText{
+    margin-bottom: 10px;
+}
+.DiagnosisLedText .messageCircle,.DiagnosisLedText .DiagnosisNumberLRTextText, .Groupbox .messageCircle,.Groupbox .DiagnosisNumberLRTextText {
+    float: right;  
+    margin-top: 15px;
+    position: absolute;
+}
+.DiagnosisLedText .DiagnosisNumberLRTextText, .Groupbox .DiagnosisNumberLRTextText {
+    max-width: 110px;
+    width: auto;
+    left: 122px;
+}
+.DiagnosisLedText .messageCircle, .Groupbox .messageCircle{
+    /*margin-left: 14px;*/
+    left: 100px;
+}
+.DiagnosisLedText .messageCircle.without,.DiagnosisNumberLRTextText.without {
+    margin-left: 0;
+    margin-top: 3px;
+    float: left;
+    position: inherit;
+}
+.DiagnosisLedText .DiagnosisNumberLRTextNumberSVG {
+    width: 60px;
+    display: inline-block;
+}
+.DiagnosisNumberLRTextText.doubleText{
+    left: 200px;
+    margin-top: 10px;
+}
+.messageCircle.doubleText{
+    left: initial;
+    margin-left: 5px;
+}
+.unitSymbol {
+    display: inline-block;
+    width: 20px;
+    min-height: 13px;
+    padding: 15px 0 0 5px;
+}
+.DiagnosisNumberLRTextText{
+    display: block;
+    width: 170px;
+    margin-left: 0;
+}
+.IE11 .DiagnosisNumberLRTextText, .IE11 .DiagnosisLedText .messageCircle{
+    position: absolute;
+    top: inherit;
+    left: 155px;
+    margin-left: 0;
+}
+.IE11 .DiagnosisNumberLRTextText{
+    left: 175px;
+}
+input[type=range]{
+    -webkit-appearance: none;
+    height: 4px;
+    background: #d5d5d5;
+}
+input[type=range]::-webkit-slider-thumb, input[type=range]::-moz-range-thumb, input[type=range]::-ms-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+#dialog-message {
+    position: absolute;
+    right: 2px;
+    width: 275px;
+    bottom: 0;
+    top: 250px;
+    background: #f2f2f2;
+    font-size: 1.500em;
+    padding: 50px;
+}
+.diagnose .footerHead .subTabMenu{
+    border-radius: 3px;
+    background: linear-gradient(#fdfdfe, #dadee4);
+    border: 2px solid #d2d8e0;
+    width: 170px;
+    display: none;
+    z-index: 10;
+    height: 0;
+    position: absolute;
+    padding: 5px 0;
+    left: 100px;
+    bottom: 25px;
+}
+.diagnose .footerHead .subTabMenu li{
+    line-height: 30px;
+    margin: 0;
+}
+.diagnose .footerHead .subTabMenu li.active,.diagnose .footerHead .subTabMenu li:hover {
+    cursor: pointer;
+    background: #b1cbf7;
+    font-weight: bold;
+}
+
+/* Context menu */
+#contextMenu {
+    background: #F9F9F9;
+    box-shadow: 0 0 12px rgba( 0, 0, 0, .3 );
+    border: 1px solid #ccc;
+    display: none;
+    position: absolute;
+    top: 0; left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 100px;
+}
+ 
+#contextMenu li {
+    position: relative;
+    width: 200px;
+}
+ 
+#contextMenu li:hover {
+    background: #444;
+}
+ 
+#contextMenu a {
+    color: #444;
+    display: inline-block;
+    padding: 8px;
+    text-decoration: none;
+/*    width: 85%;*/
+}
+ 
+#contextMenu li:hover a {
+    color: #f9f9f9;
+}
+ 
+#contextMenu li:last-child a {
+    border-bottom: none;
+}
+
+.myPage{
+    width: 400px;
+    height: 400px;
+    display: none;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    background: #fff;
+}
+.numpad{
+    margin-top: 20px;
+}
+.numpad td{
+    vertical-align: middle;
+    border: none !important;
+    padding: 0 !important;
+    /*display: inline-block;*/
+}
+.numpad td a, .plus, .minus, .done, .clear, span.writebutton, span.cancelbutton, span.savebutton, span.savemebutton{
+    width: 56px;
+    height: 38px;
+    
+    background-repeat: no-repeat;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.167em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    top: 0;
+}
+.numpad td a{
+    width: 64px;
+    height: 45px;
+    background-position: -140px -302px;
+    background-image: url(../images/scroll.png);
+}
+.numpad td a.plus{
+    background-position: -139px -198px;
+}
+.numpad td a.minus{
+    background-position: -139px -245px;
+}
+.numpad td a.done{
+    /*background-position: 0 -546px;*/
+}
+/*.numpad td a.clear{
+    background-position: 0 -499px;
+}*/
+
+.tableRight{
+    padding-left: 30px;
+    height: 60px;
+}
+.tableRight.tdplus{
+    vertical-align: top;
+}
+.tableRight.tddone{
+    vertical-align: bottom;
+}
+span.writebutton{
+    background-image:url(../svg/tabs/edit.svg), linear-gradient(#fff, #d1d7e0);
+    float: right;
+    display: none;
+    margin-right: 3px;
+}
+.grey{
+    background: #d9dee2;
+    margin: 5px -10px; /*5px 0 5px -10px; */  
+    padding: 4px 13px 3px;
+}
+span.cancelbutton{
+    background-image:url(../svg/tabs/close.svg), linear-gradient(#fff, #d1d7e0);
+    display: none;
+    float: left;
+}
+span.savebutton, span.savemebutton{
+    background-image:url(../svg/tabs/accept.svg), linear-gradient(#fff, #d1d7e0);
+    display: none;
+    float: left;
+    /*margin-right: -10px;*/
+}
+
+span.cancelbutton, span.savebutton, span.savemebutton, .textnumnum span.savebutton, .textnumnum span.cancelbutton{
+    float: right;
+    margin-right: 3px;
+}
+
+.DiagnosisNumberLRTextNumberSVG, .DiagnosisStringText {
+    font-size: 1.167em;
+    background: #fff;
+    padding: 8px;
+    margin: 0;
+    box-shadow: -1px -1px 5px 0 #d0d0d0;
+}
+.DiagnosisNumberLRTextNumberSVG.notwritable{
+    background: none;
+    box-shadow: none;
+    width: auto;
+}
+.Private .DiagnosisNumberLRTextNumberSVG{
+    width: 40px;
+    /*margin-bottom: 10px;*/
+    display: inline-block;
+}
+table.privTable{
+    text-align: left;
+}
+table.privTable tr.even {background: #d9dee2}
+table.privTable tr.odd {background: #FFF}
+table.privTable td{
+    border: 1px solid #105395;
+    padding: 3px;
+    vertical-align: middle;
+}
+table.privTable tr:hover{
+    cursor: pointer;
+}
+.radio{
+    margin-bottom: 10px;
+}
+.radio input{
+    margin-right: 10px;
+}
+table.DiagnosisAlarmTable.Groupbox{
+    width: 352px;
+    border-spacing: 0 2px;
+    border-collapse: separate;
+    padding: 0;
+    table-layout: fixed;
+}
+
+#precenter{
+    background: #f2f2f2;
+}
+.alarmpage{
+    background: #f2f2f2;
+    border-radius:4px;
+    box-shadow: inset 1px 1px 6px #cecece;
+    position: absolute;
+    top: -80px;
+    left: 0;
+    right: 12px;
+    padding: 0 15px 45px 15px;
+    height: 0;
+    display: none;
+    
+    
+}
+#alarmpage_content{
+/*    -webkit-column-width: 610px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    -moz-column-width: 610px;
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;*/
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    right: 12px;
+    z-index: 0;
+}
+#alarmpage_content.alarmList{
+/*    -moz-column-width: auto;
+    -moz-column-count: 1;
+    -webkit-column-width: auto;
+    -webkit-column-count: 1;*/
+    overflow: scroll;
+    max-height: 500px;
+    
+}
+.alarmpage:after{
+    clear: both;
+}
+#selectId{
+    margin-bottom: 20px;
+    top: 0;
+    padding: 5px;
+    height: 30px;
+}
+#alarmpage .alarm_solo{
+    margin: inherit;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #618cb6;
+    border-radius: 4px;
+    padding: 10px;
+    break-inside: avoid;
+   -moz-break-inside: avoid;
+   -webkit-break-inside: avoid;
+   display: inline-block;
+}
+
+
+#alarmpage .firsttile {
+    width: 155px;
+    height: 28px;
+/*    position: relative;*/
+/*    border: 2px solid transparent;*/
+/*    border-radius: 4px;*/
+    background: linear-gradient(#fff, #d1d7e0);
+/*    background-clip: padding-box;*/
+    padding: 6px 10px 14px;
+/*    box-shadow:1px 1px 6px #cecece;*/
+    font-size: 1.333em;
+    line-height: 20px;
+    text-align: center;
+/*    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position: 0 11px;*/
+}
+ 
+#alarmpage .firsttile::after {
+/*    position: absolute;
+    top: -2px; 
+    bottom: -2px;
+    left: -2px; 
+    right: -2px;
+    background: linear-gradient(#d1d7e0, #fff);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;*/
+}
+#alarmpage .firsttile .tilename{
+    padding-left: 25px;
+    display: inline-block;
+    background-size: 45px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: -6px 2px;
+}
+#alarmpage ul li.booth .tilename{
+    background-image:url(../svg/icons_start/booth.svg);
+}
+#alarmpage ul li.dry .tilename{
+    background-image:url(../svg/icons_start/dry.svg);
+}
+#alarmpage ul li.exhaustAir .tilename{
+    background-image:url(../svg/icons_start/exhaustAir.svg);
+}
+#alarmpage ul li.pvcSupply .tilename{
+    background-image:url(../svg/icons_start/pvcSupply.svg);
+}
+#alarmpage ul li.supplyAir .tilename{
+    background-image:url(../svg/icons_start/supplyAir.svg);
+}
+#alarmpage ul li.wet .tilename{
+    background-image:url(../svg/icons_start/wet.svg);
+}
+#alarmpage ul li.wetElectric .tilename{
+    background-image:url(../svg/icons_start/wetElectric.svg);
+}
+#alarmpage ul li.workingArea .tilename{
+    background-image:url(../svg/icons_start/workingArea.svg);
+}
+.alarmheader{
+    height: 70px;
+    box-shadow: 1px 2px 5px 0 #d0d0d0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.emosbutton {
+    width: 160px;
+    height: 20px;
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background: linear-gradient(#fff, #d1d7e0);
+    background-clip: padding-box;
+    padding: 10px;
+    box-shadow:1px 1px 6px #cecece;
+    display: inline-block;
+    top: 20px;
+/*    margin-right: 20px;*/
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+ 
+.emosbutton::after {
+    position: absolute;
+    top: -2px; 
+    bottom: -2px;
+    left: -2px; 
+    right: -2px;
+    background: linear-gradient(#d1d7e0, #fff);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px #cecece;
+}
+.alarmtab:hover{cursor: pointer;}
+.alarmtab.icon1{
+    background-image:url(../svg/status/plantDetails.svg),linear-gradient(#fff, #d1d7e0);    
+}
+.alarmtab.icon2{
+    background-image:url(../svg/status/messages.svg),linear-gradient(#fff, #d1d7e0);
+}
+.alarmtab.icon3{
+    background-image:url(../svg/status/alarmLogbook.svg), linear-gradient(#fff, #d1d7e0);
+}
+.alarmtab.icon4{
+    background-image:url(../svg/status/historicalTrending.svg),linear-gradient(#fff, #d1d7e0);
+}
+.alarmtabwrapper.active .alarmtab.icon1{
+    background-image:url(../svg/status/plantDetails.svg);    
+}
+.alarmtabwrapper.active .alarmtab.icon2{
+    background-image:url(../svg/status/messages.svg);
+    margin-left: 0;
+    border-radius: 7px 7px 0 0;
+    width: 170px;
+}
+.alarmtabwrapper.active .alarmtab.icon3{
+    background-image:url(../svg/status/alarmLogbook.svg);
+    margin-left: 0;
+    border-radius: 7px 7px 0 0;
+    width: 170px;
+}
+.alarmtabwrapper.active .alarmtab.icon4{
+    background-image:url(../svg/status/historicalTrending.svg);
+    margin-left: 0;
+    border-radius: 7px 7px 0 0;
+    width: 170px;
+}
+.alarmtabwrapper.active .alarmtab{
+    height: 43px;
+    border-radius: 0 7px 0 0;
+    margin-bottom: 20px;
+    top: 10px;
+    margin-left: -4px;
+    box-shadow: inset -1px 1px 6px #cecece;
+    
+    padding-right: 0;
+    background-position: center 6px;
+    width: 176px;
+}
+.alarmtabwrapper{
+    margin-right: 20px;
+    margin-top: -25px;
+    width: 184px;
+}
+.alarmtabwrapper.active{
+    background: #f2f2f2;
+    height: 69px;
+    overflow: hidden;
+    display: inline-block;
+/*    float: left;*/
+    position: relative;
+    top: 31px;
+    margin-left: 3px;    
+}
+.quickcontrol{
+    float: right;
+    margin-top: 103px;
+    border-radius: 4px;
+    margin-right: 370px;
+}
+.quickcontrol .emosbutton{
+    font-size: 1.333em;
+    width: 180px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.quickcontrol .emosbutton:hover{
+    cursor: pointer;
+}
+.quickcontrol .quit{
+    background-image:url(../svg/content/acknowledge.svg),linear-gradient(#fff, #d1d7e0);
+}
+.quickcontrol .reset{
+    background-image:url(../svg/content/reset.svg),linear-gradient(#fff, #d1d7e0);
+}
+.crumbOL{
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    border-radius: 4px;
+    background: #f2f2f2;
+    box-shadow: inset 0px 0px 6px 1px #cecece;
+    padding: 10px;
+    display: none;
+    height: 0;
+}
+.breadoverlay1{
+    left: 240px;
+}
+.breadoverlay_li{
+    padding: 3px;
+}
+
+.alarmTable{
+    height: 44px;
+    border: none;
+    break-inside: avoid;
+   -moz-break-inside: avoid;
+   -webkit-break-inside: avoid;
+}
+.alarmTable td{
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    padding: 5px;
+    border:none;
+}
+.alarmTable.alarm td:first-child{
+    background-image: url(../svg/status/error.svg);
+    padding-left: 35px;
+}
+.alarmTable.alarm td{
+    background-color: #eccbcb;
+    color: #222222;
+    font-weight: bold;
+    word-break: break-all;
+}
+.alarmTable.warning td:first-child{
+    background-image: url(../svg/status/warning.svg);
+    padding-left: 35px;
+}
+.alarmTable.warning td{
+    background-color: #fcdbc5;  
+    color: #222222;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.DiagnosisAlarmTable th{
+    background: none;
+    height: 35px;
+    border: none;
+    padding: 5px;
+}
+.DiagnosisBarSVG{
+    width: 110px;
+}
+.DiagnosisRampBarSVG{
+    width: 55px;
+}
+.DiagnosisRampBar{
+    fill: #6c6c6c;
+}
+@media	only screen and (-webkit-min-device-pixel-ratio: 1.1),
+	only screen and (-o-min-device-pixel-ratio: 11/10),
+	only screen and (min-resolution: 100dpi)
+	{
+		
+	}

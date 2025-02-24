@@ -1,0 +1,449 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "",
+   "Version": "10-10",
+   "Name": "HBSCell",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status",
+       "TextID": "Status",
+       "VisibleAtRight": "0",
+       "VisibleOPCID": "",
+       "1000007-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Response Signals",
+        "TextID": "ResponseSignals",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Enbl",
+        "Position": "L",
+        "TextID": "Enbl",
+        "OffLED": "O",
+        "Text": "Cell Enabled",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Enbl_in",
+        "Position": "L",
+        "TextID": "Enbl_in",
+        "OffLED": "O",
+        "Text": "Cell Enable In",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Enbl_out",
+        "Position": "L",
+        "TextID": "Enbl_out",
+        "OffLED": "O",
+        "Text": "Cell Enable Out",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextInteger": {
+        "OPCID": "LoadPriority",
+        "Position": "L",
+        "TextID": "LoadPriority",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Cell Load Priority",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextInteger": {
+        "OPCID": "CellInfo1",
+        "Position": "L",
+        "TextID": "CellInfo1",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Cell Information 1",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextInteger": {
+        "OPCID": "CellInfo2",
+        "Position": "L",
+        "TextID": "CellInfo2",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Cell Information 2",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      },
+      "1000014-AddPageTab": {
+       "Text": "Interlock Forward",
+       "TextID": "InterlockForward",
+       "VisibleAtRight": "0",
+       "1000015-AddText": {
+        "Position": "L",
+        "TextID": "InterlockSignalsForward",
+        "Text": "Interlock Signals -> Forward",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Body.S1080_FwdAvToPrev",
+        "Position": "L",
+        "TextID": "S1080",
+        "OffLED": "O",
+        "Text": "Available To Previous",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Body.S1081_FwdTrCplToPrev",
+        "Position": "L",
+        "TextID": "S1081",
+        "OffLED": "O",
+        "Text": "Transfer Complete To Previous",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Body.S1082_FwdTrReqFrPrev",
+        "Position": "L",
+        "TextID": "S1082",
+        "OffLED": "O",
+        "Text": "Transfer Request From Previous",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Body.S1083_FwdRunFrPrev",
+        "Position": "L",
+        "TextID": "S1083",
+        "OffLED": "O",
+        "Text": "Running From Previous",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Body.S1090_FwdAvFrNxt",
+        "Position": "L",
+        "TextID": "S1090",
+        "OffLED": "O",
+        "Text": "Available From Next",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Body.S1091_FwdTrCplFrNxt",
+        "Position": "L",
+        "TextID": "S1091",
+        "OffLED": "O",
+        "Text": "Transfer Complete From Next",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Body.S1092_FwdTrReqToNxt",
+        "Position": "L",
+        "TextID": "S1092",
+        "OffLED": "O",
+        "Text": "Transfer Request To Next",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Body.S1093_FwdRunToNxt",
+        "Position": "L",
+        "TextID": "S1093",
+        "OffLED": "O",
+        "Text": "Running To Next",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "VisibleOPCID": ""
+      },
+      "1000024-AddPageTab": {
+       "Text": "Interlock Reverse",
+       "TextID": "InterlockReverse",
+       "VisibleAtRight": "0",
+       "1000025-AddText": {
+        "Position": "L",
+        "TextID": "InterlockSignalsReverse",
+        "Text": "Interlock Signals <- Reverse",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000026-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Body.S1084_RevAvFrPrev",
+        "Position": "L",
+        "TextID": "S1084",
+        "OffLED": "O",
+        "Text": "Available From Previous",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000027-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Body.S1085_RevTrCplFrPrev",
+        "Position": "L",
+        "TextID": "S1085",
+        "OffLED": "O",
+        "Text": "Transfer Complete From Previous",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Body.S1086_RevTrReqToPrev",
+        "Position": "L",
+        "TextID": "S1086",
+        "OffLED": "O",
+        "Text": "Transfer Request To Previous",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000029-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Body.S1087_RevRunToPrev",
+        "Position": "L",
+        "TextID": "S1087",
+        "OffLED": "O",
+        "Text": "Running To Previous",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000030-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Body.S1094_RevAvToNxt",
+        "Position": "L",
+        "TextID": "S1094",
+        "OffLED": "O",
+        "Text": "Available To Next",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000031-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Body.S1095_RevTrCplToNxt",
+        "Position": "L",
+        "TextID": "S1095",
+        "OffLED": "O",
+        "Text": "Transfer Complete To Next",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000032-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Body.S1096_RevTrReqFrNxt",
+        "Position": "L",
+        "TextID": "S1096",
+        "OffLED": "O",
+        "Text": "Transfer Request From Next",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000033-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "Body.S1097_RevRunFrNxt",
+        "Position": "L",
+        "TextID": "S1097",
+        "OffLED": "O",
+        "Text": "Running From Next",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "VisibleOPCID": ""
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000034-Messages": {
+     "1000035-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "1"
+    },
+    "1000036-AddPageTab": {
+     "1000037-AddPageControl": {
+      "1000038-AddPageTab": {
+       "Text": "Data change",
+       "TextID": "DataChange",
+       "VisibleAtRight": "0",
+       "1000039-AddText": {
+        "Position": "L",
+        "TextID": "SkidData",
+        "Text": "Skid data"
+       },
+       "1000040-AddTextIntegerInput": {
+        "OPCID": "Body.SD.I1030_RBDataSkidNo",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Skid Number",
+        "UnitLocale": "",
+        "TextID": "I1030",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483647",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000041-AddTextIntegerInput": {
+        "OPCID": "Body.SD.I1031_RBDataTarget",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Target",
+        "UnitLocale": "",
+        "TextID": "I1031",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483647",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000042-AddTextIntegerInput": {
+        "OPCID": "Body.SD.I1032_RBDataFIFO",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "FIFO",
+        "UnitLocale": "",
+        "TextID": "I1032",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483647",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000043-AddTextIntegerInput": {
+        "OPCID": "Body.SD.I1033_RBDataAuxData",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "AUX Data",
+        "UnitLocale": "",
+        "TextID": "I1033",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483647",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000044-AddTextIntegerInput": {
+        "OPCID": "LoadPriority",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Load Priority",
+        "UnitLocale": "",
+        "TextID": "LoadPriority",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2147483647",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Conveyor",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": "GP.G2003_Vari",
+ "DiagnosisControl": "HBSCell",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1411141530
+}

@@ -1,0 +1,421 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-06",
+   "Name": "FU206.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2276_Reset",
+        "Position": "L",
+        "UserRight": "11",
+        "TextID": "C2276",
+        "OffLED": "O",
+        "Text": "Reset",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "1000009-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2275_RefrSingleDiag",
+        "Position": "L",
+        "UserRight": "4",
+        "TextID": "C2275",
+        "OffLED": "O",
+        "Text": "Refresh DP Slave Single Diagnosis",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "on"
+       },
+       "1000010-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2273_StepSlave",
+        "Position": "L",
+        "UserRight": "4",
+        "TextID": "C2273",
+        "OffLED": "O",
+        "Text": "Step Through the DP Slaves",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "on"
+       },
+       "1000011-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2274_StepErr",
+        "Position": "L",
+        "UserRight": "4",
+        "TextID": "C2274",
+        "OffLED": "O",
+        "Text": "Step Through the DP Slave Errors",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "on"
+       },
+       "1000012-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2360_SingleDiag",
+        "Position": "R",
+        "TextID": "S2360",
+        "OffLED": "O",
+        "Text": "Single Diagnosis",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2362_DiagOverflow",
+        "Position": "R",
+        "TextID": "S2362",
+        "OffLED": "O",
+        "Text": "Diagnostics Overflow",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2361_DPSlavesOK",
+        "Position": "R",
+        "TextID": "S2361",
+        "OffLED": "O",
+        "Text": "All Slaves OK",
+        "Border": "B",
+        "VisibleOPCID": ""
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000016-Messages": {
+     "1000017-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000018-AddPageTab": {
+     "1000019-AddPageControl": {
+      "1000020-AddPageTab": {
+       "Text": "Parameters 1",
+       "TextID": "Parameters1",
+       "VisibleAtRight": "0",
+       "1000021-AddText": {
+        "Position": "L",
+        "TextID": "Slave",
+        "Text": "Slave",
+        "showHide": true
+       },
+       "1000022-AddTextInteger": {
+        "OPCID": "AA.I2473_SlaveAdd",
+        "Position": "L",
+        "TextID": "I2473",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Slaveadress",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextInteger": {
+        "OPCID": "AA.I2481_DiagCounter",
+        "Position": "L",
+        "TextID": "I2481",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Diagnostic Counter",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddText": {
+        "Position": "L",
+        "TextID": "I7361",
+        "Text": "Slave Status"
+       },
+       "1000025-AddTextInteger": {
+        "OPCID": "AA.I7361_SlaveState",
+        "TextID": "E7361_SlaveState",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Slave Status",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": ""
+       },
+       "1000026-AddText": {
+        "Position": "L",
+        "TextID": "I7362",
+        "Text": "Identification Number"
+       },
+       "1000027-AddTextInteger": {
+        "OPCID": "AA.I7362_SlaveIdentNo",
+        "TextID": "E7362_SlaveIdentNo",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Identification Number",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": ""
+       },
+       "1000028-AddText": {
+        "Position": "L",
+        "TextID": "I2474",
+        "Text": "Error Number",
+        "showHide": true
+       },
+       "1000029-AddTextInteger": {
+        "OPCID": "AA.I2474_ErrorNo",
+        "Position": "L",
+        "TextID": "I2474",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Error Number",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000030-AddText": {
+        "Position": "L",
+        "TextID": "I7363",
+        "Text": "Error Type"
+       },
+       "1000031-AddTextInteger": {
+        "OPCID": "AA.I7363_ErrorType",
+        "TextID": "E7363_ErrorType",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Error Type",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": ""
+       }
+      },
+      "1000032-AddPageTab": {
+       "Text": "Parameters 2",
+       "TextID": "Parameters2",
+       "VisibleAtRight": "0",
+       "1000033-AddText": {
+        "Position": "L",
+        "TextID": "I2476",
+        "Text": "Channel ",
+        "showHide": true
+       },
+       "1000034-AddTextInteger": {
+        "OPCID": "AA.I2476_ChanNo",
+        "Position": "L",
+        "TextID": "I2476",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Channel Number",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": ""
+       },
+       "1000035-AddTextInteger": {
+        "OPCID": "AA.I7365_ChanType",
+        "Position": "L",
+        "TextID": "I7365",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Channel Type",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000036-AddTextInteger": {
+        "OPCID": "AA.I7366_ChanErrCode",
+        "Position": "L",
+        "TextID": "E7366_ChanErrCode",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Channel Error Code",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000037-AddText": {
+        "Position": "L",
+        "TextID": "I2475",
+        "Text": "Module ",
+        "showHide": true
+       },
+       "1000038-AddTextInteger": {
+        "OPCID": "AA.I2475_ModuleNo",
+        "Position": "L",
+        "TextID": "I2475",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Module Number",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": ""
+       },
+       "1000039-AddTextInteger": {
+        "OPCID": "AA.I7364_ModuleState",
+        "Position": "L",
+        "TextID": "E7364_ModuleState",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Module Status",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000040-AddPageTab": {
+       "Text": "Parameters 3",
+       "TextID": "Parameters3",
+       "VisibleAtRight": "0",
+       "1000041-AddText": {
+        "Position": "L",
+        "TextID": "InformationError1",
+        "Text": "Information Error 1",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000042-AddBitBar": {
+        "OPCID": "AA.I2478_ChanErrInfo1P2",
+        "Position": "L",
+        "VisibleAtRight": "0",
+        "Text": "BitBar"
+       },
+       "1000043-AddText": {
+        "Position": "L",
+        "TextID": "Bit17toBit10",
+        "Text": "Bit 1.7 to Bit 1.0",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000044-AddBitBar": {
+        "OPCID": "AA.I2477_ChanErrInfo1P1",
+        "Position": "R",
+        "VisibleAtRight": "0",
+        "Text": "BitBar"
+       },
+       "1000045-AddText": {
+        "Position": "L",
+        "TextID": "InformationError2",
+        "Text": "Information Error 2",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000046-AddBitBar": {
+        "OPCID": "AA.I2480_ChanErrInfo2P2",
+        "Position": "L",
+        "VisibleAtRight": "0",
+        "Text": "BitBar"
+       },
+       "1000047-AddText": {
+        "Position": "L",
+        "TextID": "Bit17toBit10",
+        "Text": "Bit 1.7 to Bit 1.0",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000048-AddBitBar": {
+        "OPCID": "AA.I2479_ChanErrInfo2P1",
+        "Position": "R",
+        "VisibleAtRight": "0",
+        "Text": "BitBar"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU206",
+ "DiagnosisControl": "FU206",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 886149144
+}

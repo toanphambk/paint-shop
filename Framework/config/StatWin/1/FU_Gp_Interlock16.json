@@ -1,0 +1,408 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-20",
+   "Name": "FU_Gp_Interlock16.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation 1",
+       "TextID": "Operation1",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "TextID": "&E_G7310_ILMDes",
+        "Text": "Interlock Message Description",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7311_ILM1",
+        "Position": "L",
+        "TextID": "G7311_ILMText1",
+        "OffLED": "O",
+        "Text": "$I_Interlock Message 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7312_ILM2",
+        "Position": "L",
+        "TextID": "G7312_ILMText2",
+        "OffLED": "O",
+        "Text": "$I_Interlock Message 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7313_ILM3",
+        "Position": "L",
+        "TextID": "G7313_ILMText3",
+        "OffLED": "O",
+        "Text": "$I_Interlock Message 3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7314_ILM4",
+        "Position": "L",
+        "TextID": "G7314_ILMText4",
+        "OffLED": "O",
+        "Text": "$I_Interlock Message 4",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7315_ILM5",
+        "Position": "L",
+        "TextID": "G7315_ILMText5",
+        "OffLED": "O",
+        "Text": "$I_Interlock Message 5",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7316_ILM6",
+        "Position": "L",
+        "TextID": "G7316_ILMText6",
+        "OffLED": "O",
+        "Text": "$I_Interlock Message 6",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7317_ILM7",
+        "Position": "L",
+        "TextID": "G7317_ILMText7",
+        "OffLED": "O",
+        "Text": "$I_Interlock Message 7",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7318_ILM8",
+        "Position": "L",
+        "TextID": "G7318_ILMText8",
+        "OffLED": "O",
+        "Text": "$I_Interlock Message 8",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7319_ILM9",
+        "Position": "R",
+        "TextID": "G7319_ILMText9",
+        "OffLED": "O",
+        "Text": "$O_Interlock Message 9",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7320_ILM10",
+        "Position": "R",
+        "TextID": "G7320_ILMText10",
+        "OffLED": "O",
+        "Text": "$O_Interlock Message 10",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7321_ILM11",
+        "Position": "R",
+        "TextID": "G7321_ILMText11",
+        "OffLED": "O",
+        "Text": "$O_Interlock Message 11",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7322_ILM12",
+        "Position": "R",
+        "TextID": "G7322_ILMText12",
+        "OffLED": "O",
+        "Text": "$O_Interlock Message 12",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7323_ILM13",
+        "Position": "R",
+        "TextID": "G7323_ILMText13",
+        "OffLED": "O",
+        "Text": "$O_Interlock Message 13",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7324_ILM14",
+        "Position": "R",
+        "TextID": "G7324_ILMText14",
+        "OffLED": "O",
+        "Text": "$O_Interlock Message 14",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7325_ILM15",
+        "Position": "R",
+        "TextID": "G7325_ILMText15",
+        "OffLED": "O",
+        "Text": "$O_Interlock Message 15",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7326_ILM16",
+        "Position": "R",
+        "TextID": "G7326_ILMText16",
+        "OffLED": "O",
+        "Text": "$O_Interlock Message 16",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000024-AddPageTab": {
+       "Text": "Operation 2",
+       "TextID": "Operation2",
+       "VisibleAtRight": "0",
+       "1000025-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "UserRight": "7",
+        "Position": "L",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000027-AddText": {
+        "Position": "R",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1278_EnLife",
+        "Position": "R",
+        "TextID": "S1278",
+        "OffLED": "O",
+        "Text": "Enable Life Monitoring",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000029-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3144_LifeBitCfg",
+        "Position": "R",
+        "TextID": "S3144",
+        "OffLED": "O",
+        "Text": "Life Bit from Configuration",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000030-Messages": {
+     "1000031-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000032-AddPageTab": {
+     "1000033-AddPageControl": {
+      "1000034-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000035-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000036-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1446_AAckn",
+        "OPCID": "AA.I2446_AAckn",
+        "UserRight": "6",
+        "TextID": "I2446",
+        "Text": "Automatic Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S1278_EnLife",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0"
+       },
+       "1000037-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "AS.I1448_HBRS",
+        "OPCID": "AA.I2448_HBRS",
+        "UserRight": "0",
+        "TextID": "I2448",
+        "Text": "Motion Control Heartbeat Remote Station",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S1278_EnLife",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "1000038-AddText": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "showHide": true
+       },
+       "1000039-AddTextInteger": {
+        "OPCID": "AA.I2486_HBRS",
+        "TextID": "I2486",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Heartbeat from Remote Station",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "SB.S1278_EnLife",
+        "VisibleAtRight": "0"
+       },
+       "1000040-AddTextInteger": {
+        "OPCID": "AA.I2487_HBS",
+        "TextID": "I2487",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Heartbeat from Station (PLC)",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "SB.S1278_EnLife",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "1"
+      }
+     },
+     "RegAutoHide": "1",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Gp_Interlock16",
+ "DiagnosisControl": "FU_Gp_Interlock16",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -489015886
+}

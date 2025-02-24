@@ -1,0 +1,346 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-20",
+   "Name": "FU_Gp_FPLCInformation.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation ",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0"
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1061_StartDepass",
+        "UserRight": "9",
+        "Position": "L",
+        "TextID": "C1061",
+        "OffLED": "O",
+        "Text": "Start Depassivation",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1062_DepassSecondStep",
+        "UserRight": "9",
+        "Position": "L",
+        "TextID": "C1062",
+        "OffLED": "O",
+        "Text": "Depassivation Second Step",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1066_Reset",
+        "UserRight": "9",
+        "Position": "L",
+        "TextID": "C1066",
+        "OffLED": "O",
+        "Text": "Reset from Visu",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddText": {
+        "Position": "R",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1009_SafetyDeactivated",
+        "Position": "R",
+        "TextID": "S1009",
+        "OffLED": "O",
+        "Text": "Safety Mode Deactivated",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1008_ReintegrationNecessary",
+        "Position": "R",
+        "TextID": "S1008",
+        "OffLED": "O",
+        "Text": "Reintegration Necessary",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1006_ReintegrationRequested",
+        "Position": "R",
+        "TextID": "S1006",
+        "OffLED": "O",
+        "Text": "Reintegration Requested",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1007_ReadyForSecondStep",
+        "Position": "R",
+        "TextID": "S1007",
+        "OffLED": "O",
+        "Text": "Ready for Second Step",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000016-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1268_CFV",
+        "Position": "R",
+        "TextID": "S1268",
+        "OffLED": "O",
+        "Text": "Collective Fault to Visu",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextLED": {
+        "OnLED": "R",
+        "OPCID": "SB.S1000_IntFlt",
+        "Position": "R",
+        "TextID": "S1000",
+        "OffLED": "O",
+        "Text": "Internal Fault",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000018-Messages": {
+     "1000019-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000020-AddPageTab": {
+     "1000021-AddPageControl": {
+      "1000022-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000023-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000024-AddTextSiemensTimeLong": {
+        "OPCID": "GP.G2052_SafetyCompDate",
+        "TextID": "G2052",
+        "Text": "Compilation date of the safety program",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddTextSiemensTimeLong": {
+        "OPCID": "GP.G2053_SafetyCompDateRtg",
+        "TextID": "G2053",
+        "Text": "Compilation date of the safety program Runtime Group",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddTextInteger": {
+        "OPCID": "GP.G2051_FSigSafetyPrg",
+        "TextID": "G2051",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Collective F-signature of the safety program",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000027-AddTextInteger": {
+        "OPCID": "GP.G2050_FSigRtg",
+        "TextID": "G2050",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Collective F-signature of the F-Runtime group",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddTextInteger": {
+        "OPCID": "GP.G2054_Vers_S7SAF",
+        "TextID": "G2054",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Version Label of STEP 7 Safety",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000029-AddTextInteger": {
+        "OPCID": "AA.I1326_MaxFRt",
+        "TextID": "I1326",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Maximum F-Runtime",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000030-AddTextInteger": {
+        "OPCID": "AA.I1327_MaxFRtSR",
+        "TextID": "I1327",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Maximum F-Runtime Since Reset",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000031-AddTextInteger": {
+        "OPCID": "AA.I1325_ActFRt",
+        "TextID": "I1325",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Actual FRTG-Runtime",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000032-AddTextInteger": {
+        "OPCID": "AA.I2351_MaxCycleSR",
+        "TextID": "I2351",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Maximum Cycle Time Since Reset",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000033-AddTextInteger": {
+        "OPCID": "AA.I2343_MaxCycle",
+        "TextID": "I2343",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Maximum Cycle Time",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000034-AddTextInteger": {
+        "OPCID": "AA.I2341_ActCycle",
+        "TextID": "I2341",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Actual Cycle Time",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Gp_FPLCInformation",
+ "DiagnosisControl": "FU_Gp_FPLCInformation.10",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1510255024
+}

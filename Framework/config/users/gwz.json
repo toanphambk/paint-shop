@@ -1,0 +1,111 @@
+{
+ "tabs": {
+  "Private1": {
+   "1": {
+    "data": {
+     "OnLED": "G",
+     "OPCID": "CB.C1251_Ackn",
+     "Position": "L",
+     "UserRight": "4",
+     "TextID": "C1251",
+     "OffLED": "O",
+     "Text": "Fault Acknowledge",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleOPCID": "",
+     "VisibleAtRight": "0",
+     "leftIcon": "reset",
+     "writable": true,
+     "DiagnosisLibID": 1
+    },
+    "myPLC": "P1E1T1.P1E1T1_TR02_TH123_Q16",
+    "myKey": "1000013-AddTextInputLED",
+    "writable": false
+   },
+   "2": {
+    "data": {
+     "OnLED": "G",
+     "OPCID": "",
+     "Position": "L",
+     "UserRight": "9",
+     "TextID": "S1251",
+     "OffLED": "O",
+     "Text": "Automatic Mode",
+     "Bold": "1",
+     "Border": "B",
+     "writeTagWR1": "CB.C2263_Auto",
+     "readTagRD1": "SB.S1257_Manu",
+     "readTagRD2": "SB.S1251_Auto",
+     "leftIcon": "handMode",
+     "rightIcon": "automatic",
+     "VisibleOPCID": "",
+     "VisibleAtRight": "0",
+     "writable": true,
+     "DiagnosisLibID": 1
+    },
+    "myPLC": "P1P1V1.P1P1V1_EF01_PE011_G31",
+    "myKey": "1000012-AddCommandFeedback1WR2RD",
+    "writable": false
+   },
+   "3": {
+    "data": {
+     "OnLED": "G",
+     "OPCID": "SB.S7311_ILM1",
+     "Position": "L",
+     "TextID": "&S_G7311_ILMText1",
+     "OffLED": "O",
+     "Text": "Interlock Message 1",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleOPCID": "CO.C2331_ConfIn1",
+     "VisibleAtRight": "0",
+     "writable": false,
+     "DiagnosisLibID": 1
+    },
+    "myPLC": "P1C1T1.P1C1T1_ZS01_A01_GPTIY4",
+    "myKey": "1000016-AddTextLED",
+    "writable": false
+   },
+   "4": {
+    "data": {
+     "OnLED": "G",
+     "OPCID": "SB.S7311_ILM1",
+     "Position": "L",
+     "TextID": "&S_G7311_ILMText1",
+     "OffLED": "O",
+     "Text": "Interlock Message 1",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleOPCID": "CO.C2331_ConfIn1",
+     "VisibleAtRight": "0",
+     "writable": false,
+     "DiagnosisLibID": 1
+    },
+    "myPLC": "P1C1T1.P1C1T1_ZS01_A01_GPTIY4",
+    "myKey": "1000016-AddTextLED",
+    "writable": false
+   }
+  },
+  "Private3": {
+   "5": {
+    "data": {
+     "OnLED": "G",
+     "OPCID": "SB.S2384_LesSwL",
+     "TextID": "S2384",
+     "OffLED": "O",
+     "Text": "Actual Value < Negative Switching Limit",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleOPCID": "SB.S3110_CBAPV",
+     "VisibleAtRight": "0",
+     "Position": "L",
+     "writable": false,
+     "DiagnosisLibID": 1
+    },
+    "myPLC": "P1F1V1.P1B1V1_AL01_VU225_B22",
+    "myKey": "1000019-AddTextLED",
+    "writable": false
+   }
+  }
+ }
+}

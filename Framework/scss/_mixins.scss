@@ -1,0 +1,33 @@
+@import "variablen";
+
+@mixin buildTiles($machine, $id, $ulClass, $tilename, $gradient){    
+    #{$id} ul#{$ulClass} li.#{$machine} #{$tilename}, .grid-element.#{$machine} {
+         background-image: url('../svg/icons_start/#{$machine}.svg'),$gradient;
+         background-repeat: no-repeat;
+       } 
+    #{$id} ul#{$ulClass} li.#{$machine}:active, .grid-element.#{$machine}:active {
+         background-image: url('../svg/icons_start/#{$machine}.svg'),$reversegradient;
+         background-repeat: no-repeat;
+       }
+       .grid-element.#{$machine} {
+           background-position: center 0px;
+       }  
+    
+}
+@mixin buildSmallTiles($machine, $id, $ulClass, $tilename, $gradient){    
+    #{$id} ul#{$ulClass} li.#{$machine} #{$tilename} {
+        background-image: url('../svg/icons_start/#{$machine}.svg');
+    } 
+    .plantslist .pagerHeadLineIcon.#{$machine} {
+        background-image: url('../svg/icons_start/#{$machine}.svg');
+    }
+    .dropdownlist li.#{$machine}, .dropdown span.#{$machine} {
+        background-image: url('../svg/icons_start/#{$machine}.svg');
+        background-size: 30px 30px;
+        background-repeat: no-repeat;
+        padding-left: 35px;
+    }
+/*    #{$id} ul#{$ulClass} li.#{$machine}:active {
+         background-image: url('../svg/icons_start/#{$machine}.svg');
+       }    */ 
+}

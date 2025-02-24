@@ -1,0 +1,23 @@
+<div id="statusbar">
+  <ul class="status-messages alarms">
+    <li class="emosbutton error">
+      <div ng-show="messages.errorCount > 0">
+        <span class="alert error"></span>
+		<span class="errorCount">{{ messages.errorCount }}</span>
+      </div>
+    </li>
+    <li class="emosbutton warning">
+      <div ng-show="messages.warningCount > 0">
+        <span class="alert warning"></span>
+		<span class="errorCount">{{ messages.warningCount }}</span>
+      </div>
+    </li>
+    <li class="emosbutton info">
+      <div ng-show="messages.infoCount > 0">
+        <span class="alert info"></span>
+		<span class="errorCount">{{ messages.infoCount }}</span>
+      </div>
+    </li>
+  </ul>
+</div>
+

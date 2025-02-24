@@ -1,0 +1,200 @@
+{
+	"0": {
+		"block": [{
+				"AddText": {
+					"Bold": "2",
+					"Position": "L",
+					"Text": "Schaltkasten 1",
+					"TextID": "bl1",
+					"VisibleAtRight": "0",
+					"showHide": true
+				}
+			},
+			{
+				"AddTextLED": {
+					"OnLED": "G",
+					"OPCID": "led",
+					"Position": "L",
+					"TextID": "led",
+					"OffLED": "O",
+					"Text": "led 1",
+					"Bold": "1",
+					"Border": "B",
+					"VisibleOPCID": "",
+					"VisibleAtRight": "0"
+				}
+			},
+			{
+				"AddTextLED": {
+					"OnLED": "G",
+					"OPCID": "led",
+					"Position": "L",
+					"TextID": "led",
+					"OffLED": "O",
+					"Text": "led 2",
+					"Bold": "1",
+					"Border": "B",
+					"VisibleOPCID": "",
+					"VisibleAtRight": "0"
+				}
+			},
+			{
+				"AddTextLED": {
+					"OnLED": "G",
+					"OPCID": "sdfsd",
+					"Position": "L",
+					"TextID": "dsdfdsf",
+					"OffLED": "O",
+					"Text": "led 3",
+					"Bold": "1",
+					"Border": "B",
+					"VisibleOPCID": "",
+					"VisibleAtRight": "0"
+				}
+			},
+			{
+				"AddTextLED": {
+					"OnLED": "G",
+					"OPCID": "hhhhh",
+					"Position": "L",
+					"TextID": "hhhhh",
+					"OffLED": "O",
+					"Text": "led 4",
+					"Bold": "1",
+					"Border": "B",
+					"VisibleOPCID": "",
+					"VisibleAtRight": "0"
+				}
+			}
+		]
+	},
+	"1": {
+		"element": {
+			"AddTextLED": {
+				"OnLED": "G",
+				"OPCID": "hhhhh",
+				"Position": "L",
+				"TextID": "hhhhh",
+				"OffLED": "O",
+				"Text": "led 4",
+				"Bold": "1",
+				"Border": "B",
+				"VisibleOPCID": "",
+				"VisibleAtRight": "0"
+			}
+		}
+	},
+	"2": {
+		"element": {
+			"AddCommandFeedback1WR1RD": {
+				"OnLED": "G",
+				"OPCID": "",
+				"Position": "L",
+				"UserRight": "0",
+				"TextID": "1wr1rd",
+				"OffLED": "O",
+				"Text": "1wr1rd",
+				"Bold": "1",
+				"Border": "B",
+				"writeTagWR1": "1wr1rd",
+				"readTagRD1": "1wr1rd",
+				"leftIcon": "automatic",
+				"rightIcon": "handMode",
+				"VisibleOPCID": "",
+				"VisibleAtRight": "0"
+			}
+		}
+	},
+	"3": {
+		"element": {
+			"AddCommandFeedback3WR4RD": {
+				"OnLED": "",
+				"OPCID": "Command_Feedback_3WR_4RD",
+				"Position": "L",
+				"UserRight": "9",
+				"TextID": "Command_Feedback_3WR_4RD",
+				"OffLED": "",
+				"Text": "Command_Feedback_3WR_4RD",
+				"Bold": "1",
+				"Border": "B",
+				"writeTagWR1": "ddd",
+				"writeTagWR2": "ddd",
+				"writeTagWR3": "ddd",
+				"readTagRD1": "ddd",
+				"readTagRD2": "ddd",
+				"readTagRD3": "ddd",
+				"readTagRD4": "ddd",
+				"leftIcon": "openCommand",
+				"middleIcon": "stopCommand",
+				"rightIcon": "closeCommand",
+				"visibilityStop": "",
+				"VisibleOPCID": "",
+				"VisibleAtRight": "0"
+			}
+		}
+	},
+	"4": {
+		"block": [{
+				"AddText": {
+					"Bold": "2",
+					"Position": "L",
+					"Text": "Schaltkasten 2",
+					"TextID": "block0",
+					"VisibleAtRight": "0",
+					"VisibleOPCID": "",
+					"showHide": true
+				}
+			},
+			{
+				"AddControllerElement": {
+					"Position": "L",
+					"UserRight": "0",
+					"Bold": "1",
+					"Border": "B",
+					"VisibleAtRight": "0",
+					"actualText": "Actual Value (X)",
+					"actualTextID": "R2251",
+					"actualMetricalUnit": "°C",
+					"actualImperialUnit": "°F",
+					"actualLocalUnit": "°C",
+					"actualDecimalDigits": "1",
+					"actualValueTag": "AA.R2251_ActValue",
+					"setpointText": "Setpoint (W) ",
+					"setpointTextID": "R2270",
+					"setpointMetricalUnit": "°C",
+					"setpointImperialUnit": "°F",
+					"setpointLocalUnit": "°C",
+					"setpointDecimalDigits": "1",
+					"setpointRampValueTag": "AA.R2270_Setp",
+					"visibilityOPCIDPanel": "",
+					"setpointActualValueTag": "AA.R2321_ActSetp",
+					"outputText": "Output (Y)",
+					"outputTextID": "R2325",
+					"outputMetricalUnit": "%",
+					"outputImperialUnit": "%",
+					"outputLocalUnit": "%",
+					"outputDecimalDigits": "1",
+					"outputValueTag": "AA.R2325_Y",
+					"trendingTagArray": [],
+					"trendingSetFilter": [],
+					"userVisiblePanel": "",
+					"Text": "ControllerElement"
+				}
+			},
+			{
+				"AddTextLED": {
+					"OnLED": "G",
+					"OPCID": "led",
+					"Position": "L",
+					"TextID": "led",
+					"OffLED": "O",
+					"Text": "led 2",
+					"Bold": "1",
+					"Border": "B",
+					"VisibleOPCID": "",
+					"VisibleAtRight": "0"
+				}
+			}
+		]
+	}
+}

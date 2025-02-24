@@ -1,0 +1,291 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU236.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "R",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3572_CompOn1",
+        "Position": "R",
+        "TextID": "S3572",
+        "OffLED": "O",
+        "Text": "Compensation On 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3580_VisComp1",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3573_CompOn2",
+        "Position": "R",
+        "TextID": "S3573",
+        "OffLED": "O",
+        "Text": "Compensation On 2",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3581_VisComp2",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3574_CompOn3",
+        "Position": "R",
+        "TextID": "S3574",
+        "OffLED": "O",
+        "Text": "Compensation On 3",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3582_VisComp3",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3575_CompOn4",
+        "Position": "R",
+        "TextID": "S3575",
+        "OffLED": "O",
+        "Text": "Compensation On 4",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3583_VisComp4",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3576_CompOn5",
+        "Position": "R",
+        "TextID": "S3576",
+        "OffLED": "O",
+        "Text": "Compensation On 5",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3584_VisComp5",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3577_CompOn6",
+        "Position": "R",
+        "TextID": "S3577",
+        "OffLED": "O",
+        "Text": "Compensation On 6",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3585_VisComp6",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3578_CompOn7",
+        "Position": "R",
+        "TextID": "S3578",
+        "OffLED": "O",
+        "Text": "Compensation On 7",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3586_VisComp7",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3579_CompOn8",
+        "Position": "R",
+        "TextID": "S3579",
+        "OffLED": "O",
+        "Text": "Compensation On 8",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3587_VisComp8",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000016-Messages": {
+     "1000017-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000018-AddPageTab": {
+     "1000019-AddPageControl": {
+      "1000020-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000021-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000022-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "Bold": "2",
+        "Bold2": "2",
+        "TextID2": "Setpoint",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1712_Comp1MinOff",
+        "OPCID": "TA.T2712_Comp1MinOff",
+        "UserRight": "6",
+        "TextID": "T2712",
+        "Text": "Compensation 1 Minimum Off Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3580_VisComp1",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1713_Comp2MinOff",
+        "OPCID": "TA.T2713_Comp2MinOff",
+        "UserRight": "6",
+        "TextID": "T2713",
+        "Text": "Compensation 2 Minimum Off Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3581_VisComp2",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1714_Comp3MinOff",
+        "OPCID": "TA.T2714_Comp3MinOff",
+        "UserRight": "6",
+        "TextID": "T2714",
+        "Text": "Compensation 3 Minimum Off Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3582_VisComp3",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1715_Comp4MinOff",
+        "OPCID": "TA.T2715_Comp4MinOff",
+        "UserRight": "6",
+        "TextID": "T2715",
+        "Text": "Compensation 4 Minimum Off Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3583_VisComp4",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000027-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1716_Comp5MinOff",
+        "OPCID": "TA.T2716_Comp5MinOff",
+        "UserRight": "6",
+        "TextID": "T2716",
+        "Text": "Compensation 5 Minimum Off Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3584_VisComp5",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1717_Comp6MinOff",
+        "OPCID": "TA.T2717_Comp6MinOff",
+        "UserRight": "6",
+        "TextID": "T2717",
+        "Text": "Compensation 6 Minimum Off Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3585_VisComp6",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000029-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1718_Comp7MinOff",
+        "OPCID": "TA.T2718_Comp7MinOff",
+        "UserRight": "6",
+        "TextID": "T2718",
+        "Text": "Compensation 7 Minimum Off Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3586_VisComp7",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000030-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1719_Comp8MinOff",
+        "OPCID": "TA.T2719_Comp8MinOff",
+        "UserRight": "6",
+        "TextID": "T2719",
+        "Text": "Compensation 8 Minimum Off Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S3587_VisComp8",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU236",
+ "DiagnosisControl": "FU236.01",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1026494447
+}

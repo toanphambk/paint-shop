@@ -1,0 +1,276 @@
+//global classes to extent other classes
+//@import "variablen";
+@font-face { 
+    font-family: 'Roboto';
+    src: url('font/Roboto.ttf') format('truetype'); 
+}
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    };
+}
+
+@-moz-keyframes spinoff {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(-360deg);
+    };
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spinoff {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinoff {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+.fl{float: left;}
+.fixfl{float: left;}
+.cl{clear: both;}
+.putLeft{left: 0;}
+.putRight{left:830px;top:0}
+.marL169{margin-left: 169px;}
+%alarmsigns{
+    width: 20px;
+    height:16px;
+    display: block;
+    float:right;
+    margin: 2px;
+    background-repeat: no-repeat;
+}
+%overlay{
+    background: $overlay-back;
+    border: 1px solid $greyborder;
+    display: none;
+    height: 0;
+    border-radius: 3px;
+    position: absolute;
+}
+%noshadow{
+    box-shadow: none;
+    border-radius: 0;
+}
+#alarmheader ul li .alert, ul.maincats li .alert, #alarmpage .alarm_solo li .alert, .quit .alert{
+    background-image:url(../svg/status/error.svg);
+}
+/*#alarmheader ul li .warn, ul.maincats li .warn, #alarmpage .alarm_solo li .warn, .quit .warn{*/
+.warn{
+    background-image:url(../svg/status/warning.svg);
+    background-repeat: no-repeat;
+}
+/*#alarmheader ul li .fine, ul.maincats li .fine, #alarmpage .alarm_solo li .fine, .quit .fine, #reset .fine{*/
+.fine{
+    background-image:url(../svg/status/ok.svg);
+    background-repeat: no-repeat;
+}
+// alarmheader Diagnosis
+#alarmheader ul li .alert.error{
+    background-image:url('../assets/images/statusbar/ico_state_error.png');
+}
+#alarmheader ul li .alert.warning{
+    background-image:url('../assets/images/statusbar/ico_state_warning.png');
+}
+#alarmheader ul li .alert.info{
+    background-image:url('../assets/images/statusbar/ico_state_info.png');
+}
+.emosbutton {
+    //width: 160px;
+    height: 20px;
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background: $gradient;
+    background-clip: padding-box;
+    padding: 10px;
+    box-shadow:1px 1px 6px #cecece;
+    display: inline-block;
+    top: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-sizing: content-box;
+    
+    &:hover{
+        cursor: pointer;
+    }
+    
+    &:after {
+        position: absolute;
+        top: -2px; 
+        bottom: -2px;
+        left: -2px; 
+        right: -2px;
+        background: $reversegradient;
+        content: '';
+        z-index: -1;
+        border-radius: 4px;
+        box-shadow: 2px 2px 6px #cecece;
+    }
+    &.halbrechts{
+        border-radius: 0px 4px 4px 0;
+        border-left: 1px solid #dbdee3;
+    }
+    &.halblinks{
+        border-radius: 4px 0 0 4px;
+        border-right: 1px solid #dbdee3;
+    }
+    &.mitte{
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        width: 50px !important;
+        
+        &.switchmode{
+            width: 70px !important;
+        }
+    }
+}
+.emosbutton:active{
+    background: $reversegradient;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.emosbutton.disabled, .text.disabled{
+    opacity: 0.5 !important;
+    pointer-events: none !important;
+    cursor: default !important;
+}
+.emosbutton.active:not(.buttonEdit):not(.subsubPage):not(.extContent):not(.subsubsubPage) {
+    height: 71px;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #cecece;
+    border-bottom: none;
+    /*width: 58px;*/
+    background-position: center 6px;
+}
+.emosbutton.disabled:after{
+    background: none;
+}
+.alarmtabwrapper .alarmtab{
+    width: 160px;
+}
+.alarmtabwrapper.active .alarmtab{
+    margin-left: 0;
+    border-radius: 7px 7px 0 0;
+    width: 170px;
+}
+.alarmTable td{
+    color: #222222;
+    font-weight: bold;
+    word-break: break-all;
+}
+.ball {
+    background-color: rgba(0,0,0,0);
+    border: 5px solid rgba(25,111,163,0.9);
+    opacity: .9;
+    border-top: 5px solid rgba(0,0,0,0);
+    border-left: 5px solid rgba(0,0,0,0);
+    border-radius: 350px;
+    box-shadow: 0 0 35px #2187e7;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    -moz-animation: spin 3s infinite linear;
+    -webkit-animation: spin 3s infinite linear;
+    animation: spin 3s infinite linear;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -185px;
+    margin-left: -185px;
+    display: none;
+    z-index: 11;
+    
+    &.block{
+        display: block;
+    }
+}
+
+.ball1 {
+    background-color: rgba(0,0,0,0);
+    border: 5px solid rgba(25,111,163,0.9);
+    opacity: .9;
+    border-top: 5px solid rgba(0,0,0,0);
+    border-left: 5px solid rgba(0,0,0,0);
+    border-radius: 350px;
+    box-shadow: 0 0 15px #2187e7;
+    width: 330px;
+    height: 330px;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+    -moz-animation: spinoff 3s infinite linear;
+    -webkit-animation: spinoff 3s infinite linear;
+    animation: spinoff 3s infinite linear;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -175px;
+    margin-left: -175px;
+    display: none;
+    z-index: 11;
+    
+    &.block{
+        display: block;
+    }
+}
+.modal, .modal1{
+    position: absolute;
+    top: 110px;
+    left: 120px;
+    bottom: 0px;
+    right: 0px;
+    background: rgba(93, 83, 83, 0.5);
+    display: none;
+    z-index: 1;
+}
+
+.servererror{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    font-size: 30px;
+    z-index: 2;
+    background: #f2f2f2;
+    padding: 30px;
+    border: 3px solid red;
+}
+

@@ -1,0 +1,287 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "FU_Re_MACSConventionalBodyTrack.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1066_Reset",
+        "UserRight": "11",
+        "Position": "L",
+        "TextID": "C1066",
+        "OffLED": "O",
+        "Text": "Reset from Visu",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "1000009-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "Position": "L",
+        "UserRight": "9",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "acknowledge"
+       },
+       "1000010-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true,
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2326_SysEmpty",
+        "TextID": "S2326",
+        "OffLED": "O",
+        "Text": "Empty",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2496_EnblConv",
+        "TextID": "S2496",
+        "OffLED": "O",
+        "Text": "Enable from Conveyor",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000013-Messages": {
+     "1000014-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000015-AddPageTab": {
+     "1000016-AddPageControl": {
+      "1000017-AddPageTab": {
+       "Text": "Overview",
+       "TextID": "Overview",
+       "VisibleAtRight": "0",
+       "1000018-AddText": {
+        "Position": "L",
+        "TextID": "General",
+        "Text": "General",
+        "showHide": true,
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextInteger": {
+        "OPCID": "AA.I2288_JobsOnConv",
+        "TextID": "I2288",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Quantity of Jobs On Conveyor",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000020-AddTextIntegerInput": {
+        "OPCID": "AS.I3732_BodyTypeDef",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Default Body Type",
+        "UnitLocale": "",
+        "TextID": "I3732",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "48",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "48",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000021-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Timer",
+        "TextID": "Timer",
+        "VisibleAtRight": "0",
+        "showHide": false
+       },
+       "1000022-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I1597_MOn",
+        "OPCID": "AA.I1597_MOn",
+        "UserRight": "6",
+        "TextID": "I1597",
+        "Text": "Motion Control On timer",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "1000023-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "2147483640",
+        "OPCID2": "AS.I4594_DelStopConv",
+        "OPCID": "AA.I4594",
+        "UserRight": "6",
+        "TextID": "I4594",
+        "Text": "Switch-Off Delay after Conveyor has Stopped",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "Base": "ms",
+        "VisibleAtRight": "0",
+        "VisuBase": "s",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      },
+      "1000024-AddPageTab": {
+       "Text": "Configuration",
+       "TextID": "Configuration",
+       "VisibleAtRight": "1",
+       "1000025-AddText": {
+        "Position": "L",
+        "TextID": "Config",
+        "Text": "Config",
+        "showHide": true,
+        "VisibleAtRight": "1"
+       },
+       "1000026-AddTextIntegerInput": {
+        "OPCID": "CO.I2287_QtyImpConv",
+        "UserRight": "1",
+        "IntInputMin": "0",
+        "Text": "Quantity of Impulses for Conveyor Length",
+        "UnitLocale": "cm",
+        "TextID": "I2287",
+        "UnitInit": "2",
+        "UnitMetric": "cm",
+        "IntInputMax": "100000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "cm",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "1000000",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000027-AddTextIntegerInput": {
+        "OPCID": "CO.I3201_TrackOffset",
+        "UserRight": "1",
+        "IntInputMin": "0",
+        "Text": "Tracking Offset",
+        "UnitLocale": "cm",
+        "TextID": "I3201",
+        "UnitInit": "2",
+        "UnitMetric": "cm",
+        "IntInputMax": "100000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "cm",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "1000000",
+        "InputMin": "0",
+        "Position": "L"
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Re_MACSConventionalBodyTrack",
+ "DiagnosisControl": "FU_Re_MACSConventionalBodyTrack.10",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1726733943
+}

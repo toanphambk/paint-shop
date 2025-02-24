@@ -1,0 +1,9 @@
+
+<div class="content-section" ng-click="closeOverlay($event)">
+  <navigation-bar></navigation-bar>
+  <div id="gridplant" class="grid plant standard" ng-init="rangeStart = 0; rangeEnd = 20;">      
+    <gridelement-plant dir-paginate="item in items | messageFilter:filter.error:filter.warning:filter.info:filter.processFault:filter.electricalFault:filter.mechanicalFault:filter.softwareFault | itemsPerPage:20"  pagination-id="gridError"></gridelement-plant>
+  </div>
+  <dir-pagination-controls pagination-id="gridError" template-url="directives/contentsectionPlant/paginationGrid.tpl.html"></dir-pagination-controls>
+  <wizard ng-show="selectedTile.name"></wizard>
+</div>

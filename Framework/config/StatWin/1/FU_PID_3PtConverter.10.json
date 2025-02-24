@@ -1,0 +1,109 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "FU_PID_3PtConverter.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Three Step Controller",
+       "TextID": "ThreeStepController",
+       "VisibleAtRight": "1",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "Setpoints",
+        "Text": "Setpoints",
+        "showHide": false,
+        "VisibleAtRight": "1"
+       },
+       "1000008-AddTextRealInput": {
+        "OPCID": "R1151_Drive",
+        "UserRight": "1",
+        "RealInputMax": "",
+        "Position": "L",
+        "Text": "Drive Run Time",
+        "UnitLocale": "s",
+        "Precision": "3",
+        "TextID": "R1151",
+        "UnitInit": "2",
+        "UnitMetric": "s",
+        "RealInputMin": "",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "100.0",
+        "InputMin": "0.0"
+       },
+       "1000009-AddTextTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID": "AS.I2251_MPulse",
+        "UserRight": "1",
+        "TextID": "AS.I2251",
+        "Text": "Minimum Impulse Time Position Signal",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "ms",
+        "Base": "ms",
+        "Position": "L"
+       },
+       "1000010-AddTextTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID": "AS.I2252_MBreak",
+        "UserRight": "1",
+        "TextID": "AS.I2252",
+        "Text": "Minimum Break Time Position Signal",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "ms",
+        "Base": "ms",
+        "Position": "L"
+       },
+       "1000011-AddTextTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID": "AS.I2250_PIDCyc",
+        "UserRight": "1",
+        "TextID": "AS.I2250",
+        "Text": "PID Cycle Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "ms",
+        "Base": "ms",
+        "Position": "L"
+       },
+       "RegAutoHide": "1"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_PID_3PtConverter",
+ "DiagnosisControl": "FU_PID_3PtConverter.10",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1458827882
+}

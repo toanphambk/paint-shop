@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06.11.2015, 12:55:02
+    Author     : harald
+*/
+h4{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+h5{
+    font-size: 16px;
+    margin: 10px;
+}
+#center{
+    //margin-bottom: 20px;
+}
+.headercontainer{
+    //padding-left: 18px;
+    margin: 5px 28px;;
+}
+.inputHeader{
+    display:block;
+    width: 128px;
+    float: left;
+}
+.inputHeader::after{
+    clear: both;
+}
+.POJO{
+    margin-bottom: 20px;
+}
+fieldset.POJO{
+    border-bottom: 2px solid #003254;
+    padding-bottom: 20px;
+}
+li.POJO{
+    margin-bottom: 10px;
+}
+.POJO .collection{
+    margin: 5px 20px;
+}
+.POJO div.collection ul.first li.subtree{
+    margin: 20px;
+    border-bottom: 2px dotted #003254;
+    padding-bottom: 20px;
+}
+.POJO div.collection ul.first li.subtree input{
+    //width:100px;
+}
+
+.ui-icon.delete{
+    display: inline-block;
+    padding: 8px;
+    margin-left: 3px;
+    position: relative;
+    bottom: 4px;
+}
+span.field{
+    margin-right:5px;
+    font-size: 16px;
+    font-weight: bold;
+}

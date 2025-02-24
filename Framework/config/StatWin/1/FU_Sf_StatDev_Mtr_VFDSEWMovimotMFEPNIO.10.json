@@ -1,0 +1,284 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-19",
+   "Name": "FU_Sf_StatDev_Mtr_VFDSEWMovimotMFEPNIO.10",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2000_UpdtOpCyc",
+        "UserRight": "9",
+        "Position": "L",
+        "TextID": "C2000",
+        "OffLED": "O",
+        "Text": "Update Operation Cycles",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2001_UpdtSwitchOnT",
+        "UserRight": "9",
+        "Position": "L",
+        "TextID": "C2001",
+        "OffLED": "O",
+        "Text": "Update Switch-On Time",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2002_ResManMovements",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C2002",
+        "OffLED": "O",
+        "Text": "Reset Manual Movement Counter",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "1000011-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000012-AddTextReal": {
+        "OPCID": "AA.I2002_ManMoveCounter",
+        "Precision": "0",
+        "TextID": "I2002",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Manual Movement Counter",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextReal": {
+        "OPCID": "AA.I2003_SPChCntr",
+        "Precision": "0",
+        "TextID": "I2003",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Set Point Change Counter",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000014-Messages": {
+     "1000015-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000016-AddPageTab": {
+     "1000017-AddPageControl": {
+      "1000018-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000019-AddText": {
+        "Position": "L",
+        "TextID": "ActualValues",
+        "Text": "Actual Values",
+        "showHide": true
+       },
+       "1000020-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "AS.I2000_OpCyc",
+        "OPCID": "AA.I2000_OpCyc",
+        "UserRight": "7",
+        "VisuBase": "s",
+        "Text": "Operating Cycles",
+        "Base": "s",
+        "TextID": "I2000",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "AS.I2001_SwitchOnT",
+        "OPCID": "AA.I2001_SwitchOnT",
+        "UserRight": "7",
+        "VisuBase": "s",
+        "Text": "Switch-On Time",
+        "Base": "s",
+        "TextID": "I2001",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0",
+       "1000022-AddText": {
+        "Position": "L",
+        "TextID": "Status",
+        "Text": "Status",
+        "showHide": false
+       },
+       "1000023-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S8000_NoPS24VDC",
+        "TextID": "S8000",
+        "OffLED": "O",
+        "Text": "No Power Supply 24V DC",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S8001_SlaveFault",
+        "TextID": "S8001",
+        "OffLED": "O",
+        "Text": "Slave Fault",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S8002_CommonFaultDevice",
+        "TextID": "S8002",
+        "OffLED": "O",
+        "Text": "Common Fault Device",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000026-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S8003_NoPS400VAC",
+        "TextID": "S8003",
+        "OffLED": "O",
+        "Text": "No Power Supply 400V AAC",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000027-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S8004_MPFault",
+        "TextID": "S8004",
+        "OffLED": "O",
+        "Text": "Motor Protector Fault",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000028-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S8006_NoMode",
+        "TextID": "S8006",
+        "OffLED": "O",
+        "Text": "No Mode Activated",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU_Sf_StatDev_Mtr_VFDSEWMovimotMFEPNIO",
+ "DiagnosisControl": "FU_Sf_StatDev_Mtr_VFDSEWMovimotMFEPNIO.10",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1456468042
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Ebene_1"
+   x="0px"
+   y="0px"
+   width="20px"
+   height="16px"
+   viewBox="0 0 20 16"
+   style="enable-background:new 0 0 20 16;"
+   xml:space="preserve"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="operationMode.svg"><metadata
+     id="metadata21"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs19" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="988"
+     id="namedview17"
+     showgrid="false"
+     inkscape:zoom="18.097514"
+     inkscape:cx="3.6945246"
+     inkscape:cy="9.8926356"
+     inkscape:window-x="1358"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Ebene_1" /><style
+     type="text/css"
+     id="style3">
+	.st0{fill:none;}
+	.st1{fill:#F27019;}
+	.st2{fill:#FFFFFF;}
+</style><rect
+     class="st0"
+     width="20"
+     height="16"
+     id="rect5" /><g
+     id="g7"><path
+       class="st1"
+       d="m 20,12 c 0,2.2 -1.8,4 -4,4 L 4,16 C 1.8,16 0,14.2 0,12 L 0,4 C 0,1.8 1.8,0 4,0 l 12,0 c 2.2,0 4,1.8 4,4 l 0,8 z"
+       id="path9"
+       style="fill:#3b4654;fill-opacity:1"
+       inkscape:connector-curvature="0" /></g><path
+     inkscape:connector-curvature="0"
+     class="st1"
+     d="m 11.37088,4.0739107 c 1.235326,0.5268559 2.138065,1.5326702 2.518165,2.6821725 l 1.805477,0 C 15.219397,4.888142 13.936558,3.2117837 11.988543,2.445449 10.943266,2.0143855 9.8504772,1.9185936 8.8527134,2.0622814 l 0.760201,1.6763582 c 0.5701506,0 1.1878146,0.095792 1.7579656,0.3352711 z M 3.9589196,5.8939571 C 3.1036935,8.001378 3.483794,10.300384 4.7666332,11.976741 L 5.9069347,10.587759 C 5.1942463,9.4382566 5.004196,7.9055865 5.5743468,6.5645002 5.8594222,5.8939571 6.2870352,5.3192055 6.8096734,4.8402462 L 6.0494724,3.2117837 C 5.1467337,3.8823268 4.3865328,4.7444538 3.9589196,5.8939571 Z m 4.3236431,6.5617439 -1.1403014,1.388982 c 0.095025,0.0479 0.1425377,0.09579 0.2375629,0.09579 3.1833408,1.29319 6.7467838,-0.23948 8.0296228,-3.448507 0.04751,-0.143689 0.09502,-0.287377 0.142538,-0.431064 l -1.85299,0 c -0.950251,2.107421 -3.278367,3.113236 -5.4164323,2.394797 z"
+     id="path9-0"
+     style="fill:#ffffff;fill-opacity:1" /><polygon
+     transform="matrix(0.47512562,0,0,0.4789594,0.68055296,-0.42830751)"
+     class="st1"
+     points="24,14 35.4,14 29.9,20 "
+     id="polygon11"
+     style="fill:#ffffff;fill-opacity:1" /><polygon
+     transform="matrix(0.47512562,0,0,0.4789594,0.68055296,-0.42830751)"
+     class="st1"
+     points="19,24.4 12.7,34.3 11,25.9 "
+     id="polygon13"
+     style="fill:#ffffff;fill-opacity:1" /><polygon
+     transform="matrix(0.47512562,0,0,0.4789594,0.68055296,-0.42830751)"
+     class="st1"
+     points="13.5,15 7.5,5.7 15.5,7.2 "
+     id="polygon15"
+     style="fill:#ffffff;fill-opacity:1" /></svg>

@@ -1,0 +1,257 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "Rd_FuAxisControlAxis0EO1",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status 1",
+       "TextID": "Status1",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Response Signals",
+        "TextID": "ResponseSignals",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1900_InvReady",
+        "Position": "L",
+        "TextID": "S1900",
+        "OffLED": "O",
+        "Text": "Inverter ready",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1550_InvFault",
+        "Position": "L",
+        "TextID": "S1550",
+        "OffLED": "O",
+        "Text": "Inverter fault",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1120_Run",
+        "Position": "L",
+        "TextID": "S1120",
+        "OffLED": "O",
+        "Text": "Run",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1017_TarRchd",
+        "Position": "L",
+        "TextID": "S1017",
+        "OffLED": "O",
+        "Text": "Target recharged",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1028_Brake",
+        "Position": "L",
+        "TextID": "S1028",
+        "OffLED": "O",
+        "Text": "Brake",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1104_InvCtrlEnbl",
+        "Position": "L",
+        "TextID": "S1104",
+        "OffLED": "O",
+        "Text": "Inverter control enabled",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1105_InvLimitSw",
+        "Position": "L",
+        "TextID": "S1105",
+        "OffLED": "O",
+        "Text": "Inverter limit switch",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000015-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1106_InvNotActivated",
+        "Position": "L",
+        "TextID": "S1106",
+        "OffLED": "O",
+        "Text": "Inverter Not Activated",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "10000001-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000016-Messages": {
+     "1000017-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000018-AddPageTab": {
+     "1000019-AddPageControl": {
+      "1000020-AddPageTab": {
+       "Text": "Actual values",
+       "TextID": "ActualValues",
+       "VisibleAtRight": "0",
+       "1000021-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Value",
+        "TextID": "Value",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000022-AddTextInteger": {
+        "OPCID": "AA.I1058_VFCStB",
+        "TextID": "I1058",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "VFCStB",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000023-AddTextInteger": {
+        "OPCID": "AA.I1999_ARUT",
+        "TextID": "I1999",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "ramp",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000024-AddTextInteger": {
+        "OPCID": "AA.I1405_SetSpeed",
+        "TextID": "I1405",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Set speed",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000025-AddTextInteger": {
+        "OPCID": "AA.I1404_ActSpeed",
+        "TextID": "R1404",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Actual speed",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000026-AddTextInteger": {
+        "OPCID": "AA.R1004_ActValCur",
+        "TextID": "R1004",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Actual value current",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000027-AddTextInteger": {
+        "OPCID": "AA.R1030_ActiveCurrent",
+        "TextID": "R1030",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Active current",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       }
+      }
+     },
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "Rd_FuAxisControlAxis0EO1",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -361701703
+}

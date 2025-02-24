@@ -1,0 +1,373 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "Rd_FuCarrierDriverEM1",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status",
+       "TextID": "Status",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Response Signals",
+        "TextID": "ResponseSignals",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1326_Exec",
+        "Position": "L",
+        "TextID": "S1326",
+        "OffLED": "O",
+        "Text": "Exec",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1103_MPHalted",
+        "Position": "L",
+        "TextID": "S1103",
+        "OffLED": "O",
+        "Text": "MP Halted",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1268_CFV",
+        "Position": "L",
+        "TextID": "S1268",
+        "OffLED": "O",
+        "Text": "Collective Fault to Visu",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Control",
+        "TextID": "Control",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000012-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1158_StartNewMP",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1158",
+        "OffLED": "O",
+        "Text": "Start New MP",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1159_LoadNewMP",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1159",
+        "OffLED": "O",
+        "Text": "Load New MP",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0",
+       "10000001-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       }
+      },
+      "1000014-AddPageTab": {
+       "Text": "Control",
+       "TextID": "Control",
+       "VisibleAtRight": "0",
+       "1000015-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Control",
+        "TextID": "Control",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000016-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1160_CnclPgr",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1160",
+        "OffLED": "O",
+        "Text": "Cancel Program",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1161_ContPgr",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1161",
+        "OffLED": "O",
+        "Text": "Control Program",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1050_Fwd",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1050",
+        "OffLED": "O",
+        "Text": "Forward",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1051_Rev",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1051",
+        "OffLED": "O",
+        "Text": "Reverse",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1068_Halt",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1068",
+        "OffLED": "O",
+        "Text": "Halting",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000021-Messages": {
+     "1000022-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000023-AddPageTab": {
+     "1000024-AddPageControl": {
+      "1000025-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000026-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Parameters",
+        "TextID": "Parameters",
+        "VisibleAtRight": "0",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000027-AddTextIntegerInput": {
+        "OPCID": "P1201_MotionPgr",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Motion Program",
+        "UnitLocale": "",
+        "TextID": "P1201",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "IntInputMax": "300",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "100",
+        "InputMin": "-100",
+        "Position": "L"
+       },
+       "1000028-AddTextInteger": {
+        "OPCID": "AA.I1551_ActMoProg",
+        "TextID": "I1551",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Actual Motion Program",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000029-AddTextInteger": {
+        "OPCID": "AA.I1552_ActMoStep",
+        "TextID": "I1552",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Actual Motion Step",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000030-AddTextInteger": {
+        "OPCID": "AA.R1100_StepTime",
+        "TextID": "R1100",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Step Time",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000031-AddTextInteger": {
+        "OPCID": "AA.I1556_Track",
+        "TextID": "I1556",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Track",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000032-AddTextInteger": {
+        "OPCID": "AA.R1012_TgtPos",
+        "TextID": "R1012",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Target Position",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000033-AddTextInteger": {
+        "OPCID": "AA.R1013_TrcSpeed",
+        "TextID": "R1013",
+        "UnitInit": "",
+        "UnitMetric": "",
+        "Text": "Traction Speed",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000034-AddTextInteger": {
+        "OPCID": "AA.R1016_TgtAng",
+        "TextID": "R1016",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Target Angle",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000035-AddTextInteger": {
+        "OPCID": "AA.R1017_RotSpeed",
+        "TextID": "R1017",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Rotation Speed",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000036-AddString": {
+        "OPCID": "M1041_MPName",
+        "Position": "L",
+        "StrStart": "0",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "StrLen": "40",
+        "VisibleAtRight": "0",
+        "Text": "Program Name",
+        "TextID": "M1041"
+       },
+       "VisibleOPCID": ""
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "Rd_FuCarrierDriverEM1",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1949819835
+}

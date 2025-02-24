@@ -1,0 +1,249 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "10-10",
+   "Name": "Gp_IL1AnalVal",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status",
+       "TextID": "Status",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "TextID": "E7310_ILMDes",
+        "Text": "Interlock Message Description",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0"
+       },
+       "1000008-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3144_LifeBitCfg",
+        "Position": "L",
+        "TextID": "S3144",
+        "OffLED": "O",
+        "Text": "Life Bit from Configuration",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "10000001-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       },
+       "10000002-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1252_Enbl",
+        "Position": "L",
+        "TextID": "S1252",
+        "OffLED": "O",
+        "Text": "Enable Device",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0",
+        "VisibleOPCID": ""
+       },
+       "10000003-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1255_EnFV",
+        "Position": "M",
+        "TextID": "S1255",
+        "OffLED": "O",
+        "Text": "Enable Faults",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0",
+        "VisibleOPCID": ""
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000010-Messages": {
+     "1000011-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000012-AddPageTab": {
+     "1000013-AddPageControl": {
+      "1000014-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000015-AddText": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "showHide": true,
+        "VisibleOPCID": ""
+       },
+       "1000016-AddTextInteger": {
+        "OPCID": "AA.I7682_ILDInt",
+        "TextID": "I7682",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Interlock Analog Value Double Integer",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "SB.S3145_VisInt",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000017-AddTextReal": {
+        "OPCID": "AA.R7683_ILReal",
+        "Precision": "1",
+        "TextID": "R7683",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Interlock Analog Value Real",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "SB.S3146_VisReal",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000018-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "AS.I2446_AAckn",
+        "OPCID": "AA.I2446_AAckn",
+        "UserRight": "7",
+        "TextID": "I2446",
+        "Text": "Automatic Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "ms",
+        "Base": "ms",
+        "Position": "L"
+       },
+       "1000019-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "AS.I2448_HBRS",
+        "OPCID": "AA.I2448_HBRS",
+        "UserRight": "7",
+        "TextID": "I2448",
+        "Text": "Motion Control Heartbeat Remote Station",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0",
+        "VisuBase": "ms",
+        "Base": "ms",
+        "Position": "L"
+       },
+       "1000020-AddText": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Bold": "2",
+        "Border": "N",
+        "VisibleAtRight": "0",
+        "Position": "L",
+        "showHide": false,
+        "VisibleOPCID": ""
+       },
+       "1000021-AddTextInteger": {
+        "OPCID": "AA.I2486_HBRS",
+        "TextID": "I2486",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Heartbeat from Remote Station",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "SB.S1278_EnLife",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000022-AddTextInteger": {
+        "OPCID": "AA.I2487_HBS",
+        "TextID": "I2487",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Heartbeat from Station (PLC)",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "SB.S1278_EnLife",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "RegAutoHide": "0",
+       "VisibleOPCID": ""
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "Gp_IL1AnalVal",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -1675812815
+}

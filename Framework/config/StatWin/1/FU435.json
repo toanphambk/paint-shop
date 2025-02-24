@@ -1,0 +1,214 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "20-20",
+   "Name": "FU435.20",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2258_Reset",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C2258",
+        "OffLED": "O",
+        "Text": "Reset",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "1000009-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2822_ResetCoCount",
+        "UserRight": "0",
+        "Position": "L",
+        "TextID": "C2822",
+        "OffLED": "O",
+        "Text": "Reset Consumption Counter",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "leftIcon": "reset"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000010-Messages": {
+     "1000011-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000012-AddPageTab": {
+     "1000013-AddPageControl": {
+      "1000014-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000015-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000016-AddTextRealInput": {
+        "OPCID": "AS.V2875_F52FlowMeOverfloSP",
+        "UserRight": "7",
+        "RealInputMax": "2147483640",
+        "Text": "F52 Flow MeterCounter Overflow Setpoint Warning",
+        "UnitLocale": "kg/h",
+        "Precision": "1",
+        "TextID": "V2875",
+        "UnitInit": "2",
+        "UnitMetric": "kg/h",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "kg/h",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640.00",
+        "InputMin": "-2147483640.00",
+        "Position": "L"
+       },
+       "1000017-AddTextReal": {
+        "OPCID": "AA.R2530_F52FlowMeCouAV",
+        "Precision": "1",
+        "TextID": "R2530",
+        "UnitInit": "2",
+        "UnitMetric": "kg/h",
+        "Text": "F52 Flow Meter Counter Actual Value kg/h",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "kg/h",
+        "UnitImperial": "kg/h",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddTextReal": {
+        "OPCID": "AA.R2531_PSTransBatch",
+        "Precision": "1",
+        "TextID": "R2531",
+        "UnitInit": "2",
+        "UnitMetric": "kg",
+        "Text": "Precoat Supply Transmitted Batch",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "kg",
+        "UnitImperial": "kg",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextReal": {
+        "OPCID": "AA.V2873_CoCount",
+        "Precision": "1",
+        "TextID": "V2873",
+        "UnitInit": "2",
+        "UnitMetric": "kg",
+        "Text": "Consumption Counter Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "kg",
+        "UnitImperial": "kg",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextRealInput": {
+        "OPCID": "AS.V2871_CoCountOverFlSetp",
+        "UserRight": "0",
+        "RealInputMax": "2147483640",
+        "Text": "Consumption Counter Overflow Setpoint",
+        "UnitLocale": "kg",
+        "Precision": "1",
+        "TextID": "V2871",
+        "UnitInit": "2",
+        "UnitMetric": "kg",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "kg",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640.00",
+        "InputMin": "-2147483640.00",
+        "Position": "L"
+       },
+       "1000021-AddTextReal": {
+        "OPCID": "AA.V2870_ELCoCount",
+        "Precision": "1",
+        "TextID": "R2519",
+        "UnitInit": "2",
+        "UnitMetric": "kg",
+        "Text": "Consumption Endless Counter Actual Value",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "kg",
+        "UnitImperial": "kg",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextRealInput": {
+        "OPCID": "AS.V2872_CoELCountOverFlSe",
+        "UserRight": "0",
+        "RealInputMax": "2147483640",
+        "Text": "Consumption Endless Counter Overflow Setpoint",
+        "UnitLocale": "kg",
+        "Precision": "1",
+        "TextID": "V2872",
+        "UnitInit": "2",
+        "UnitMetric": "kg",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "kg",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483640.00",
+        "InputMin": "-2147483640.00",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU435",
+ "DiagnosisControl": "FU435",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -183239009
+}

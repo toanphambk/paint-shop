@@ -1,0 +1,220 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1261_EnblOM",
+     "Position": "L",
+     "TextID": "S1261",
+     "OffLED": "O",
+     "Text": "Enable Operation",
+     "Border": "B"
+    },
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "L",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU224.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7271_ExtOM1",
+        "Position": "R",
+        "TextID": "E7271_OMText1",
+        "OffLED": "O",
+        "Text": "External Operation Message 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7272_ExtOM2",
+        "Position": "R",
+        "TextID": "E7272_OMText2",
+        "OffLED": "O",
+        "Text": "External Operation Message 2",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7273_ExtOM3",
+        "Position": "R",
+        "TextID": "E7273_OMText3",
+        "OffLED": "O",
+        "Text": "External Operation Message 3",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S7274_ExtOM4",
+        "Position": "R",
+        "TextID": "E7274_OMText4",
+        "OffLED": "O",
+        "Text": "External Operation Message 4",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000012-Messages": {
+     "1000013-AlarmClient": {},
+     "Text": "Messages"
+    },
+    "1000014-AddPageTab": {
+     "1000015-AddPageControl": {
+      "1000016-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000017-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000018-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1275_InDel1",
+        "OPCID": "TA.T2275_InDel1",
+        "UserRight": "1",
+        "TextID": "&A_E7261_FWText1",
+        "Text": "Input Delay 1",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2371_CBFW1",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1275_InDel1",
+        "OPCID": "TA.T2275_InDel1",
+        "UserRight": "1",
+        "TextID": "&B_E7261_FWText1",
+        "Text": "Input Delay 1",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2371_CBFW1",
+        "IntTimeMin": "0"
+       },
+       "1000020-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1276_InDel2",
+        "OPCID": "TA.T2276_InDel2",
+        "UserRight": "1",
+        "TextID": "&A_E7262_FWText2",
+        "Text": "Input Delay 2",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2372_CBFW2",
+        "IntTimeMin": "0"
+       },
+       "1000021-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1276_InDel2",
+        "OPCID": "TA.T2276_InDel2",
+        "UserRight": "1",
+        "TextID": "&B_E7262_FWText2",
+        "Text": "Input Delay 2",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2372_CBFW2",
+        "IntTimeMin": "0"
+       },
+       "1000022-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1277_InDel3",
+        "OPCID": "TA.T2277_InDel3",
+        "UserRight": "1",
+        "TextID": "&A_E7263_FWText3",
+        "Text": "Input Delay 3",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2373_CBFW3",
+        "IntTimeMin": "0"
+       },
+       "1000023-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1277_InDel3",
+        "OPCID": "TA.T2277_InDel3",
+        "UserRight": "1",
+        "TextID": "&B_E7263_FWText3",
+        "Text": "Input Delay 3",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2373_CBFW3",
+        "IntTimeMin": "0"
+       },
+       "1000024-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1278_InDel4",
+        "OPCID": "TA.T2278_InDel4",
+        "UserRight": "1",
+        "TextID": "&A_E7264_FWText4",
+        "Text": "Input Delay 4",
+        "Border": "B",
+        "VisibleOPCID": "SB.S2374_CBFW4",
+        "IntTimeMin": "0"
+       },
+       "1000025-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "32767",
+        "OPCID2": "TS.T1278_InDel4",
+        "OPCID": "TA.T2278_InDel4",
+        "UserRight": "1",
+        "TextID": "&B_E7264_FWText4",
+        "Text": "Input Delay 4",
+        "Border": "B",
+        "VisibleOPCID": "NOT SB.S2374_CBFW4",
+        "IntTimeMin": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU224",
+ "DiagnosisControl": "FU224",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1444489547
+}

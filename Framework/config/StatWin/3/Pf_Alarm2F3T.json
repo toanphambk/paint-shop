@@ -1,0 +1,316 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0",
+     "VisibleOPCID": ""
+    }
+   },
+   "OPCVersionID": "GP.G2003_Vari",
+   "Version": "10-10",
+   "Name": "Pf_Alarm2F3T",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Status",
+       "TextID": "Status",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Response signals",
+        "TextID": "ResponseSignals",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2388_S1NotUsed",
+        "Position": "L",
+        "TextID": "S2388",
+        "OffLED": "O",
+        "Text": "Status Bit for Signal 1 Not Used",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2389_S1Warning",
+        "Position": "L",
+        "TextID": "S2389",
+        "OffLED": "O",
+        "Text": "Status Bit for Signal 1 Warning",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2390_S1Fault",
+        "Position": "L",
+        "TextID": "S2390",
+        "OffLED": "O",
+        "Text": "Status Bit for Signal 1 Fault",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2391_S2NotUsed",
+        "Position": "L",
+        "TextID": "S2391",
+        "OffLED": "O",
+        "Text": "Status Bit for Signal 2 Not Used",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000012-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2392_S2Warning",
+        "Position": "L",
+        "TextID": "S2392",
+        "OffLED": "O",
+        "Text": "Status Bit for Signal 2 Warning",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000013-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2393_S2Fault",
+        "Position": "L",
+        "TextID": "S2393",
+        "OffLED": "O",
+        "Text": "Status Bit for Signal 2 Fault",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000014-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "Bold": "2",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000015-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1251_Ackn",
+        "UserRight": "4",
+        "Position": "L",
+        "TextID": "C1251",
+        "OffLED": "O",
+        "Text": "Fault Acknowledge",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0",
+       "10000001-AddText": {
+        "Bold": "2",
+        "Position": "L",
+        "Text": "Releases",
+        "TextID": "Releases",
+        "VisibleAtRight": "0",
+        "showHide": false
+       },
+       "10000002-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S1255_EnFV",
+        "Position": "M",
+        "TextID": "S1255",
+        "OffLED": "O",
+        "Text": "Enable Faults",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleAtRight": "0",
+        "VisibleOPCID": ""
+       }
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000016-Messages": {
+     "1000017-AlarmClient": {},
+     "Text": "Messages",
+     "Visible": "2"
+    },
+    "1000018-AddPageTab": {
+     "1000019-AddPageControl": {
+      "1000020-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000021-AddText": {
+        "Position": "L",
+        "TextID": "SetPoints",
+        "Text": "Set Points",
+        "showHide": true
+       },
+       "1000022-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.I1453_MOn1",
+        "OPCID": "AA.I1453_MOn1",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Motion Control 1 On Timer",
+        "UnitLocale": "x0,1s",
+        "TextID": "I1453",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "x0,1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483647",
+        "InputMin": "-100",
+        "Position": "L"
+       },
+       "1000023-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.I1454_MOff1",
+        "OPCID": "AA.I1454_MOff1",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Motion Control 1 Off Timer",
+        "UnitLocale": "x0,1s",
+        "TextID": "I1454",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "x0,1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483647",
+        "InputMin": "-100",
+        "Position": "L"
+       },
+       "1000024-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.I1455_Sens1",
+        "OPCID": "AA.I1455_Sens1",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Motion Control 1 Sensor Timer",
+        "UnitLocale": "x0,1s",
+        "TextID": "I1455",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "x0,1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483647",
+        "InputMin": "-100",
+        "Position": "L"
+       },
+       "1000025-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.I1456_MOn2",
+        "OPCID": "AA.I1456_MOn2",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Motion Control 2 On Timer",
+        "UnitLocale": "x0,1s",
+        "TextID": "I1456",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "x0,1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483647",
+        "InputMin": "-100",
+        "Position": "L"
+       },
+       "1000026-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.I1457_MOff2",
+        "OPCID": "AA.I1457_MOff2",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Motion Control 2 Off Timer",
+        "UnitLocale": "x0,1s",
+        "TextID": "I1457",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "x0,1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483647",
+        "InputMin": "-100",
+        "Position": "L"
+       },
+       "1000027-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.I1458_Sens2",
+        "OPCID": "AA.I1458_Sens2",
+        "UserRight": "7",
+        "IntInputMin": "0",
+        "Text": "Motion Control 2 Sensor Timer",
+        "UnitLocale": "x0,1s",
+        "TextID": "I1458",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "IntInputMax": "1000",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "x0,1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2147483647",
+        "InputMin": "-100",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "110_02F",
+ "DiagnosisLibID": "3",
+ "HeadControls": "true",
+ "Tag": ".I20_201_Heinz",
+ "DiagnosisControl": "Pf_Alarm2F3T",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 907607786
+}

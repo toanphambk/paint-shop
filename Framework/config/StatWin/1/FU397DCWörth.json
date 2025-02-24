@@ -1,0 +1,166 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU397DCWörth.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S12252_RBMR",
+        "Position": "R",
+        "TextID": "S12252",
+        "OffLED": "O",
+        "Text": "Wälzlagerüberwachung Betrieb",
+        "Border": "B",
+        "VisibleOPCID": ""
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S12253_VibMR",
+        "Position": "R",
+        "TextID": "S12253",
+        "OffLED": "O",
+        "Text": "Schwingungsüberwachung Betrieb",
+        "Border": "B",
+        "VisibleOPCID": ""
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation"
+    },
+    "1000010-Messages": {
+     "1000011-AlarmClient": {},
+     "Text": "Messages"
+    },
+    "1000012-AddPageTab": {
+     "1000013-AddPageControl": {
+      "1000014-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000015-AddText": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Border": "N",
+        "Position": "L",
+        "showHide": true
+       },
+       "1000016-AddTextReal": {
+        "OPCID": "AA.P12000_RBIAV",
+        "Precision": "1",
+        "TextID": "P12000",
+        "UnitInit": "2",
+        "UnitMetric": "dBsv",
+        "Text": "Wälzlagerüberwachung Stoßimpulse",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "dBsv",
+        "UnitImperial": "dBsv",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000017-AddTextReal": {
+        "OPCID": "AA.P12001_VibAV",
+        "Precision": "1",
+        "TextID": "P12001",
+        "UnitInit": "2",
+        "UnitMetric": "mm/s",
+        "Text": "Schwingungsüberwachung ",
+        "Border": "B",
+        "UnitLocale": "mm/s",
+        "UnitImperial": "mm/s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddText": {
+        "TextID": "Setpoint",
+        "Text": "Setpoint",
+        "Border": "N",
+        "Position": "L",
+        "showHide": true
+       },
+       "1000019-AddTextRealInput": {
+        "OPCID": "AS.P17001_RBMFC",
+        "UserRight": "0",
+        "RealInputMax": "1000",
+        "Text": "Wälzlagerüberwachung Alarmwert",
+        "UnitLocale": "dBsv",
+        "Precision": "1",
+        "TextID": "P17001",
+        "UnitInit": "2",
+        "UnitMetric": "dBsv",
+        "RealInputMin": "0",
+        "Border": "B",
+        "UnitImperial": "dBsv",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "100.00",
+        "InputMin": "0.00",
+        "Position": "L"
+       },
+       "1000020-AddTextRealInput": {
+        "OPCID": "AS.P17002_VibMMR",
+        "UserRight": "0",
+        "RealInputMax": "1000",
+        "Text": "Schwingungsüberwachung Meßbereichsendwert",
+        "UnitLocale": "mm/s",
+        "Precision": "1",
+        "TextID": "P17002",
+        "UnitInit": "2",
+        "UnitMetric": "mm/s",
+        "RealInputMin": "0",
+        "Border": "B",
+        "UnitImperial": "mm/s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "1000.00",
+        "InputMin": "0.00",
+        "Position": "L"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU397DCWörth",
+ "DiagnosisControl": "FU397DCWörth",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1852659981
+}

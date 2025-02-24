@@ -1,0 +1,275 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000003-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000004-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Manual Operation",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Bold": "1",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "05-20",
+   "Name": "FU346.05",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ControlSignals",
+        "Text": "Control Signals",
+        "showHide": true
+       },
+       "1000008-AddCommandFeedback2WR2RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "0",
+        "TextID": "C1101",
+        "OffLED": "O",
+        "Text": "Auto Identification",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C1102_ManuIdent",
+        "writeTagWR2": "CB.C1101_AutoIdent",
+        "readTagRD1": "SB.S2317_ManuIdent",
+        "readTagRD2": "SB.S2316_AutoIdent",
+        "leftIcon": "handMode",
+        "rightIcon": "automatic",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddCommandFeedback1WR1RD": {
+        "OnLED": "G",
+        "OPCID": "",
+        "Position": "L",
+        "UserRight": "0",
+        "TextID": "C1103",
+        "OffLED": "O",
+        "Text": "Default Identification",
+        "Bold": "1",
+        "Border": "B",
+        "writeTagWR1": "CB.C1103_DefIdent",
+        "readTagRD1": "SB.S2318_DefIdent",
+        "leftIcon": "off",
+        "rightIcon": "on",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "showHide": true
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S3424_RdTyp",
+        "Position": "R",
+        "TextID": "S3424",
+        "OffLED": "O",
+        "Text": "Read Body Type",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000012-Messages": {
+     "1000013-AlarmClient": {},
+     "Visible": "2",
+     "Text": "Messages"
+    },
+    "1000014-AddPageTab": {
+     "1000015-AddPageControl": {
+      "1000016-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000017-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000018-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "TextID2": "Setpoint"
+       },
+       "1000019-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.P2345_DRd",
+        "OPCID": "AA.I2345_DRd",
+        "UserRight": "1",
+        "IntInputMin": "0",
+        "Text": "Delay Time Read Body Time",
+        "UnitLocale": "*0,1s",
+        "TextID": "I2345",
+        "UnitInit": "2",
+        "UnitMetric": "*0,1s",
+        "IntInputMax": "32767",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "*0,1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.P2346_InRel",
+        "OPCID": "AA.I2346_InRel",
+        "UserRight": "1",
+        "IntInputMin": "0",
+        "Text": "Timer Inlet Released",
+        "UnitLocale": "*0,1s",
+        "TextID": "I2346",
+        "UnitInit": "2",
+        "UnitMetric": "*0,1s",
+        "IntInputMax": "32767",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "*0,1s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "100",
+        "OPCID2": "TS.T1631_ExtRdType",
+        "OPCID": "TA.T2631_ExtRdType",
+        "UserRight": "7",
+        "TextID": "T2631",
+        "Text": "Impulse Extension Read Body Type",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextInteger": {
+        "OPCID": "AA.I2467_BTyp",
+        "TextID": "I2467",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Actual Type of Body",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": ""
+       },
+       "1000023-AddTextIntegerInput": {
+        "OPCID": "AS.P2263_DefBTyp",
+        "UserRight": "1",
+        "IntInputMin": "1",
+        "Text": "Default Body Type",
+        "UnitLocale": "",
+        "TextID": "P2263",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "20",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000024-AddTextIntegerInput": {
+        "OPCID": "AS.P2262_PreBTyp",
+        "UserRight": "7",
+        "IntInputMin": "1",
+        "Text": "Preselected Body Type",
+        "UnitLocale": "",
+        "TextID": "P2262",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "20",
+        "Bold": "1",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000025-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C2291_SetTyp",
+        "UserRight": "7",
+        "TextID": "C2291",
+        "OffLED": "O",
+        "Text": "Set Type",
+        "Bold": "1",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU346",
+ "DiagnosisControl": "FU346.04",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": -781149481
+}

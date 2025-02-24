@@ -1,0 +1,337 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1254_EnMV",
+     "Position": "R",
+     "TextID": "S1254",
+     "OffLED": "O",
+     "Text": "Enable Operation",
+     "Border": "B"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU3201.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "VisibleAtRight": "0",
+        "showHide": true
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2306_RunSteady",
+        "Position": "L",
+        "TextID": "S2306",
+        "OffLED": "O",
+        "Text": "Run Steady",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2908_PLCBat",
+        "Position": "L",
+        "TextID": "S2908",
+        "OffLED": "O",
+        "Text": "PLC Battery Present",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2909_PCMCIABat0",
+        "Position": "L",
+        "TextID": "S2909",
+        "OffLED": "O",
+        "Text": "PCMCIA Card Slot 0 Batt. Present",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2910_PCMCIABat1",
+        "Position": "L",
+        "TextID": "",
+        "OffLED": "O",
+        "Text": "PCMCIA Card Slot 1 Batt. Present",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000012-Messages": {
+     "1000013-AlarmClient": {},
+     "Text": "Messages"
+    },
+    "1000014-AddPageTab": {
+     "1000015-AddPageControl": {
+      "1000016-AddPageTab": {
+       "Text": "Parameters 1",
+       "TextID": "Parameters1",
+       "VisibleAtRight": "0",
+       "1000017-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000018-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "GP.E2210_YearSP",
+        "OPCID": "GP.E2209_YearAV",
+        "UserRight": "0",
+        "IntInputMin": "1900",
+        "Text": "Year",
+        "UnitLocale": "",
+        "TextID": "E2209_YearAV",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "2100",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "2100",
+        "InputMin": "1900",
+        "Position": "L"
+       },
+       "1000019-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "GP.E2212_MonthSP",
+        "OPCID": "GP.E2211_MonthAV",
+        "UserRight": "0",
+        "IntInputMin": "1",
+        "Text": "Month",
+        "UnitLocale": "",
+        "TextID": "E2211_MonthAV",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "12",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "12",
+        "InputMin": "1",
+        "Position": "L"
+       },
+       "1000020-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "GP.E2214_DaySP",
+        "OPCID": "GP.E2213_DayAV",
+        "UserRight": "0",
+        "IntInputMin": "1",
+        "Text": "Day",
+        "UnitLocale": "",
+        "TextID": "E2213_DayAV",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "31",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "31",
+        "InputMin": "1",
+        "Position": "L"
+       },
+       "1000021-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "GP.E2218_HourSP",
+        "OPCID": "GP.E2217_HourAV",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Hour",
+        "UnitLocale": "h",
+        "TextID": "E2217_HourAV",
+        "UnitInit": "2",
+        "UnitMetric": "h",
+        "IntInputMax": "23",
+        "Border": "B",
+        "UnitImperial": "h",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "23",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000022-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "GP.E2220_MinSP",
+        "OPCID": "GP.E2219_MinAV",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Minute",
+        "UnitLocale": "m",
+        "TextID": "E2219_MinAV",
+        "UnitInit": "2",
+        "UnitMetric": "m",
+        "IntInputMax": "59",
+        "Border": "B",
+        "UnitImperial": "m",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "59",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000023-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "GP.E2222_SecSP",
+        "OPCID": "GP.E2221_SecAV",
+        "UserRight": "0",
+        "IntInputMin": "0",
+        "Text": "Second",
+        "UnitLocale": "s",
+        "TextID": "GP.E2221_SecAV",
+        "UnitInit": "2",
+        "UnitMetric": "s",
+        "IntInputMax": "59",
+        "Border": "B",
+        "UnitImperial": "s",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "InputMax": "59",
+        "InputMin": "0",
+        "Position": "L"
+       },
+       "1000024-AddTextInputLED": {
+        "OnLED": "G",
+        "OPCID": "CB.C1256_SetTime",
+        "UserRight": "13",
+        "TextID": "C1256",
+        "OffLED": "O",
+        "Text": "Set Date Time",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      },
+      "1000025-AddPageTab": {
+       "Text": "Parameters 2",
+       "TextID": "Parameters2",
+       "VisibleAtRight": "0",
+       "1000026-AddText": {
+        "Position": "L",
+        "TextID": "Parameters",
+        "Text": "Parameters",
+        "showHide": true
+       },
+       "1000027-AddTextInteger": {
+        "OPCID": "AA.I2484_MastMinTime",
+        "TextID": "I2484",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Minimum Execution Time Mastertask",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddTextInteger": {
+        "OPCID": "AA.I2482_MastCurrTime",
+        "TextID": "I2482",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Current Execution Time Mastertask",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000029-AddTextInteger": {
+        "OPCID": "AA.I2483_MastMaxTime",
+        "TextID": "I2483",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Maximum Execution Time Mastertask",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000030-AddTextInteger": {
+        "OPCID": "AA.I2487_FastMinTime",
+        "TextID": "I2487",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Minimum Execution Time Fasttask",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000031-AddTextInteger": {
+        "OPCID": "AA.I2485_FastCurrTime",
+        "TextID": "I2485",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Current Execution Time Fasttask",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000032-AddTextInteger": {
+        "OPCID": "AA.I2486_FastMaxTime",
+        "TextID": "I2486",
+        "UnitInit": "2",
+        "UnitMetric": "ms",
+        "Text": "Maximum Execution Time Fasttask",
+        "Border": "B",
+        "UnitLocale": "ms",
+        "UnitImperial": "ms",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       }
+      }
+     },
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU3201",
+ "DiagnosisControl": "FU3201.01",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 678886740
+}

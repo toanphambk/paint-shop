@@ -1,0 +1,354 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {
+    "1000001-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1255_EnFV",
+     "Position": "M",
+     "TextID": "S1255",
+     "OffLED": "O",
+     "Text": "Enable Faults",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    },
+    "1000002-TopTextLED": {
+     "OnLED": "G",
+     "OPCID": "SB.S1252_Enbl",
+     "Position": "L",
+     "TextID": "S1252",
+     "OffLED": "O",
+     "Text": "Enable Device",
+     "Border": "B",
+     "VisibleAtRight": "0"
+    }
+   },
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU290.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Operation",
+       "TextID": "Operation",
+       "VisibleAtRight": "0",
+       "1000007-AddText": {
+        "Position": "R",
+        "TextID": "ResponseSignals",
+        "Text": "Response Signals",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000008-AddTextLED": {
+        "OnLED": "G",
+        "OPCID": "SB.S2496_EnblConv",
+        "Position": "R",
+        "TextID": "S2496",
+        "OffLED": "O",
+        "Text": "Enable from Conveyor",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000009-AddTextInteger": {
+        "OPCID": "AA.I2362_BTyp",
+        "Position": "R",
+        "TextID": "I2362",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Type of Body",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddTextInteger": {
+        "OPCID": "AA.I2363_PTyp",
+        "Position": "R",
+        "TextID": "I2363",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Type of Paint",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       }
+      }
+     },
+     "Text": "Operation",
+     "TextID": "Operation",
+     "VisibleAtRight": "0"
+    },
+    "1000011-Messages": {
+     "1000012-AlarmClient": {},
+     "Text": "Messages"
+    },
+    "1000013-AddPageTab": {
+     "1000014-AddPageControl": {
+      "1000015-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "VisibleAtRight": "0",
+       "1000016-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000017-AddTextInteger": {
+        "OPCID": "AA.I2362_BTyp",
+        "TextID": "I2362",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Type of Body",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000018-AddDoubleTextLong": {
+        "TextID": "ActualValue",
+        "Text": "Actual Value",
+        "Text2": "Setpoint",
+        "TextID2": "Setpoint",
+        "VisibleAtRight": "0"
+       },
+       "1000019-AddTextRealRealInputLong": {
+        "OPCID2": "AS.V2403_PreHeat",
+        "OPCID": "AA1.R2359_PreHeat",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "Text": "Preheating",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "R2359",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000020-AddTextRealRealInputLong": {
+        "OPCID2": "AS.V2404_BrkTime",
+        "OPCID": "AA1.R2360_BrkTime",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "Text": "Break Time",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "R2360",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000021-AddTextRealRealInputLong": {
+        "OPCID2": "AS.V2405_Stby",
+        "OPCID": "AA1.R2361_Stby",
+        "UserRight": "7",
+        "RealInputMax": "100",
+        "Text": "Standby",
+        "UnitLocale": "%",
+        "Precision": "1",
+        "TextID": "R2361",
+        "UnitInit": "2",
+        "UnitMetric": "%",
+        "RealInputMin": "0",
+        "Border": "B",
+        "UnitImperial": "%",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000022-AddTextIntegerIntegerInputLong": {
+        "OPCID2": "AS.P2800_OffsetCas",
+        "OPCID": "AA.I2364_Counter",
+        "UserRight": "1",
+        "IntInputMin": "0",
+        "Text": "Offset Cascade",
+        "UnitLocale": "",
+        "TextID": "P2800",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "IntInputMax": "32767",
+        "Border": "B",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000023-AddTextDoubleTimerInputLong": {
+        "IntTimeMax": "1000",
+        "OPCID2": "TS.T1485_CPSIM",
+        "OPCID": "TA.T2485_CPSIM",
+        "UserRight": "6",
+        "TextID": "T2485",
+        "Text": "Pulse Sensor Interval Monitoring",
+        "Border": "B",
+        "VisibleOPCID": "",
+        "IntTimeMin": "0",
+        "VisibleAtRight": "0"
+       }
+      },
+      "1000024-AddPageTab": {
+       "Text": "Paint",
+       "TextID": "Paint",
+       "VisibleAtRight": "0",
+       "1000025-AddText": {
+        "Position": "L",
+        "TextID": "",
+        "Text": "",
+        "VisibleOPCID": ""
+       },
+       "1000026-AddTextInteger": {
+        "OPCID": "AA.I2363_PTyp",
+        "TextID": "I2363",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Type of Paint",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000027-AddTextReal": {
+        "OPCID": "AA.R2358_PaintFactor",
+        "Precision": "1",
+        "TextID": "R2358",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "Text": "Actual Paint Factor",
+        "Border": "B",
+        "UnitLocale": "",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000028-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS4.V2406_PaintFacT1",
+        "UserRight": "6",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Paint Factor Type 1",
+        "UnitLocale": "",
+        "Precision": "1",
+        "TextID": "V2406",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "RealInputMin": "0",
+        "Bold": "1",
+        "Border": "B",
+        "LEDOPCID": "SB2.S3011_PaintFacTyp1",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000029-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS4.V2407_PaintFacT2",
+        "UserRight": "6",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Paint Factor Type 2",
+        "UnitLocale": "",
+        "Precision": "1",
+        "TextID": "V2407",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "RealInputMin": "0",
+        "Border": "B",
+        "LEDOPCID": "SB2.S3012_PaintFacTyp2",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000030-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS4.V2408_PaintFacT3",
+        "UserRight": "6",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Paint Factor Type 3",
+        "UnitLocale": "",
+        "Precision": "1",
+        "TextID": "V2408",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "RealInputMin": "0",
+        "Border": "B",
+        "LEDOPCID": "SB2.S3013_PaintFacTyp3",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000031-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS4.V2409_PaintFacT4",
+        "UserRight": "6",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Paint Factor Type 4",
+        "UnitLocale": "",
+        "Precision": "1",
+        "TextID": "V2409",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "RealInputMin": "0",
+        "Border": "B",
+        "LEDOPCID": "SB2.S3014_PaintFacTyp4",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000032-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS4.V2410_PaintFacT5",
+        "UserRight": "6",
+        "RealInputMax": "100",
+        "OffLED": "O",
+        "Text": "Paint Factor Type 5",
+        "UnitLocale": "",
+        "Precision": "1",
+        "TextID": "V2410",
+        "UnitInit": "2",
+        "UnitMetric": "",
+        "RealInputMin": "0",
+        "Border": "B",
+        "LEDOPCID": "SB2.S3015_PaintFacTyp5",
+        "UnitImperial": "",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "RegAutoHide": "0"
+      }
+     },
+     "RegAutoHide": "0",
+     "Text": "Parameters",
+     "TextID": "Parameters",
+     "VisibleAtRight": "0"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU290",
+ "DiagnosisControl": "FU290",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 731442198
+}

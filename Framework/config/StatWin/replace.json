@@ -1,0 +1,18 @@
+{
+	"StringLong": "String",
+	"StringInputLong": "StringInput",
+	"TextLong": "Text",	
+	"HeadLine": "Text",
+	"TextLEDLong": "TextLED",
+	"TextLEDInputLong": "TextInputLED",
+	"TextLEDNiveau": "TextLED",
+	"TextIntegerLong": "TextInteger",
+	"TextRealLong": "TextReal",
+	"TextRealInputNiveau": "TextRealInput",
+	"TextIntegerInputLong": "TextIntegerInput",	
+	"TextRealInputLong": "TextRealInput",	
+	"LEDTextIntegerLong": "TextLEDIntegerLong",
+	"LEDTextIntegerInputLong": "TextLEDIntegerInputLong",
+	"Space": "",
+	"SpaceLong": ""
+}

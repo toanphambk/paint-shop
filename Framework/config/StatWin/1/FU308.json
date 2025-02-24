@@ -1,0 +1,135 @@
+{
+ "data": {
+  "windowData": {
+   "Comment": "",
+   "Head": {},
+   "OPCVersionID": "GP.E2003_Vari",
+   "Version": "01-20",
+   "Name": "FU308.01",
+   "PageControl": {
+    "1000004-AddPageTab": {
+     "1000005-AddPageControl": {
+      "1000006-AddPageTab": {
+       "Text": "Parameters",
+       "TextID": "Parameters",
+       "1000007-AddText": {
+        "Position": "L",
+        "TextID": "Setpoints",
+        "Text": "Setpoints",
+        "VisibleOPCID": "",
+        "showHide": true
+       },
+       "1000008-AddTextReal": {
+        "OPCID": "AA.R2321_ActSet",
+        "Precision": "1",
+        "TextID": "R2321",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "Text": "Actual Setpoint",
+        "Bold": "1",
+        "Border": "B",
+        "UnitLocale": "°C",
+        "UnitImperial": "°F",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0",
+        "Position": "L"
+       },
+       "1000009-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V7257_Setp1",
+        "UserRight": "7",
+        "RealInputMax": "2147483640",
+        "OffLED": "O",
+        "Text": "Internal Setpoint 1 Active",
+        "UnitLocale": "°C",
+        "Precision": "1",
+        "TextID": "E7257_TextS1",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "LEDOPCID": "SB.S2329_ISet1A",
+        "UnitImperial": "°F",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000010-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V7258_Setp2",
+        "UserRight": "7",
+        "RealInputMax": "2147483640",
+        "OffLED": "O",
+        "Text": "Internal Setpoint 2 Active",
+        "UnitLocale": "°C",
+        "Precision": "1",
+        "TextID": "E7258_TextS2",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "RealInputMin": "-2147483640",
+        "Bold": "1",
+        "Border": "B",
+        "LEDOPCID": "SB.S2330_ISet2A",
+        "UnitImperial": "°F",
+        "VisibleOPCID": "",
+        "VisibleAtRight": "0"
+       },
+       "1000011-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V7259_Setp3",
+        "UserRight": "7",
+        "RealInputMax": "2147483640",
+        "OffLED": "O",
+        "Text": "Internal Setpoint 3 Active",
+        "UnitLocale": "°C",
+        "Precision": "1",
+        "TextID": "E7259_TextS3",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "RealInputMin": "-2147483640",
+        "Border": "B",
+        "LEDOPCID": "SB.S2331_ISet3A",
+        "UnitImperial": "°F",
+        "VisibleOPCID": ""
+       },
+       "1000012-AddLEDTextRealInputLong": {
+        "OnLED": "G",
+        "OPCID": "AS.V7260_Setp4",
+        "UserRight": "7",
+        "RealInputMax": "2147483640",
+        "OffLED": "O",
+        "Text": "Internal Setpoint 4 Active",
+        "UnitLocale": "°C",
+        "Precision": "1",
+        "TextID": "E7260_TextS4",
+        "UnitInit": "2",
+        "UnitMetric": "°C",
+        "RealInputMin": "-2147483640",
+        "Border": "B",
+        "LEDOPCID": "SB.S2332_ISet4A",
+        "UnitImperial": "°F",
+        "VisibleOPCID": ""
+       }
+      }
+     },
+     "Text": "Parameters",
+     "TextID": "Parameters"
+    },
+    "1000013-Messages": {
+     "1000014-AlarmClient": {},
+     "Text": "Messages"
+    }
+   }
+  }
+ },
+ "GroupRightIndex": "0",
+ "PLC": "Simulator_01",
+ "DiagnosisLibID": "1",
+ "HeadControls": "true",
+ "Tag": ".New_Elements_FU308",
+ "DiagnosisControl": "FU308",
+ "type": "OpenDiagnosisWindow",
+ "Private": "true",
+ "Summary": "true",
+ "HashCode": 1167086949
+}
