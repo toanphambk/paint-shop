@@ -1113,8 +1113,8 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
 var myWrn = false;
-myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155', 'PrioMin1') > 0);
-myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155', 'PrioMin2') > 0);
+myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155', 'PrioMin1') > 0);
+myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155', 'PrioMin2') > 0);
 ;
  Condition1 = myFlt;
  Condition2 = myWrn;
@@ -1164,8 +1164,8 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
 var myWrn = false;
-myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115', 'PrioMin1') > 0);
-myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115', 'PrioMin2') > 0);
+myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'PrioMin1') > 0);
+myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'PrioMin2') > 0);
 ;
  Condition1 = myFlt;
  Condition2 = myWrn;
@@ -1215,8 +1215,8 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
 var myWrn = false;
-myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115', 'PrioMin1') > 0);
-myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115', 'PrioMin2') > 0);
+myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'PrioMin1') > 0);
+myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'PrioMin2') > 0);
 ;
  Condition1 = myFlt;
  Condition2 = myWrn;
@@ -1358,7 +1358,51 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH_49NEF28ENY0958'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH_49NEF28ENY0958'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
 myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170', 'PrioMin1') > 0);
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH_49NEF28ENY959'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170_SB_S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1402,7 +1446,51 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH_49XDJ40RHF'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH_49XDJ40RHF'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
 myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170', 'PrioMin1') > 0);
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH_49XDJ40RHF1'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170_SB_S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1468,7 +1556,51 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10219_4AAH2PZ0OE'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10219_4AAH2PZ0OE'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
 myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115', 'PrioMin1') > 0);
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10219_4AAH2PZ0OE1'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115_SB_S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1512,7 +1644,51 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10279_4AAH2PZA1Z'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10279_4AAH2PZA1Z'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
 myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115', 'PrioMin1') > 0);
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10279_4AAH2PZA1Z1'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115_SB_S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1556,7 +1732,51 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD05_LO120_LO120', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10346_FFG3VDPE1'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD05_LO120_LO120_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10346_FFG3VDPE1'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
 myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170', 'PrioMin1') > 0);
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10681'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170_SB_S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1600,7 +1820,51 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10682'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10682'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
 myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_LO160_LO160', 'PrioMin1') > 0);
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10684'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO160_LO160_SB_S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1644,7 +1908,29 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_LO165_LO165', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10685'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_LO175_LO175', 'PrioMin1') > 0);
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO165_LO165_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10685'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO175_LO175_SB_S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1666,7 +1952,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_LO175_LO175', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10686'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155', 'PrioMin1') > 0);
+myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155', 'PrioMin1') > 0);
  var condition = myFlt
  return condition;
  },
@@ -1688,7 +1974,29 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10687'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115', 'PrioMin1') > 0);
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10687'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'PrioMin1') > 0);
  var condition = myFlt
  return condition;
  },
@@ -1710,7 +2018,51 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10688'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115', 'PrioMin1') > 0);
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10688'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'PrioMin1') > 0);
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10689'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115_SB_S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1733,6 +2085,28 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115', 'Pr
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
 myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO110_LO110', 'PrioMin1') > 0);
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10690'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO110_LO110_SB_S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1803,6 +2177,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH_49XDJ40HR0'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH_49XDJ40HR0'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
 var myWrn = false;
@@ -1853,6 +2249,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY7' : false,
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH_49XDJ40HR1'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH_49XDJ40HR1'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
@@ -1956,6 +2374,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH_FD51I80HR0951'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH_FD51I80HR0951'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
 var myWrn = false;
@@ -2006,6 +2446,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY7' : false,
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH_FD51I80HR952'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH_FD51I80HR952'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
@@ -2058,6 +2520,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10212_4AAH2PYXJV'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10212_4AAH2PYXJV'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
 var myWrn = false;
@@ -2108,6 +2592,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY7' : false,
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10212_4AAH2PYXJV1'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10212_4AAH2PYXJV1'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
@@ -2160,6 +2666,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10272_4AAH2PZ6XG'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10272_4AAH2PZ6XG'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
 var myWrn = false;
@@ -2210,6 +2738,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY7' : false,
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10272_4AAH2PZ6XG1'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10272_4AAH2PZ6XG1'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
@@ -2262,6 +2812,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10338_1JJLZJDAX'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD05_LO120_LO120_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10338_1JJLZJDAX'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
 var myWrn = false;
@@ -2312,6 +2884,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY7' : false,
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10673'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10673'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
@@ -2364,6 +2958,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10674'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10674'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
 var myWrn = false;
@@ -2414,6 +3030,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY7' : false,
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10676'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO160_LO160_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10676'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
@@ -2466,6 +3104,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10677'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO165_LO165_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10677'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
 var myWrn = false;
@@ -2517,11 +3177,33 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10678'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO175_LO175_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10678'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
 var myWrn = false;
-myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155', 'PrioMin1') > 0);
-myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155', 'PrioMin2') > 0);
+myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155', 'PrioMin1') > 0);
+myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155', 'PrioMin2') > 0);
 ;
  Condition1 = myFlt;
  Condition2 = myWrn;
@@ -2568,11 +3250,33 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10679'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10679'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
 var myWrn = false;
-myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115', 'PrioMin1') > 0);
-myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115', 'PrioMin2') > 0);
+myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'PrioMin1') > 0);
+myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'PrioMin2') > 0);
 ;
  Condition1 = myFlt;
  Condition2 = myWrn;
@@ -2619,11 +3323,33 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10680'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10680'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
 var myWrn = false;
-myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115', 'PrioMin1') > 0);
-myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115', 'PrioMin2') > 0);
+myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'PrioMin1') > 0);
+myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'PrioMin2') > 0);
 ;
  Condition1 = myFlt;
  Condition2 = myWrn;
@@ -2669,6 +3395,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY7' : false,
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10681'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10681'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
@@ -2720,6 +3468,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY7' : false,
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10682'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO110_LO110_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10682'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var Pos, PRev;
@@ -4766,7 +5536,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'Arrow_L690'});
 new emosWS.ESColorBlink({"conditionFunction" : function(){
-var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.SB.S1062_Fwd')
+var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.SB.S1062_Fwd')
 return condition;
 },
 "PLACEHOLDER_SWAP_FILLCOLOR" : true,
@@ -4788,7 +5558,7 @@ return condition;
 "STDPLACEHOLDER_SHAPENAME" : 'Arrow_L691'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
 ;
- Condition1 = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.SB.S1257_Manu');
+ Condition1 = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.SB.S1257_Manu');
  Condition2 = false;
  Condition3 = false;
  Condition4 = false;
@@ -4834,7 +5604,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'Arrow_L691'});
 new emosWS.ESColorBlink({"conditionFunction" : function(){
-var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1062_Fwd')
+var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1062_Fwd')
 return condition;
 },
 "PLACEHOLDER_SWAP_FILLCOLOR" : true,
@@ -4856,7 +5626,7 @@ return condition;
 "STDPLACEHOLDER_SHAPENAME" : 'Arrow_L692'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
 ;
- Condition1 = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1257_Manu');
+ Condition1 = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1257_Manu');
  Condition2 = false;
  Condition3 = false;
  Condition4 = false;
@@ -4902,7 +5672,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'Arrow_L692'});
 new emosWS.ESColorBlink({"conditionFunction" : function(){
-var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1062_Fwd')
+var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1062_Fwd')
 return condition;
 },
 "PLACEHOLDER_SWAP_FILLCOLOR" : true,
@@ -4924,7 +5694,7 @@ return condition;
 "STDPLACEHOLDER_SHAPENAME" : 'Arrow_L693'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
 ;
- Condition1 = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1257_Manu');
+ Condition1 = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1257_Manu');
  Condition2 = false;
  Condition3 = false;
  Condition4 = false;
@@ -5378,7 +6148,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'Arrow_R691'});
 new emosWS.ESColorBlink({"conditionFunction" : function(){
-var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.SB.S1063_Rev')
+var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.SB.S1063_Rev')
 return condition;
 },
 "PLACEHOLDER_SWAP_FILLCOLOR" : true,
@@ -5400,7 +6170,7 @@ return condition;
 "STDPLACEHOLDER_SHAPENAME" : 'Arrow_R692'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
 ;
- Condition1 = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.SB.S1257_Manu');
+ Condition1 = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.SB.S1257_Manu');
  Condition2 = false;
  Condition3 = false;
  Condition4 = false;
@@ -5446,7 +6216,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'Arrow_R692'});
 new emosWS.ESColorBlink({"conditionFunction" : function(){
-var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1063_Rev')
+var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1063_Rev')
 return condition;
 },
 "PLACEHOLDER_SWAP_FILLCOLOR" : true,
@@ -5468,7 +6238,7 @@ return condition;
 "STDPLACEHOLDER_SHAPENAME" : 'Arrow_R693'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
 ;
- Condition1 = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1257_Manu');
+ Condition1 = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1257_Manu');
  Condition2 = false;
  Condition3 = false;
  Condition4 = false;
@@ -5514,7 +6284,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'Arrow_R693'});
 new emosWS.ESColorBlink({"conditionFunction" : function(){
-var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1063_Rev')
+var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1063_Rev')
 return condition;
 },
 "PLACEHOLDER_SWAP_FILLCOLOR" : true,
@@ -5536,7 +6306,7 @@ return condition;
 "STDPLACEHOLDER_SHAPENAME" : 'Arrow_R694'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
 ;
- Condition1 = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1257_Manu');
+ Condition1 = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1257_Manu');
  Condition2 = false;
  Condition3 = false;
  Condition4 = false;
@@ -6445,7 +7215,7 @@ new emosWS.ESDiagnosisWindow({'conditionFunction' : function() {
 ;
  DiagnosisLibID = 3;
  PLC = 'P1Y2C5';
- ID = '.P1Y2C5_2C5CD07_LO155_LO155';
+ ID = '.P1Y2C5_2C5CD07_TT155_LO155';
  DiagnosisControl = 'CRB2D2S2S.CM1FM1';
  GroupRightIndex = 0;
  Enabled = true;
@@ -6461,7 +7231,7 @@ new emosWS.ESDiagnosisWindow({'conditionFunction' : function() {
 ;
  DiagnosisLibID = 3;
  PLC = 'P1Y2C5';
- ID = '.P1Y2C5_2C5CD02_LO115_LO115';
+ ID = '.P1Y2C5_2C5CD02_EL115_LO115';
  DiagnosisControl = 'CRB2D2S2S.CM1FM1';
  GroupRightIndex = 0;
  Enabled = true;
@@ -6477,7 +7247,7 @@ new emosWS.ESDiagnosisWindow({'conditionFunction' : function() {
 ;
  DiagnosisLibID = 3;
  PLC = 'P1Y2C5';
- ID = '.P1Y2C5_2C5CD02_LO115_LO115';
+ ID = '.P1Y2C5_2C5CD02_EL115_LO115';
  DiagnosisControl = 'CRB2D2S2S.CM1FM1';
  GroupRightIndex = 0;
  Enabled = true;
@@ -7269,12 +8039,12 @@ new emosWS.ESClickWrite({'conditionFunction' : function() {
  var Condition2;
 var Select2;
 var CDK2,DEV2;
-Select2=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.SB.S1107_FwdSelVisu');
+Select2=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.SB.S1107_FwdSelVisu');
 CDK2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');
-DEV2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.AA.I8011_AreaNr');
+DEV2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.AA.I8011_AreaNr');
 Condition2=(Select2&&(CDK2==DEV2)) || !Select2
 ; 
- Tag = 'P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.CB.C1121_FwdSelVisu';
+ Tag = 'P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.CB.C1121_FwdSelVisu';
  Value = '-1';
  Enabled = g_ManualMode.value && Condition2;
 return {Tag:Tag, Value:Value, Enabled:Enabled};
@@ -7286,7 +8056,7 @@ return {Tag:Tag, Value:Value, Enabled:Enabled};
  'STDPLACEHOLDER_SHAPENAME' : 'Button1H10693'});
 new emosWS.ESClickWrite({'conditionFunction' : function() {
 ; 
- Tag = 'P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.AA.I8011_AreaNr';
+ Tag = 'P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.AA.I8011_AreaNr';
  Value = GetTagValueAsString('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');;
  Enabled = g_ManualMode.value;
 return {Tag:Tag, Value:Value, Enabled:Enabled};
@@ -7300,12 +8070,12 @@ new emosWS.ESClickWrite({'conditionFunction' : function() {
  var Condition2;
 var Select2;
 var CDK2,DEV2;
-Select2=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1107_FwdSelVisu');
+Select2=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1107_FwdSelVisu');
 CDK2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');
-DEV2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.AA.I8011_AreaNr');
+DEV2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.AA.I8011_AreaNr');
 Condition2=(Select2&&(CDK2==DEV2)) || !Select2
 ; 
- Tag = 'P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.CB.C1121_FwdSelVisu';
+ Tag = 'P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.CB.C1121_FwdSelVisu';
  Value = '-1';
  Enabled = g_ManualMode.value && Condition2;
 return {Tag:Tag, Value:Value, Enabled:Enabled};
@@ -7317,7 +8087,7 @@ return {Tag:Tag, Value:Value, Enabled:Enabled};
  'STDPLACEHOLDER_SHAPENAME' : 'Button1H10694'});
 new emosWS.ESClickWrite({'conditionFunction' : function() {
 ; 
- Tag = 'P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.AA.I8011_AreaNr';
+ Tag = 'P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.AA.I8011_AreaNr';
  Value = GetTagValueAsString('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');;
  Enabled = g_ManualMode.value;
 return {Tag:Tag, Value:Value, Enabled:Enabled};
@@ -7331,12 +8101,12 @@ new emosWS.ESClickWrite({'conditionFunction' : function() {
  var Condition2;
 var Select2;
 var CDK2,DEV2;
-Select2=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1107_FwdSelVisu');
+Select2=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1107_FwdSelVisu');
 CDK2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');
-DEV2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.AA.I8011_AreaNr');
+DEV2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.AA.I8011_AreaNr');
 Condition2=(Select2&&(CDK2==DEV2)) || !Select2
 ; 
- Tag = 'P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.CB.C1121_FwdSelVisu';
+ Tag = 'P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.CB.C1121_FwdSelVisu';
  Value = '-1';
  Enabled = g_ManualMode.value && Condition2;
 return {Tag:Tag, Value:Value, Enabled:Enabled};
@@ -7348,7 +8118,7 @@ return {Tag:Tag, Value:Value, Enabled:Enabled};
  'STDPLACEHOLDER_SHAPENAME' : 'Button1H10695'});
 new emosWS.ESClickWrite({'conditionFunction' : function() {
 ; 
- Tag = 'P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.AA.I8011_AreaNr';
+ Tag = 'P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.AA.I8011_AreaNr';
  Value = GetTagValueAsString('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');;
  Enabled = g_ManualMode.value;
 return {Tag:Tag, Value:Value, Enabled:Enabled};
@@ -7703,12 +8473,12 @@ new emosWS.ESClickWrite({'conditionFunction' : function() {
  var Condition1;
 var Select1;
 var CDK1,DEV1;
-Select1=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.SB.S1108_RevSelVisu');
+Select1=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.SB.S1108_RevSelVisu');
 CDK1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');
-DEV1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.AA.I8011_AreaNr');
+DEV1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.AA.I8011_AreaNr');
 Condition1=(Select1&&(CDK1==DEV1)) || !Select1
 ; 
- Tag = 'P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.CB.C1122_RevSelVisu';
+ Tag = 'P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.CB.C1122_RevSelVisu';
  Value = '-1';
  Enabled = g_ManualMode.value && Condition1;
 return {Tag:Tag, Value:Value, Enabled:Enabled};
@@ -7720,7 +8490,7 @@ return {Tag:Tag, Value:Value, Enabled:Enabled};
  'STDPLACEHOLDER_SHAPENAME' : 'Button2H10694'});
 new emosWS.ESClickWrite({'conditionFunction' : function() {
 ; 
- Tag = 'P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.AA.I8011_AreaNr';
+ Tag = 'P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.AA.I8011_AreaNr';
  Value = GetTagValueAsString('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');;
  Enabled = g_ManualMode.value;
 return {Tag:Tag, Value:Value, Enabled:Enabled};
@@ -7734,12 +8504,12 @@ new emosWS.ESClickWrite({'conditionFunction' : function() {
  var Condition1;
 var Select1;
 var CDK1,DEV1;
-Select1=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1108_RevSelVisu');
+Select1=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1108_RevSelVisu');
 CDK1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');
-DEV1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.AA.I8011_AreaNr');
+DEV1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.AA.I8011_AreaNr');
 Condition1=(Select1&&(CDK1==DEV1)) || !Select1
 ; 
- Tag = 'P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.CB.C1122_RevSelVisu';
+ Tag = 'P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.CB.C1122_RevSelVisu';
  Value = '-1';
  Enabled = g_ManualMode.value && Condition1;
 return {Tag:Tag, Value:Value, Enabled:Enabled};
@@ -7751,7 +8521,7 @@ return {Tag:Tag, Value:Value, Enabled:Enabled};
  'STDPLACEHOLDER_SHAPENAME' : 'Button2H10695'});
 new emosWS.ESClickWrite({'conditionFunction' : function() {
 ; 
- Tag = 'P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.AA.I8011_AreaNr';
+ Tag = 'P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.AA.I8011_AreaNr';
  Value = GetTagValueAsString('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');;
  Enabled = g_ManualMode.value;
 return {Tag:Tag, Value:Value, Enabled:Enabled};
@@ -7765,12 +8535,12 @@ new emosWS.ESClickWrite({'conditionFunction' : function() {
  var Condition1;
 var Select1;
 var CDK1,DEV1;
-Select1=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1108_RevSelVisu');
+Select1=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1108_RevSelVisu');
 CDK1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');
-DEV1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.AA.I8011_AreaNr');
+DEV1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.AA.I8011_AreaNr');
 Condition1=(Select1&&(CDK1==DEV1)) || !Select1
 ; 
- Tag = 'P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.CB.C1122_RevSelVisu';
+ Tag = 'P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.CB.C1122_RevSelVisu';
  Value = '-1';
  Enabled = g_ManualMode.value && Condition1;
 return {Tag:Tag, Value:Value, Enabled:Enabled};
@@ -7782,7 +8552,7 @@ return {Tag:Tag, Value:Value, Enabled:Enabled};
  'STDPLACEHOLDER_SHAPENAME' : 'Button2H10696'});
 new emosWS.ESClickWrite({'conditionFunction' : function() {
 ; 
- Tag = 'P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.AA.I8011_AreaNr';
+ Tag = 'P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.AA.I8011_AreaNr';
  Value = GetTagValueAsString('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');;
  Enabled = g_ManualMode.value;
 return {Tag:Tag, Value:Value, Enabled:Enabled};
@@ -8164,7 +8934,7 @@ new emosWS.ESColorSwap({'conditionFunction' : function() {
  'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'EnableH10684'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
- var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.SB.S1252_Enbl')
+ var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.SB.S1252_Enbl')
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -8184,7 +8954,7 @@ new emosWS.ESColorSwap({'conditionFunction' : function() {
  'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'EnableH10685'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
- var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1252_Enbl')
+ var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1252_Enbl')
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -8204,7 +8974,7 @@ new emosWS.ESColorSwap({'conditionFunction' : function() {
  'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'EnableH10686'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
- var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1252_Enbl')
+ var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1252_Enbl')
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -8325,7 +9095,7 @@ myNH = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_CDK', 'PrioMin3') 
  'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'Estop_919JGX2'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
- var condition = !GetTagValueAsBoolean('P1Y2C3.==P1Y2C5=2C5DP05++LO160+OF-S101F-L')
+ var condition = !GetTagValueAsBoolean('P1Y2C5.P1Y2C5_EcoScreen.ES.P1Y2C5_2C5DP05_LO160_OF_S101F.S1819_EStopStat')
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -8345,7 +9115,7 @@ new emosWS.ESColorSwap({'conditionFunction' : function() {
  'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'EstopOn0050'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
- var condition = !GetTagValueAsBoolean('P1Y2C5.==P1Y2C5=2C5DP05++LO165+OF-S101F-L')
+ var condition = !GetTagValueAsBoolean('P1Y2C5.P1Y2C5_EcoScreen.ES.P1Y2C5_2C5DP05_LO165_OF_S101F.S1819_EStopStat')
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -8365,7 +9135,7 @@ new emosWS.ESColorSwap({'conditionFunction' : function() {
  'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'EstopOn51'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
- var condition = !GetTagValueAsBoolean('P1Y2C5.==P1Y2C5=2C5CD05++LO120+OF-S101F-L')
+ var condition = !GetTagValueAsBoolean('P1Y2C5.P1Y2C5_EcoScreen.ES.P1Y2C5_2C5DP04_LO120_OF_S101F.S1819_EStopStat')
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -8387,6 +9157,28 @@ new emosWS.ESColorSwap({'conditionFunction' : function() {
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
 myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170', 'PrioMin1') > 0);
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'Fault'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170_SB_S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -8430,7 +9222,51 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5DC02_EL115_FX115', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'Fault_4AAH2PYK5M'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'Fault_4AAH2PYK5M'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
 myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'PrioMin1') > 0);
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'Fault_4AAH2PYUVF'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115_SB_S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -8474,6 +9310,28 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5DC02_EL115_EL115', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'Fault_919I91V'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'Fault_919I91V'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
 myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170', 'PrioMin1') > 0);
  var condition = myFlt
  return condition;
@@ -8496,7 +9354,51 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'Fault1'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'Fault1'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
 myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C1.P1Y2C5_2C5CD06_TC170_MU170', 'PrioMin1') > 0);
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'Fault2'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170_SB_S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -8567,6 +9469,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
 var myWrn = false;
@@ -8617,6 +9541,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY7' : false,
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring_4AAH2PYJ9H'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring_4AAH2PYJ9H'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
@@ -8669,6 +9615,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring_4AAH2PYTZA'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring_4AAH2PYTZA'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
 var myWrn = false;
@@ -8719,6 +9687,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY7' : false,
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring_919I7Y2'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring_919I7Y2'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
@@ -8771,6 +9761,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring1'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring1'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
 var myWrn = false;
@@ -8821,6 +9833,28 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY7' : false,
  'PLACEHOLDER_VISIBILITY8' : false,
  'PLACEHOLDER_VISIBILITYELSE' : false,
+ 'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring2'});
+new emosWS.ESColorSwap({'conditionFunction' : function() {
+ var myFlt = false;
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170_SB_S1268_CFV');
+ var condition = myFlt
+ return condition;
+ },
+ 'PLACEHOLDER_SWAP_FILLCOLOR' : false,
+ 'PLACEHOLDER_SWAP_STROKECOLOR' : false,
+ 'PLACEHOLDER_SWAP_VISIBILITY' : true,
+ 'PLACEHOLDER_SWAP_USETRUE' : true,
+ 'PLACEHOLDER_SWAP_USEFALSE' : true,
+ 'PLACEHOLDER_SWAP_USEQUALITY' : false,
+ 'PLACEHOLDER_FILLCOLOR' : '#FF0000',
+ 'PLACEHOLDER_FILLCOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
+ 'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
+ 'PLACEHOLDER_STROKECOLOR' : '#FF0000',
+ 'PLACEHOLDER_STROKECOLORFALSE' : '#00FF00',
+ 'PLACEHOLDER_VISIBILITY' : true,
+ 'PLACEHOLDER_VISIBILITYFALSE' : false,
+ 'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring2'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var condition = (iVis_115.value == 2) && (GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115.AA.I1006_ActPos') >= 2)
@@ -9122,7 +10156,7 @@ new emosWS.ESDiagnosisWindow({'conditionFunction' : function() {
 ;
  DiagnosisLibID = 3;
  PLC = 'P1Y2C5';
- ID = '.P1Y2C5_2C5CD07_LO155_LO155';
+ ID = '.P1Y2C5_2C5CD07_TT155_LO155';
  DiagnosisControl = 'CRB2D2S2S.CM1FM1';
  GroupRightIndex = 0;
  Enabled = true;
@@ -9138,7 +10172,7 @@ new emosWS.ESDiagnosisWindow({'conditionFunction' : function() {
 ;
  DiagnosisLibID = 3;
  PLC = 'P1Y2C5';
- ID = '.P1Y2C5_2C5CD02_LO115_LO115';
+ ID = '.P1Y2C5_2C5CD02_EL115_LO115';
  DiagnosisControl = 'CRB2D2S2S.CM1FM1';
  GroupRightIndex = 0;
  Enabled = true;
@@ -9154,7 +10188,7 @@ new emosWS.ESDiagnosisWindow({'conditionFunction' : function() {
 ;
  DiagnosisLibID = 3;
  PLC = 'P1Y2C5';
- ID = '.P1Y2C5_2C5CD02_LO115_LO115';
+ ID = '.P1Y2C5_2C5CD02_EL115_LO115';
  DiagnosisControl = 'CRB2D2S2S.CM1FM1';
  GroupRightIndex = 0;
  Enabled = true;
@@ -10417,7 +11451,7 @@ new emosWS.ESColorSwap({'conditionFunction' : function() {
  'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'LockH10687'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
- var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.SB.S1389_EnDataChangeVisu')
+ var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.SB.S1389_EnDataChangeVisu')
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -10437,7 +11471,7 @@ new emosWS.ESColorSwap({'conditionFunction' : function() {
  'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'LockH10688'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
- var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1389_EnDataChangeVisu')
+ var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1389_EnDataChangeVisu')
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -10457,7 +11491,7 @@ new emosWS.ESColorSwap({'conditionFunction' : function() {
  'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'LockH10689'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
- var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1389_EnDataChangeVisu')
+ var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1389_EnDataChangeVisu')
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -11054,9 +12088,9 @@ DEV2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_LO175_LO175.AA.I8011_AreaNr');
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var Select2;
 var CDK2,DEV2;
-Select2=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.SB.S1107_FwdSelVisu');
+Select2=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.SB.S1107_FwdSelVisu');
 CDK2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');
-DEV2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.AA.I8011_AreaNr');
+DEV2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.AA.I8011_AreaNr');
  var condition = Select2 && (CDK2==DEV2)
  return condition;
  },
@@ -11079,9 +12113,9 @@ DEV2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.AA.I8011_AreaNr');
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var Select2;
 var CDK2,DEV2;
-Select2=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1107_FwdSelVisu');
+Select2=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1107_FwdSelVisu');
 CDK2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');
-DEV2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.AA.I8011_AreaNr');
+DEV2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.AA.I8011_AreaNr');
  var condition = Select2 && (CDK2==DEV2)
  return condition;
  },
@@ -11104,9 +12138,9 @@ DEV2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.AA.I8011_AreaNr');
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var Select2;
 var CDK2,DEV2;
-Select2=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1107_FwdSelVisu');
+Select2=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1107_FwdSelVisu');
 CDK2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');
-DEV2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.AA.I8011_AreaNr');
+DEV2=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.AA.I8011_AreaNr');
  var condition = Select2 && (CDK2==DEV2)
  return condition;
  },
@@ -11529,9 +12563,9 @@ DEV1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_LO175_LO175.AA.I8011_AreaNr');
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var Select1;
 var CDK1,DEV1;
-Select1=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.SB.S1108_RevSelVisu');
+Select1=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.SB.S1108_RevSelVisu');
 CDK1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');
-DEV1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.AA.I8011_AreaNr');
+DEV1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.AA.I8011_AreaNr');
  var condition = Select1 && (CDK1==DEV1)
  return condition;
  },
@@ -11554,9 +12588,9 @@ DEV1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.AA.I8011_AreaNr');
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var Select1;
 var CDK1,DEV1;
-Select1=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1108_RevSelVisu');
+Select1=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1108_RevSelVisu');
 CDK1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');
-DEV1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.AA.I8011_AreaNr');
+DEV1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.AA.I8011_AreaNr');
  var condition = Select1 && (CDK1==DEV1)
  return condition;
  },
@@ -11579,9 +12613,9 @@ DEV1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.AA.I8011_AreaNr');
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var Select1;
 var CDK1,DEV1;
-Select1=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1108_RevSelVisu');
+Select1=GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1108_RevSelVisu');
 CDK1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_CDK.AA.I8011_AreaNr');
-DEV1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.AA.I8011_AreaNr');
+DEV1=GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.AA.I8011_AreaNr');
  var condition = Select1 && (CDK1==DEV1)
  return condition;
  },
@@ -11977,7 +13011,7 @@ new emosWS.ESColorSwap({'conditionFunction' : function() {
  'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'Occupied1H10682'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
- var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.SB.S1071_Occ')
+ var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.SB.S1071_Occ')
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -11997,7 +13031,7 @@ new emosWS.ESColorSwap({'conditionFunction' : function() {
  'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'Occupied1H10683'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
- var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1071_Occ')
+ var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1071_Occ')
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -12017,7 +13051,7 @@ new emosWS.ESColorSwap({'conditionFunction' : function() {
  'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'Occupied1H10684'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
- var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.SB.S1071_Occ')
+ var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1071_Occ')
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -12057,7 +13091,7 @@ new emosWS.ESColorSwap({'conditionFunction' : function() {
  'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'Occupied1H10686'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
- var condition = !GetTagValueAsBoolean('P1Y2C5.==P1Y2C5=2C5DP05++LO160+OF-S101P-L')
+ var condition = !GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5DP05_DIMMM1.SB.S7271_ExtOM1')
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -12077,7 +13111,7 @@ new emosWS.ESColorSwap({'conditionFunction' : function() {
  'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'OvalABCVGJBX_104NK5I7'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
- var condition = !GetTagValueAsBoolean('P1Y2C5.==P1Y2C5=2C5DP05++LO165+OF-S101P-L')
+ var condition = !GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5DP05_DIMMM1.SB.S7272_ExtOM1')
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -12097,7 +13131,7 @@ new emosWS.ESColorSwap({'conditionFunction' : function() {
  'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'OvalABCVGJBX_104NK5I8'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
- var condition = !GetTagValueAsBoolean('P1Y2C5.==P1Y2C5=2C5CD05++LO120+OF-S101P-L')
+ var condition = !GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5DP04_DIMMM1.SB.S7271_ExtOM1')
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -12951,7 +13985,7 @@ iSkidNr = GetTagValueAsDouble('P1Y2C5.P1Y2C5_2C5CD06_LO175_LO175.IL.SD.I1030_RBD
  'STDPLACEHOLDER_SHAPENAME' : 'SkidNr1H10680'});
 new emosWS.ESDynamicText({'conditionFunction' : function() {
  var iSkidNr = 0;
-iSkidNr = GetTagValueAsDouble('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.IL.SD.I1030_RBDataSkidNo');
+iSkidNr = GetTagValueAsDouble('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.IL.SD.I1030_RBDataSkidNo');
 ; 
  Text = GetAsString(iSkidNr);
  Enabled = true;
@@ -12963,7 +13997,7 @@ return {'Text' : Text, 'Enabled' : Enabled};
  'STDPLACEHOLDER_SHAPENAME' : 'SkidNr1H10681'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var iSkidNr = 0;
-iSkidNr = GetTagValueAsDouble('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.IL.SD.I1030_RBDataSkidNo');
+iSkidNr = GetTagValueAsDouble('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155.IL.SD.I1030_RBDataSkidNo');
  var condition = iSkidNr > 0
  return condition;
  },
@@ -12985,7 +14019,7 @@ iSkidNr = GetTagValueAsDouble('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155.IL.SD.I1030_RBD
  'STDPLACEHOLDER_SHAPENAME' : 'SkidNr1H10681'});
 new emosWS.ESDynamicText({'conditionFunction' : function() {
  var iSkidNr = 0;
-iSkidNr = GetTagValueAsDouble('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.IL.SD.I1030_RBDataSkidNo');
+iSkidNr = GetTagValueAsDouble('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.IL.SD.I1030_RBDataSkidNo');
 ; 
  Text = GetAsString(iSkidNr);
  Enabled = true;
@@ -12997,7 +14031,7 @@ return {'Text' : Text, 'Enabled' : Enabled};
  'STDPLACEHOLDER_SHAPENAME' : 'SkidNr1H10682'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var iSkidNr = 0;
-iSkidNr = GetTagValueAsDouble('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.IL.SD.I1030_RBDataSkidNo');
+iSkidNr = GetTagValueAsDouble('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.IL.SD.I1030_RBDataSkidNo');
  var condition = iSkidNr > 0
  return condition;
  },
@@ -13019,7 +14053,7 @@ iSkidNr = GetTagValueAsDouble('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.IL.SD.I1030_RBD
  'STDPLACEHOLDER_SHAPENAME' : 'SkidNr1H10682'});
 new emosWS.ESDynamicText({'conditionFunction' : function() {
  var iSkidNr = 0;
-iSkidNr = GetTagValueAsDouble('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.IL.SD.I1030_RBDataSkidNo');
+iSkidNr = GetTagValueAsDouble('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.IL.SD.I1030_RBDataSkidNo');
 ; 
  Text = GetAsString(iSkidNr);
  Enabled = true;
@@ -13031,7 +14065,7 @@ return {'Text' : Text, 'Enabled' : Enabled};
  'STDPLACEHOLDER_SHAPENAME' : 'SkidNr1H10683'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var iSkidNr = 0;
-iSkidNr = GetTagValueAsDouble('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115.IL.SD.I1030_RBDataSkidNo');
+iSkidNr = GetTagValueAsDouble('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.IL.SD.I1030_RBDataSkidNo');
  var condition = iSkidNr > 0
  return condition;
  },
@@ -14129,8 +15163,8 @@ myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_LO175_LO175', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'WarningIconH10685'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myWrn, myFlt = false;
-myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155', 'PrioMin1') > 0);
-myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155', 'PrioMin2') > 0);
+myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155', 'PrioMin1') > 0);
+myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD07_TT155_LO155', 'PrioMin2') > 0);
  var condition = myWrn && !myFlt
  return condition;
  },
@@ -14152,8 +15186,8 @@ myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD07_LO155_LO155', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'WarningIconH10686'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myWrn, myFlt = false;
-myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115', 'PrioMin1') > 0);
-myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115', 'PrioMin2') > 0);
+myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'PrioMin1') > 0);
+myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'PrioMin2') > 0);
  var condition = myWrn && !myFlt
  return condition;
  },
@@ -14175,8 +15209,8 @@ myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'WarningIconH10687'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myWrn, myFlt = false;
-myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115', 'PrioMin1') > 0);
-myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_LO115_LO115', 'PrioMin2') > 0);
+myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'PrioMin1') > 0);
+myWrn = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'PrioMin2') > 0);
  var condition = myWrn && !myFlt
  return condition;
  },
