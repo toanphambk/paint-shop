@@ -5,6 +5,7 @@ import { OPCUAClientService } from './opcua/OPCUAClient';
 import config from './config/config';
 import apiRoutes from './routes/api';
 import path from 'path';
+import os from 'os';
 // Create Express app
 const app = express();
 
@@ -32,8 +33,9 @@ async function main() {
         console.log(`WebSocket server running on port ${WS_PORT}`);
 
         // Start HTTP server
-        app.listen(HTTP_PORT, () => {
-            console.log(`HTTP server running on port ${HTTP_PORT}`);
+        app.listen(HTTP_PORT, '0.0.0.0', () => {
+            const hostName = os.hostname();
+            console.log(`HTTP server running on ${hostName}:${HTTP_PORT}`);
         });
 
         // Handle application shutdown
