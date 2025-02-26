@@ -1197,37 +1197,37 @@ return {'Text' : Text, 'Enabled' : Enabled};
  'PLACEHOLDER_STROKECOLORQUALITYGOOD' : '#000000',
  'PLACEHOLDER_STROKECOLORQUALITYBAD' : '#FF8000',
  'STDPLACEHOLDER_SHAPENAME' : 'Rectangle34'});
-new emosWS.InputText({'uiID': 'AAA_49POU75KQV10', 'text': '' , 'maxlength': '1', 'pattern': '', 'font-size' : '16', 'onchange': function(text, object){
+new emosWS.InputText({'uiID': 'AAA_49POU75KQV10', 'text': '' , 'maxlength': '3', 'pattern': '', 'font-size' : '16', 'onchange': function(text, object){
 var myText;
 myText = text;
 SetTagValue(true,gPLC.value + gDB + gDBMix + gModel_6+ '.SetQuant', myText)
 },'onkeypress': function(e, object){}});
-new emosWS.InputText({'uiID': 'AAA_49POU75KQV11', 'text': '' , 'maxlength': '1', 'pattern': '', 'font-size' : '16', 'onchange': function(text, object){
+new emosWS.InputText({'uiID': 'AAA_49POU75KQV11', 'text': '' , 'maxlength': '3', 'pattern': '', 'font-size' : '16', 'onchange': function(text, object){
 var myText;
 myText = text;
 SetTagValue(true,gPLC.value + gDB + gDBMix + gModel_7+ '.SetQuant', myText)
 },'onkeypress': function(e, object){}});
-new emosWS.InputText({'uiID': 'AAA_49POU75KQV12', 'text': '' , 'maxlength': '1', 'pattern': '', 'font-size' : '16', 'onchange': function(text, object){
+new emosWS.InputText({'uiID': 'AAA_49POU75KQV12', 'text': '' , 'maxlength': '3', 'pattern': '', 'font-size' : '16', 'onchange': function(text, object){
 var myText;
 myText = text;
 SetTagValue(true,gPLC.value + gDB + gDBMix + gModel_5+ '.SetQuant', myText)
 },'onkeypress': function(e, object){}});
-new emosWS.InputText({'uiID': 'AAA_49POU75KQV6', 'text': '' , 'maxlength': '1', 'pattern': '', 'font-size' : '16', 'onchange': function(text, object){
+new emosWS.InputText({'uiID': 'AAA_49POU75KQV6', 'text': '' , 'maxlength': '3', 'pattern': '', 'font-size' : '16', 'onchange': function(text, object){
 var myText;
 myText = text;
 SetTagValue(true,gPLC.value + gDB + gDBMix + gModel_1+ '.SetQuant', myText)
 },'onkeypress': function(e, object){}});
-new emosWS.InputText({'uiID': 'AAA_49POU75KQV7', 'text': '' , 'maxlength': '1', 'pattern': '', 'font-size' : '16', 'onchange': function(text, object){
+new emosWS.InputText({'uiID': 'AAA_49POU75KQV7', 'text': '' , 'maxlength': '3', 'pattern': '', 'font-size' : '16', 'onchange': function(text, object){
 var myText;
 myText = text;
 SetTagValue(true,gPLC.value + gDB + gDBMix + gModel_3+ '.SetQuant', myText)
 },'onkeypress': function(e, object){}});
-new emosWS.InputText({'uiID': 'AAA_49POU75KQV8', 'text': '' , 'maxlength': '1', 'pattern': '', 'font-size' : '16', 'onchange': function(text, object){
+new emosWS.InputText({'uiID': 'AAA_49POU75KQV8', 'text': '' , 'maxlength': '3', 'pattern': '', 'font-size' : '16', 'onchange': function(text, object){
 var myText;
 myText = text;
 SetTagValue(true,gPLC.value + gDB + gDBMix + gModel_4+ '.SetQuant', myText)
 },'onkeypress': function(e, object){}});
-new emosWS.InputText({'uiID': 'AAA_49POU75KQV9', 'text': '' , 'maxlength': '1', 'pattern': '', 'font-size' : '16', 'onchange': function(text, object){
+new emosWS.InputText({'uiID': 'AAA_49POU75KQV9', 'text': '' , 'maxlength': '3', 'pattern': '', 'font-size' : '16', 'onchange': function(text, object){
 var myText;
 myText = text;
 SetTagValue(true,gPLC.value + gDB + gDBMix + gModel_2+ '.SetQuant', myText)
