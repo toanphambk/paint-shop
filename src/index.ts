@@ -41,8 +41,8 @@ async function main() {
         // Handle application shutdown
         const shutdown = async () => {
             console.log('\nShutting down...');
-            await wsServer.stop();
-            await opcuaService.stop();
+            // await wsServer.stop();
+            // await opcuaService.stop();
             process.exit(0);
         };
 
