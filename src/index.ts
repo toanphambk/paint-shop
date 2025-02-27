@@ -42,7 +42,7 @@ async function main() {
         const shutdown = async () => {
             console.log('\nShutting down...');
             await wsServer.stop();
-            // await opcuaService.stop();
+            await opcuaService.stop();
             process.exit(0);
         };
 
