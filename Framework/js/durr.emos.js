@@ -8036,6 +8036,7 @@
     var self = this,
       href = location.href,
       switchedToOtherServer = false;
+      console.log
     serverPool.forEach(function (server) {
       var _url = self.getURLFromServer(server);
       if (_url !== href) {
@@ -8057,7 +8058,7 @@
       var server = serverPool[i];
       url = href.replace(protocol + server, protocol + targetServer);
       if (url !== href) break;
-    }
+    }    
     return url;
   };
 

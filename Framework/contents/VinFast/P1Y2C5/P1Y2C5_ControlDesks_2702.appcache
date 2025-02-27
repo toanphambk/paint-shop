@@ -1,0 +1,39 @@
+CACHE MANIFEST
+# version: 27. Feb 2025 10:25:23
+
+CACHE:
+# Library resource
+/lib/js/jquery.js
+/lib/js/jquery-ui.js
+/lib/js/durr.emos.js
+/lib/css/jquery-ui.css
+/lib/css/durr.emos.css
+js/site.configuration.js
+
+# For every slide
+2C5CD06.htm
+js/2C5CD06.js
+2C5CD06.svg
+
+
+# EndFor
+
+# For every image in folder images
+images/184767826_image1.PNG
+images/184767826_image2.PNG
+images/184767826_image3.PNG
+images/184767826_image4.PNG
+images/184767826_image5.PNG
+images/184767826_image6.PNG
+images/184767826_image7.PNG
+images/184767826_image8.PNG
+images/184767826_image9.PNG
+images/184767826_image10.PNG
+images/184767826_image11.PNG
+images/184767826_image12.PNG
+images/184767826_image13.PNG
+
+# EndFor
+
+NETWORK:
+*

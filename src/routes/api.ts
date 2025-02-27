@@ -67,6 +67,10 @@ router.get('/ws/admin/framework/file', (req: Request, res: Response) => {
     }
 });
 
+router.get('/reachable', (req: Request, res: Response) => {
+    res.status(200).json({ reachable: true });
+});
+
 // Get StatWin files
 router.get('/Framework/config/StatWin/:filepath(*)', (req: Request, res: Response) => {
     const filepath = req.params.filepath;
