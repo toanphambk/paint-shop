@@ -1409,7 +1409,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH_49NEF28ENY0958'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1453,7 +1453,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH_49NEF28ENY959'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1497,7 +1497,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH_49NEF28ENY960'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1541,7 +1541,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH_49XDJ40RHF'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1585,7 +1585,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH_49XDJ40RHF1'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1629,7 +1629,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH_49XDJ40RHF2'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1695,7 +1695,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10219_4AAH2PZ0OE'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1739,7 +1739,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10219_4AAH2PZ0OE1'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1783,7 +1783,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10279_4AAH2PZA1Z'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1827,7 +1827,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10279_4AAH2PZA1Z1'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1871,7 +1871,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD05_LO120_LO120', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10346_FFG3VDPE1'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD05_LO120_LO120_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD05_LO120_LO120.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1915,7 +1915,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10681'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -1959,7 +1959,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10682'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -2003,7 +2003,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10683'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -2047,7 +2047,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_LO160_LO160', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10684'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO160_LO160_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO160_LO160.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -2091,7 +2091,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_LO165_LO165', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10685'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO165_LO165_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO165_LO165.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -2113,7 +2113,7 @@ myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO165_LO165_SB_S1268_CFV');
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10685'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO175_LO175_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO175_LO175.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -2157,7 +2157,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10688'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -2201,7 +2201,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmIconH10689'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -2274,7 +2274,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH_49XDJ40HR0'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -2347,7 +2347,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH_49XDJ40HR1'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -2420,7 +2420,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH_49XDJ40HR2'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -2544,7 +2544,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH_FD51I80HR0951'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -2617,7 +2617,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH_FD51I80HR952'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -2690,7 +2690,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH_FD51I80HR953'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -2763,7 +2763,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10212_4AAH2PYXJV'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -2836,7 +2836,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10212_4AAH2PYXJV1'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -2909,7 +2909,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10272_4AAH2PZ6XG'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -2982,7 +2982,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10272_4AAH2PZ6XG1'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -3055,7 +3055,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10338_1JJLZJDAX'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD05_LO120_LO120_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD05_LO120_LO120.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -3128,7 +3128,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10673'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -3201,7 +3201,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10674'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -3274,7 +3274,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10675'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -3347,7 +3347,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10676'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO160_LO160_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO160_LO160.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -3420,7 +3420,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10677'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO165_LO165_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO165_LO165.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -3493,7 +3493,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10678'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO175_LO175_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_LO175_LO175.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -3566,7 +3566,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10680'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -3639,7 +3639,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'AlarmTriangleH10681'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -9106,7 +9106,7 @@ new emosWS.ESColorSwap({'conditionFunction' : function() {
  'PLACEHOLDER_VISIBILITY' : true,
  'PLACEHOLDER_VISIBILITYFALSE' : false,
  'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
- 'STDPLACEHOLDER_SHAPENAME' : 'EL117'});
+ 'STDPLACEHOLDER_SHAPENAME' : 'EL116'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var condition = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1252_Enbl')
  return condition;
@@ -9672,7 +9672,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'Fault'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -9716,7 +9716,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5DC02_EL115_FX115', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'Fault_4AAH2PYK5M'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -9760,7 +9760,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'Fault_4AAH2PYUVF'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -9804,7 +9804,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5DC02_EL115_EL115', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'Fault_919I91V'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -9848,7 +9848,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'Fault1'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -9892,7 +9892,7 @@ myFlt = (GetAlarmGroupPropertyAsInteger('P1Y2C1.P1Y2C5_2C5CD06_TC170_MU170', 'Pr
  'STDPLACEHOLDER_SHAPENAME' : 'Fault2'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -9965,7 +9965,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -10038,7 +10038,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring_4AAH2PYJ9H'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_FX115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -10111,7 +10111,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring_4AAH2PYTZA'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_LO115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -10184,7 +10184,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring_919I7Y2'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD02_EL115_EL115.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -10257,7 +10257,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring1'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_LO170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -10330,7 +10330,7 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'STDPLACEHOLDER_SHAPENAME' : 'FaultAndWaring2'});
 new emosWS.ESColorSwap({'conditionFunction' : function() {
  var myFlt = false;
-myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170_SB_S1268_CFV');
+myFlt = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_MU170.SB.S1268_CFV');
  var condition = myFlt
  return condition;
  },
@@ -10389,7 +10389,7 @@ new emosWS.ESColorSwap({'conditionFunction' : function() {
  'PLACEHOLDER_VISIBILITY' : true,
  'PLACEHOLDER_VISIBILITYFALSE' : false,
  'PLACEHOLDER_SWAP_HIDEIFQUALITYBAD' : false,
- 'STDPLACEHOLDER_SHAPENAME' : 'FX117'});
+ 'STDPLACEHOLDER_SHAPENAME' : 'FX116'});
 new emosWS.ESDiagnosisWindow({'conditionFunction' : function() {
 ;
  DiagnosisLibID = 3;
@@ -10829,7 +10829,7 @@ Pos = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1027_Pos');
 PRev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1069_PRev');
 actPos = GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.AA.I1006_ActPos');
 lastPos= GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.CO.I1044_LastPos');
- var condition = (Pos && !PRev)
+ var condition = (Pos && PRev)
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -10902,7 +10902,7 @@ Pos = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1027_Pos');
 PRev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1069_PRev');
 actPos = GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.AA.I1006_ActPos');
 lastPos= GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.CO.I1044_LastPos');
- var condition = (Pos && !PRev)
+ var condition = (Pos && PRev)
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -11048,7 +11048,7 @@ Pos = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1027_Pos');
 PFwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1068_PFwd');
 actPos = GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.AA.I1006_ActPos');
 lastPos= GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.CO.I1044_LastPos');
- var condition = (Pos && !PFwd)
+ var condition = (Pos && PFwd)
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -11121,7 +11121,7 @@ Pos = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1027_Pos');
 PFwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1068_PFwd');
 actPos = GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.AA.I1006_ActPos');
 lastPos= GetTagValueAsInteger('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.CO.I1044_LastPos');
- var condition = (Pos && !PFwd)
+ var condition = (Pos && PFwd)
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -12076,7 +12076,7 @@ PRev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1069_PRev');
 PFwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1068_PFwd');
 Rev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1063_Rev');
 Fwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1062_Fwd');
- var condition = (iVis_170.value == 2) && (PRev || Fwd)
+ var condition = (iVis_170.value == 2) && (PRev)
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -12101,7 +12101,7 @@ PRev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1069_PRev');
 PFwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1068_PFwd');
 Rev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1063_Rev');
 Fwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1062_Fwd');
- var condition = (iVis_170.value == 2) && (PFwd || Rev)
+ var condition = (iVis_170.value == 2) && !(PFwd || PRev)
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -12126,7 +12126,7 @@ PRev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1069_PRev');
 PFwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1068_PFwd');
 Rev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1063_Rev');
 Fwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1062_Fwd');
- var condition = (iVis_170.value == 2) && !(PFwd || Rev || Fwd || PRev)
+ var condition = (iVis_170.value == 2) && (PFwd)
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -13511,7 +13511,7 @@ PRev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1069_PRev');
 PFwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1068_PFwd');
 Rev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1063_Rev');
 Fwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1062_Fwd');
- var condition = (iVis_170.value == 3) && (PRev || Fwd)
+ var condition = (iVis_170.value == 3) && (PRev)
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -13536,7 +13536,7 @@ PRev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1069_PRev');
 PFwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1068_PFwd');
 Rev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1063_Rev');
 Fwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1062_Fwd');
- var condition = (iVis_170.value == 3) && (PFwd || Rev)
+ var condition = (iVis_170.value == 3) && !(PFwd || PRev)
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -13561,7 +13561,7 @@ PRev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1069_PRev');
 PFwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1068_PFwd');
 Rev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1063_Rev');
 Fwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1062_Fwd');
- var condition = (iVis_170.value == 3) && !(PFwd || Rev || Fwd || PRev)
+ var condition = (iVis_170.value == 3) && (PFwd)
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -14562,6 +14562,8 @@ return {Condition1:Condition1, Condition2:Condition2, Condition3:Condition3, Con
  'PLACEHOLDER_VISIBILITY8' : true,
  'PLACEHOLDER_VISIBILITYELSE' : false,
  'STDPLACEHOLDER_SHAPENAME' : 'PositionNr_919IXBG'});
+new LanguageText({'textID' : 'T03_JigsCheck', 'target': 'Rectangle_306.Text'});
+new LanguageText({'textID' : 'T03_JigsCheck', 'target': 'Rectangle_307.Text'});
 new emosWS.ESColorSwapMulti({'conditionFunction' : function() {
  var myFlt = false;
 var myWrn = false;
@@ -15325,7 +15327,7 @@ PRev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1069_PRev');
 PFwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1068_PFwd');
 Rev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1063_Rev');
 Fwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1062_Fwd');
- var condition = (iVis_170.value == 1) && (PRev || Fwd)
+ var condition = (iVis_170.value == 1) && (PRev)
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -15350,7 +15352,7 @@ PRev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1069_PRev');
 PFwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1068_PFwd');
 Rev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1063_Rev');
 Fwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1062_Fwd');
- var condition = (iVis_170.value == 1) && (PFwd || Rev)
+ var condition = (iVis_170.value == 1) && !(PFwd || PRev)
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
@@ -15375,7 +15377,7 @@ PRev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1069_PRev');
 PFwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1068_PFwd');
 Rev = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1063_Rev');
 Fwd = GetTagValueAsBoolean('P1Y2C5.P1Y2C5_2C5CD06_TC170_TC170.SB.S1062_Fwd');
- var condition = (iVis_170.value == 1) && !(PFwd || Rev || Fwd || PRev)
+ var condition = (iVis_170.value == 1) && (PFwd)
  return condition;
  },
  'PLACEHOLDER_SWAP_FILLCOLOR' : false,
